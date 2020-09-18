@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Synth Punk</title>
+    </head>
+
+    <body>
+        <h1> Synth Punk</h1>
+
+        <div>
+            Click here to start the waveform:
+            <button onclick="play()">Start/Stop</button>
+        </div>
+
+        <br>
+
+        <div>
+            <input onchange="changetype()" type="radio" name="waveform" checked value="sine"> Sine
+            <input onchange="changetype()" type="radio" name="waveform" checked value="sawtooth"> Sawtooth
+            <input onchange="changetype()" type="radio" name="waveform" checked value="square"> Square
+            <input onchange="changetype()" type="radio" name="waveform" checked value="triangle"> Triangle
+        </div>
+
+        <br>
+
+        <div>
+            <input id="freqslider" type="range" onchange="changefreq()" name="slider">
+        </div>
+
+        <script type="text/javascript" src="audio.js">
+
+        </script>
+    </body>
+
+</html>
