@@ -1,14 +1,25 @@
 //"use strict";
+var audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
+var volume = audioContext.createGain();
+var volumeControl = document.querySelector("#volume");
 var play, oscillator, changefreq, changetype;
 
 var oscProp = {
   type: "sine",
-  frequency: 500,
+  frequency: 440,
   playing: false,
 };
 
-var audioContext = new AudioContext();
+volume.connect(audioContext.destination);
+
+volumeControl.addEventListener(
+  "input",
+  function () {
+    volume.gain.value = this.value;
+  },
+  false
+);
 
 window.onload = function () {
   play = function () {
@@ -22,7 +33,7 @@ window.onload = function () {
         oscProp.frequency,
         audioContext.currentTime
       );
-      oscillator.connect(audioContext.destination);
+      oscillator.connect(volume);
       oscillator.start();
       oscProp.playing = true;
     }
