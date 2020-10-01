@@ -3,71 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Synth Punk</title>
   </head>
 
   <body>
-    <h1>Synth Punk</h1>
-
-    <div>
-      Click here to start the waveform:
-      <button onclick="play()">Start/Stop</button>
-    </div>
-
-    <br />
-
-    <div>
-      <input
-        onchange="changetype()"
-        type="radio"
-        name="waveform"
-        checked
-        value="sine"
-      />
-      Sine
-      <input
-        onchange="changetype()"
-        type="radio"
-        name="waveform"
-        checked
-        value="sawtooth"
-      />
-      Sawtooth
-      <input
-        onchange="changetype()"
-        type="radio"
-        name="waveform"
-        checked
-        value="square"
-      />
-      Square
-      <input
-        onchange="changetype()"
-        type="radio"
-        name="waveform"
-        checked
-        value="triangle"
-      />
-      Triangle
-    </div>
-
-    <br />
-
-    <div>
-      <label>Slide to change frequency</label>
-      <br />
-      <input
-        id="freqslider"
-        type="range"
-        onchange="changefreq()"
-        name="slider"
-        step="0.01"
-      />
-
+    <div class="synthBorder">
+      <h1>Synth Punk</h1>
       <div>
-        <label>Volume</label>
-        <br />
-        <input type="range" id="volume" min="0" max="2" value="1" step="0.01" />
+        <button onclick="play()">Start/Stop</button>
+      </div>
+
+      <div class="waveTypes">
+        <input
+          onchange="changetype()"
+          type="radio"
+          name="waveform"
+          checked
+          value="sine"
+        />
+        <label>Sine</label>
+        <input
+          onchange="changetype()"
+          type="radio"
+          name="waveform"
+          checked
+          value="sawtooth"
+        />
+        <label>Sawtooth</label>
+        <input
+          onchange="changetype()"
+          type="radio"
+          name="waveform"
+          checked
+          value="square"
+        />
+        <label>Square</label>
+        <input
+          onchange="changetype()"
+          type="radio"
+          name="waveform"
+          checked
+          value="triangle"
+        />
+        <label>Triangle</label>
+      </div>
+
+      <div class="ctrls">
+        <label>Frequency Slider</label>
+        <input
+          id="freqslider"
+          name="slider"
+          type="range"
+          onchange="changefreq()"
+          min="220"
+          max="880"
+          value="440"
+          step="0.01"
+        />
+
+        <div>
+          <label>Volume</label>
+          <input
+            type="range"
+            id="volume"
+            min="0"
+            max="2"
+            value="1"
+            step="0.01"
+          />
+        </div>
       </div>
     </div>
 

@@ -4,15 +4,15 @@ var audioContext = new (window.AudioContext || window.webkitAudioContext)();
 var volume = audioContext.createGain();
 var volumeControl = document.querySelector("#volume");
 var play, oscillator, changefreq, changetype;
+var frequencyRange = document.querySelector("#freqslider");
 
 var oscProp = {
-  type: "sine",
+  type: "triangle",
   frequency: 440,
   playing: false,
 };
 
 volume.connect(audioContext.destination);
-
 volumeControl.addEventListener(
   "input",
   function () {
@@ -29,10 +29,10 @@ window.onload = function () {
     } else {
       oscillator = audioContext.createOscillator();
       oscillator.type = oscProp.type;
-      oscillator.frequency.setValueAtTime(
+      /* oscillator.frequency.setValueAtTime(
         oscProp.frequency,
         audioContext.currentTime
-      );
+      );*/
       oscillator.connect(volume);
       oscillator.start();
       oscProp.playing = true;
@@ -40,17 +40,20 @@ window.onload = function () {
   };
 
   changefreq = function () {
-    oscProp.frequency = document.getElementById("freqslider").value * 30;
-    // console.log(oscProp.type);
-    play();
-    play();
+    //oscProp.frequency = document.getElementById("freqslider");
+    frequencyRange.addEventListener("input", (event) => {
+      oscillator.frequency.value = event.target.value;
+    });
+    // console.log();
+    // play();
+    // play();
   };
 
   changetype = function () {
     oscProp.type = document.querySelector(
       "input[name = 'waveform']:checked"
     ).value;
-    //console.log(oscProp.type);
+    //console.log();
     play();
     play();
   };
