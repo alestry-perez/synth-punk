@@ -1,5 +1,8 @@
 //"use strict";
-var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+var audioContext = new (window.AudioContext || window.webkitAudioContext)({
+  latencyHint: "interactive",
+  sampleRate: 44100,
+});
 
 var volume = audioContext.createGain();
 var volumeControl = document.querySelector("#volume");
@@ -44,9 +47,9 @@ window.onload = function () {
     frequencyRange.addEventListener("input", (event) => {
       oscillator.frequency.value = event.target.value;
     });
-    // console.log();
-    // play();
-    // play();
+    //console.log();
+    play();
+    play();
   };
 
   changetype = function () {
