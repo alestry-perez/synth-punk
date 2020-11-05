@@ -50754,9 +50754,12 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 //create a synth and connect it to the main output (your speakers)
-var synth = new Tone.Synth().toDestination(); //play a middle 'C' for the duration of an 8th note
-
-synth.triggerAttackRelease("C4", "8n");
+var synth = new Tone.Synth().toDestination();
+var now = Tone.now();
+synth.triggerAttackRelease("C4", "8n", now);
+synth.triggerAttackRelease("E4", "8n", now + 0.5);
+synth.triggerAttackRelease("G4", "8n", now + 1);
+synth.triggerAttackRelease("B4", "8n", now + 1.5);
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
