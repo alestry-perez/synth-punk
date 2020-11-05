@@ -1,4 +1,4 @@
-/*body {
+body {
   background-color: rebeccapurple;
 }
 
@@ -15,6 +15,13 @@ h1 {
 }
 
 button {
+  margin-top: 8px;
+  width: 100px;
+  border: 1px solid black;
+  height: 20px;
+  text-align: center;
+  appearance: none;
+  background-color: white;
   float: left;
   margin-left: 2em;
 }
