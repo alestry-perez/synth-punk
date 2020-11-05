@@ -1,0 +1,26 @@
+{
+  "esversion": 6,
+  "name": "synth-punk",
+  "version": "1.0.0",
+  "main": "toneAudio.js",
+  "dependencies": {
+    "jshint": "^2.12.0",
+    "tone": "^14.7.58"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alestry-perez/synth-punk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alestry-perez/synth-punk/issues"
+  },
+  "homepage": "https://github.com/alestry-perez/synth-punk#readme",
+  "description": ""
+}
