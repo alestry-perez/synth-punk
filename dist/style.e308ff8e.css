@@ -1,0 +1,42 @@
+body {
+  background-color: rebeccapurple;
+}
+
+.synthBorder {
+  background-color: aqua;
+  border-radius: 50em;
+  width: 50rem;
+  height: auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-top: 8px;
+  width: 100px;
+  border: 1px solid black;
+  height: 20px;
+  text-align: center;
+  appearance: none;
+  background-color: white;
+  float: left;
+  margin-left: 2em;
+}
+
+.waveTypes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ctrls {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  justify-content: space-evenly;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

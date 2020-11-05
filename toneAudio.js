@@ -1,4 +1,4 @@
-import * as Tone from "./tone";
+import * as Tone from "tone";
 
 //create a synth and connect it to the main output (your speakers)
 var synth = new Tone.Synth().toDestination();
