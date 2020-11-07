@@ -8,7 +8,9 @@
     "parcel": "^1.12.4",
     "tone": "^14.7.58"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  },
   "scripts": {
     "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"

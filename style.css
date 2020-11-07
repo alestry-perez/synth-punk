@@ -2,7 +2,7 @@ body {
   background-color: rebeccapurple;
 }
 
-.synthBorder {
+/* .synthBorder {
   background-color: aqua;
   border-radius: 50em;
   width: 50rem;
@@ -24,7 +24,7 @@ button {
   background-color: white;
   float: left;
   margin-left: 2em;
-}
+} */
 
 .waveTypes {
   display: flex;
@@ -40,7 +40,7 @@ button {
 
 /*Synth-Sequencer*/
 
-.synth {
+/* .synth {
   padding: 0.5rem 0;
   display: flex;
 }
@@ -157,36 +157,36 @@ button {
   overflow: hidden;
 }
 .synth_buttonInput:nth-child(1) .synth_buttonInputAnim {
-  background-image: url(/images/ui/tiles/synth/sine-black.svg);
+  background-image: url();
 }
 .synth_buttonInput:nth-child(2) .synth_buttonInputAnim {
-  background-image: url(/images/ui/tiles/synth/saw-black.svg);
+  background-image: url();
 }
 .synth_buttonInput:nth-child(3) .synth_buttonInputAnim {
-  background-image: url(/images/ui/tiles/synth/square-black.svg);
+  background-image: url();
 }
 .synth_buttonInput:nth-child(4) .synth_buttonInputAnim {
-  background-image: url(/images/ui/tiles/synth/triangle-black.svg);
+  background-image: url();
 }
 .synth_buttonInput:nth-child(1)
   .synth_buttonInputInner:checked
   + .synth_buttonInputAnim {
-  background-image: url(/images/ui/tiles/synth/sine-yellow.svg);
+  background-image: url();
 }
 .synth_buttonInput:nth-child(2)
   .synth_buttonInputInner:checked
   + .synth_buttonInputAnim {
-  background-image: url(/images/ui/tiles/synth/saw-yellow.svg);
+  background-image: url();
 }
 .synth_buttonInput:nth-child(3)
   .synth_buttonInputInner:checked
   + .synth_buttonInputAnim {
-  background-image: url(/images/ui/tiles/synth/square-yellow.svg);
+  background-image: url();
 }
 .synth_buttonInput:nth-child(4)
   .synth_buttonInputInner:checked
   + .synth_buttonInputAnim {
-  background-image: url(/images/ui/tiles/synth/triangle-yellow.svg);
+  background-image: url();
 }
 .synth_buttonInputAnim {
   display: block;
@@ -266,27 +266,27 @@ button {
 .synth_selectOption:hover {
   background: #000000;
   color: #ffffff;
-}
+} */
+
 .sequencer {
+  display: flex;
   position: absolute;
   bottom: 25rem;
-  left: 0;
-  width: 50%;
+  width: 96.7%;
   height: 8vw;
   background: #ffffff;
-  display: flex;
-  padding: 1rem 1rem 5rem 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
 .sequencer_control {
   max-width: 20%;
   padding-right: 0.2rem;
 }
 .sequencer_play {
-  width: 100%;
+  width: 5em;
   height: 4vw;
   background: #ffffff;
   font-family: "Times New Roman";
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #000000;
   border: 1px solid #000000;
   outline: 0;
@@ -308,7 +308,7 @@ button {
   text-align: right;
   font-family: "Times New Roman";
   color: #000000;
-  font-size: 0.8rem;
+  font-size: 1rem;
   outline: 0;
 }
 .sequencer_slide {
@@ -454,9 +454,14 @@ button {
 .sequencer_drum input:checked + label {
   color: #ffffff;
 }
-#drum-nodes {
+
+#synth-nodes {
   display: none;
 }
+
+/* #drum-nodes {
+} */
+
 @media screen and (max-width: 780px) {
   .synth {
     letter-spacing: 0;

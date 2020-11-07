@@ -50759,9 +50759,10 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 //   console.log("audio is ready");
 // });
 var synth = new Tone.Synth().toDestination();
-var now = Tone.now();
+var now = Tone.start();
 synth.triggerAttackRelease("C4", "8n", now);
 synth.triggerAttackRelease("E4", "8n", now + 0.5);
+synth.triggerAttackRelease("G4", "8n", now + 1);
 synth.triggerAttackRelease("G4", "8n", now + 1);
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -50791,7 +50792,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52449" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55463" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
