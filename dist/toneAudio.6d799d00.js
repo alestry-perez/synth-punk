@@ -50758,12 +50758,20 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 //   await Tone.start();
 //   console.log("audio is ready");
 // });
+var o = Object;
 var synth = new Tone.Synth().toDestination();
-var now = Tone.start();
+var now = Tone.now();
 synth.triggerAttackRelease("C4", "8n", now);
 synth.triggerAttackRelease("E4", "8n", now + 0.5);
 synth.triggerAttackRelease("G4", "8n", now + 1);
-synth.triggerAttackRelease("G4", "8n", now + 1);
+synth.triggerAttackRelease("A4", "8n", now + 1.5); // Synth & Drum Selector
+
+document.getElementById("show-synth").addEventListener("change", function () {
+  this.checked && (o.activeNodes = document.getElementById("synth-nodes"), document.getElementById("synth-nodes").style.display = "flex", document.getElementById("drum-nodes").style.display = "none");
+});
+document.getElementById("show-drums").addEventListener("change", function () {
+  this.checked && (o.activeNodes = document.getElementById("drum-nodes"), document.getElementById("drum-nodes").style.display = "flex", document.getElementById("synth-nodes").style.display = "none");
+});
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -50792,7 +50800,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55463" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58002" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

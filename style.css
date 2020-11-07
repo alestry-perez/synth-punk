@@ -455,12 +455,9 @@ button {
   color: #ffffff;
 }
 
-#synth-nodes {
+#drum-nodes {
   display: none;
 }
-
-/* #drum-nodes {
-} */
 
 @media screen and (max-width: 780px) {
   .synth {
