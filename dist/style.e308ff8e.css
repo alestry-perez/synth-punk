@@ -282,7 +282,7 @@ button {
   padding-right: 0.2rem;
 }
 .sequencer_play {
-  width: 5em;
+  width: 8em;
   height: 4vw;
   background: #ffffff;
   font-family: "Times New Roman";
@@ -290,6 +290,10 @@ button {
   color: #000000;
   border: 1px solid #000000;
   outline: 0;
+}
+.sequencer_bpm input {
+  width: 3em;
+  margin: 0.5em;
 }
 .sequencer_panels,
 .sequencer_slide {
