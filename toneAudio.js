@@ -1,20 +1,17 @@
 import * as Tone from "tone";
 
-let o = Object;
-let synthButton = document.querySelector("#synth-play");
+let playButton = document.getElementById("synth-play");
+
 //Synth & Drum Selector
-
-//attach a click listener to a play button
-
 document.getElementById("show-synth").addEventListener("change", function () {
   this.checked &&
-    ((o.activeNodes = document.getElementById("synth-nodes")),
+    ((Object.activeNodes = document.getElementById("synth-nodes")),
     (document.getElementById("synth-nodes").style.display = "flex"),
     (document.getElementById("drum-nodes").style.display = "none"));
 }),
   document.getElementById("show-drums").addEventListener("change", function () {
     this.checked &&
-      ((o.activeNodes = document.getElementById("drum-nodes")),
+      ((Object.activeNodes = document.getElementById("drum-nodes")),
       (document.getElementById("drum-nodes").style.display = "flex"),
       (document.getElementById("synth-nodes").style.display = "none"));
   });

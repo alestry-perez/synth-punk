@@ -50753,14 +50753,12 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var o = Object;
-var synthButton = document.querySelector("#synth-play"); //Synth & Drum Selector
-//attach a click listener to a play button
+var playButton = document.getElementById("synth-play"); //Synth & Drum Selector
 
 document.getElementById("show-synth").addEventListener("change", function () {
-  this.checked && (o.activeNodes = document.getElementById("synth-nodes"), document.getElementById("synth-nodes").style.display = "flex", document.getElementById("drum-nodes").style.display = "none");
+  this.checked && (Object.activeNodes = document.getElementById("synth-nodes"), document.getElementById("synth-nodes").style.display = "flex", document.getElementById("drum-nodes").style.display = "none");
 }), document.getElementById("show-drums").addEventListener("change", function () {
-  this.checked && (o.activeNodes = document.getElementById("drum-nodes"), document.getElementById("drum-nodes").style.display = "flex", document.getElementById("synth-nodes").style.display = "none");
+  this.checked && (Object.activeNodes = document.getElementById("drum-nodes"), document.getElementById("drum-nodes").style.display = "flex", document.getElementById("synth-nodes").style.display = "none");
 });
 var typeInput,
     typeList,
@@ -50933,7 +50931,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51827" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56818" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
