@@ -50764,21 +50764,19 @@ var o = Object; // const synth = new Tone.Synth().toDestination();
 // synth.triggerAttackRelease("E4", "8n", now + 0.5);
 // synth.triggerAttackRelease("G4", "8n", now + 1);
 // synth.triggerAttackRelease("A4", "8n", now + 1.5);
+// function tileInitSynth(e) {
+//   var t = new (window.AudioContext || window.webkitAudioContext)({
+//       latencyHint: "interactive",
+//       sampleRate: 22050
+//   });
 // Synth & Drum Selector
 
-document.getElementById("show-synth").addEventListener("change", function () {
-  this.checked && (o.activeNodes = document.getElementById("synth-nodes"), document.getElementById("synth-nodes").style.display = "flex", document.getElementById("drum-nodes").style.display = "none");
-});
-document.getElementById("show-drums").addEventListener("change", function () {
-  this.checked && (o.activeNodes = document.getElementById("drum-nodes"), document.getElementById("drum-nodes").style.display = "flex", document.getElementById("synth-nodes").style.display = "none");
-});
-forEach(o.synthButtons, function (e, t) {
-  e.addEventListener("change", function (e) {
-    var t = this.value;
-    updateParam(this.getAttribute("data-param"), t, o), synthSave(o);
-  }), e.value == getParam(e.getAttribute("data-param"), o) && (e.checked = !0);
-}), o.playButton.addEventListener("click", function () {
+o.playButton.addEventListener("click", function () {
   toggleSequencerPlaying(o);
+}), document.getElementById("show-synth").addEventListener("change", function () {
+  this.checked && (o.activeNodes = document.getElementById("synth-nodes"), document.getElementById("synth-nodes").style.display = "flex", document.getElementById("drum-nodes").style.display = "none");
+}), document.getElementById("show-drums").addEventListener("change", function () {
+  this.checked && (o.activeNodes = document.getElementById("drum-nodes"), document.getElementById("drum-nodes").style.display = "flex", document.getElementById("synth-nodes").style.display = "none");
 });
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -50808,7 +50806,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62899" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51411" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
