@@ -50771,13 +50771,248 @@ var o = Object; // const synth = new Tone.Synth().toDestination();
 //   });
 // Synth & Drum Selector
 
-o.playButton.addEventListener("click", function () {
-  toggleSequencerPlaying(o);
-}), document.getElementById("show-synth").addEventListener("change", function () {
-  this.checked && (o.activeNodes = document.getElementById("synth-nodes"), document.getElementById("synth-nodes").style.display = "flex", document.getElementById("drum-nodes").style.display = "none");
-}), document.getElementById("show-drums").addEventListener("change", function () {
-  this.checked && (o.activeNodes = document.getElementById("drum-nodes"), document.getElementById("drum-nodes").style.display = "flex", document.getElementById("synth-nodes").style.display = "none");
-});
+function tileInitSynth(e) {
+  var t = new (window.AudioContext || window.webkitAudioContext)({
+    latencyHint: "interactive",
+    sampleRate: 22050
+  });
+  e.data = {
+    context: t,
+    notes: ["E3", "D3", "E3", "G3", "E4", "D4", "E4", "G4", "C4", "D4", "C4", "C5", "E4", "E5", "G4", "G3"],
+    notesActive: [!0, !1, !0, !1, !0, !0, !0, !0, !1, !1, !0, !1, !0, !1, !0, !0],
+    drums: {
+      B: [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0],
+      S: [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      H: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      C: [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0]
+    },
+    noteIndex: 15,
+    bpm: 88,
+    noteDivision: 4,
+    nextTick: t.currentTime,
+    counter: 0,
+    sequencerPlaying: !1,
+    started: !1
+  }, e.data.drums = {
+    B: [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0],
+    S: [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+    H: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    C: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  }, e.data.tickInterval = 60 / e.data.bpm / e.data.noteDivision, initCanvasAndAppend(document.getElementById("waveform-canvas"), e, !0), e.data.analyser = t.createAnalyser(), e.data.analyser.fftSize = 1024, e.data.bufferLength = e.data.analyser.frequencyBinCount, e.data.dataArray = new Uint8Array(e.data.bufferLength), createSynth(e.data), createDrums(e.data), synthLoad(e.data), initSynthInteractions(e.data, e);
+}
+
+function tileUpdateSynth(e, t, a) {
+  t.sequencerPlaying ? (runSequencer(t, a), e.drawRequired = !0, e.updateRequired = !0) : e.updateRequired = !1, calculateWaveform(t);
+}
+
+function tileDrawSynth(e, t) {
+  showActiveNode(t), drawWaveform(t);
+}
+
+function runSequencer(e, t) {
+  if (e.sequencerPlaying && e.nextTick < e.context.currentTime + 0.1) {
+    e.noteIndex++, e.noteIndex >= e.notes.length && (e.noteIndex = 0);
+    var a = getGroove(e);
+    if (e.notesActive[e.noteIndex]) playNote(e.notes[e.noteIndex], Math.max(0, e.nextTick + a), e);
+    playDrums(e, Math.max(0, e.nextTick + a)), e.nextTick += e.tickInterval, e.context.currentTime - e.nextTick > 4 * e.tickInterval && (e.nextTick = e.context.currentTime);
+  }
+}
+
+function playDrums(e, t) {
+  1 == e.drums.B[e.noteIndex] && e.kick && e.kick.play(t), 1 == e.drums.S[e.noteIndex] && e.snare && e.snare.play(t), 1 == e.drums.H[e.noteIndex] && e.hihat && e.hihat.play(t), 1 == e.drums.C[e.noteIndex] && e.cymbal && e.cymbal.play(t);
+}
+
+function createDrums(t) {
+  var a;
+  t.drumReverb = t.context.createConvolver(), t.drumReverbGain = t.context.createGain(), t.drumReverbGain.gain.value = 0.2, t.drumGain = t.context.createGain(), t.drumGain.gain.value = 2.2, t.drumMaster = t.context.createGain(), t.drumMaster.gain.value = 0.5, t.drumGain.connect(t.drumMaster), t.drumReverbGain.connect(t.drumMaster), t.drumMaster.connect(t.compressor);
+  var e = new XMLHttpRequest();
+  e.open("get", "/sounds/ir-min.wav", !0), e.responseType = "arraybuffer", e.onload = function () {
+    t.context.decodeAudioData(e.response, function (e) {
+      a = e, t.drumReverb.buffer = a, t.drumReverb.connect(t.drumReverbGain), t.kick = audioFileLoader("/sounds/kick.wav", t), t.snare = audioFileLoader("/sounds/snare.wav", t), t.hihat = audioFileLoader("/sounds/hihat.wav", t), t.cymbal = audioFileLoader("/sounds/cymbal.wav", t);
+    });
+  }, e.send();
+}
+
+function initSynthInteractions(o, e) {
+  o.playButton = document.getElementById("synth-play"), o.bpmInput = document.getElementById("synth-bpm"), o.swingInput = document.getElementById("synth-swing"), o.synthSequencerNodes = document.getElementById("synth-nodes").children, o.synthDrumNodes = document.getElementsByClassName("sequencer__drum"), o.synthKnobs = document.getElementsByClassName("synth__knobOuter"), o.synthButtons = document.getElementsByClassName("synth__buttonInputInner"), forEach(o.synthButtons, function (e, t) {
+    e.addEventListener("change", function (e) {
+      var t = this.value;
+      updateParam(this.getAttribute("data-param"), t, o), synthSave(o);
+    }), e.value == getParam(e.getAttribute("data-param"), o) && (e.checked = !0);
+  }), o.playButton.addEventListener("click", function () {
+    toggleSequencerPlaying(o);
+  }), document.getElementById("show-synth").addEventListener("change", function () {
+    this.checked && (o.activeNodes = document.getElementById("synth-nodes"), document.getElementById("synth-nodes").style.display = "flex", document.getElementById("drum-nodes").style.display = "none");
+  }), document.getElementById("show-drums").addEventListener("change", function () {
+    this.checked && (o.activeNodes = document.getElementById("drum-nodes"), document.getElementById("drum-nodes").style.display = "flex", document.getElementById("synth-nodes").style.display = "none");
+  }), o.bpmInput.value = o.bpm, o.bpmInput.addEventListener("change", function () {
+    isNaN(this.value) || (o.bpm = Math.max(1, Math.min(300, this.value)), o.tickInterval = 60 / o.bpm / o.noteDivision), this.value = o.bpm;
+  }), forEach(o.synthDrumNodes, function (t, e) {
+    var a = t.parentNode.getAttribute("data-index"),
+        n = t.getAttribute("data-drum");
+    t.children[0].checked = 1 == o.drums[n][a], t.addEventListener("click", function (e) {
+      t.children[0].checked = !t.children[0].checked, o.drums[n][a] = t.children[0].checked ? 1 : 0;
+    });
+  });
+}
+
+function toggleSequencerPlaying(e) {
+  e.sequencerPlaying = !e.sequencerPlaying, e.sequencerPlaying ? (e.nextTick = e.context.currentTime, e.noteIndex = 15, e.started || (e.osc1.start(), e.osc2.start(), e.started = !0), runSequencer(e), e.playButton.innerHTML = "Stop") : (e.playButton.innerHTML = "Play", e.amp.gain.cancelScheduledValues(e.context.currentTime), e.amp.gain.linearRampToValueAtTime(1e-5, e.context.currentTime + 0.1), showActiveNode(e));
+}
+
+function showActiveNode(a) {
+  a.sequencerPlaying ? forEach(a.activeNodes.children, function (e, t) {
+    boolClass(e, "is-playing", a.noteIndex == t);
+  }) : forEach(a.activeNodes.children, function (e, t) {
+    boolClass(e, "is-playing", !1);
+  });
+}
+
+color.khaki = "#B4B17C", color.yellow = "#F4ECA4", color.red = "#B65B7F", color.green = "#5B8B6C", color.purple = "#7F519D", color.grey = "#E0DED1", color.black = "#1F0539", color.white = "#F5F4F0";
+var synthLoadParams = ["ampEnv", "bpm", "tickInterval", "delayFeedbackInput", "delayTimeInput", "distortionInput", "drums", "grooveAmount", "grooveTime", "highpassEnv", "highpassFreq", "highpassFreqInput", "highpassResInput", "lowpassEnv", "lowpassFreq", "lowpassFreqInput", "lowpassResInput", "noteLength", "notes", "notesActive", "osc1Fine", "osc1Octave", "osc1Pitch", "osc1Semi", "osc1LevelInput", "osc2Fine", "osc2Octave", "osc2Pitch", "osc2Semi", "osc2LevelInput", "oscLevelInput", "oscPitch", "portamento", "portamentoInput", "reverbInput", "voltEnv"];
+var typeInput,
+    typeList,
+    noteLetters = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"],
+    sharpLetters = ["C#", "D#", "F#", "G#", "A#"],
+    noteValues = {
+  C0: 16.35,
+  "C#0": 17.32,
+  Db0: 17.32,
+  D0: 18.35,
+  "D#0": 19.45,
+  Eb0: 19.45,
+  E0: 20.6,
+  F0: 21.83,
+  "F#0": 23.12,
+  Gb0: 23.12,
+  G0: 24.5,
+  "G#0": 25.96,
+  Ab0: 25.96,
+  A0: 27.5,
+  "A#0": 29.14,
+  Bb0: 29.14,
+  B0: 30.87,
+  C1: 32.7,
+  "C#1": 34.65,
+  Db1: 34.65,
+  D1: 36.71,
+  "D#1": 38.89,
+  Eb1: 38.89,
+  E1: 41.2,
+  F1: 43.65,
+  "F#1": 46.25,
+  Gb1: 46.25,
+  G1: 49,
+  "G#1": 51.91,
+  Ab1: 51.91,
+  A1: 55,
+  "A#1": 58.27,
+  Bb1: 58.27,
+  B1: 61.74,
+  C2: 65.41,
+  "C#2": 69.3,
+  Db2: 69.3,
+  D2: 73.42,
+  "D#2": 77.78,
+  Eb2: 77.78,
+  E2: 82.41,
+  F2: 87.31,
+  "F#2": 92.5,
+  Gb2: 92.5,
+  G2: 98,
+  "G#2": 103.83,
+  Ab2: 103.83,
+  A2: 110,
+  "A#2": 116.54,
+  Bb2: 116.54,
+  B2: 123.47,
+  C3: 130.81,
+  "C#3": 138.59,
+  Db3: 138.59,
+  D3: 146.83,
+  "D#3": 155.56,
+  Eb3: 155.56,
+  E3: 164.81,
+  F3: 174.61,
+  "F#3": 185,
+  Gb3: 185,
+  G3: 196,
+  "G#3": 207.65,
+  Ab3: 207.65,
+  A3: 220,
+  "A#3": 233.08,
+  Bb3: 233.08,
+  B3: 246.94,
+  C4: 261.63,
+  "C#4": 277.18,
+  Db4: 277.18,
+  D4: 293.66,
+  "D#4": 311.13,
+  Eb4: 311.13,
+  E4: 329.63,
+  F4: 349.23,
+  "F#4": 369.99,
+  Gb4: 369.99,
+  G4: 392,
+  "G#4": 415.3,
+  Ab4: 415.3,
+  A4: 440,
+  "A#4": 466.16,
+  Bb4: 466.16,
+  B4: 493.88,
+  C5: 523.25,
+  "C#5": 554.37,
+  Db5: 554.37,
+  D5: 587.33,
+  "D#5": 622.25,
+  Eb5: 622.25,
+  E5: 659.26,
+  F5: 698.46,
+  "F#5": 739.99,
+  Gb5: 739.99,
+  G5: 783.99,
+  "G#5": 830.61,
+  Ab5: 830.61,
+  A5: 880,
+  "A#5": 932.33,
+  Bb5: 932.33,
+  B5: 987.77,
+  C6: 1046.5,
+  "C#6": 1108.73,
+  Db6: 1108.73,
+  D6: 1174.66,
+  "D#6": 1244.51,
+  Eb6: 1244.51,
+  E6: 1318.51,
+  F6: 1396.91,
+  "F#6": 1479.98,
+  Gb6: 1479.98,
+  G6: 1567.98,
+  "G#6": 1661.22,
+  Ab6: 1661.22,
+  A6: 1760,
+  "A#6": 1864.66,
+  Bb6: 1864.66,
+  B6: 1975.53,
+  C7: 2093,
+  "C#7": 2217.46,
+  Db7: 2217.46,
+  D7: 2349.32,
+  "D#7": 2489.02,
+  Eb7: 2489.02,
+  E7: 2637.02,
+  F7: 2793.83,
+  "F#7": 2959.96,
+  Gb7: 2959.96,
+  G7: 3135.96,
+  "G#7": 3322.44,
+  Ab7: 3322.44,
+  A7: 3520,
+  "A#7": 3729.31,
+  Bb7: 3729.31,
+  B7: 3951.07,
+  C8: 4186.01
+};
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -50806,7 +51041,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51411" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51827" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
