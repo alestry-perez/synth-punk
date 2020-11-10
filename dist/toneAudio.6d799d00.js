@@ -50753,123 +50753,15 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-// //attach a click listener to a play button
-// document.getElementById("play-button").addEventListener("click", async () => {
-//   await Tone.start();
-//   console.log("audio is ready");
-// });
-var o = Object; // const synth = new Tone.Synth().toDestination();
-// const now = Tone.now();
-// synth.triggerAttackRelease("C4", "8n", now);
-// synth.triggerAttackRelease("E4", "8n", now + 0.5);
-// synth.triggerAttackRelease("G4", "8n", now + 1);
-// synth.triggerAttackRelease("A4", "8n", now + 1.5);
-// function tileInitSynth(e) {
-//   var t = new (window.AudioContext || window.webkitAudioContext)({
-//       latencyHint: "interactive",
-//       sampleRate: 22050
-//   });
-// Synth & Drum Selector
+var o = Object;
+var synthButton = document.querySelector("#synth-play"); //Synth & Drum Selector
+//attach a click listener to a play button
 
-function tileInitSynth(e) {
-  var t = new (window.AudioContext || window.webkitAudioContext)({
-    latencyHint: "interactive",
-    sampleRate: 22050
-  });
-  e.data = {
-    context: t,
-    notes: ["E3", "D3", "E3", "G3", "E4", "D4", "E4", "G4", "C4", "D4", "C4", "C5", "E4", "E5", "G4", "G3"],
-    notesActive: [!0, !1, !0, !1, !0, !0, !0, !0, !1, !1, !0, !1, !0, !1, !0, !0],
-    drums: {
-      B: [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0],
-      S: [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
-      H: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-      C: [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0]
-    },
-    noteIndex: 15,
-    bpm: 88,
-    noteDivision: 4,
-    nextTick: t.currentTime,
-    counter: 0,
-    sequencerPlaying: !1,
-    started: !1
-  }, e.data.drums = {
-    B: [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0],
-    S: [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
-    H: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    C: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-  }, e.data.tickInterval = 60 / e.data.bpm / e.data.noteDivision, initCanvasAndAppend(document.getElementById("waveform-canvas"), e, !0), e.data.analyser = t.createAnalyser(), e.data.analyser.fftSize = 1024, e.data.bufferLength = e.data.analyser.frequencyBinCount, e.data.dataArray = new Uint8Array(e.data.bufferLength), createSynth(e.data), createDrums(e.data), synthLoad(e.data), initSynthInteractions(e.data, e);
-}
-
-function tileUpdateSynth(e, t, a) {
-  t.sequencerPlaying ? (runSequencer(t, a), e.drawRequired = !0, e.updateRequired = !0) : e.updateRequired = !1, calculateWaveform(t);
-}
-
-function tileDrawSynth(e, t) {
-  showActiveNode(t), drawWaveform(t);
-}
-
-function runSequencer(e, t) {
-  if (e.sequencerPlaying && e.nextTick < e.context.currentTime + 0.1) {
-    e.noteIndex++, e.noteIndex >= e.notes.length && (e.noteIndex = 0);
-    var a = getGroove(e);
-    if (e.notesActive[e.noteIndex]) playNote(e.notes[e.noteIndex], Math.max(0, e.nextTick + a), e);
-    playDrums(e, Math.max(0, e.nextTick + a)), e.nextTick += e.tickInterval, e.context.currentTime - e.nextTick > 4 * e.tickInterval && (e.nextTick = e.context.currentTime);
-  }
-}
-
-function playDrums(e, t) {
-  1 == e.drums.B[e.noteIndex] && e.kick && e.kick.play(t), 1 == e.drums.S[e.noteIndex] && e.snare && e.snare.play(t), 1 == e.drums.H[e.noteIndex] && e.hihat && e.hihat.play(t), 1 == e.drums.C[e.noteIndex] && e.cymbal && e.cymbal.play(t);
-}
-
-function createDrums(t) {
-  var a;
-  t.drumReverb = t.context.createConvolver(), t.drumReverbGain = t.context.createGain(), t.drumReverbGain.gain.value = 0.2, t.drumGain = t.context.createGain(), t.drumGain.gain.value = 2.2, t.drumMaster = t.context.createGain(), t.drumMaster.gain.value = 0.5, t.drumGain.connect(t.drumMaster), t.drumReverbGain.connect(t.drumMaster), t.drumMaster.connect(t.compressor);
-  var e = new XMLHttpRequest();
-  e.open("get", "/sounds/ir-min.wav", !0), e.responseType = "arraybuffer", e.onload = function () {
-    t.context.decodeAudioData(e.response, function (e) {
-      a = e, t.drumReverb.buffer = a, t.drumReverb.connect(t.drumReverbGain), t.kick = audioFileLoader("/sounds/kick.wav", t), t.snare = audioFileLoader("/sounds/snare.wav", t), t.hihat = audioFileLoader("/sounds/hihat.wav", t), t.cymbal = audioFileLoader("/sounds/cymbal.wav", t);
-    });
-  }, e.send();
-}
-
-function initSynthInteractions(o, e) {
-  o.playButton = document.getElementById("synth-play"), o.bpmInput = document.getElementById("synth-bpm"), o.swingInput = document.getElementById("synth-swing"), o.synthSequencerNodes = document.getElementById("synth-nodes").children, o.synthDrumNodes = document.getElementsByClassName("sequencer__drum"), o.synthKnobs = document.getElementsByClassName("synth__knobOuter"), o.synthButtons = document.getElementsByClassName("synth__buttonInputInner"), forEach(o.synthButtons, function (e, t) {
-    e.addEventListener("change", function (e) {
-      var t = this.value;
-      updateParam(this.getAttribute("data-param"), t, o), synthSave(o);
-    }), e.value == getParam(e.getAttribute("data-param"), o) && (e.checked = !0);
-  }), o.playButton.addEventListener("click", function () {
-    toggleSequencerPlaying(o);
-  }), document.getElementById("show-synth").addEventListener("change", function () {
-    this.checked && (o.activeNodes = document.getElementById("synth-nodes"), document.getElementById("synth-nodes").style.display = "flex", document.getElementById("drum-nodes").style.display = "none");
-  }), document.getElementById("show-drums").addEventListener("change", function () {
-    this.checked && (o.activeNodes = document.getElementById("drum-nodes"), document.getElementById("drum-nodes").style.display = "flex", document.getElementById("synth-nodes").style.display = "none");
-  }), o.bpmInput.value = o.bpm, o.bpmInput.addEventListener("change", function () {
-    isNaN(this.value) || (o.bpm = Math.max(1, Math.min(300, this.value)), o.tickInterval = 60 / o.bpm / o.noteDivision), this.value = o.bpm;
-  }), forEach(o.synthDrumNodes, function (t, e) {
-    var a = t.parentNode.getAttribute("data-index"),
-        n = t.getAttribute("data-drum");
-    t.children[0].checked = 1 == o.drums[n][a], t.addEventListener("click", function (e) {
-      t.children[0].checked = !t.children[0].checked, o.drums[n][a] = t.children[0].checked ? 1 : 0;
-    });
-  });
-}
-
-function toggleSequencerPlaying(e) {
-  e.sequencerPlaying = !e.sequencerPlaying, e.sequencerPlaying ? (e.nextTick = e.context.currentTime, e.noteIndex = 15, e.started || (e.osc1.start(), e.osc2.start(), e.started = !0), runSequencer(e), e.playButton.innerHTML = "Stop") : (e.playButton.innerHTML = "Play", e.amp.gain.cancelScheduledValues(e.context.currentTime), e.amp.gain.linearRampToValueAtTime(1e-5, e.context.currentTime + 0.1), showActiveNode(e));
-}
-
-function showActiveNode(a) {
-  a.sequencerPlaying ? forEach(a.activeNodes.children, function (e, t) {
-    boolClass(e, "is-playing", a.noteIndex == t);
-  }) : forEach(a.activeNodes.children, function (e, t) {
-    boolClass(e, "is-playing", !1);
-  });
-}
-
-color.khaki = "#B4B17C", color.yellow = "#F4ECA4", color.red = "#B65B7F", color.green = "#5B8B6C", color.purple = "#7F519D", color.grey = "#E0DED1", color.black = "#1F0539", color.white = "#F5F4F0";
-var synthLoadParams = ["ampEnv", "bpm", "tickInterval", "delayFeedbackInput", "delayTimeInput", "distortionInput", "drums", "grooveAmount", "grooveTime", "highpassEnv", "highpassFreq", "highpassFreqInput", "highpassResInput", "lowpassEnv", "lowpassFreq", "lowpassFreqInput", "lowpassResInput", "noteLength", "notes", "notesActive", "osc1Fine", "osc1Octave", "osc1Pitch", "osc1Semi", "osc1LevelInput", "osc2Fine", "osc2Octave", "osc2Pitch", "osc2Semi", "osc2LevelInput", "oscLevelInput", "oscPitch", "portamento", "portamentoInput", "reverbInput", "voltEnv"];
+document.getElementById("show-synth").addEventListener("change", function () {
+  this.checked && (o.activeNodes = document.getElementById("synth-nodes"), document.getElementById("synth-nodes").style.display = "flex", document.getElementById("drum-nodes").style.display = "none");
+}), document.getElementById("show-drums").addEventListener("change", function () {
+  this.checked && (o.activeNodes = document.getElementById("drum-nodes"), document.getElementById("drum-nodes").style.display = "flex", document.getElementById("synth-nodes").style.display = "none");
+});
 var typeInput,
     typeList,
     noteLetters = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"],

@@ -26,7 +26,7 @@ button {
   margin-left: 2em;
 } */
 
-.waveTypes {
+/* .waveTypes {
   display: flex;
   justify-content: space-evenly;
 }
@@ -36,7 +36,7 @@ button {
   flex-direction: row;
   margin-top: 2em;
   justify-content: space-evenly;
-}
+} */
 
 /*Synth-Sequencer*/
 
@@ -279,7 +279,7 @@ button {
 }
 .sequencer_control {
   max-width: 20%;
-  padding-right: 0.2rem;
+  padding-right: 1rem;
 }
 .sequencer_play {
   width: 8em;
@@ -292,7 +292,7 @@ button {
   outline: 0;
 }
 .sequencer_bpm input {
-  width: 3em;
+  width: 2em;
   margin: 0.5em;
 }
 .sequencer_panels,
@@ -348,7 +348,7 @@ button {
   padding: 0;
 }
 .sequencer_panel input:checked {
-  background: #000000;
+  background: black;
 }
 .sequencer_panel label {
   position: relative;
@@ -377,7 +377,7 @@ button {
   margin-right: 1px;
   margin-bottom: 1px;
   flex: 1;
-  border: 1px solid #000000;
+  border: 0.5px solid #000000;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -389,14 +389,14 @@ button {
   left: 50%;
   width: 2rem;
   height: 2rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   transform: translate3d(-50%, -50%, 0);
-  border: 1px solid #000000;
+  border: 0.5px solid #000000;
   opacity: 0;
   pointer-events: none;
 }
 .sequencer_node.is-playing .sequencer_nodeActive:checked {
-  background: #ffffff;
+  background: #000000;
 }
 .sequencer_node.is-playing .sequencer_nodeActive:checked + .sequencer_nodeNote {
   color: #000000;
@@ -425,7 +425,7 @@ button {
   border: none;
   background: 0 0;
   pointer-events: none;
-  color: #ffffff;
+  color: white;
   top: 50%;
   left: 50%;
   width: 2rem;
@@ -436,13 +436,13 @@ button {
 }
 .sequencer_drum {
   display: inline-block;
-  background: red;
+  background: black;
   width: 50%;
   flex-grow: 1;
   height: calc(50% + 2px);
   margin: -1px;
   position: relative;
-  border: 1px solid #000000;
+  border: 0.5px solid #000000;
 }
 .sequencer_drum label {
   position: absolute;
@@ -456,60 +456,8 @@ button {
   pointer-events: none;
 }
 .sequencer_drum input:checked + label {
-  color: #ffffff;
+  color: black;
 }
-
 #drum-nodes {
   display: none;
-}
-
-@media screen and (max-width: 780px) {
-  .synth {
-    letter-spacing: 0;
-    padding: 1vw 0;
-  }
-  .synth_heading {
-    font-size: 2.5vw;
-  }
-  .synth_section {
-    padding: 3.2vw 1.4vw 2vw;
-  }
-  .synth_knob {
-    width: 8vw;
-  }
-  .synth_buttonInput,
-  .synth_knobInner,
-  .synth_knobOuter {
-    width: 7.75vw;
-    height: 7.75vw;
-  }
-  .synth_buttonInput {
-    height: 6.25vw;
-  }
-  .synth_knobLabel {
-    font-size: 1.5vw;
-  }
-  .synth_knobInput {
-    font-size: 1.8vw;
-    width: 5vw;
-  }
-  .sequencer {
-    letter-spacing: 0;
-    height: 20vw;
-  }
-  .sequencer_play {
-    height: 9.8vw;
-  }
-  .sequencer_panel,
-  .sequencer_panels,
-  .sequencer_slide {
-    height: 4.9vw;
-  }
-  .sequencer_slide,
-  .sequencer_slide input {
-    font-size: 2.5vw;
-  }
-  .sequencer_panel {
-    font-size: 1.5vw;
-  }
 }
