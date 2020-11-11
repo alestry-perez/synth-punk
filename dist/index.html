@@ -8,312 +8,35 @@
   <script src="/style.e308ff8e.js"></script></head>
 
   <body>
-    <!-- <div class="synthBorder">
+    <div class="synthBorder">
       <h1>Synth Punk</h1>
       <div>
         <button onclick="play()">Start/Stop</button>
       </div>
 
       <div class="waveTypes">
-        <input
-          onchange="changetype()"
-          type="radio"
-          name="waveform"
-          checked
-          value="sine"
-        />
+        <input onchange="changetype()" type="radio" name="waveform" checked="" value="sine">
         <label>Sine</label>
-        <input
-          onchange="changetype()"
-          type="radio"
-          name="waveform"
-          checked
-          value="sawtooth"
-        />
+        <input onchange="changetype()" type="radio" name="waveform" checked="" value="sawtooth">
         <label>Sawtooth</label>
-        <input
-          onchange="changetype()"
-          type="radio"
-          name="waveform"
-          checked
-          value="square"
-        />
+        <input onchange="changetype()" type="radio" name="waveform" checked="" value="square">
         <label>Square</label>
-        <input
-          onchange="changetype()"
-          type="radio"
-          name="waveform"
-          checked
-          value="triangle"
-        />
+        <input onchange="changetype()" type="radio" name="waveform" checked="" value="triangle">
         <label>Triangle</label>
       </div>
 
       <div class="ctrls">
         <label>Frequency Slider</label>
-        <input
-          id="freqslider"
-          name="slider"
-          type="range"
-          onchange="changefreq()"
-          min="220"
-          max="880"
-          value="440"
-          step="0.01"
-        />
+        <input id="freqslider" name="slider" type="range" onchange="changefreq()" min="220" max="880" value="440" step="0.01">
 
         <div>
           <label>Volume</label>
-          <input
-            type="range"
-            id="volume"
-            min="0"
-            max="2"
-            value="1"
-            step="0.01"
-          />
+          <input type="range" id="volume" min="0" max="2" value="1" step="0.01">
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <!-- <button id="play-button">Play</button> -->
-
-    <div class="sequencer">
-      <div class="sequencer_control">
-        <button class="sequencer_play" id="synth-play">Play Stop</button>
-        <div class="sequencer_bpm">
-          <label for="bpm">BPM:</label>
-          <input name="bpm" value="128" id="synth-bpm">
-        </div>
-        <div class="sequencer_panels">
-          <div class="sequencer_panel">
-            <input type="radio" value="synth" name="sequencerPanel" checked="" id="show-synth">
-            <label>SYNTH</label>
-          </div>
-          <div class="sequencer_panel">
-            <input type="radio" value="drums" name="sequencerPanel" id="show-drums">
-            <label>DRUMS</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="sequencer_input">
-        <div class="sequencer_nodes" id="synth-nodes">
-          <div class="sequencer_node" data-index="0">
-            <input type="checkbox" class="sequencer_nodeActive" checked="">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="1">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="2">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="3">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="4">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="5">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="6">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="7">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="8">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="9">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="10">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="11">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="12">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="13">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="14">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-          <div class="sequencer_node" data-index="15">
-            <input type="checkbox" class="sequencer_nodeActive">
-            <input value="C4" class="sequencer_nodeNote">
-          </div>
-        </div>
-
-        <div class="sequencer_nodes" id="drum-nodes">
-          <div class="sequencer_node" data-index="0">
-            <div class="sequencer_drum" data-drum="B">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>B</label>
-            </div>
-            <div class="sequencer_drum" data-drum="S">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>S</label>
-            </div>
-            <div class="sequencer_drum" data-drum="H">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>H</label>
-            </div>
-            <div class="sequencer_drum" data-drum="C">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>C</label>
-            </div>
-          </div>
-          <div class="sequencer_node" data-index="1">
-            <div class="sequencer_drum" data-drum="B">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>B</label>
-            </div>
-            <div class="sequencer_drum" data-drum="S">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>S</label>
-            </div>
-            <div class="sequencer_drum" data-drum="H">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>H</label>
-            </div>
-            <div class="sequencer_drum" data-drum="C">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>C</label>
-            </div>
-          </div>
-          <div class="sequencer_node" data-index="2">
-            <div class="sequencer_drum" data-drum="B">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>B</label>
-            </div>
-            <div class="sequencer_drum" data-drum="S">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>S</label>
-            </div>
-            <div class="sequencer_drum" data-drum="H">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>H</label>
-            </div>
-            <div class="sequencer_drum" data-drum="C">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>C</label>
-            </div>
-          </div>
-          <div class="sequencer_node" data-index="3">
-            <div class="sequencer_drum" data-drum="B">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>B</label>
-            </div>
-            <div class="sequencer_drum" data-drum="S">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>S</label>
-            </div>
-            <div class="sequencer_drum" data-drum="H">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>H</label>
-            </div>
-            <div class="sequencer_drum" data-drum="C">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>C</label>
-            </div>
-          </div>
-          <div class="sequencer_node" data-index="4">
-            <div class="sequencer_drum" data-drum="B">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>B</label>
-            </div>
-            <div class="sequencer_drum" data-drum="S">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>S</label>
-            </div>
-            <div class="sequencer_drum" data-drum="H">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>H</label>
-            </div>
-            <div class="sequencer_drum" data-drum="C">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>C</label>
-            </div>
-          </div>
-          <div class="sequencer_node" data-index="5">
-            <div class="sequencer_drum" data-drum="B">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>B</label>
-            </div>
-            <div class="sequencer_drum" data-drum="S">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>S</label>
-            </div>
-            <div class="sequencer_drum" data-drum="H">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>H</label>
-            </div>
-            <div class="sequencer_drum" data-drum="C">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>C</label>
-            </div>
-          </div>
-          <div class="sequencer_node" data-index="6">
-            <div class="sequencer_drum" data-drum="B">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>B</label>
-            </div>
-            <div class="sequencer_drum" data-drum="S">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>S</label>
-            </div>
-            <div class="sequencer_drum" data-drum="H">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>H</label>
-            </div>
-            <div class="sequencer_drum" data-drum="C">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>C</label>
-            </div>
-          </div>
-          <div class="sequencer_node" data-index="7">
-            <div class="sequencer_drum" data-drum="B">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>B</label>
-            </div>
-            <div class="sequencer_drum" data-drum="S">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>S</label>
-            </div>
-            <div class="sequencer_drum" data-drum="H">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>H</label>
-            </div>
-            <div class="sequencer_drum" data-drum="C">
-              <input type="checkbox" class="sequencer_nodeActive">
-              <label>C</label>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    
+    <div class="sequencer"></div>
     <script src="/toneAudio.6d799d00.js"></script>
   </body>
 </html>
