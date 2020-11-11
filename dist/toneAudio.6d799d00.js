@@ -50767,7 +50767,7 @@ gain.toMaster();
 synths.forEach(function (synth) {
   return synth.connect(gain);
 });
-var $rows = document.body.querySelectorAll(".sequencerMain > div > div"),
+var $rows = document.body.querySelectorAll(".subSequencer"),
     notes = ["G5", "E4", "C3"];
 var index = 0;
 Tone.Transport.scheduleRepeat(repeat, "8n");

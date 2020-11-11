@@ -17,7 +17,7 @@ gain.toMaster();
 
 synths.forEach((synth) => synth.connect(gain));
 
-const $rows = document.body.querySelectorAll(".sequencerMain > div > div"),
+const $rows = document.body.querySelectorAll(".subSequencer"),
   notes = ["G5", "E4", "C3"];
 let index = 0;
 
