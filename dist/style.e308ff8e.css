@@ -1,6 +1,10 @@
 body {
   background-color: rebeccapurple;
 }
+.synthMain {
+  justify-content: center;
+  display: grid;
+}
 .synthBorder {
   background-color: aqua;
   border-radius: 50em;
@@ -34,6 +38,12 @@ button {
 }
 
 /*Synth-Sequencer*/
+
+.sequencerMain {
+  justify-content: center;
+  display: grid;
+  margin-top: 5rem;
+}
 
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */

@@ -50753,14 +50753,39 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-console.clear();
-var synth = [new Tone.Synth(), new Tone.Synth(), new Tone.Synth()];
+// UPDATE: there is a problem in chrome with starting audio context
+//  before a user gesture. This fixes it.
+document.documentElement.addEventListener("mousedown", function () {
+  if (Tone.context.state !== "running") Tone.context.resume();
+});
+var synths = [new Tone.Synth(), new Tone.Synth(), new Tone.Synth()];
 synths[0].oscillator.type = "triangle";
 synths[1].oscillator.type = "sine";
-synths[2].oscillator.type = "square";
+synths[2].oscillator.type = "sawtooth";
+var gain = new Tone.Gain(0.6);
+gain.toMaster();
 synths.forEach(function (synth) {
-  return synth.toMaster();
+  return synth.connect(gain);
 });
+var $rows = document.body.querySelectorAll(".sequencerMain > div > div"),
+    notes = ["G5", "E4", "C3"];
+var index = 0;
+Tone.Transport.scheduleRepeat(repeat, "8n");
+Tone.Transport.start();
+
+function repeat(time) {
+  var step = index % 8;
+
+  for (var i = 0; i < $rows.length; i++) {
+    var synth = synths[i],
+        note = notes[i],
+        $row = $rows[i],
+        $input = $row.querySelector("input:nth-child(".concat(step + 1, ")"));
+    if ($input.checked) synth.triggerAttackRelease(note, "8n", time);
+  }
+
+  index++;
+}
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -50789,7 +50814,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58187" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65213" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
