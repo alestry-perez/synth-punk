@@ -1,19 +1,16 @@
 body {
   background-color: rebeccapurple;
 }
-
 .synthBorder {
   background-color: aqua;
   border-radius: 50em;
   width: 50rem;
   height: auto;
 }
-
 h1 {
   display: flex;
   justify-content: center;
 }
-
 button {
   margin-top: 8px;
   width: 100px;
@@ -29,7 +26,6 @@ button {
   display: flex;
   justify-content: space-evenly;
 }
-
 .ctrls {
   display: flex;
   flex-direction: row;
