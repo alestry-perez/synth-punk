@@ -1,7 +1,5 @@
 import * as Tone from "tone";
 
-// UPDATE: there is a problem in chrome with starting audio context
-//  before a user gesture. This fixes it.
 document.documentElement.addEventListener("mousedown", () => {
   if (Tone.context.state !== "running") Tone.context.resume();
 });
@@ -13,7 +11,7 @@ synths[1].oscillator.type = "sine";
 synths[2].oscillator.type = "sawtooth";
 
 const gain = new Tone.Gain(0.6);
-gain.toMaster();
+gain.toDestination();
 
 synths.forEach((synth) => synth.connect(gain));
 
