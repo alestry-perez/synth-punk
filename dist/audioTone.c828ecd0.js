@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/tone/build/esm/version.js":[function(require,module,exports) {
+})({"node_modules/tone/build/esm/version.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -126,14 +126,14 @@ Object.defineProperty(exports, "__esModule", {
 exports.version = void 0;
 const version = "14.8.14";
 exports.version = version;
-},{}],"../node_modules/@babel/runtime/helpers/arrayWithHoles.js":[function(require,module,exports) {
+},{}],"node_modules/@babel/runtime/helpers/arrayWithHoles.js":[function(require,module,exports) {
 function _arrayWithHoles(arr) {
   if (Array.isArray(arr)) return arr;
 }
 
 module.exports = _arrayWithHoles;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{}],"../node_modules/@babel/runtime/helpers/iterableToArrayLimit.js":[function(require,module,exports) {
+},{}],"node_modules/@babel/runtime/helpers/iterableToArrayLimit.js":[function(require,module,exports) {
 function _iterableToArrayLimit(arr, i) {
   if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
@@ -163,7 +163,7 @@ function _iterableToArrayLimit(arr, i) {
 
 module.exports = _iterableToArrayLimit;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{}],"../node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
+},{}],"node_modules/@babel/runtime/helpers/arrayLikeToArray.js":[function(require,module,exports) {
 function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
@@ -176,7 +176,7 @@ function _arrayLikeToArray(arr, len) {
 
 module.exports = _arrayLikeToArray;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{}],"../node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js":[function(require,module,exports) {
+},{}],"node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js":[function(require,module,exports) {
 var arrayLikeToArray = require("./arrayLikeToArray.js");
 
 function _unsupportedIterableToArray(o, minLen) {
@@ -190,14 +190,14 @@ function _unsupportedIterableToArray(o, minLen) {
 
 module.exports = _unsupportedIterableToArray;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{"./arrayLikeToArray.js":"../node_modules/@babel/runtime/helpers/arrayLikeToArray.js"}],"../node_modules/@babel/runtime/helpers/nonIterableRest.js":[function(require,module,exports) {
+},{"./arrayLikeToArray.js":"node_modules/@babel/runtime/helpers/arrayLikeToArray.js"}],"node_modules/@babel/runtime/helpers/nonIterableRest.js":[function(require,module,exports) {
 function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
 module.exports = _nonIterableRest;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{}],"../node_modules/@babel/runtime/helpers/slicedToArray.js":[function(require,module,exports) {
+},{}],"node_modules/@babel/runtime/helpers/slicedToArray.js":[function(require,module,exports) {
 var arrayWithHoles = require("./arrayWithHoles.js");
 
 var iterableToArrayLimit = require("./iterableToArrayLimit.js");
@@ -212,7 +212,7 @@ function _slicedToArray(arr, i) {
 
 module.exports = _slicedToArray;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{"./arrayWithHoles.js":"../node_modules/@babel/runtime/helpers/arrayWithHoles.js","./iterableToArrayLimit.js":"../node_modules/@babel/runtime/helpers/iterableToArrayLimit.js","./unsupportedIterableToArray.js":"../node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js","./nonIterableRest.js":"../node_modules/@babel/runtime/helpers/nonIterableRest.js"}],"../node_modules/@babel/runtime/helpers/classCallCheck.js":[function(require,module,exports) {
+},{"./arrayWithHoles.js":"node_modules/@babel/runtime/helpers/arrayWithHoles.js","./iterableToArrayLimit.js":"node_modules/@babel/runtime/helpers/iterableToArrayLimit.js","./unsupportedIterableToArray.js":"node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js","./nonIterableRest.js":"node_modules/@babel/runtime/helpers/nonIterableRest.js"}],"node_modules/@babel/runtime/helpers/classCallCheck.js":[function(require,module,exports) {
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -221,7 +221,7 @@ function _classCallCheck(instance, Constructor) {
 
 module.exports = _classCallCheck;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{}],"../node_modules/@babel/runtime/helpers/createClass.js":[function(require,module,exports) {
+},{}],"node_modules/@babel/runtime/helpers/createClass.js":[function(require,module,exports) {
 function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
     var descriptor = props[i];
@@ -240,7 +240,7 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 module.exports = _createClass;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{}],"../node_modules/automation-events/build/es5/bundle.js":[function(require,module,exports) {
+},{}],"node_modules/automation-events/build/es5/bundle.js":[function(require,module,exports) {
 var define;
 var global = arguments[3];
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -620,7 +620,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     value: true
   });
 });
-},{"@babel/runtime/helpers/slicedToArray":"../node_modules/@babel/runtime/helpers/slicedToArray.js","@babel/runtime/helpers/classCallCheck":"../node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"../node_modules/@babel/runtime/helpers/createClass.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/abort-error.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/slicedToArray":"node_modules/@babel/runtime/helpers/slicedToArray.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js"}],"node_modules/standardized-audio-context/build/es2019/factories/abort-error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -631,7 +631,7 @@ exports.createAbortError = void 0;
 const createAbortError = () => new DOMException('', 'AbortError');
 
 exports.createAbortError = createAbortError;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/add-active-input-connection-to-audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/add-active-input-connection-to-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -646,7 +646,7 @@ const createAddActiveInputConnectionToAudioNode = insertElementInSet => {
 };
 
 exports.createAddActiveInputConnectionToAudioNode = createAddActiveInputConnectionToAudioNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/add-audio-node-connections.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/add-audio-node-connections.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -672,7 +672,7 @@ const createAddAudioNodeConnections = audioNodeConnectionsStore => {
 };
 
 exports.createAddAudioNodeConnections = createAddAudioNodeConnections;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/add-audio-param-connections.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/add-audio-param-connections.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -691,7 +691,7 @@ const createAddAudioParamConnections = audioParamConnectionsStore => {
 };
 
 exports.createAddAudioParamConnections = createAddAudioParamConnections;
-},{}],"../node_modules/standardized-audio-context/build/es2019/globals.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/globals.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -719,7 +719,7 @@ const NODE_NAME_TO_PROCESSOR_CONSTRUCTOR_MAPS = new WeakMap();
 exports.NODE_NAME_TO_PROCESSOR_CONSTRUCTOR_MAPS = NODE_NAME_TO_PROCESSOR_CONSTRUCTOR_MAPS;
 const NODE_TO_PROCESSOR_MAPS = new WeakMap();
 exports.NODE_TO_PROCESSOR_MAPS = NODE_TO_PROCESSOR_MAPS;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/is-constructible.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/is-constructible.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -745,7 +745,7 @@ const isConstructible = constructible => {
 };
 
 exports.isConstructible = isConstructible;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/split-import-statements.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/split-import-statements.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -784,7 +784,7 @@ const splitImportStatements = (source, url) => {
 };
 
 exports.splitImportStatements = splitImportStatements;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/add-audio-worklet-module.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/add-audio-worklet-module.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -999,7 +999,7 @@ const createAddAudioWorkletModule = (cacheTestResult, createNotSupportedError, e
 };
 
 exports.createAddAudioWorkletModule = createAddAudioWorkletModule;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","../helpers/is-constructible":"../node_modules/standardized-audio-context/build/es2019/helpers/is-constructible.js","../helpers/split-import-statements":"../node_modules/standardized-audio-context/build/es2019/helpers/split-import-statements.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","../helpers/is-constructible":"node_modules/standardized-audio-context/build/es2019/helpers/is-constructible.js","../helpers/split-import-statements":"node_modules/standardized-audio-context/build/es2019/helpers/split-import-statements.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1018,7 +1018,7 @@ const getValueForKey = (map, key) => {
 };
 
 exports.getValueForKey = getValueForKey;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1043,7 +1043,7 @@ const pickElementFromSet = (set, predicate) => {
 };
 
 exports.pickElementFromSet = pickElementFromSet;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1067,7 +1067,7 @@ const deletePassiveInputConnectionToAudioNode = (passiveInputs, source, output, 
 };
 
 exports.deletePassiveInputConnectionToAudioNode = deletePassiveInputConnectionToAudioNode;
-},{"./get-value-for-key":"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js","./pick-element-from-set":"../node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js":[function(require,module,exports) {
+},{"./get-value-for-key":"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js","./pick-element-from-set":"node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1084,7 +1084,7 @@ const getEventListenersOfAudioNode = audioNode => {
 };
 
 exports.getEventListenersOfAudioNode = getEventListenersOfAudioNode;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1107,7 +1107,7 @@ const setInternalStateToActive = audioNode => {
 };
 
 exports.setInternalStateToActive = setInternalStateToActive;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./get-event-listeners-of-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js"}],"../node_modules/standardized-audio-context/build/es2019/guards/audio-worklet-node.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./get-event-listeners-of-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js"}],"node_modules/standardized-audio-context/build/es2019/guards/audio-worklet-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1120,7 +1120,7 @@ const isAudioWorkletNode = audioNode => {
 };
 
 exports.isAudioWorkletNode = isAudioWorkletNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1143,7 +1143,7 @@ const setInternalStateToPassive = audioNode => {
 };
 
 exports.setInternalStateToPassive = setInternalStateToPassive;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./get-event-listeners-of-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive-when-necessary.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./get-event-listeners-of-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive-when-necessary.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1163,7 +1163,7 @@ const setInternalStateToPassiveWhenNecessary = (audioNode, activeInputs) => {
 };
 
 exports.setInternalStateToPassiveWhenNecessary = setInternalStateToPassiveWhenNecessary;
-},{"../guards/audio-worklet-node":"../node_modules/standardized-audio-context/build/es2019/guards/audio-worklet-node.js","./set-internal-state-to-passive":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/add-connection-to-audio-node.js":[function(require,module,exports) {
+},{"../guards/audio-worklet-node":"node_modules/standardized-audio-context/build/es2019/guards/audio-worklet-node.js","./set-internal-state-to-passive":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"node_modules/standardized-audio-context/build/es2019/factories/add-connection-to-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1251,7 +1251,7 @@ const createAddConnectionToAudioNode = (addActiveInputConnectionToAudioNode, add
 };
 
 exports.createAddConnectionToAudioNode = createAddConnectionToAudioNode;
-},{"../helpers/delete-passive-input-connection-to-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-node.js","../helpers/set-internal-state-to-active":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive-when-necessary":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive-when-necessary.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/add-passive-input-connection-to-audio-node.js":[function(require,module,exports) {
+},{"../helpers/delete-passive-input-connection-to-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-node.js","../helpers/set-internal-state-to-active":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive-when-necessary":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive-when-necessary.js"}],"node_modules/standardized-audio-context/build/es2019/factories/add-passive-input-connection-to-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1272,7 +1272,7 @@ const createAddPassiveInputConnectionToAudioNode = insertElementInSet => {
 };
 
 exports.createAddPassiveInputConnectionToAudioNode = createAddPassiveInputConnectionToAudioNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/add-silent-connection.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/add-silent-connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1301,7 +1301,7 @@ const createAddSilentConnection = createNativeGainNode => {
 };
 
 exports.createAddSilentConnection = createAddSilentConnection;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/add-unrendered-audio-worklet-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/add-unrendered-audio-worklet-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1316,7 +1316,7 @@ const createAddUnrenderedAudioWorkletNode = getUnrenderedAudioWorkletNodes => {
 };
 
 exports.createAddUnrenderedAudioWorkletNode = createAddUnrenderedAudioWorkletNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/analyser-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/analyser-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1416,7 +1416,7 @@ const createAnalyserNodeConstructor = (audionNodeConstructor, createAnalyserNode
 };
 
 exports.createAnalyserNodeConstructor = createAnalyserNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1429,7 +1429,7 @@ const isOwnedByContext = (nativeAudioNode, nativeContext) => {
 };
 
 exports.isOwnedByContext = isOwnedByContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/analyser-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/analyser-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1482,7 +1482,7 @@ const createAnalyserNodeRendererFactory = (createNativeAnalyserNode, getNativeAu
 };
 
 exports.createAnalyserNodeRendererFactory = createAnalyserNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1501,7 +1501,7 @@ const testAudioBufferCopyChannelMethodsOutOfBoundsSupport = nativeAudioBuffer =>
 };
 
 exports.testAudioBufferCopyChannelMethodsOutOfBoundsSupport = testAudioBufferCopyChannelMethodsOutOfBoundsSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/index-size-error.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/index-size-error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1512,7 +1512,7 @@ exports.createIndexSizeError = void 0;
 const createIndexSizeError = () => new DOMException('', 'IndexSizeError');
 
 exports.createIndexSizeError = createIndexSizeError;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-get-channel-data-method.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-get-channel-data-method.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1539,7 +1539,7 @@ const wrapAudioBufferGetChannelDataMethod = audioBuffer => {
 };
 
 exports.wrapAudioBufferGetChannelDataMethod = wrapAudioBufferGetChannelDataMethod;
-},{"../factories/index-size-error":"../node_modules/standardized-audio-context/build/es2019/factories/index-size-error.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-constructor.js":[function(require,module,exports) {
+},{"../factories/index-size-error":"node_modules/standardized-audio-context/build/es2019/factories/index-size-error.js"}],"node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1616,7 +1616,7 @@ const createAudioBufferConstructor = (audioBufferStore, cacheTestResult, createN
 };
 
 exports.createAudioBufferConstructor = createAudioBufferConstructor;
-},{"../helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support.js","../helpers/wrap-audio-buffer-get-channel-data-method":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-get-channel-data-method.js"}],"../node_modules/standardized-audio-context/build/es2019/constants.js":[function(require,module,exports) {
+},{"../helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support.js","../helpers/wrap-audio-buffer-get-channel-data-method":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-get-channel-data-method.js"}],"node_modules/standardized-audio-context/build/es2019/constants.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1627,7 +1627,7 @@ const MOST_NEGATIVE_SINGLE_FLOAT = -3.4028234663852886e38;
 exports.MOST_NEGATIVE_SINGLE_FLOAT = MOST_NEGATIVE_SINGLE_FLOAT;
 const MOST_POSITIVE_SINGLE_FLOAT = -MOST_NEGATIVE_SINGLE_FLOAT;
 exports.MOST_POSITIVE_SINGLE_FLOAT = MOST_POSITIVE_SINGLE_FLOAT;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1640,7 +1640,7 @@ var _globals = require("../globals");
 const isActiveAudioNode = audioNode => _globals.ACTIVE_AUDIO_NODE_STORE.has(audioNode);
 
 exports.isActiveAudioNode = isActiveAudioNode;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-source-node-constructor.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js"}],"node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1781,7 +1781,7 @@ const createAudioBufferSourceNodeConstructor = (audioNodeConstructor, createAudi
 };
 
 exports.createAudioBufferSourceNodeConstructor = createAudioBufferSourceNodeConstructor;
-},{"../constants":"../node_modules/standardized-audio-context/build/es2019/constants.js","../helpers/is-active-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","../helpers/set-internal-state-to-active":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-source-node-renderer-factory.js":[function(require,module,exports) {
+},{"../constants":"node_modules/standardized-audio-context/build/es2019/constants.js","../helpers/is-active-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","../helpers/set-internal-state-to-active":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-source-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1867,7 +1867,7 @@ const createAudioBufferSourceNodeRendererFactory = (connectAudioParam, createNat
 };
 
 exports.createAudioBufferSourceNodeRendererFactory = createAudioBufferSourceNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/guards/audio-buffer-source-node.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/guards/audio-buffer-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1880,7 +1880,7 @@ const isAudioBufferSourceNode = audioNode => {
 };
 
 exports.isAudioBufferSourceNode = isAudioBufferSourceNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/guards/biquad-filter-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/guards/biquad-filter-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1893,7 +1893,7 @@ const isBiquadFilterNode = audioNode => {
 };
 
 exports.isBiquadFilterNode = isBiquadFilterNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/guards/constant-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/guards/constant-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1906,7 +1906,7 @@ const isConstantSourceNode = audioNode => {
 };
 
 exports.isConstantSourceNode = isConstantSourceNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/guards/gain-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/guards/gain-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1919,7 +1919,7 @@ const isGainNode = audioNode => {
 };
 
 exports.isGainNode = isGainNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/guards/oscillator-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/guards/oscillator-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1932,7 +1932,7 @@ const isOscillatorNode = audioNode => {
 };
 
 exports.isOscillatorNode = isOscillatorNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/guards/stereo-panner-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/guards/stereo-panner-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1945,7 +1945,7 @@ const isStereoPannerNode = audioNode => {
 };
 
 exports.isStereoPannerNode = isStereoPannerNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1962,7 +1962,7 @@ const getAudioNodeConnections = audioNode => {
 };
 
 exports.getAudioNodeConnections = getAudioNodeConnections;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-param-connections.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-param-connections.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1979,7 +1979,7 @@ const getAudioParamConnections = audioParam => {
 };
 
 exports.getAudioParamConnections = getAudioParamConnections;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/deactivate-active-audio-node-input-connections.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/deactivate-active-audio-node-input-connections.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2035,7 +2035,7 @@ const deactivateActiveAudioNodeInputConnections = (audioNode, trace) => {
 };
 
 exports.deactivateActiveAudioNodeInputConnections = deactivateActiveAudioNodeInputConnections;
-},{"../guards/audio-buffer-source-node":"../node_modules/standardized-audio-context/build/es2019/guards/audio-buffer-source-node.js","../guards/audio-worklet-node":"../node_modules/standardized-audio-context/build/es2019/guards/audio-worklet-node.js","../guards/biquad-filter-node":"../node_modules/standardized-audio-context/build/es2019/guards/biquad-filter-node.js","../guards/constant-source-node":"../node_modules/standardized-audio-context/build/es2019/guards/constant-source-node.js","../guards/gain-node":"../node_modules/standardized-audio-context/build/es2019/guards/gain-node.js","../guards/oscillator-node":"../node_modules/standardized-audio-context/build/es2019/guards/oscillator-node.js","../guards/stereo-panner-node":"../node_modules/standardized-audio-context/build/es2019/guards/stereo-panner-node.js","./get-audio-node-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js","./get-audio-param-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-param-connections.js","./is-active-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","./set-internal-state-to-passive":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js":[function(require,module,exports) {
+},{"../guards/audio-buffer-source-node":"node_modules/standardized-audio-context/build/es2019/guards/audio-buffer-source-node.js","../guards/audio-worklet-node":"node_modules/standardized-audio-context/build/es2019/guards/audio-worklet-node.js","../guards/biquad-filter-node":"node_modules/standardized-audio-context/build/es2019/guards/biquad-filter-node.js","../guards/constant-source-node":"node_modules/standardized-audio-context/build/es2019/guards/constant-source-node.js","../guards/gain-node":"node_modules/standardized-audio-context/build/es2019/guards/gain-node.js","../guards/oscillator-node":"node_modules/standardized-audio-context/build/es2019/guards/oscillator-node.js","../guards/stereo-panner-node":"node_modules/standardized-audio-context/build/es2019/guards/stereo-panner-node.js","./get-audio-node-connections":"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js","./get-audio-param-connections":"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-param-connections.js","./is-active-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","./set-internal-state-to-passive":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2050,7 +2050,7 @@ const deactivateAudioGraph = context => {
 };
 
 exports.deactivateAudioGraph = deactivateAudioGraph;
-},{"./deactivate-active-audio-node-input-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/deactivate-active-audio-node-input-connections.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/is-valid-latency-hint.js":[function(require,module,exports) {
+},{"./deactivate-active-audio-node-input-connections":"node_modules/standardized-audio-context/build/es2019/helpers/deactivate-active-audio-node-input-connections.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/is-valid-latency-hint.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2063,7 +2063,7 @@ const isValidLatencyHint = latencyHint => {
 };
 
 exports.isValidLatencyHint = isValidLatencyHint;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2247,7 +2247,7 @@ const createAudioContextConstructor = (baseAudioContextConstructor, createInvali
 };
 
 exports.createAudioContextConstructor = createAudioContextConstructor;
-},{"../helpers/deactivate-audio-graph":"../node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js","../helpers/is-valid-latency-hint":"../node_modules/standardized-audio-context/build/es2019/helpers/is-valid-latency-hint.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-destination-node-constructor.js":[function(require,module,exports) {
+},{"../helpers/deactivate-audio-graph":"node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js","../helpers/is-valid-latency-hint":"node_modules/standardized-audio-context/build/es2019/helpers/is-valid-latency-hint.js"}],"node_modules/standardized-audio-context/build/es2019/factories/audio-destination-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2307,7 +2307,7 @@ const createAudioDestinationNodeConstructor = (audioNodeConstructor, createAudio
 };
 
 exports.createAudioDestinationNodeConstructor = createAudioDestinationNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-destination-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/audio-destination-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2337,7 +2337,7 @@ const createAudioDestinationNodeRenderer = renderInputsOfAudioNode => {
 };
 
 exports.createAudioDestinationNodeRenderer = createAudioDestinationNodeRenderer;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-listener-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/audio-listener-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2477,7 +2477,7 @@ const createAudioListenerFactory = (createAudioParam, createNativeChannelMergerN
 };
 
 exports.createAudioListenerFactory = createAudioListenerFactory;
-},{"../constants":"../node_modules/standardized-audio-context/build/es2019/constants.js"}],"../node_modules/standardized-audio-context/build/es2019/guards/audio-node.js":[function(require,module,exports) {
+},{"../constants":"node_modules/standardized-audio-context/build/es2019/constants.js"}],"node_modules/standardized-audio-context/build/es2019/guards/audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2490,7 +2490,7 @@ const isAudioNode = audioNodeOrAudioParam => {
 };
 
 exports.isAudioNode = isAudioNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/guards/audio-node-output-connection.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/guards/audio-node-output-connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2505,7 +2505,7 @@ const isAudioNodeOutputConnection = outputConnection => {
 };
 
 exports.isAudioNodeOutputConnection = isAudioNodeOutputConnection;
-},{"./audio-node":"../node_modules/standardized-audio-context/build/es2019/guards/audio-node.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js":[function(require,module,exports) {
+},{"./audio-node":"node_modules/standardized-audio-context/build/es2019/guards/audio-node.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2529,7 +2529,7 @@ const insertElementInSet = (set, element, predicate, ignoreDuplicates) => {
 };
 
 exports.insertElementInSet = insertElementInSet;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/add-active-input-connection-to-audio-param.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/add-active-input-connection-to-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2544,7 +2544,7 @@ const addActiveInputConnectionToAudioParam = (activeInputs, source, [output, eve
 };
 
 exports.addActiveInputConnectionToAudioParam = addActiveInputConnectionToAudioParam;
-},{"./insert-element-in-set":"../node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/add-passive-input-connection-to-audio-param.js":[function(require,module,exports) {
+},{"./insert-element-in-set":"node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/add-passive-input-connection-to-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2565,7 +2565,7 @@ const addPassiveInputConnectionToAudioParam = (passiveInputs, [source, output, e
 };
 
 exports.addPassiveInputConnectionToAudioParam = addPassiveInputConnectionToAudioParam;
-},{"./insert-element-in-set":"../node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js"}],"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js":[function(require,module,exports) {
+},{"./insert-element-in-set":"node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js"}],"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2578,7 +2578,7 @@ const isNativeAudioNodeFaker = nativeAudioNodeOrNativeAudioNodeFaker => {
 };
 
 exports.isNativeAudioNodeFaker = isNativeAudioNodeFaker;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/connect-native-audio-node-to-native-audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/connect-native-audio-node-to-native-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2600,7 +2600,7 @@ const connectNativeAudioNodeToNativeAudioNode = (nativeSourceAudioNode, nativeDe
 };
 
 exports.connectNativeAudioNodeToNativeAudioNode = connectNativeAudioNodeToNativeAudioNode;
-},{"../guards/native-audio-node-faker":"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/delete-active-input-connection.js":[function(require,module,exports) {
+},{"../guards/native-audio-node-faker":"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/delete-active-input-connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2620,7 +2620,7 @@ const deleteActiveInputConnection = (activeInputConnections, source, output) => 
 };
 
 exports.deleteActiveInputConnection = deleteActiveInputConnection;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/delete-active-input-connection-to-audio-param.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/delete-active-input-connection-to-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2635,7 +2635,7 @@ const deleteActiveInputConnectionToAudioParam = (activeInputs, source, output) =
 };
 
 exports.deleteActiveInputConnectionToAudioParam = deleteActiveInputConnectionToAudioParam;
-},{"./pick-element-from-set":"../node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/delete-event-listeners-of-audio-node.js":[function(require,module,exports) {
+},{"./pick-element-from-set":"node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/delete-event-listeners-of-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2654,7 +2654,7 @@ const deleteEventListenerOfAudioNode = (audioNode, eventListener) => {
 };
 
 exports.deleteEventListenerOfAudioNode = deleteEventListenerOfAudioNode;
-},{"./get-event-listeners-of-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-param.js":[function(require,module,exports) {
+},{"./get-event-listeners-of-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2678,7 +2678,7 @@ const deletePassiveInputConnectionToAudioParam = (passiveInputs, source, output)
 };
 
 exports.deletePassiveInputConnectionToAudioParam = deletePassiveInputConnectionToAudioParam;
-},{"./get-value-for-key":"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js","./pick-element-from-set":"../node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/disconnect-native-audio-node-from-native-audio-node.js":[function(require,module,exports) {
+},{"./get-value-for-key":"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js","./pick-element-from-set":"node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/disconnect-native-audio-node-from-native-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2697,7 +2697,7 @@ const disconnectNativeAudioNodeFromNativeAudioNode = (nativeSourceAudioNode, nat
 };
 
 exports.disconnectNativeAudioNodeFromNativeAudioNode = disconnectNativeAudioNodeFromNativeAudioNode;
-},{"../guards/native-audio-node-faker":"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-node.js":[function(require,module,exports) {
+},{"../guards/native-audio-node-faker":"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2714,7 +2714,7 @@ const getNativeAudioNode = audioNode => {
 };
 
 exports.getNativeAudioNode = getNativeAudioNode;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-param.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2731,7 +2731,7 @@ const getNativeAudioParam = audioParam => {
 };
 
 exports.getNativeAudioParam = getNativeAudioParam;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/is-part-of-a-cycle.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./get-value-for-key":"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/is-part-of-a-cycle.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2746,7 +2746,7 @@ const isPartOfACycle = audioNode => {
 };
 
 exports.isPartOfACycle = isPartOfACycle;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/is-passive-audio-node.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/is-passive-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2761,7 +2761,7 @@ const isPassiveAudioNode = audioNode => {
 };
 
 exports.isPassiveAudioNode = isPassiveAudioNode;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-node-disconnect-method-support.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-node-disconnect-method-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2806,7 +2806,7 @@ const testAudioNodeDisconnectMethodSupport = nativeAudioContext => {
 };
 
 exports.testAudioNodeDisconnectMethodSupport = testAudioNodeDisconnectMethodSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/visit-each-audio-node-once.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/visit-each-audio-node-once.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2828,7 +2828,7 @@ const visitEachAudioNodeOnce = (cycles, visitor) => {
 };
 
 exports.visitEachAudioNodeOnce = visitEachAudioNodeOnce;
-},{}],"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2841,7 +2841,7 @@ const isNativeAudioNode = nativeAudioNodeOrAudioParam => {
 };
 
 exports.isNativeAudioNode = isNativeAudioNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-node-disconnect-method.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-node-disconnect-method.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2927,7 +2927,7 @@ const wrapAudioNodeDisconnectMethod = nativeAudioNode => {
 };
 
 exports.wrapAudioNodeDisconnectMethod = wrapAudioNodeDisconnectMethod;
-},{"../guards/native-audio-node":"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-node-constructor.js":[function(require,module,exports) {
+},{"../guards/native-audio-node":"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node.js"}],"node_modules/standardized-audio-context/build/es2019/factories/audio-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3328,7 +3328,7 @@ const createAudioNodeConstructor = (addAudioNodeConnections, addConnectionToAudi
 };
 
 exports.createAudioNodeConstructor = createAudioNodeConstructor;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","../guards/audio-node":"../node_modules/standardized-audio-context/build/es2019/guards/audio-node.js","../guards/audio-node-output-connection":"../node_modules/standardized-audio-context/build/es2019/guards/audio-node-output-connection.js","../helpers/add-active-input-connection-to-audio-param":"../node_modules/standardized-audio-context/build/es2019/helpers/add-active-input-connection-to-audio-param.js","../helpers/add-passive-input-connection-to-audio-param":"../node_modules/standardized-audio-context/build/es2019/helpers/add-passive-input-connection-to-audio-param.js","../helpers/connect-native-audio-node-to-native-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/connect-native-audio-node-to-native-audio-node.js","../helpers/delete-active-input-connection":"../node_modules/standardized-audio-context/build/es2019/helpers/delete-active-input-connection.js","../helpers/delete-active-input-connection-to-audio-param":"../node_modules/standardized-audio-context/build/es2019/helpers/delete-active-input-connection-to-audio-param.js","../helpers/delete-event-listeners-of-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/delete-event-listeners-of-audio-node.js","../helpers/delete-passive-input-connection-to-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-node.js","../helpers/delete-passive-input-connection-to-audio-param":"../node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-param.js","../helpers/disconnect-native-audio-node-from-native-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/disconnect-native-audio-node-from-native-audio-node.js","../helpers/get-audio-node-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js","../helpers/get-audio-param-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-param-connections.js","../helpers/get-event-listeners-of-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js","../helpers/get-native-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-node.js","../helpers/get-native-audio-param":"../node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-param.js","../helpers/insert-element-in-set":"../node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js","../helpers/is-active-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","../helpers/is-part-of-a-cycle":"../node_modules/standardized-audio-context/build/es2019/helpers/is-part-of-a-cycle.js","../helpers/is-passive-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/is-passive-audio-node.js","../helpers/set-internal-state-to-active":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive-when-necessary":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive-when-necessary.js","../helpers/test-audio-node-disconnect-method-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-node-disconnect-method-support.js","../helpers/visit-each-audio-node-once":"../node_modules/standardized-audio-context/build/es2019/helpers/visit-each-audio-node-once.js","../helpers/wrap-audio-node-disconnect-method":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-node-disconnect-method.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-param-factory.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","../guards/audio-node":"node_modules/standardized-audio-context/build/es2019/guards/audio-node.js","../guards/audio-node-output-connection":"node_modules/standardized-audio-context/build/es2019/guards/audio-node-output-connection.js","../helpers/add-active-input-connection-to-audio-param":"node_modules/standardized-audio-context/build/es2019/helpers/add-active-input-connection-to-audio-param.js","../helpers/add-passive-input-connection-to-audio-param":"node_modules/standardized-audio-context/build/es2019/helpers/add-passive-input-connection-to-audio-param.js","../helpers/connect-native-audio-node-to-native-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/connect-native-audio-node-to-native-audio-node.js","../helpers/delete-active-input-connection":"node_modules/standardized-audio-context/build/es2019/helpers/delete-active-input-connection.js","../helpers/delete-active-input-connection-to-audio-param":"node_modules/standardized-audio-context/build/es2019/helpers/delete-active-input-connection-to-audio-param.js","../helpers/delete-event-listeners-of-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/delete-event-listeners-of-audio-node.js","../helpers/delete-passive-input-connection-to-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-node.js","../helpers/delete-passive-input-connection-to-audio-param":"node_modules/standardized-audio-context/build/es2019/helpers/delete-passive-input-connection-to-audio-param.js","../helpers/disconnect-native-audio-node-from-native-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/disconnect-native-audio-node-from-native-audio-node.js","../helpers/get-audio-node-connections":"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js","../helpers/get-audio-param-connections":"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-param-connections.js","../helpers/get-event-listeners-of-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js","../helpers/get-native-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-node.js","../helpers/get-native-audio-param":"node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-param.js","../helpers/insert-element-in-set":"node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js","../helpers/is-active-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","../helpers/is-part-of-a-cycle":"node_modules/standardized-audio-context/build/es2019/helpers/is-part-of-a-cycle.js","../helpers/is-passive-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/is-passive-audio-node.js","../helpers/set-internal-state-to-active":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive-when-necessary":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive-when-necessary.js","../helpers/test-audio-node-disconnect-method-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-node-disconnect-method-support.js","../helpers/visit-each-audio-node-once":"node_modules/standardized-audio-context/build/es2019/helpers/visit-each-audio-node-once.js","../helpers/wrap-audio-node-disconnect-method":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-node-disconnect-method.js"}],"node_modules/standardized-audio-context/build/es2019/factories/audio-param-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3519,7 +3519,7 @@ const createAudioParamFactory = (addAudioParamConnections, audioParamAudioNodeSt
 };
 
 exports.createAudioParamFactory = createAudioParamFactory;
-},{"automation-events":"../node_modules/automation-events/build/es5/bundle.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-param-renderer.js":[function(require,module,exports) {
+},{"automation-events":"node_modules/automation-events/build/es5/bundle.js"}],"node_modules/standardized-audio-context/build/es2019/factories/audio-param-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3573,7 +3573,7 @@ const createAudioParamRenderer = automationEventList => {
 };
 
 exports.createAudioParamRenderer = createAudioParamRenderer;
-},{}],"../node_modules/standardized-audio-context/build/es2019/read-only-map.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/read-only-map.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3617,7 +3617,7 @@ class ReadOnlyMap {
 }
 
 exports.ReadOnlyMap = ReadOnlyMap;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-worklet-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/audio-worklet-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3715,7 +3715,7 @@ const createAudioWorkletNodeConstructor = (addUnrenderedAudioWorkletNode, audioN
 };
 
 exports.createAudioWorkletNodeConstructor = createAudioWorkletNodeConstructor;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","../read-only-map":"../node_modules/standardized-audio-context/build/es2019/read-only-map.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/copy-from-channel.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","../read-only-map":"node_modules/standardized-audio-context/build/es2019/read-only-map.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/copy-from-channel.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3743,7 +3743,7 @@ parent, key, channelNumber, bufferOffset) {
     }
   }
 }
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/copy-to-channel.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/copy-to-channel.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3767,7 +3767,7 @@ const copyToChannel = (audioBuffer, parent, key, channelNumber, bufferOffset) =>
 };
 
 exports.copyToChannel = copyToChannel;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/create-nested-arrays.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/create-nested-arrays.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3793,7 +3793,7 @@ const createNestedArrays = (x, y) => {
 };
 
 exports.createNestedArrays = createNestedArrays;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-worklet-processor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-worklet-processor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3814,7 +3814,7 @@ const getAudioWorkletProcessor = (nativeOfflineAudioContext, proxy) => {
 };
 
 exports.getAudioWorkletProcessor = getAudioWorkletProcessor;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./get-native-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-node.js","./get-value-for-key":"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/audio-worklet-node-renderer-factory.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./get-native-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-node.js","./get-value-for-key":"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js"}],"node_modules/standardized-audio-context/build/es2019/factories/audio-worklet-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4103,7 +4103,7 @@ const createAudioWorkletNodeRendererFactory = (connectAudioParam, connectMultipl
 };
 
 exports.createAudioWorkletNodeRendererFactory = createAudioWorkletNodeRendererFactory;
-},{"../helpers/copy-from-channel":"../node_modules/standardized-audio-context/build/es2019/helpers/copy-from-channel.js","../helpers/copy-to-channel":"../node_modules/standardized-audio-context/build/es2019/helpers/copy-to-channel.js","../helpers/create-nested-arrays":"../node_modules/standardized-audio-context/build/es2019/helpers/create-nested-arrays.js","../helpers/get-audio-node-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js","../helpers/get-audio-worklet-processor":"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-worklet-processor.js","../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/base-audio-context-constructor.js":[function(require,module,exports) {
+},{"../helpers/copy-from-channel":"node_modules/standardized-audio-context/build/es2019/helpers/copy-from-channel.js","../helpers/copy-to-channel":"node_modules/standardized-audio-context/build/es2019/helpers/copy-to-channel.js","../helpers/create-nested-arrays":"node_modules/standardized-audio-context/build/es2019/helpers/create-nested-arrays.js","../helpers/get-audio-node-connections":"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js","../helpers/get-audio-worklet-processor":"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-worklet-processor.js","../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/base-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4233,7 +4233,7 @@ const createBaseAudioContextConstructor = (addAudioWorkletModule, analyserNodeCo
 };
 
 exports.createBaseAudioContextConstructor = createBaseAudioContextConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/biquad-filter-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/biquad-filter-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4324,7 +4324,7 @@ const createBiquadFilterNodeConstructor = (audioNodeConstructor, createAudioPara
 };
 
 exports.createBiquadFilterNodeConstructor = createBiquadFilterNodeConstructor;
-},{"../constants":"../node_modules/standardized-audio-context/build/es2019/constants.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/biquad-filter-node-renderer-factory.js":[function(require,module,exports) {
+},{"../constants":"node_modules/standardized-audio-context/build/es2019/constants.js"}],"node_modules/standardized-audio-context/build/es2019/factories/biquad-filter-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4395,7 +4395,7 @@ const createBiquadFilterNodeRendererFactory = (connectAudioParam, createNativeBi
 };
 
 exports.createBiquadFilterNodeRendererFactory = createBiquadFilterNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/cache-test-result.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/cache-test-result.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4439,7 +4439,7 @@ const createCacheTestResult = (ongoingTests, testResults) => {
 };
 
 exports.createCacheTestResult = createCacheTestResult;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/channel-merger-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/channel-merger-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4469,7 +4469,7 @@ const createChannelMergerNodeConstructor = (audioNodeConstructor, createChannelM
 };
 
 exports.createChannelMergerNodeConstructor = createChannelMergerNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/channel-merger-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/channel-merger-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4519,7 +4519,7 @@ const createChannelMergerNodeRendererFactory = (createNativeChannelMergerNode, g
 };
 
 exports.createChannelMergerNodeRendererFactory = createChannelMergerNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/channel-splitter-node-constructor.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/channel-splitter-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4549,7 +4549,7 @@ const createChannelSplitterNodeConstructor = (audioNodeConstructor, createChanne
 };
 
 exports.createChannelSplitterNodeConstructor = createChannelSplitterNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/channel-splitter-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/channel-splitter-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4599,7 +4599,7 @@ const createChannelSplitterNodeRendererFactory = (createNativeChannelSplitterNod
 };
 
 exports.createChannelSplitterNodeRendererFactory = createChannelSplitterNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/connect-audio-param.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/connect-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4614,7 +4614,7 @@ const createConnectAudioParam = renderInputsOfAudioParam => {
 };
 
 exports.createConnectAudioParam = createConnectAudioParam;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/connect-multiple-outputs.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/connect-multiple-outputs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4641,7 +4641,7 @@ const createConnectMultipleOutputs = createIndexSizeError => {
 };
 
 exports.createConnectMultipleOutputs = createConnectMultipleOutputs;
-},{"../guards/native-audio-node":"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/connected-native-audio-buffer-source-node-factory.js":[function(require,module,exports) {
+},{"../guards/native-audio-node":"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node.js"}],"node_modules/standardized-audio-context/build/es2019/factories/connected-native-audio-buffer-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4674,7 +4674,7 @@ const createConnectedNativeAudioBufferSourceNodeFactory = createNativeAudioBuffe
 };
 
 exports.createConnectedNativeAudioBufferSourceNodeFactory = createConnectedNativeAudioBufferSourceNodeFactory;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/constant-source-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/constant-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4768,7 +4768,7 @@ const createConstantSourceNodeConstructor = (audioNodeConstructor, createAudioPa
 };
 
 exports.createConstantSourceNodeConstructor = createConstantSourceNodeConstructor;
-},{"../constants":"../node_modules/standardized-audio-context/build/es2019/constants.js","../helpers/is-active-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","../helpers/set-internal-state-to-active":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/constant-source-node-renderer-factory.js":[function(require,module,exports) {
+},{"../constants":"node_modules/standardized-audio-context/build/es2019/constants.js","../helpers/is-active-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","../helpers/set-internal-state-to-active":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"node_modules/standardized-audio-context/build/es2019/factories/constant-source-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4847,7 +4847,7 @@ const createConstantSourceNodeRendererFactory = (connectAudioParam, createNative
 };
 
 exports.createConstantSourceNodeRendererFactory = createConstantSourceNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/convert-number-to-unsigned-long.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/convert-number-to-unsigned-long.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4863,7 +4863,7 @@ const createConvertNumberToUnsignedLong = unit32Array => {
 };
 
 exports.createConvertNumberToUnsignedLong = createConvertNumberToUnsignedLong;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/convolver-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/convolver-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4931,7 +4931,7 @@ const createConvolverNodeConstructor = (audioNodeConstructor, createConvolverNod
 };
 
 exports.createConvolverNodeConstructor = createConvolverNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/convolver-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/convolver-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4990,7 +4990,7 @@ const createConvolverNodeRendererFactory = (createNativeConvolverNode, getNative
 };
 
 exports.createConvolverNodeRendererFactory = createConvolverNodeRendererFactory;
-},{"../guards/native-audio-node-faker":"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js","../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/create-native-offline-audio-context.js":[function(require,module,exports) {
+},{"../guards/native-audio-node-faker":"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js","../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/create-native-offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5018,7 +5018,7 @@ const createCreateNativeOfflineAudioContext = (createNotSupportedError, nativeOf
 };
 
 exports.createCreateNativeOfflineAudioContext = createCreateNativeOfflineAudioContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/data-clone-error.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/data-clone-error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5029,7 +5029,7 @@ exports.createDataCloneError = void 0;
 const createDataCloneError = () => new DOMException('', 'DataCloneError');
 
 exports.createDataCloneError = createDataCloneError;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/detach-array-buffer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/detach-array-buffer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5054,7 +5054,7 @@ const detachArrayBuffer = arrayBuffer => {
 };
 
 exports.detachArrayBuffer = detachArrayBuffer;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/decode-audio-data.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/decode-audio-data.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5138,7 +5138,7 @@ const createDecodeAudioData = (audioBufferStore, cacheTestResult, createDataClon
 };
 
 exports.createDecodeAudioData = createDecodeAudioData;
-},{"../helpers/detach-array-buffer":"../node_modules/standardized-audio-context/build/es2019/helpers/detach-array-buffer.js","../helpers/wrap-audio-buffer-get-channel-data-method":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-get-channel-data-method.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/decrement-cycle-counter.js":[function(require,module,exports) {
+},{"../helpers/detach-array-buffer":"node_modules/standardized-audio-context/build/es2019/helpers/detach-array-buffer.js","../helpers/wrap-audio-buffer-get-channel-data-method":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-get-channel-data-method.js"}],"node_modules/standardized-audio-context/build/es2019/factories/decrement-cycle-counter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5185,7 +5185,7 @@ const createDecrementCycleCounter = (connectNativeAudioNodeToNativeAudioNode, cy
 };
 
 exports.createDecrementCycleCounter = createDecrementCycleCounter;
-},{"../guards/audio-node-output-connection":"../node_modules/standardized-audio-context/build/es2019/guards/audio-node-output-connection.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/delay-node-constructor.js":[function(require,module,exports) {
+},{"../guards/audio-node-output-connection":"node_modules/standardized-audio-context/build/es2019/guards/audio-node-output-connection.js"}],"node_modules/standardized-audio-context/build/es2019/factories/delay-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5223,7 +5223,7 @@ const createDelayNodeConstructor = (audioNodeConstructor, createAudioParam, crea
 };
 
 exports.createDelayNodeConstructor = createDelayNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/delay-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/delay-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5281,7 +5281,7 @@ const createDelayNodeRendererFactory = (connectAudioParam, createNativeDelayNode
 };
 
 exports.createDelayNodeRendererFactory = createDelayNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/delete-active-input-connection-to-audio-node.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/delete-active-input-connection-to-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5296,7 +5296,7 @@ const createDeleteActiveInputConnectionToAudioNode = pickElementFromSet => {
 };
 
 exports.createDeleteActiveInputConnectionToAudioNode = createDeleteActiveInputConnectionToAudioNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/delete-unrendered-audio-worklet-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/delete-unrendered-audio-worklet-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5311,7 +5311,7 @@ const createDeleteUnrenderedAudioWorkletNode = getUnrenderedAudioWorkletNodes =>
 };
 
 exports.createDeleteUnrenderedAudioWorkletNode = createDeleteUnrenderedAudioWorkletNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/guards/delay-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/guards/delay-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5324,7 +5324,7 @@ const isDelayNode = audioNode => {
 };
 
 exports.isDelayNode = isDelayNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/detect-cycles.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/detect-cycles.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5360,7 +5360,7 @@ const createDetectCycles = (audioParamAudioNodeStore, getAudioNodeConnections, g
 };
 
 exports.createDetectCycles = createDetectCycles;
-},{"../guards/audio-node":"../node_modules/standardized-audio-context/build/es2019/guards/audio-node.js","../guards/delay-node":"../node_modules/standardized-audio-context/build/es2019/guards/delay-node.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/disconnect-multiple-outputs.js":[function(require,module,exports) {
+},{"../guards/audio-node":"node_modules/standardized-audio-context/build/es2019/guards/audio-node.js","../guards/delay-node":"node_modules/standardized-audio-context/build/es2019/guards/delay-node.js"}],"node_modules/standardized-audio-context/build/es2019/factories/disconnect-multiple-outputs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5411,7 +5411,7 @@ const createDisconnectMultipleOutputs = createIndexSizeError => {
 };
 
 exports.createDisconnectMultipleOutputs = createDisconnectMultipleOutputs;
-},{"../guards/native-audio-node":"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/dynamics-compressor-node-constructor.js":[function(require,module,exports) {
+},{"../guards/native-audio-node":"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node.js"}],"node_modules/standardized-audio-context/build/es2019/factories/dynamics-compressor-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5516,7 +5516,7 @@ const createDynamicsCompressorNodeConstructor = (audioNodeConstructor, createAud
 };
 
 exports.createDynamicsCompressorNodeConstructor = createDynamicsCompressorNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/dynamics-compressor-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/dynamics-compressor-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5589,7 +5589,7 @@ const createDynamicsCompressorNodeRendererFactory = (connectAudioParam, createNa
 };
 
 exports.createDynamicsCompressorNodeRendererFactory = createDynamicsCompressorNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/encoding-error.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/encoding-error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5600,7 +5600,7 @@ exports.createEncodingError = void 0;
 const createEncodingError = () => new DOMException('', 'EncodingError');
 
 exports.createEncodingError = createEncodingError;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/evaluate-source.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/evaluate-source.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5667,7 +5667,7 @@ const createEvaluateSource = window => {
 };
 
 exports.createEvaluateSource = createEvaluateSource;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/event-target-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/event-target-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5712,7 +5712,7 @@ const createEventTargetConstructor = wrapEventListener => {
 };
 
 exports.createEventTargetConstructor = createEventTargetConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/expose-current-frame-and-current-time.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/expose-current-frame-and-current-time.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5753,7 +5753,7 @@ const createExposeCurrentFrameAndCurrentTime = window => {
 };
 
 exports.createExposeCurrentFrameAndCurrentTime = createExposeCurrentFrameAndCurrentTime;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/fetch-source.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/fetch-source.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5778,7 +5778,7 @@ const createFetchSource = createAbortError => {
 };
 
 exports.createFetchSource = createFetchSource;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/gain-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/gain-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5818,7 +5818,7 @@ const createGainNodeConstructor = (audioNodeConstructor, createAudioParam, creat
 };
 
 exports.createGainNodeConstructor = createGainNodeConstructor;
-},{"../constants":"../node_modules/standardized-audio-context/build/es2019/constants.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/gain-node-renderer-factory.js":[function(require,module,exports) {
+},{"../constants":"node_modules/standardized-audio-context/build/es2019/constants.js"}],"node_modules/standardized-audio-context/build/es2019/factories/gain-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5875,7 +5875,7 @@ const createGainNodeRendererFactory = (connectAudioParam, createNativeGainNode, 
 };
 
 exports.createGainNodeRendererFactory = createGainNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/get-active-audio-worklet-node-inputs.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/get-active-audio-worklet-node-inputs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5888,7 +5888,7 @@ const createGetActiveAudioWorkletNodeInputs = (activeAudioWorkletNodeInputsStore
 };
 
 exports.createGetActiveAudioWorkletNodeInputs = createGetActiveAudioWorkletNodeInputs;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/get-audio-node-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/get-audio-node-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5909,7 +5909,7 @@ const createGetAudioNodeRenderer = getAudioNodeConnections => {
 };
 
 exports.createGetAudioNodeRenderer = createGetAudioNodeRenderer;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/get-audio-node-tail-time.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/get-audio-node-tail-time.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5926,7 +5926,7 @@ const createGetAudioNodeTailTime = audioNodeTailTimeStore => {
 };
 
 exports.createGetAudioNodeTailTime = createGetAudioNodeTailTime;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/get-audio-param-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/get-audio-param-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5947,7 +5947,7 @@ const createGetAudioParamRenderer = getAudioParamConnections => {
 };
 
 exports.createGetAudioParamRenderer = createGetAudioParamRenderer;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/get-backup-offline-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/get-backup-offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5962,7 +5962,7 @@ const createGetBackupOfflineAudioContext = backupOfflineAudioContextStore => {
 };
 
 exports.createGetBackupOfflineAudioContext = createGetBackupOfflineAudioContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5973,7 +5973,7 @@ exports.createInvalidStateError = void 0;
 const createInvalidStateError = () => new DOMException('', 'InvalidStateError');
 
 exports.createInvalidStateError = createInvalidStateError;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/get-native-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/get-native-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5996,7 +5996,7 @@ const createGetNativeContext = contextStore => {
 };
 
 exports.createGetNativeContext = createGetNativeContext;
-},{"./invalid-state-error":"../node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/get-or-create-backup-offline-audio-context.js":[function(require,module,exports) {
+},{"./invalid-state-error":"node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js"}],"node_modules/standardized-audio-context/build/es2019/factories/get-or-create-backup-offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6023,7 +6023,7 @@ const createGetOrCreateBackupOfflineAudioContext = (backupOfflineAudioContextSto
 };
 
 exports.createGetOrCreateBackupOfflineAudioContext = createGetOrCreateBackupOfflineAudioContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/get-unrendered-audio-worklet-nodes.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/get-unrendered-audio-worklet-nodes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6044,7 +6044,7 @@ const createGetUnrenderedAudioWorkletNodes = unrenderedAudioWorkletNodeStore => 
 };
 
 exports.createGetUnrenderedAudioWorkletNodes = createGetUnrenderedAudioWorkletNodes;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/invalid-access-error.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/invalid-access-error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6055,7 +6055,7 @@ exports.createInvalidAccessError = void 0;
 const createInvalidAccessError = () => new DOMException('', 'InvalidAccessError');
 
 exports.createInvalidAccessError = createInvalidAccessError;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-iir-filter-node-get-frequency-response-method.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-iir-filter-node-get-frequency-response-method.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6078,7 +6078,7 @@ const wrapIIRFilterNodeGetFrequencyResponseMethod = nativeIIRFilterNode => {
 };
 
 exports.wrapIIRFilterNodeGetFrequencyResponseMethod = wrapIIRFilterNodeGetFrequencyResponseMethod;
-},{"../factories/invalid-access-error":"../node_modules/standardized-audio-context/build/es2019/factories/invalid-access-error.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/iir-filter-node-constructor.js":[function(require,module,exports) {
+},{"../factories/invalid-access-error":"node_modules/standardized-audio-context/build/es2019/factories/invalid-access-error.js"}],"node_modules/standardized-audio-context/build/es2019/factories/iir-filter-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6121,7 +6121,7 @@ const createIIRFilterNodeConstructor = (audioNodeConstructor, createNativeIIRFil
 };
 
 exports.createIIRFilterNodeConstructor = createIIRFilterNodeConstructor;
-},{"../helpers/wrap-iir-filter-node-get-frequency-response-method":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-iir-filter-node-get-frequency-response-method.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/filter-buffer.js":[function(require,module,exports) {
+},{"../helpers/wrap-iir-filter-node-get-frequency-response-method":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-iir-filter-node-get-frequency-response-method.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/filter-buffer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6165,7 +6165,7 @@ const filterBuffer = (feedback, feedbackLength, feedforward, feedforwardLength, 
 };
 
 exports.filterBuffer = filterBuffer;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/iir-filter-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/iir-filter-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6283,7 +6283,7 @@ const createIIRFilterNodeRendererFactory = (createNativeAudioBufferSourceNode, g
 };
 
 exports.createIIRFilterNodeRendererFactory = createIIRFilterNodeRendererFactory;
-},{"../helpers/filter-buffer":"../node_modules/standardized-audio-context/build/es2019/helpers/filter-buffer.js","../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/increment-cycle-counter-factory.js":[function(require,module,exports) {
+},{"../helpers/filter-buffer":"node_modules/standardized-audio-context/build/es2019/helpers/filter-buffer.js","../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/increment-cycle-counter-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6325,7 +6325,7 @@ const createIncrementCycleCounterFactory = (cycleCounters, disconnectNativeAudio
 };
 
 exports.createIncrementCycleCounterFactory = createIncrementCycleCounterFactory;
-},{"../guards/audio-node-output-connection":"../node_modules/standardized-audio-context/build/es2019/guards/audio-node-output-connection.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-context.js":[function(require,module,exports) {
+},{"../guards/audio-node-output-connection":"node_modules/standardized-audio-context/build/es2019/guards/audio-node-output-connection.js"}],"node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6341,7 +6341,7 @@ const createIsAnyAudioContext = (contextStore, isNativeAudioContext) => {
 };
 
 exports.createIsAnyAudioContext = createIsAnyAudioContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6354,7 +6354,7 @@ const createIsAnyAudioNode = (audioNodeStore, isNativeAudioNode) => {
 };
 
 exports.createIsAnyAudioNode = createIsAnyAudioNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-param.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6367,7 +6367,7 @@ const createIsAnyAudioParam = (audioParamStore, isNativeAudioParam) => {
 };
 
 exports.createIsAnyAudioParam = createIsAnyAudioParam;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-any-offline-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-any-offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6383,7 +6383,7 @@ const createIsAnyOfflineAudioContext = (contextStore, isNativeOfflineAudioContex
 };
 
 exports.createIsAnyOfflineAudioContext = createIsAnyOfflineAudioContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6398,7 +6398,7 @@ const createIsNativeAudioContext = nativeAudioContextConstructor => {
 };
 
 exports.createIsNativeAudioContext = createIsNativeAudioContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6413,7 +6413,7 @@ const createIsNativeAudioNode = window => {
 };
 
 exports.createIsNativeAudioNode = createIsNativeAudioNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-param.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6428,7 +6428,7 @@ const createIsNativeAudioParam = window => {
 };
 
 exports.createIsNativeAudioParam = createIsNativeAudioParam;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-native-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-native-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6443,7 +6443,7 @@ const createIsNativeContext = (isNativeAudioContext, isNativeOfflineAudioContext
 };
 
 exports.createIsNativeContext = createIsNativeContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-native-offline-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-native-offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6458,7 +6458,7 @@ const createIsNativeOfflineAudioContext = nativeOfflineAudioContextConstructor =
 };
 
 exports.createIsNativeOfflineAudioContext = createIsNativeOfflineAudioContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-secure-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-secure-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6469,7 +6469,7 @@ exports.createIsSecureContext = void 0;
 const createIsSecureContext = window => window !== null && window.isSecureContext;
 
 exports.createIsSecureContext = createIsSecureContext;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/is-supported-promise.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/is-supported-promise.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6487,7 +6487,7 @@ const createIsSupportedPromise = async (cacheTestResult, testAudioBufferCopyChan
 };
 
 exports.createIsSupportedPromise = createIsSupportedPromise;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/media-element-audio-source-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/media-element-audio-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6517,7 +6517,7 @@ const createMediaElementAudioSourceNodeConstructor = (audioNodeConstructor, crea
 };
 
 exports.createMediaElementAudioSourceNodeConstructor = createMediaElementAudioSourceNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/media-stream-audio-destination-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/media-stream-audio-destination-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6555,7 +6555,7 @@ const createMediaStreamAudioDestinationNodeConstructor = (audioNodeConstructor, 
 };
 
 exports.createMediaStreamAudioDestinationNodeConstructor = createMediaStreamAudioDestinationNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/media-stream-audio-source-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/media-stream-audio-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6585,7 +6585,7 @@ const createMediaStreamAudioSourceNodeConstructor = (audioNodeConstructor, creat
 };
 
 exports.createMediaStreamAudioSourceNodeConstructor = createMediaStreamAudioSourceNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/media-stream-track-audio-source-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/media-stream-track-audio-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6605,7 +6605,7 @@ const createMediaStreamTrackAudioSourceNodeConstructor = (audioNodeConstructor, 
 };
 
 exports.createMediaStreamTrackAudioSourceNodeConstructor = createMediaStreamTrackAudioSourceNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/minimal-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/minimal-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6767,7 +6767,7 @@ const createMinimalAudioContextConstructor = (createInvalidStateError, createNot
 };
 
 exports.createMinimalAudioContextConstructor = createMinimalAudioContextConstructor;
-},{"../helpers/deactivate-audio-graph":"../node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js","../helpers/is-valid-latency-hint":"../node_modules/standardized-audio-context/build/es2019/helpers/is-valid-latency-hint.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/minimal-base-audio-context-constructor.js":[function(require,module,exports) {
+},{"../helpers/deactivate-audio-graph":"node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js","../helpers/is-valid-latency-hint":"node_modules/standardized-audio-context/build/es2019/helpers/is-valid-latency-hint.js"}],"node_modules/standardized-audio-context/build/es2019/factories/minimal-base-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6829,7 +6829,7 @@ const createMinimalBaseAudioContextConstructor = (audioDestinationNodeConstructo
 };
 
 exports.createMinimalBaseAudioContextConstructor = createMinimalBaseAudioContextConstructor;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6860,7 +6860,7 @@ const testPromiseSupport = nativeContext => {
 };
 
 exports.testPromiseSupport = testPromiseSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/minimal-offline-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/minimal-offline-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -6956,7 +6956,7 @@ const createMinimalOfflineAudioContextConstructor = (cacheTestResult, createInva
 };
 
 exports.createMinimalOfflineAudioContextConstructor = createMinimalOfflineAudioContextConstructor;
-},{"../helpers/deactivate-audio-graph":"../node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js","../helpers/test-promise-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/monitor-connections.js":[function(require,module,exports) {
+},{"../helpers/deactivate-audio-graph":"node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js","../helpers/test-promise-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js"}],"node_modules/standardized-audio-context/build/es2019/factories/monitor-connections.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7041,7 +7041,7 @@ const createMonitorConnections = (insertElementInSet, isNativeAudioNode) => {
 };
 
 exports.createMonitorConnections = createMonitorConnections;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7058,7 +7058,7 @@ const assignNativeAudioNodeOption = (nativeAudioNode, options, option) => {
 };
 
 exports.assignNativeAudioNodeOption = assignNativeAudioNodeOption;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7075,7 +7075,7 @@ const assignNativeAudioNodeOptions = (nativeAudioNode, options) => {
 };
 
 exports.assignNativeAudioNodeOptions = assignNativeAudioNodeOptions;
-},{"./assign-native-audio-node-option":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-analyser-node-get-float-time-domain-data-method-support.js":[function(require,module,exports) {
+},{"./assign-native-audio-node-option":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/test-analyser-node-get-float-time-domain-data-method-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7088,7 +7088,7 @@ const testAnalyserNodeGetFloatTimeDomainDataMethodSupport = nativeAnalyserNode =
 };
 
 exports.testAnalyserNodeGetFloatTimeDomainDataMethodSupport = testAnalyserNodeGetFloatTimeDomainDataMethodSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-analyser-node-get-float-time-domain-data-method.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-analyser-node-get-float-time-domain-data-method.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7111,7 +7111,7 @@ const wrapAnalyserNodeGetFloatTimeDomainDataMethod = nativeAnalyserNode => {
 };
 
 exports.wrapAnalyserNodeGetFloatTimeDomainDataMethod = wrapAnalyserNodeGetFloatTimeDomainDataMethod;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-analyser-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-analyser-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7151,7 +7151,7 @@ const createNativeAnalyserNodeFactory = (cacheTestResult, createIndexSizeError) 
 };
 
 exports.createNativeAnalyserNodeFactory = createNativeAnalyserNodeFactory;
-},{"../helpers/assign-native-audio-node-option":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/test-analyser-node-get-float-time-domain-data-method-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-analyser-node-get-float-time-domain-data-method-support.js","../helpers/wrap-analyser-node-get-float-time-domain-data-method":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-analyser-node-get-float-time-domain-data-method.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-buffer-constructor.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-option":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/test-analyser-node-get-float-time-domain-data-method-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-analyser-node-get-float-time-domain-data-method-support.js","../helpers/wrap-analyser-node-get-float-time-domain-data-method":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-analyser-node-get-float-time-domain-data-method.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-audio-buffer-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7172,7 +7172,7 @@ const createNativeAudioBufferConstructor = window => {
 };
 
 exports.createNativeAudioBufferConstructor = createNativeAudioBufferConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7189,7 +7189,7 @@ const assignNativeAudioNodeAudioParamValue = (nativeAudioNode, options, audioPar
 };
 
 exports.assignNativeAudioNodeAudioParamValue = assignNativeAudioNodeAudioParamValue;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-source-node-start-method-consecutive-calls.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-source-node-start-method-consecutive-calls.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7214,7 +7214,7 @@ const wrapAudioBufferSourceNodeStartMethodConsecutiveCalls = nativeAudioBufferSo
 };
 
 exports.wrapAudioBufferSourceNodeStartMethodConsecutiveCalls = wrapAudioBufferSourceNodeStartMethodConsecutiveCalls;
-},{"../factories/invalid-state-error":"../node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters.js":[function(require,module,exports) {
+},{"../factories/invalid-state-error":"node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7236,7 +7236,7 @@ const wrapAudioScheduledSourceNodeStartMethodNegativeParameters = nativeAudioSch
 };
 
 exports.wrapAudioScheduledSourceNodeStartMethodNegativeParameters = wrapAudioScheduledSourceNodeStartMethodNegativeParameters;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7257,7 +7257,7 @@ const wrapAudioScheduledSourceNodeStopMethodNegativeParameters = nativeAudioSche
 };
 
 exports.wrapAudioScheduledSourceNodeStopMethodNegativeParameters = wrapAudioScheduledSourceNodeStopMethodNegativeParameters;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-buffer-source-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-audio-buffer-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7324,7 +7324,7 @@ const createNativeAudioBufferSourceNodeFactory = (addSilentConnection, cacheTest
 };
 
 exports.createNativeAudioBufferSourceNodeFactory = createNativeAudioBufferSourceNodeFactory;
-},{"../helpers/assign-native-audio-node-audio-param-value":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-option":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/wrap-audio-buffer-source-node-start-method-consecutive-calls":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-source-node-start-method-consecutive-calls.js","../helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters.js","../helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-context-constructor.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-audio-param-value":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-option":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/wrap-audio-buffer-source-node-start-method-consecutive-calls":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-source-node-start-method-consecutive-calls.js","../helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters.js","../helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7345,7 +7345,7 @@ const createNativeAudioContextConstructor = window => {
 };
 
 exports.createNativeAudioContextConstructor = createNativeAudioContextConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-destination-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-audio-destination-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7413,7 +7413,7 @@ const createNativeAudioDestinationNodeFactory = (createNativeGainNode, overwrite
 };
 
 exports.createNativeAudioDestinationNodeFactory = createNativeAudioDestinationNodeFactory;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7430,7 +7430,7 @@ const createNativeAudioWorkletNodeConstructor = window => {
 };
 
 exports.createNativeAudioWorkletNodeConstructor = createNativeAudioWorkletNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-clonability-of-audio-worklet-node-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/test-clonability-of-audio-worklet-node-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7452,7 +7452,7 @@ const testClonabilityOfAudioWorkletNodeOptions = audioWorkletNodeOptions => {
 };
 
 exports.testClonabilityOfAudioWorkletNodeOptions = testClonabilityOfAudioWorkletNodeOptions;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7601,7 +7601,7 @@ const createNativeAudioWorkletNodeFactory = (createInvalidStateError, createNati
 };
 
 exports.createNativeAudioWorkletNodeFactory = createNativeAudioWorkletNodeFactory;
-},{"../helpers/test-clonability-of-audio-worklet-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/test-clonability-of-audio-worklet-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/compute-buffer-size.js":[function(require,module,exports) {
+},{"../helpers/test-clonability-of-audio-worklet-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/test-clonability-of-audio-worklet-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/compute-buffer-size.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7618,7 +7618,7 @@ const computeBufferSize = (baseLatency, sampleRate) => {
 };
 
 exports.computeBufferSize = computeBufferSize;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/clone-audio-worklet-node-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/clone-audio-worklet-node-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7655,7 +7655,7 @@ const cloneAudioWorkletNodeOptions = audioWorkletNodeOptions => {
 };
 
 exports.cloneAudioWorkletNodeOptions = cloneAudioWorkletNodeOptions;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/create-audio-worklet-processor-promise.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/create-audio-worklet-processor-promise.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7671,7 +7671,7 @@ const createAudioWorkletProcessorPromise = async (processorConstructor, audioWor
 };
 
 exports.createAudioWorkletProcessorPromise = createAudioWorkletProcessorPromise;
-},{"./clone-audio-worklet-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/clone-audio-worklet-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/create-audio-worklet-processor.js":[function(require,module,exports) {
+},{"./clone-audio-worklet-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/clone-audio-worklet-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/create-audio-worklet-processor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -7698,7 +7698,7 @@ const createAudioWorkletProcessor = (nativeContext, nativeAudioWorkletNode, proc
 };
 
 exports.createAudioWorkletProcessor = createAudioWorkletProcessor;
-},{"../globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./create-audio-worklet-processor-promise":"../node_modules/standardized-audio-context/build/es2019/helpers/create-audio-worklet-processor-promise.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-faker-factory.js":[function(require,module,exports) {
+},{"../globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./create-audio-worklet-processor-promise":"node_modules/standardized-audio-context/build/es2019/helpers/create-audio-worklet-processor-promise.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8187,7 +8187,7 @@ const createNativeAudioWorkletNodeFakerFactory = (connectMultipleOutputs, create
 };
 
 exports.createNativeAudioWorkletNodeFakerFactory = createNativeAudioWorkletNodeFakerFactory;
-},{"../constants":"../node_modules/standardized-audio-context/build/es2019/constants.js","../helpers/compute-buffer-size":"../node_modules/standardized-audio-context/build/es2019/helpers/compute-buffer-size.js","../helpers/copy-from-channel":"../node_modules/standardized-audio-context/build/es2019/helpers/copy-from-channel.js","../helpers/copy-to-channel":"../node_modules/standardized-audio-context/build/es2019/helpers/copy-to-channel.js","../helpers/create-audio-worklet-processor":"../node_modules/standardized-audio-context/build/es2019/helpers/create-audio-worklet-processor.js","../helpers/create-nested-arrays":"../node_modules/standardized-audio-context/build/es2019/helpers/create-nested-arrays.js","../read-only-map":"../node_modules/standardized-audio-context/build/es2019/read-only-map.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-biquad-filter-node.js":[function(require,module,exports) {
+},{"../constants":"node_modules/standardized-audio-context/build/es2019/constants.js","../helpers/compute-buffer-size":"node_modules/standardized-audio-context/build/es2019/helpers/compute-buffer-size.js","../helpers/copy-from-channel":"node_modules/standardized-audio-context/build/es2019/helpers/copy-from-channel.js","../helpers/copy-to-channel":"node_modules/standardized-audio-context/build/es2019/helpers/copy-to-channel.js","../helpers/create-audio-worklet-processor":"node_modules/standardized-audio-context/build/es2019/helpers/create-audio-worklet-processor.js","../helpers/create-nested-arrays":"node_modules/standardized-audio-context/build/es2019/helpers/create-nested-arrays.js","../read-only-map":"node_modules/standardized-audio-context/build/es2019/read-only-map.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-biquad-filter-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8213,7 +8213,7 @@ const createNativeBiquadFilterNode = (nativeContext, options) => {
 };
 
 exports.createNativeBiquadFilterNode = createNativeBiquadFilterNode;
-},{"../helpers/assign-native-audio-node-audio-param-value":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-option":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-channel-merger-node-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-audio-param-value":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-option":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-channel-merger-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8242,7 +8242,7 @@ const createNativeChannelMergerNodeFactory = (nativeAudioContextConstructor, wra
 };
 
 exports.createNativeChannelMergerNodeFactory = createNativeChannelMergerNodeFactory;
-},{"../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-channel-splitter-node.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-channel-splitter-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8284,7 +8284,7 @@ const wrapChannelSplitterNode = channelSplitterNode => {
 };
 
 exports.wrapChannelSplitterNode = wrapChannelSplitterNode;
-},{"../factories/invalid-state-error":"../node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-channel-splitter-node.js":[function(require,module,exports) {
+},{"../factories/invalid-state-error":"node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-channel-splitter-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8308,7 +8308,7 @@ const createNativeChannelSplitterNode = (nativeContext, options) => {
 };
 
 exports.createNativeChannelSplitterNode = createNativeChannelSplitterNode;
-},{"../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/wrap-channel-splitter-node":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-channel-splitter-node.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-constant-source-node-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/wrap-channel-splitter-node":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-channel-splitter-node.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-constant-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8351,7 +8351,7 @@ const createNativeConstantSourceNodeFactory = (addSilentConnection, cacheTestRes
 };
 
 exports.createNativeConstantSourceNodeFactory = createNativeConstantSourceNodeFactory;
-},{"../helpers/assign-native-audio-node-audio-param-value":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters.js","../helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-audio-param-value":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters.js","../helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8366,7 +8366,7 @@ const interceptConnections = (original, interceptor) => {
 };
 
 exports.interceptConnections = interceptConnections;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-constant-source-node-faker-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-constant-source-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8492,7 +8492,7 @@ const createNativeConstantSourceNodeFakerFactory = (addSilentConnection, createN
 };
 
 exports.createNativeConstantSourceNodeFakerFactory = createNativeConstantSourceNodeFakerFactory;
-},{"../helpers/intercept-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-convolver-node-factory.js":[function(require,module,exports) {
+},{"../helpers/intercept-connections":"node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-convolver-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8543,7 +8543,7 @@ const createNativeConvolverNodeFactory = (createNotSupportedError, overwriteAcce
 };
 
 exports.createNativeConvolverNodeFactory = createNativeConvolverNodeFactory;
-},{"../helpers/assign-native-audio-node-option":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-delay-node.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-option":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-delay-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8563,7 +8563,7 @@ const createNativeDelayNode = (nativeContext, options) => {
 };
 
 exports.createNativeDelayNode = createNativeDelayNode;
-},{"../helpers/assign-native-audio-node-audio-param-value":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-dynamics-compressor-node-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-audio-param-value":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-dynamics-compressor-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8599,7 +8599,7 @@ const createNativeDynamicsCompressorNodeFactory = createNotSupportedError => {
 };
 
 exports.createNativeDynamicsCompressorNodeFactory = createNativeDynamicsCompressorNodeFactory;
-},{"../helpers/assign-native-audio-node-audio-param-value":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-gain-node.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-audio-param-value":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-gain-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8619,7 +8619,7 @@ const createNativeGainNode = (nativeContext, options) => {
 };
 
 exports.createNativeGainNode = createNativeGainNode;
-},{"../helpers/assign-native-audio-node-audio-param-value":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-iir-filter-node-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-audio-param-value":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-iir-filter-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8644,7 +8644,7 @@ const createNativeIIRFilterNodeFactory = createNativeIIRFilterNodeFaker => {
 };
 
 exports.createNativeIIRFilterNodeFactory = createNativeIIRFilterNodeFactory;
-},{"../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-iir-filter-node-faker-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-iir-filter-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8834,7 +8834,7 @@ const createNativeIIRFilterNodeFakerFactory = (createInvalidAccessError, createI
 };
 
 exports.createNativeIIRFilterNodeFakerFactory = createNativeIIRFilterNodeFakerFactory;
-},{"../helpers/compute-buffer-size":"../node_modules/standardized-audio-context/build/es2019/helpers/compute-buffer-size.js","../helpers/filter-buffer":"../node_modules/standardized-audio-context/build/es2019/helpers/filter-buffer.js","../helpers/intercept-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-media-element-audio-source-node.js":[function(require,module,exports) {
+},{"../helpers/compute-buffer-size":"node_modules/standardized-audio-context/build/es2019/helpers/compute-buffer-size.js","../helpers/filter-buffer":"node_modules/standardized-audio-context/build/es2019/helpers/filter-buffer.js","../helpers/intercept-connections":"node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-media-element-audio-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8847,7 +8847,7 @@ const createNativeMediaElementAudioSourceNode = (nativeAudioContext, options) =>
 };
 
 exports.createNativeMediaElementAudioSourceNode = createNativeMediaElementAudioSourceNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-audio-destination-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-audio-destination-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8871,7 +8871,7 @@ const createNativeMediaStreamAudioDestinationNode = (nativeAudioContext, options
 };
 
 exports.createNativeMediaStreamAudioDestinationNode = createNativeMediaStreamAudioDestinationNode;
-},{"../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-audio-source-node.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-audio-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8903,7 +8903,7 @@ const createNativeMediaStreamAudioSourceNode = (nativeAudioContext, {
 };
 
 exports.createNativeMediaStreamAudioSourceNode = createNativeMediaStreamAudioSourceNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-track-audio-source-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-track-audio-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8937,7 +8937,7 @@ const createNativeMediaStreamTrackAudioSourceNodeFactory = (createInvalidStateEr
 };
 
 exports.createNativeMediaStreamTrackAudioSourceNodeFactory = createNativeMediaStreamTrackAudioSourceNodeFactory;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-offline-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-offline-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8958,7 +8958,7 @@ const createNativeOfflineAudioContextConstructor = window => {
 };
 
 exports.createNativeOfflineAudioContextConstructor = createNativeOfflineAudioContextConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-oscillator-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-oscillator-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9011,7 +9011,7 @@ const createNativeOscillatorNodeFactory = (addSilentConnection, cacheTestResult,
 };
 
 exports.createNativeOscillatorNodeFactory = createNativeOscillatorNodeFactory;
-},{"../helpers/assign-native-audio-node-audio-param-value":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-option":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters.js","../helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-panner-node-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-audio-param-value":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-option":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-start-method-negative-parameters.js","../helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-negative-parameters.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-panner-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9053,7 +9053,7 @@ const createNativePannerNodeFactory = createNativePannerNodeFaker => {
 };
 
 exports.createNativePannerNodeFactory = createNativePannerNodeFactory;
-},{"../helpers/assign-native-audio-node-audio-param-value":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-option":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-panner-node-faker-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-audio-param-value":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-option":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-panner-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9450,7 +9450,7 @@ const createNativePannerNodeFakerFactory = (connectNativeAudioNodeToNativeAudioN
 };
 
 exports.createNativePannerNodeFakerFactory = createNativePannerNodeFakerFactory;
-},{"../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/intercept-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-periodic-wave-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/intercept-connections":"node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-periodic-wave-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9480,7 +9480,7 @@ const createNativePeriodicWaveFactory = createIndexSizeError => {
 };
 
 exports.createNativePeriodicWaveFactory = createNativePeriodicWaveFactory;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-script-processor-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-script-processor-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9493,7 +9493,7 @@ const createNativeScriptProcessorNode = (nativeContext, bufferSize, numberOfInpu
 };
 
 exports.createNativeScriptProcessorNode = createNativeScriptProcessorNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/native-stereo-panner-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/native-stereo-panner-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9543,7 +9543,7 @@ const createNativeStereoPannerNodeFactory = (createNativeStereoPannerNodeFaker, 
 };
 
 exports.createNativeStereoPannerNodeFactory = createNativeStereoPannerNodeFactory;
-},{"../helpers/assign-native-audio-node-audio-param-value":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-stereo-panner-node-faker-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-audio-param-value":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-audio-param-value.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-stereo-panner-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9883,7 +9883,7 @@ const createNativeStereoPannerNodeFakerFactory = (createNativeChannelMergerNode,
 };
 
 exports.createNativeStereoPannerNodeFakerFactory = createNativeStereoPannerNodeFakerFactory;
-},{"../helpers/intercept-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-wave-shaper-node-factory.js":[function(require,module,exports) {
+},{"../helpers/intercept-connections":"node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-wave-shaper-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9960,7 +9960,7 @@ const createNativeWaveShaperNodeFactory = (createConnectedNativeAudioBufferSourc
 };
 
 exports.createNativeWaveShaperNodeFactory = createNativeWaveShaperNodeFactory;
-},{"../helpers/assign-native-audio-node-option":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/native-wave-shaper-node-faker-factory.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-option":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-option.js","../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js"}],"node_modules/standardized-audio-context/build/es2019/factories/native-wave-shaper-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10166,7 +10166,7 @@ const createNativeWaveShaperNodeFakerFactory = (createConnectedNativeAudioBuffer
 };
 
 exports.createNativeWaveShaperNodeFakerFactory = createNativeWaveShaperNodeFakerFactory;
-},{"../helpers/assign-native-audio-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/intercept-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/not-supported-error.js":[function(require,module,exports) {
+},{"../helpers/assign-native-audio-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/assign-native-audio-node-options.js","../helpers/intercept-connections":"node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"node_modules/standardized-audio-context/build/es2019/factories/not-supported-error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10177,7 +10177,7 @@ exports.createNotSupportedError = void 0;
 const createNotSupportedError = () => new DOMException('', 'NotSupportedError');
 
 exports.createNotSupportedError = createNotSupportedError;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/offline-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/offline-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10287,7 +10287,7 @@ const createOfflineAudioContextConstructor = (baseAudioContextConstructor, cache
 };
 
 exports.createOfflineAudioContextConstructor = createOfflineAudioContextConstructor;
-},{"../helpers/deactivate-audio-graph":"../node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js","../helpers/test-promise-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/oscillator-node-constructor.js":[function(require,module,exports) {
+},{"../helpers/deactivate-audio-graph":"node_modules/standardized-audio-context/build/es2019/helpers/deactivate-audio-graph.js","../helpers/test-promise-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js"}],"node_modules/standardized-audio-context/build/es2019/factories/oscillator-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10409,7 +10409,7 @@ const createOscillatorNodeConstructor = (audioNodeConstructor, createAudioParam,
 };
 
 exports.createOscillatorNodeConstructor = createOscillatorNodeConstructor;
-},{"../helpers/is-active-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","../helpers/set-internal-state-to-active":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive":"../node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/oscillator-node-renderer-factory.js":[function(require,module,exports) {
+},{"../helpers/is-active-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","../helpers/set-internal-state-to-active":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-active.js","../helpers/set-internal-state-to-passive":"node_modules/standardized-audio-context/build/es2019/helpers/set-internal-state-to-passive.js"}],"node_modules/standardized-audio-context/build/es2019/factories/oscillator-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10494,7 +10494,7 @@ const createOscillatorNodeRendererFactory = (connectAudioParam, createNativeOsci
 };
 
 exports.createOscillatorNodeRendererFactory = createOscillatorNodeRendererFactory;
-},{"../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/panner-node-constructor.js":[function(require,module,exports) {
+},{"../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/panner-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10639,7 +10639,7 @@ const createPannerNodeConstructor = (audioNodeConstructor, createAudioParam, cre
 };
 
 exports.createPannerNodeConstructor = createPannerNodeConstructor;
-},{"../constants":"../node_modules/standardized-audio-context/build/es2019/constants.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/panner-node-renderer-factory.js":[function(require,module,exports) {
+},{"../constants":"node_modules/standardized-audio-context/build/es2019/constants.js"}],"node_modules/standardized-audio-context/build/es2019/factories/panner-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10829,7 +10829,7 @@ const createPannerNodeRendererFactory = (connectAudioParam, createNativeChannelM
 };
 
 exports.createPannerNodeRendererFactory = createPannerNodeRendererFactory;
-},{"../guards/native-audio-node-faker":"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js","../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/periodic-wave-constructor.js":[function(require,module,exports) {
+},{"../guards/native-audio-node-faker":"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js","../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/periodic-wave-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10861,7 +10861,7 @@ const createPeriodicWaveConstructor = (createNativePeriodicWave, getNativeContex
 };
 
 exports.createPeriodicWaveConstructor = createPeriodicWaveConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/render-automation.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/render-automation.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10878,7 +10878,7 @@ const createRenderAutomation = (getAudioParamRenderer, renderInputsOfAudioParam)
 };
 
 exports.createRenderAutomation = createRenderAutomation;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/render-inputs-of-audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/render-inputs-of-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10903,7 +10903,7 @@ const createRenderInputsOfAudioNode = (getAudioNodeConnections, getAudioNodeRend
 };
 
 exports.createRenderInputsOfAudioNode = createRenderInputsOfAudioNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/render-inputs-of-audio-param.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/render-inputs-of-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10926,7 +10926,7 @@ const createRenderInputsOfAudioParam = (getAudioNodeRenderer, getAudioParamConne
 };
 
 exports.createRenderInputsOfAudioParam = createRenderInputsOfAudioParam;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/render-native-offline-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/render-native-offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10982,7 +10982,7 @@ const createRenderNativeOfflineAudioContext = (cacheTestResult, createNativeGain
 };
 
 exports.createRenderNativeOfflineAudioContext = createRenderNativeOfflineAudioContext;
-},{"../helpers/test-promise-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/set-active-audio-worklet-node-inputs.js":[function(require,module,exports) {
+},{"../helpers/test-promise-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js"}],"node_modules/standardized-audio-context/build/es2019/factories/set-active-audio-worklet-node-inputs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10997,7 +10997,7 @@ const createSetActiveAudioWorkletNodeInputs = activeAudioWorkletNodeInputsStore 
 };
 
 exports.createSetActiveAudioWorkletNodeInputs = createSetActiveAudioWorkletNodeInputs;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/set-audio-node-tail-time.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/set-audio-node-tail-time.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11010,7 +11010,7 @@ const createSetAudioNodeTailTime = audioNodeTailTimeStore => {
 };
 
 exports.createSetAudioNodeTailTime = createSetAudioNodeTailTime;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/start-rendering.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/start-rendering.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11043,7 +11043,7 @@ const createStartRendering = (audioBufferStore, cacheTestResult, getAudioNodeRen
 };
 
 exports.createStartRendering = createStartRendering;
-},{"../helpers/wrap-audio-buffer-get-channel-data-method":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-get-channel-data-method.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/stereo-panner-node-constructor.js":[function(require,module,exports) {
+},{"../helpers/wrap-audio-buffer-get-channel-data-method":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-get-channel-data-method.js"}],"node_modules/standardized-audio-context/build/es2019/factories/stereo-panner-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11084,7 +11084,7 @@ const createStereoPannerNodeConstructor = (audioNodeConstructor, createAudioPara
 };
 
 exports.createStereoPannerNodeConstructor = createStereoPannerNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/stereo-panner-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/stereo-panner-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11152,7 +11152,7 @@ const createStereoPannerNodeRendererFactory = (connectAudioParam, createNativeSt
 };
 
 exports.createStereoPannerNodeRendererFactory = createStereoPannerNodeRendererFactory;
-},{"../guards/native-audio-node-faker":"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js","../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-buffer-constructor-support.js":[function(require,module,exports) {
+},{"../guards/native-audio-node-faker":"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js","../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/test-audio-buffer-constructor-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11181,7 +11181,7 @@ const createTestAudioBufferConstructorSupport = nativeAudioBufferConstructor => 
 };
 
 exports.createTestAudioBufferConstructorSupport = createTestAudioBufferConstructorSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-buffer-copy-channel-methods-subarray-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-audio-buffer-copy-channel-methods-subarray-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11219,7 +11219,7 @@ const createTestAudioBufferCopyChannelMethodsSubarraySupport = nativeOfflineAudi
 };
 
 exports.createTestAudioBufferCopyChannelMethodsSubarraySupport = createTestAudioBufferCopyChannelMethodsSubarraySupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-close-method-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-close-method-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11251,7 +11251,7 @@ const createTestAudioContextCloseMethodSupport = nativeAudioContextConstructor =
 };
 
 exports.createTestAudioContextCloseMethodSupport = createTestAudioContextCloseMethodSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-decode-audio-data-method-type-error-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-decode-audio-data-method-type-error-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11302,7 +11302,7 @@ const createTestAudioContextDecodeAudioDataMethodTypeErrorSupport = nativeOfflin
 };
 
 exports.createTestAudioContextDecodeAudioDataMethodTypeErrorSupport = createTestAudioContextDecodeAudioDataMethodTypeErrorSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-options-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-options-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11332,7 +11332,7 @@ const createTestAudioContextOptionsSupport = nativeAudioContextConstructor => {
 };
 
 exports.createTestAudioContextOptionsSupport = createTestAudioContextOptionsSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-node-connect-method-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-audio-node-connect-method-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11356,7 +11356,7 @@ const createTestAudioNodeConnectMethodSupport = nativeOfflineAudioContextConstru
 };
 
 exports.createTestAudioNodeConnectMethodSupport = createTestAudioNodeConnectMethodSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-worklet-processor-no-outputs-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-audio-worklet-processor-no-outputs-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11412,7 +11412,7 @@ const createTestAudioWorkletProcessorNoOutputsSupport = (nativeAudioWorkletNodeC
 };
 
 exports.createTestAudioWorkletProcessorNoOutputsSupport = createTestAudioWorkletProcessorNoOutputsSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-worklet-processor-post-message-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-audio-worklet-processor-post-message-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11463,7 +11463,7 @@ const createTestAudioWorkletProcessorPostMessageSupport = (nativeAudioWorkletNod
 };
 
 exports.createTestAudioWorkletProcessorPostMessageSupport = createTestAudioWorkletProcessorPostMessageSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-channel-merger-node-channel-count-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-channel-merger-node-channel-count-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11502,7 +11502,7 @@ const createTestChannelMergerNodeChannelCountSupport = nativeOfflineAudioContext
 };
 
 exports.createTestChannelMergerNodeChannelCountSupport = createTestChannelMergerNodeChannelCountSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-constant-source-node-accurate-scheduling-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-constant-source-node-accurate-scheduling-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11533,7 +11533,7 @@ const createTestConstantSourceNodeAccurateSchedulingSupport = nativeOfflineAudio
 };
 
 exports.createTestConstantSourceNodeAccurateSchedulingSupport = createTestConstantSourceNodeAccurateSchedulingSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-convolver-node-buffer-reassignability-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-convolver-node-buffer-reassignability-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11563,7 +11563,7 @@ const createTestConvolverNodeBufferReassignabilitySupport = nativeOfflineAudioCo
 };
 
 exports.createTestConvolverNodeBufferReassignabilitySupport = createTestConvolverNodeBufferReassignabilitySupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-convolver-node-channel-count-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-convolver-node-channel-count-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11592,7 +11592,7 @@ const createTestConvolverNodeChannelCountSupport = nativeOfflineAudioContextCons
 };
 
 exports.createTestConvolverNodeChannelCountSupport = createTestConvolverNodeChannelCountSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-is-secure-context-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-is-secure-context-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11605,7 +11605,7 @@ const createTestIsSecureContextSupport = window => {
 };
 
 exports.createTestIsSecureContextSupport = createTestIsSecureContextSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-media-stream-audio-source-node-media-stream-without-audio-track-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-media-stream-audio-source-node-media-stream-without-audio-track-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11632,7 +11632,7 @@ const createTestMediaStreamAudioSourceNodeMediaStreamWithoutAudioTrackSupport = 
 };
 
 exports.createTestMediaStreamAudioSourceNodeMediaStreamWithoutAudioTrackSupport = createTestMediaStreamAudioSourceNodeMediaStreamWithoutAudioTrackSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-offline-audio-context-current-time-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-offline-audio-context-current-time-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11667,7 +11667,7 @@ const createTestOfflineAudioContextCurrentTimeSupport = (createNativeGainNode, n
 };
 
 exports.createTestOfflineAudioContextCurrentTimeSupport = createTestOfflineAudioContextCurrentTimeSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/test-stereo-panner-node-default-value-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/test-stereo-panner-node-default-value-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11711,7 +11711,7 @@ const createTestStereoPannerNodeDefaultValueSupport = nativeOfflineAudioContextC
 };
 
 exports.createTestStereoPannerNodeDefaultValueSupport = createTestStereoPannerNodeDefaultValueSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/unknown-error.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/unknown-error.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11722,7 +11722,7 @@ exports.createUnknownError = void 0;
 const createUnknownError = () => new DOMException('', 'UnknownError');
 
 exports.createUnknownError = createUnknownError;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/wave-shaper-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/wave-shaper-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11792,7 +11792,7 @@ const createWaveShaperNodeConstructor = (audioNodeConstructor, createInvalidStat
 };
 
 exports.createWaveShaperNodeConstructor = createWaveShaperNodeConstructor;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/wave-shaper-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/wave-shaper-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11851,7 +11851,7 @@ const createWaveShaperNodeRendererFactory = (createNativeWaveShaperNode, getNati
 };
 
 exports.createWaveShaperNodeRendererFactory = createWaveShaperNodeRendererFactory;
-},{"../guards/native-audio-node-faker":"../node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js","../helpers/is-owned-by-context":"../node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"../node_modules/standardized-audio-context/build/es2019/factories/window.js":[function(require,module,exports) {
+},{"../guards/native-audio-node-faker":"node_modules/standardized-audio-context/build/es2019/guards/native-audio-node-faker.js","../helpers/is-owned-by-context":"node_modules/standardized-audio-context/build/es2019/helpers/is-owned-by-context.js"}],"node_modules/standardized-audio-context/build/es2019/factories/window.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11862,7 +11862,7 @@ exports.createWindow = void 0;
 const createWindow = () => typeof window === 'undefined' ? null : window;
 
 exports.createWindow = createWindow;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-copy-channel-methods.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-copy-channel-methods.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11909,7 +11909,7 @@ const createWrapAudioBufferCopyChannelMethods = (convertNumberToUnsignedLong, cr
 };
 
 exports.createWrapAudioBufferCopyChannelMethods = createWrapAudioBufferCopyChannelMethods;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-copy-channel-methods-out-of-bounds.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-copy-channel-methods-out-of-bounds.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11944,7 +11944,7 @@ const createWrapAudioBufferCopyChannelMethodsOutOfBounds = convertNumberToUnsign
 };
 
 exports.createWrapAudioBufferCopyChannelMethodsOutOfBounds = createWrapAudioBufferCopyChannelMethodsOutOfBounds;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-source-node-stop-method-nullified-buffer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-source-node-stop-method-nullified-buffer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11970,7 +11970,7 @@ const createWrapAudioBufferSourceNodeStopMethodNullifiedBuffer = overwriteAccess
 };
 
 exports.createWrapAudioBufferSourceNodeStopMethodNullifiedBuffer = createWrapAudioBufferSourceNodeStopMethodNullifiedBuffer;
-},{}],"../node_modules/standardized-audio-context/build/es2019/factories/wrap-channel-merger-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/factories/wrap-channel-merger-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12014,7 +12014,7 @@ const createWrapChannelMergerNode = (createInvalidStateError, monitorConnections
 };
 
 exports.createWrapChannelMergerNode = createWrapChannelMergerNode;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/is-dc-curve.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/is-dc-curve.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12037,7 +12037,7 @@ const isDCCurve = curve => {
 };
 
 exports.isDCCurve = isDCCurve;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/overwrite-accessors.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/overwrite-accessors.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12063,7 +12063,7 @@ const overwriteAccessors = (object, property, createGetter, createSetter) => {
 };
 
 exports.overwriteAccessors = overwriteAccessors;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/sanitize-audio-worklet-node-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/sanitize-audio-worklet-node-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12086,7 +12086,7 @@ const sanitizeAudioWorkletNodeOptions = options => {
 };
 
 exports.sanitizeAudioWorkletNodeOptions = sanitizeAudioWorkletNodeOptions;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/sanitize-channel-splitter-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/sanitize-channel-splitter-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12101,7 +12101,7 @@ const sanitizeChannelSplitterOptions = options => {
 };
 
 exports.sanitizeChannelSplitterOptions = sanitizeChannelSplitterOptions;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/sanitize-periodic-wave-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/sanitize-periodic-wave-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12143,7 +12143,7 @@ const sanitizePeriodicWaveOptions = options => {
 };
 
 exports.sanitizePeriodicWaveOptions = sanitizePeriodicWaveOptions;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/set-value-at-time-until-possible.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/set-value-at-time-until-possible.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12164,7 +12164,7 @@ const setValueAtTimeUntilPossible = (audioParam, value, startTime) => {
 };
 
 exports.setValueAtTimeUntilPossible = setValueAtTimeUntilPossible;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-start-method-consecutive-calls-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-start-method-consecutive-calls-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12186,7 +12186,7 @@ const testAudioBufferSourceNodeStartMethodConsecutiveCallsSupport = nativeContex
 };
 
 exports.testAudioBufferSourceNodeStartMethodConsecutiveCallsSupport = testAudioBufferSourceNodeStartMethodConsecutiveCallsSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-start-method-offset-clamping-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-start-method-offset-clamping-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12209,7 +12209,7 @@ const testAudioBufferSourceNodeStartMethodOffsetClampingSupport = nativeContext 
 };
 
 exports.testAudioBufferSourceNodeStartMethodOffsetClampingSupport = testAudioBufferSourceNodeStartMethodOffsetClampingSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-stop-method-nullified-buffer-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-stop-method-nullified-buffer-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12231,7 +12231,7 @@ const testAudioBufferSourceNodeStopMethodNullifiedBufferSupport = nativeContext 
 };
 
 exports.testAudioBufferSourceNodeStopMethodNullifiedBufferSupport = testAudioBufferSourceNodeStopMethodNullifiedBufferSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-start-method-negative-parameters-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-start-method-negative-parameters-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12252,7 +12252,7 @@ const testAudioScheduledSourceNodeStartMethodNegativeParametersSupport = nativeC
 };
 
 exports.testAudioScheduledSourceNodeStartMethodNegativeParametersSupport = testAudioScheduledSourceNodeStartMethodNegativeParametersSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-stop-method-consecutive-calls-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-stop-method-consecutive-calls-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12276,7 +12276,7 @@ const testAudioScheduledSourceNodeStopMethodConsecutiveCallsSupport = nativeCont
 };
 
 exports.testAudioScheduledSourceNodeStopMethodConsecutiveCallsSupport = testAudioScheduledSourceNodeStopMethodConsecutiveCallsSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-stop-method-negative-parameters-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-stop-method-negative-parameters-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12297,7 +12297,7 @@ const testAudioScheduledSourceNodeStopMethodNegativeParametersSupport = nativeCo
 };
 
 exports.testAudioScheduledSourceNodeStopMethodNegativeParametersSupport = testAudioScheduledSourceNodeStopMethodNegativeParametersSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-dom-exception-constructor-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/test-dom-exception-constructor-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12346,7 +12346,7 @@ const testDomExceptionConstructorSupport = () => {
 };
 
 exports.testDomExceptionConstructorSupport = testDomExceptionConstructorSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/test-transferables-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/test-transferables-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12370,7 +12370,7 @@ const testTransferablesSupport = () => new Promise(resolve => {
 });
 
 exports.testTransferablesSupport = testTransferablesSupport;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-source-node-start-method-offset-clamping.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-source-node-start-method-offset-clamping.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12395,7 +12395,7 @@ const wrapAudioBufferSourceNodeStartMethodOffsetClamping = nativeAudioBufferSour
 };
 
 exports.wrapAudioBufferSourceNodeStartMethodOffsetClamping = wrapAudioBufferSourceNodeStartMethodOffsetClamping;
-},{}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-consecutive-calls.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-consecutive-calls.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12438,7 +12438,7 @@ const wrapAudioScheduledSourceNodeStopMethodConsecutiveCalls = (nativeAudioSched
 };
 
 exports.wrapAudioScheduledSourceNodeStopMethodConsecutiveCalls = wrapAudioScheduledSourceNodeStopMethodConsecutiveCalls;
-},{"./intercept-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-event-listener.js":[function(require,module,exports) {
+},{"./intercept-connections":"node_modules/standardized-audio-context/build/es2019/helpers/intercept-connections.js"}],"node_modules/standardized-audio-context/build/es2019/helpers/wrap-event-listener.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12465,505 +12465,505 @@ const wrapEventListener = (target, eventListener) => {
 };
 
 exports.wrapEventListener = wrapEventListener;
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/analyser-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/analyser-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/analyser-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/analyser-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-node-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-node-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-context-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-context-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-destination-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-destination-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-listener.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-listener.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-node-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-node-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-node-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-node-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-param.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-param-descriptor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-param-descriptor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-param-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-param-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-scheduled-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-scheduled-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-scheduled-source-node-event-map.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-scheduled-source-node-event-map.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node-event-map.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node-event-map.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-processor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-processor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-processor-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-processor-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/automation.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/automation.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/base-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/base-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/biquad-filter-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/biquad-filter-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/biquad-filter-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/biquad-filter-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/channel-merger-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/channel-merger-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/channel-splitter-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/channel-splitter-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/common-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/common-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/common-offline-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/common-offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-node-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-node-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/convolver-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/convolver-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/convolver-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/convolver-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/delay-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/delay-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/delay-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/delay-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/dynamics-compressor-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/dynamics-compressor-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/dynamics-compressor-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/dynamics-compressor-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/gain-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/gain-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/gain-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/gain-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/iir-filter-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/iir-filter-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/iir-filter-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/iir-filter-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/media-element-audio-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/media-element-audio-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/media-element-audio-source-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/media-element-audio-source-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-destination-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-destination-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-source-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-source-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-track-audio-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-track-audio-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-track-audio-source-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-track-audio-source-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/minimal-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/minimal-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/minimal-base-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/minimal-base-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/minimal-base-audio-context-event-map.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/minimal-base-audio-context-event-map.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/minimal-offline-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/minimal-offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/native-audio-node-faker.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/native-audio-node-faker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/native-audio-worklet-node-faker.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/native-audio-worklet-node-faker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/native-constant-source-node-faker.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/native-constant-source-node-faker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/native-convolver-node-faker.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/native-convolver-node-faker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/native-iir-filter-node-faker.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/native-iir-filter-node-faker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/native-panner-node-faker.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/native-panner-node-faker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/native-stereo-panner-node-faker.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/native-stereo-panner-node-faker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/native-wave-shaper-node-faker.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/native-wave-shaper-node-faker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-completion-event.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-completion-event.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-node-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-node-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/panner-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/panner-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/panner-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/panner-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave-constraints.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave-constraints.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/read-only-map.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/read-only-map.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/stereo-panner-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/stereo-panner-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/stereo-panner-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/stereo-panner-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/wave-shaper-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/wave-shaper-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/wave-shaper-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/wave-shaper-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/worklet-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/worklet-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/interfaces/index.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/interfaces/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -14048,2365 +14048,2365 @@ Object.keys(_workletOptions).forEach(function (key) {
     }
   });
 });
-},{"./analyser-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/analyser-node.js","./analyser-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/analyser-options.js","./audio-buffer":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer.js","./audio-buffer-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-options.js","./audio-buffer-source-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-node.js","./audio-buffer-source-node-renderer":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-node-renderer.js","./audio-buffer-source-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-options.js","./audio-context":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-context.js","./audio-context-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-context-options.js","./audio-destination-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-destination-node.js","./audio-listener":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-listener.js","./audio-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-node.js","./audio-node-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-node-options.js","./audio-node-renderer":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-node-renderer.js","./audio-param":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-param.js","./audio-param-descriptor":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-param-descriptor.js","./audio-param-renderer":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-param-renderer.js","./audio-scheduled-source-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-scheduled-source-node.js","./audio-scheduled-source-node-event-map":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-scheduled-source-node-event-map.js","./audio-worklet":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet.js","./audio-worklet-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node.js","./audio-worklet-node-event-map":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node-event-map.js","./audio-worklet-node-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node-options.js","./audio-worklet-processor":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-processor.js","./audio-worklet-processor-constructor":"../node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-processor-constructor.js","./automation":"../node_modules/standardized-audio-context/build/es2019/interfaces/automation.js","./base-audio-context":"../node_modules/standardized-audio-context/build/es2019/interfaces/base-audio-context.js","./biquad-filter-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/biquad-filter-node.js","./biquad-filter-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/biquad-filter-options.js","./channel-merger-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/channel-merger-options.js","./channel-splitter-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/channel-splitter-options.js","./common-audio-context":"../node_modules/standardized-audio-context/build/es2019/interfaces/common-audio-context.js","./common-offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/interfaces/common-offline-audio-context.js","./constant-source-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-node.js","./constant-source-node-renderer":"../node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-node-renderer.js","./constant-source-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-options.js","./convolver-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/convolver-node.js","./convolver-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/convolver-options.js","./delay-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/delay-node.js","./delay-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/delay-options.js","./dynamics-compressor-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/dynamics-compressor-node.js","./dynamics-compressor-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/dynamics-compressor-options.js","./gain-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/gain-node.js","./gain-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/gain-options.js","./iir-filter-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/iir-filter-node.js","./iir-filter-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/iir-filter-options.js","./media-element-audio-source-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/media-element-audio-source-node.js","./media-element-audio-source-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/media-element-audio-source-options.js","./media-stream-audio-destination-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-destination-node.js","./media-stream-audio-source-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-source-node.js","./media-stream-audio-source-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-source-options.js","./media-stream-track-audio-source-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-track-audio-source-node.js","./media-stream-track-audio-source-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-track-audio-source-options.js","./minimal-audio-context":"../node_modules/standardized-audio-context/build/es2019/interfaces/minimal-audio-context.js","./minimal-base-audio-context":"../node_modules/standardized-audio-context/build/es2019/interfaces/minimal-base-audio-context.js","./minimal-base-audio-context-event-map":"../node_modules/standardized-audio-context/build/es2019/interfaces/minimal-base-audio-context-event-map.js","./minimal-offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/interfaces/minimal-offline-audio-context.js","./native-audio-node-faker":"../node_modules/standardized-audio-context/build/es2019/interfaces/native-audio-node-faker.js","./native-audio-worklet-node-faker":"../node_modules/standardized-audio-context/build/es2019/interfaces/native-audio-worklet-node-faker.js","./native-constant-source-node-faker":"../node_modules/standardized-audio-context/build/es2019/interfaces/native-constant-source-node-faker.js","./native-convolver-node-faker":"../node_modules/standardized-audio-context/build/es2019/interfaces/native-convolver-node-faker.js","./native-iir-filter-node-faker":"../node_modules/standardized-audio-context/build/es2019/interfaces/native-iir-filter-node-faker.js","./native-panner-node-faker":"../node_modules/standardized-audio-context/build/es2019/interfaces/native-panner-node-faker.js","./native-stereo-panner-node-faker":"../node_modules/standardized-audio-context/build/es2019/interfaces/native-stereo-panner-node-faker.js","./native-wave-shaper-node-faker":"../node_modules/standardized-audio-context/build/es2019/interfaces/native-wave-shaper-node-faker.js","./offline-audio-completion-event":"../node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-completion-event.js","./offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context.js","./offline-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context-constructor.js","./offline-audio-context-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context-options.js","./oscillator-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-node.js","./oscillator-node-renderer":"../node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-node-renderer.js","./oscillator-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-options.js","./panner-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/panner-node.js","./panner-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/panner-options.js","./periodic-wave":"../node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave.js","./periodic-wave-constraints":"../node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave-constraints.js","./periodic-wave-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave-options.js","./read-only-map":"../node_modules/standardized-audio-context/build/es2019/interfaces/read-only-map.js","./stereo-panner-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/stereo-panner-node.js","./stereo-panner-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/stereo-panner-options.js","./wave-shaper-node":"../node_modules/standardized-audio-context/build/es2019/interfaces/wave-shaper-node.js","./wave-shaper-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/wave-shaper-options.js","./worklet-options":"../node_modules/standardized-audio-context/build/es2019/interfaces/worklet-options.js"}],"../node_modules/standardized-audio-context/build/es2019/types/abort-error-factory.js":[function(require,module,exports) {
+},{"./analyser-node":"node_modules/standardized-audio-context/build/es2019/interfaces/analyser-node.js","./analyser-options":"node_modules/standardized-audio-context/build/es2019/interfaces/analyser-options.js","./audio-buffer":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer.js","./audio-buffer-options":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-options.js","./audio-buffer-source-node":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-node.js","./audio-buffer-source-node-renderer":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-node-renderer.js","./audio-buffer-source-options":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-buffer-source-options.js","./audio-context":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-context.js","./audio-context-options":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-context-options.js","./audio-destination-node":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-destination-node.js","./audio-listener":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-listener.js","./audio-node":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-node.js","./audio-node-options":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-node-options.js","./audio-node-renderer":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-node-renderer.js","./audio-param":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-param.js","./audio-param-descriptor":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-param-descriptor.js","./audio-param-renderer":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-param-renderer.js","./audio-scheduled-source-node":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-scheduled-source-node.js","./audio-scheduled-source-node-event-map":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-scheduled-source-node-event-map.js","./audio-worklet":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet.js","./audio-worklet-node":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node.js","./audio-worklet-node-event-map":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node-event-map.js","./audio-worklet-node-options":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-node-options.js","./audio-worklet-processor":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-processor.js","./audio-worklet-processor-constructor":"node_modules/standardized-audio-context/build/es2019/interfaces/audio-worklet-processor-constructor.js","./automation":"node_modules/standardized-audio-context/build/es2019/interfaces/automation.js","./base-audio-context":"node_modules/standardized-audio-context/build/es2019/interfaces/base-audio-context.js","./biquad-filter-node":"node_modules/standardized-audio-context/build/es2019/interfaces/biquad-filter-node.js","./biquad-filter-options":"node_modules/standardized-audio-context/build/es2019/interfaces/biquad-filter-options.js","./channel-merger-options":"node_modules/standardized-audio-context/build/es2019/interfaces/channel-merger-options.js","./channel-splitter-options":"node_modules/standardized-audio-context/build/es2019/interfaces/channel-splitter-options.js","./common-audio-context":"node_modules/standardized-audio-context/build/es2019/interfaces/common-audio-context.js","./common-offline-audio-context":"node_modules/standardized-audio-context/build/es2019/interfaces/common-offline-audio-context.js","./constant-source-node":"node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-node.js","./constant-source-node-renderer":"node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-node-renderer.js","./constant-source-options":"node_modules/standardized-audio-context/build/es2019/interfaces/constant-source-options.js","./convolver-node":"node_modules/standardized-audio-context/build/es2019/interfaces/convolver-node.js","./convolver-options":"node_modules/standardized-audio-context/build/es2019/interfaces/convolver-options.js","./delay-node":"node_modules/standardized-audio-context/build/es2019/interfaces/delay-node.js","./delay-options":"node_modules/standardized-audio-context/build/es2019/interfaces/delay-options.js","./dynamics-compressor-node":"node_modules/standardized-audio-context/build/es2019/interfaces/dynamics-compressor-node.js","./dynamics-compressor-options":"node_modules/standardized-audio-context/build/es2019/interfaces/dynamics-compressor-options.js","./gain-node":"node_modules/standardized-audio-context/build/es2019/interfaces/gain-node.js","./gain-options":"node_modules/standardized-audio-context/build/es2019/interfaces/gain-options.js","./iir-filter-node":"node_modules/standardized-audio-context/build/es2019/interfaces/iir-filter-node.js","./iir-filter-options":"node_modules/standardized-audio-context/build/es2019/interfaces/iir-filter-options.js","./media-element-audio-source-node":"node_modules/standardized-audio-context/build/es2019/interfaces/media-element-audio-source-node.js","./media-element-audio-source-options":"node_modules/standardized-audio-context/build/es2019/interfaces/media-element-audio-source-options.js","./media-stream-audio-destination-node":"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-destination-node.js","./media-stream-audio-source-node":"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-source-node.js","./media-stream-audio-source-options":"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-audio-source-options.js","./media-stream-track-audio-source-node":"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-track-audio-source-node.js","./media-stream-track-audio-source-options":"node_modules/standardized-audio-context/build/es2019/interfaces/media-stream-track-audio-source-options.js","./minimal-audio-context":"node_modules/standardized-audio-context/build/es2019/interfaces/minimal-audio-context.js","./minimal-base-audio-context":"node_modules/standardized-audio-context/build/es2019/interfaces/minimal-base-audio-context.js","./minimal-base-audio-context-event-map":"node_modules/standardized-audio-context/build/es2019/interfaces/minimal-base-audio-context-event-map.js","./minimal-offline-audio-context":"node_modules/standardized-audio-context/build/es2019/interfaces/minimal-offline-audio-context.js","./native-audio-node-faker":"node_modules/standardized-audio-context/build/es2019/interfaces/native-audio-node-faker.js","./native-audio-worklet-node-faker":"node_modules/standardized-audio-context/build/es2019/interfaces/native-audio-worklet-node-faker.js","./native-constant-source-node-faker":"node_modules/standardized-audio-context/build/es2019/interfaces/native-constant-source-node-faker.js","./native-convolver-node-faker":"node_modules/standardized-audio-context/build/es2019/interfaces/native-convolver-node-faker.js","./native-iir-filter-node-faker":"node_modules/standardized-audio-context/build/es2019/interfaces/native-iir-filter-node-faker.js","./native-panner-node-faker":"node_modules/standardized-audio-context/build/es2019/interfaces/native-panner-node-faker.js","./native-stereo-panner-node-faker":"node_modules/standardized-audio-context/build/es2019/interfaces/native-stereo-panner-node-faker.js","./native-wave-shaper-node-faker":"node_modules/standardized-audio-context/build/es2019/interfaces/native-wave-shaper-node-faker.js","./offline-audio-completion-event":"node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-completion-event.js","./offline-audio-context":"node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context.js","./offline-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context-constructor.js","./offline-audio-context-options":"node_modules/standardized-audio-context/build/es2019/interfaces/offline-audio-context-options.js","./oscillator-node":"node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-node.js","./oscillator-node-renderer":"node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-node-renderer.js","./oscillator-options":"node_modules/standardized-audio-context/build/es2019/interfaces/oscillator-options.js","./panner-node":"node_modules/standardized-audio-context/build/es2019/interfaces/panner-node.js","./panner-options":"node_modules/standardized-audio-context/build/es2019/interfaces/panner-options.js","./periodic-wave":"node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave.js","./periodic-wave-constraints":"node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave-constraints.js","./periodic-wave-options":"node_modules/standardized-audio-context/build/es2019/interfaces/periodic-wave-options.js","./read-only-map":"node_modules/standardized-audio-context/build/es2019/interfaces/read-only-map.js","./stereo-panner-node":"node_modules/standardized-audio-context/build/es2019/interfaces/stereo-panner-node.js","./stereo-panner-options":"node_modules/standardized-audio-context/build/es2019/interfaces/stereo-panner-options.js","./wave-shaper-node":"node_modules/standardized-audio-context/build/es2019/interfaces/wave-shaper-node.js","./wave-shaper-options":"node_modules/standardized-audio-context/build/es2019/interfaces/wave-shaper-options.js","./worklet-options":"node_modules/standardized-audio-context/build/es2019/interfaces/worklet-options.js"}],"node_modules/standardized-audio-context/build/es2019/types/abort-error-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/active-audio-worklet-node-inputs-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/active-audio-worklet-node-inputs-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/active-input-connection.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/active-input-connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-active-input-connection-to-audio-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-active-input-connection-to-audio-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-active-input-connection-to-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-active-input-connection-to-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-audio-node-connections-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-audio-node-connections-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-audio-node-connections-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-audio-node-connections-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-audio-param-connections-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-audio-param-connections-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-audio-param-connections-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-audio-param-connections-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-audio-worklet-module-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-audio-worklet-module-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-audio-worklet-module-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-audio-worklet-module-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-connection-to-audio-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-connection-to-audio-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-connection-to-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-connection-to-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-passive-input-connection-to-audio-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-passive-input-connection-to-audio-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-passive-input-connection-to-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-passive-input-connection-to-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-silent-connection-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-silent-connection-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-silent-connection-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-silent-connection-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-unrendered-audio-worklet-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-unrendered-audio-worklet-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/add-unrendered-audio-worklet-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/add-unrendered-audio-worklet-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/analyser-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/analyser-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/analyser-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/analyser-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/analyser-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/analyser-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/analyser-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/analyser-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/any-audio-buffer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/any-audio-buffer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/any-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/any-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-context-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-context-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-context-latency-category.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-context-latency-category.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-context-state.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-context-state.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-listener-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-listener-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-listener-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-listener-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-node-connections.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-node-connections.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-node-connections-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-node-connections-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-node-output-connection.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-node-output-connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-node-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-node-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-node-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-node-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-node-tail-time-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-node-tail-time-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-param-audio-node-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-param-audio-node-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-param-connections.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-param-connections.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-param-connections-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-param-connections-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-param-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-param-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-param-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-param-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-param-map.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-param-map.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-param-output-connection.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-param-output-connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-param-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-param-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-param-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-param-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/backup-offline-audio-context-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/backup-offline-audio-context-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/base-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/base-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/base-audio-context-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/base-audio-context-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-type.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-type.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-count-mode.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-count-mode.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-interpretation.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-interpretation.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/cache-test-result-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/cache-test-result-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/cache-test-result-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/cache-test-result-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/connect-audio-param-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/connect-audio-param-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/connect-audio-param-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/connect-audio-param-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/connect-multiple-outputs-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/connect-multiple-outputs-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/connect-multiple-outputs-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/connect-multiple-outputs-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/connect-native-audio-node-to-native-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/connect-native-audio-node-to-native-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/connected-native-audio-buffer-source-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/connected-native-audio-buffer-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/connected-native-audio-buffer-source-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/connected-native-audio-buffer-source-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/context-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/context-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/convert-number-to-unsigned-long-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/convert-number-to-unsigned-long-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/convert-number-to-unsigned-long-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/convert-number-to-unsigned-long-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/convolver-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/convolver-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/convolver-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/convolver-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/convolver-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/convolver-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/convolver-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/convolver-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/create-native-offline-audio-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/create-native-offline-audio-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/create-native-offline-audio-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/create-native-offline-audio-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/cycle-counters.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/cycle-counters.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/data-clone-error-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/data-clone-error-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/decode-audio-data-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/decode-audio-data-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/decode-audio-data-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/decode-audio-data-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/decode-error-callback.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/decode-error-callback.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/decode-success-callback.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/decode-success-callback.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/decrement-cycle-counter-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/decrement-cycle-counter-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/decrement-cycle-counter-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/decrement-cycle-counter-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/delay-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/delay-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/delay-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/delay-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/delay-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/delay-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/delay-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/delay-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/delete-active-input-connection-to-audio-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/delete-active-input-connection-to-audio-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/delete-active-input-connection-to-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/delete-active-input-connection-to-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/delete-unrendered-audio-worklet-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/delete-unrendered-audio-worklet-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/delete-unrendered-audio-worklet-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/delete-unrendered-audio-worklet-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/detect-cycles-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/detect-cycles-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/detect-cycles-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/detect-cycles-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/disconnect-multiple-outputs-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/disconnect-multiple-outputs-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/disconnect-multiple-outputs-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/disconnect-multiple-outputs-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/disconnect-native-audio-node-from-native-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/disconnect-native-audio-node-from-native-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/distance-model-type.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/distance-model-type.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/encoding-error-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/encoding-error-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/error-event-handler.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/error-event-handler.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/evaluate-audio-worklet-global-scope-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/evaluate-audio-worklet-global-scope-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/evaluate-source-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/evaluate-source-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/evaluate-source-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/evaluate-source-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/event-handler.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/event-handler.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/event-target-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/event-target-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/event-target-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/event-target-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/expose-current-frame-and-current-time-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/expose-current-frame-and-current-time-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/expose-current-frame-and-current-time-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/expose-current-frame-and-current-time-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/fetch-source-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/fetch-source-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/fetch-source-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/fetch-source-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/gain-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/gain-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/gain-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/gain-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/gain-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/gain-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/gain-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/gain-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-active-audio-worklet-node-inputs-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-active-audio-worklet-node-inputs-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-active-audio-worklet-node-inputs-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-active-audio-worklet-node-inputs-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-connections-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-connections-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-renderer-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-renderer-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-tail-time-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-tail-time-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-tail-time-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-tail-time-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-audio-param-connections-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-audio-param-connections-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-audio-param-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-audio-param-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-audio-param-renderer-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-audio-param-renderer-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-backup-offline-audio-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-backup-offline-audio-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-backup-offline-audio-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-backup-offline-audio-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-event-listeners-of-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-event-listeners-of-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-native-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-native-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-native-audio-param-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-native-audio-param-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-native-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-native-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-native-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-native-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-or-create-backup-offline-audio-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-or-create-backup-offline-audio-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-or-create-backup-offline-audio-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-or-create-backup-offline-audio-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-unrendered-audio-worklet-nodes-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-unrendered-audio-worklet-nodes-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-unrendered-audio-worklet-nodes-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-unrendered-audio-worklet-nodes-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/get-value-for-key-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/get-value-for-key-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/index-size-error-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/index-size-error-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/insert-element-in-set-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/insert-element-in-set-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/internal-state-event-listener.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/internal-state-event-listener.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/invalid-access-error-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/invalid-access-error-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/invalid-state-error-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/invalid-state-error-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-active-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-active-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-param-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-param-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-param-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-param-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-any-offline-audio-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-any-offline-audio-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-any-offline-audio-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-any-offline-audio-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-dc-curve-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-dc-curve-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-param-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-param-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-param-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-param-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-offline-audio-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-offline-audio-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-native-offline-audio-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-native-offline-audio-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-part-of-a-cycle-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-part-of-a-cycle-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-passive-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-passive-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-secure-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-secure-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/is-supported-promise-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/is-supported-promise-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/media-element-audio-source-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/media-element-audio-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/media-element-audio-source-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/media-element-audio-source-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-destination-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-destination-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-destination-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-destination-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-source-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-source-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-source-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/media-stream-track-audio-source-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/media-stream-track-audio-source-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/media-stream-track-audio-source-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/media-stream-track-audio-source-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/minimal-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/minimal-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/minimal-audio-context-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/minimal-audio-context-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/minimal-base-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/minimal-base-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/minimal-base-audio-context-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/minimal-base-audio-context-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/minimal-offline-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/minimal-offline-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/minimal-offline-audio-context-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/minimal-offline-audio-context-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/monitor-connections-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/monitor-connections-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/monitor-connections-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/monitor-connections-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-analyser-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-analyser-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-analyser-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-analyser-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-analyser-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-analyser-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-context-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-context-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-listener.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-listener.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-param.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-param-map.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-param-map.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-faker-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-faker-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-faker-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-options.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-options.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-biquad-filter-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-biquad-filter-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-biquad-filter-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-biquad-filter-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-channel-splitter-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-channel-splitter-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-channel-splitter-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-channel-splitter-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-faker-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-faker-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-faker-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-convolver-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-convolver-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-convolver-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-convolver-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-convolver-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-convolver-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-delay-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-delay-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-delay-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-delay-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-event-target.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-event-target.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-gain-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-gain-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-gain-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-gain-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-faker-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-faker-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-faker-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-media-element-audio-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-media-element-audio-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-media-element-audio-source-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-media-element-audio-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-destination-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-destination-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-destination-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-destination-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-source-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-panner-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-panner-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-panner-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node-faker-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-panner-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node-faker-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-panner-node-faker-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-script-processor-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-script-processor-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-script-processor-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-script-processor-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-faker-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-faker-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-faker-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-faker-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-faker-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-faker-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-faker-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/not-supported-error-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/not-supported-error-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/offline-audio-context-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/offline-audio-context-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/oscillator-type.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/oscillator-type.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/output-connection.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/output-connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/over-sample-type.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/over-sample-type.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/overwrite-accessors-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/overwrite-accessors-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/panner-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/panner-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/panner-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/panner-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/panner-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/panner-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/panner-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/panner-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/panning-model-type.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/panning-model-type.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/passive-audio-node-input-connection.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/passive-audio-node-input-connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/passive-audio-param-input-connection.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/passive-audio-param-input-connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/periodic-wave-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/periodic-wave-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/periodic-wave-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/periodic-wave-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/pick-element-from-set-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/pick-element-from-set-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/render-automation-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/render-automation-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/render-automation-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/render-automation-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-param-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-param-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-param-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-param-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/render-native-offline-audio-context-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/render-native-offline-audio-context-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/render-native-offline-audio-context-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/render-native-offline-audio-context-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/sanitize-audio-worklet-node-options-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/sanitize-audio-worklet-node-options-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/sanitize-channel-splitter-options-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/sanitize-channel-splitter-options-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/sanitize-periodic-wave-options-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/sanitize-periodic-wave-options-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/set-active-audio-worklet-node-inputs-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/set-active-audio-worklet-node-inputs-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/set-active-audio-worklet-node-inputs-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/set-active-audio-worklet-node-inputs-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/set-audio-node-tail-time-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/set-audio-node-tail-time-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/set-audio-node-tail-time-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/set-audio-node-tail-time-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/set-value-at-time-until-possible-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/set-value-at-time-until-possible-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/start-rendering-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/start-rendering-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/start-rendering-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/start-rendering-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-audio-buffer-copy-channel-methods-subarray-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-audio-buffer-copy-channel-methods-subarray-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-audio-buffer-constructor-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-audio-buffer-constructor-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-audio-context-close-method-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-audio-context-close-method-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-audio-context-decode-audio-data-method-type-error-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-audio-context-decode-audio-data-method-type-error-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-audio-context-options-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-audio-context-options-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-audio-node-connect-method-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-audio-node-connect-method-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-audio-worklet-processor-no-outputs-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-audio-worklet-processor-no-outputs-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-audio-worklet-processor-post-message-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-audio-worklet-processor-post-message-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-channel-merger-node-channel-count-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-channel-merger-node-channel-count-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-constant-source-node-accurate-scheduling-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-constant-source-node-accurate-scheduling-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-convolver-node-buffer-reassignability-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-convolver-node-buffer-reassignability-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-convolver-node-channel-count-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-convolver-node-channel-count-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-is-secure-context-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-is-secure-context-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-media-stream-audio-source-node-media-stream-without-audio-track-support.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-media-stream-audio-source-node-media-stream-without-audio-track-support.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-offline-audio-context-current-time-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-offline-audio-context-current-time-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/test-stereo-panner-node-default-value-support-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/test-stereo-panner-node-default-value-support-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/unknown-error-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/unknown-error-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/unrendered-audio-worklet-node-store.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/unrendered-audio-worklet-node-store.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/unrendered-audio-worklet-nodes.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/unrendered-audio-worklet-nodes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-constructor.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-constructor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-constructor-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-constructor-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-renderer-factory-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-renderer-factory-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-renderer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-renderer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/window.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/window.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/window-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/window-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-out-of-bounds-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-out-of-bounds-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-out-of-bounds-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-out-of-bounds-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-start-method-offset-clamping-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-start-method-offset-clamping-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-stop-method-nullified-buffer-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-stop-method-nullified-buffer-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-stop-method-nullified-buffer-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-stop-method-nullified-buffer-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-scheduled-source-node-stop-method-consecutive-calls-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-scheduled-source-node-stop-method-consecutive-calls-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-channel-merger-node-factory.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-channel-merger-node-factory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-channel-merger-node-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-channel-merger-node-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/wrap-event-listener-function.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/wrap-event-listener-function.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/standardized-audio-context/build/es2019/types/index.js":[function(require,module,exports) {
+},{}],"node_modules/standardized-audio-context/build/es2019/types/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21521,7 +21521,7 @@ Object.keys(_wrapEventListenerFunction).forEach(function (key) {
     }
   });
 });
-},{"./abort-error-factory":"../node_modules/standardized-audio-context/build/es2019/types/abort-error-factory.js","./active-audio-worklet-node-inputs-store":"../node_modules/standardized-audio-context/build/es2019/types/active-audio-worklet-node-inputs-store.js","./active-input-connection":"../node_modules/standardized-audio-context/build/es2019/types/active-input-connection.js","./add-active-input-connection-to-audio-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/add-active-input-connection-to-audio-node-factory.js","./add-active-input-connection-to-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/add-active-input-connection-to-audio-node-function.js","./add-audio-node-connections-factory":"../node_modules/standardized-audio-context/build/es2019/types/add-audio-node-connections-factory.js","./add-audio-node-connections-function":"../node_modules/standardized-audio-context/build/es2019/types/add-audio-node-connections-function.js","./add-audio-param-connections-factory":"../node_modules/standardized-audio-context/build/es2019/types/add-audio-param-connections-factory.js","./add-audio-param-connections-function":"../node_modules/standardized-audio-context/build/es2019/types/add-audio-param-connections-function.js","./add-audio-worklet-module-factory":"../node_modules/standardized-audio-context/build/es2019/types/add-audio-worklet-module-factory.js","./add-audio-worklet-module-function":"../node_modules/standardized-audio-context/build/es2019/types/add-audio-worklet-module-function.js","./add-connection-to-audio-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/add-connection-to-audio-node-factory.js","./add-connection-to-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/add-connection-to-audio-node-function.js","./add-passive-input-connection-to-audio-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/add-passive-input-connection-to-audio-node-factory.js","./add-passive-input-connection-to-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/add-passive-input-connection-to-audio-node-function.js","./add-silent-connection-factory":"../node_modules/standardized-audio-context/build/es2019/types/add-silent-connection-factory.js","./add-silent-connection-function":"../node_modules/standardized-audio-context/build/es2019/types/add-silent-connection-function.js","./add-unrendered-audio-worklet-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/add-unrendered-audio-worklet-node-factory.js","./add-unrendered-audio-worklet-node-function":"../node_modules/standardized-audio-context/build/es2019/types/add-unrendered-audio-worklet-node-function.js","./analyser-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/analyser-node-constructor.js","./analyser-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/analyser-node-constructor-factory.js","./analyser-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/analyser-node-renderer-factory.js","./analyser-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/analyser-node-renderer-factory-factory.js","./any-audio-buffer":"../node_modules/standardized-audio-context/build/es2019/types/any-audio-buffer.js","./any-context":"../node_modules/standardized-audio-context/build/es2019/types/any-context.js","./audio-buffer-constructor":"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-constructor.js","./audio-buffer-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-constructor-factory.js","./audio-buffer-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-constructor.js","./audio-buffer-source-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-constructor-factory.js","./audio-buffer-source-node-renderer":"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer.js","./audio-buffer-source-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer-factory.js","./audio-buffer-source-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer-factory-factory.js","./audio-buffer-store":"../node_modules/standardized-audio-context/build/es2019/types/audio-buffer-store.js","./audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/types/audio-context-constructor.js","./audio-context-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-context-constructor-factory.js","./audio-context-latency-category":"../node_modules/standardized-audio-context/build/es2019/types/audio-context-latency-category.js","./audio-context-state":"../node_modules/standardized-audio-context/build/es2019/types/audio-context-state.js","./audio-destination-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-constructor.js","./audio-destination-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-constructor-factory.js","./audio-destination-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-renderer-factory.js","./audio-listener-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-listener-factory.js","./audio-listener-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-listener-factory-factory.js","./audio-node-connections":"../node_modules/standardized-audio-context/build/es2019/types/audio-node-connections.js","./audio-node-connections-store":"../node_modules/standardized-audio-context/build/es2019/types/audio-node-connections-store.js","./audio-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/audio-node-constructor.js","./audio-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-node-constructor-factory.js","./audio-node-output-connection":"../node_modules/standardized-audio-context/build/es2019/types/audio-node-output-connection.js","./audio-node-renderer":"../node_modules/standardized-audio-context/build/es2019/types/audio-node-renderer.js","./audio-node-store":"../node_modules/standardized-audio-context/build/es2019/types/audio-node-store.js","./audio-node-tail-time-store":"../node_modules/standardized-audio-context/build/es2019/types/audio-node-tail-time-store.js","./audio-param-audio-node-store":"../node_modules/standardized-audio-context/build/es2019/types/audio-param-audio-node-store.js","./audio-param-connections":"../node_modules/standardized-audio-context/build/es2019/types/audio-param-connections.js","./audio-param-connections-store":"../node_modules/standardized-audio-context/build/es2019/types/audio-param-connections-store.js","./audio-param-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-param-factory.js","./audio-param-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-param-factory-factory.js","./audio-param-map":"../node_modules/standardized-audio-context/build/es2019/types/audio-param-map.js","./audio-param-output-connection":"../node_modules/standardized-audio-context/build/es2019/types/audio-param-output-connection.js","./audio-param-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-param-renderer-factory.js","./audio-param-store":"../node_modules/standardized-audio-context/build/es2019/types/audio-param-store.js","./audio-worklet-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-constructor.js","./audio-worklet-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-constructor-factory.js","./audio-worklet-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-renderer-factory.js","./audio-worklet-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-renderer-factory-factory.js","./backup-offline-audio-context-store":"../node_modules/standardized-audio-context/build/es2019/types/backup-offline-audio-context-store.js","./base-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/types/base-audio-context-constructor.js","./base-audio-context-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/base-audio-context-constructor-factory.js","./biquad-filter-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-constructor.js","./biquad-filter-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-constructor-factory.js","./biquad-filter-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-renderer-factory.js","./biquad-filter-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-renderer-factory-factory.js","./biquad-filter-type":"../node_modules/standardized-audio-context/build/es2019/types/biquad-filter-type.js","./channel-count-mode":"../node_modules/standardized-audio-context/build/es2019/types/channel-count-mode.js","./channel-interpretation":"../node_modules/standardized-audio-context/build/es2019/types/channel-interpretation.js","./channel-merger-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-constructor.js","./channel-merger-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-constructor-factory.js","./channel-merger-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-renderer-factory.js","./channel-merger-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-renderer-factory-factory.js","./channel-splitter-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-constructor.js","./channel-splitter-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-constructor-factory.js","./channel-splitter-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-renderer-factory.js","./channel-splitter-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-renderer-factory-factory.js","./cache-test-result-factory":"../node_modules/standardized-audio-context/build/es2019/types/cache-test-result-factory.js","./cache-test-result-function":"../node_modules/standardized-audio-context/build/es2019/types/cache-test-result-function.js","./connect-audio-param-factory":"../node_modules/standardized-audio-context/build/es2019/types/connect-audio-param-factory.js","./connect-audio-param-function":"../node_modules/standardized-audio-context/build/es2019/types/connect-audio-param-function.js","./connect-multiple-outputs-factory":"../node_modules/standardized-audio-context/build/es2019/types/connect-multiple-outputs-factory.js","./connect-multiple-outputs-function":"../node_modules/standardized-audio-context/build/es2019/types/connect-multiple-outputs-function.js","./connect-native-audio-node-to-native-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/connect-native-audio-node-to-native-audio-node-function.js","./connected-native-audio-buffer-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/connected-native-audio-buffer-source-node-factory.js","./connected-native-audio-buffer-source-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/connected-native-audio-buffer-source-node-factory-factory.js","./constant-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-constructor.js","./constant-source-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-constructor-factory.js","./constant-source-node-renderer":"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer.js","./constant-source-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer-factory.js","./constant-source-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer-factory-factory.js","./constructor":"../node_modules/standardized-audio-context/build/es2019/types/constructor.js","./context":"../node_modules/standardized-audio-context/build/es2019/types/context.js","./context-store":"../node_modules/standardized-audio-context/build/es2019/types/context-store.js","./convert-number-to-unsigned-long-factory":"../node_modules/standardized-audio-context/build/es2019/types/convert-number-to-unsigned-long-factory.js","./convert-number-to-unsigned-long-function":"../node_modules/standardized-audio-context/build/es2019/types/convert-number-to-unsigned-long-function.js","./convolver-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/convolver-node-constructor.js","./convolver-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/convolver-node-constructor-factory.js","./convolver-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/convolver-node-renderer-factory.js","./convolver-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/convolver-node-renderer-factory-factory.js","./create-native-offline-audio-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/create-native-offline-audio-context-factory.js","./create-native-offline-audio-context-function":"../node_modules/standardized-audio-context/build/es2019/types/create-native-offline-audio-context-function.js","./cycle-counters":"../node_modules/standardized-audio-context/build/es2019/types/cycle-counters.js","./data-clone-error-factory":"../node_modules/standardized-audio-context/build/es2019/types/data-clone-error-factory.js","./decode-audio-data-factory":"../node_modules/standardized-audio-context/build/es2019/types/decode-audio-data-factory.js","./decode-audio-data-function":"../node_modules/standardized-audio-context/build/es2019/types/decode-audio-data-function.js","./decode-error-callback":"../node_modules/standardized-audio-context/build/es2019/types/decode-error-callback.js","./decode-success-callback":"../node_modules/standardized-audio-context/build/es2019/types/decode-success-callback.js","./decrement-cycle-counter-factory":"../node_modules/standardized-audio-context/build/es2019/types/decrement-cycle-counter-factory.js","./decrement-cycle-counter-function":"../node_modules/standardized-audio-context/build/es2019/types/decrement-cycle-counter-function.js","./delay-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/delay-node-constructor.js","./delay-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/delay-node-constructor-factory.js","./delay-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/delay-node-renderer-factory.js","./delay-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/delay-node-renderer-factory-factory.js","./delete-active-input-connection-to-audio-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/delete-active-input-connection-to-audio-node-factory.js","./delete-active-input-connection-to-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/delete-active-input-connection-to-audio-node-function.js","./delete-unrendered-audio-worklet-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/delete-unrendered-audio-worklet-node-factory.js","./delete-unrendered-audio-worklet-node-function":"../node_modules/standardized-audio-context/build/es2019/types/delete-unrendered-audio-worklet-node-function.js","./detect-cycles-factory":"../node_modules/standardized-audio-context/build/es2019/types/detect-cycles-factory.js","./detect-cycles-function":"../node_modules/standardized-audio-context/build/es2019/types/detect-cycles-function.js","./disconnect-multiple-outputs-factory":"../node_modules/standardized-audio-context/build/es2019/types/disconnect-multiple-outputs-factory.js","./disconnect-multiple-outputs-function":"../node_modules/standardized-audio-context/build/es2019/types/disconnect-multiple-outputs-function.js","./disconnect-native-audio-node-from-native-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/disconnect-native-audio-node-from-native-audio-node-function.js","./distance-model-type":"../node_modules/standardized-audio-context/build/es2019/types/distance-model-type.js","./dynamics-compressor-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-constructor.js","./dynamics-compressor-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-constructor-factory.js","./dynamics-compressor-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-renderer-factory.js","./dynamics-compressor-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-renderer-factory-factory.js","./encoding-error-factory":"../node_modules/standardized-audio-context/build/es2019/types/encoding-error-factory.js","./error-event-handler":"../node_modules/standardized-audio-context/build/es2019/types/error-event-handler.js","./evaluate-audio-worklet-global-scope-function":"../node_modules/standardized-audio-context/build/es2019/types/evaluate-audio-worklet-global-scope-function.js","./evaluate-source-factory":"../node_modules/standardized-audio-context/build/es2019/types/evaluate-source-factory.js","./evaluate-source-function":"../node_modules/standardized-audio-context/build/es2019/types/evaluate-source-function.js","./event-handler":"../node_modules/standardized-audio-context/build/es2019/types/event-handler.js","./event-target-constructor":"../node_modules/standardized-audio-context/build/es2019/types/event-target-constructor.js","./event-target-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/event-target-constructor-factory.js","./expose-current-frame-and-current-time-factory":"../node_modules/standardized-audio-context/build/es2019/types/expose-current-frame-and-current-time-factory.js","./expose-current-frame-and-current-time-function":"../node_modules/standardized-audio-context/build/es2019/types/expose-current-frame-and-current-time-function.js","./fetch-source-factory":"../node_modules/standardized-audio-context/build/es2019/types/fetch-source-factory.js","./fetch-source-function":"../node_modules/standardized-audio-context/build/es2019/types/fetch-source-function.js","./gain-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/gain-node-constructor.js","./gain-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/gain-node-constructor-factory.js","./gain-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/gain-node-renderer-factory.js","./gain-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/gain-node-renderer-factory-factory.js","./get-active-audio-worklet-node-inputs-factory":"../node_modules/standardized-audio-context/build/es2019/types/get-active-audio-worklet-node-inputs-factory.js","./get-active-audio-worklet-node-inputs-function":"../node_modules/standardized-audio-context/build/es2019/types/get-active-audio-worklet-node-inputs-function.js","./get-audio-node-connections-function":"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-connections-function.js","./get-audio-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-renderer-factory.js","./get-audio-node-renderer-function":"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-renderer-function.js","./get-audio-node-tail-time-factory":"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-tail-time-factory.js","./get-audio-node-tail-time-function":"../node_modules/standardized-audio-context/build/es2019/types/get-audio-node-tail-time-function.js","./get-audio-param-connections-function":"../node_modules/standardized-audio-context/build/es2019/types/get-audio-param-connections-function.js","./get-audio-param-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/get-audio-param-renderer-factory.js","./get-audio-param-renderer-function":"../node_modules/standardized-audio-context/build/es2019/types/get-audio-param-renderer-function.js","./get-backup-offline-audio-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/get-backup-offline-audio-context-factory.js","./get-backup-offline-audio-context-function":"../node_modules/standardized-audio-context/build/es2019/types/get-backup-offline-audio-context-function.js","./get-event-listeners-of-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/get-event-listeners-of-audio-node-function.js","./get-native-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/get-native-audio-node-function.js","./get-native-audio-param-function":"../node_modules/standardized-audio-context/build/es2019/types/get-native-audio-param-function.js","./get-native-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/get-native-context-factory.js","./get-native-context-function":"../node_modules/standardized-audio-context/build/es2019/types/get-native-context-function.js","./get-or-create-backup-offline-audio-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/get-or-create-backup-offline-audio-context-factory.js","./get-or-create-backup-offline-audio-context-function":"../node_modules/standardized-audio-context/build/es2019/types/get-or-create-backup-offline-audio-context-function.js","./get-unrendered-audio-worklet-nodes-factory":"../node_modules/standardized-audio-context/build/es2019/types/get-unrendered-audio-worklet-nodes-factory.js","./get-unrendered-audio-worklet-nodes-function":"../node_modules/standardized-audio-context/build/es2019/types/get-unrendered-audio-worklet-nodes-function.js","./get-value-for-key-function":"../node_modules/standardized-audio-context/build/es2019/types/get-value-for-key-function.js","./iir-filter-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-constructor.js","./iir-filter-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-constructor-factory.js","./iir-filter-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-renderer-factory.js","./iir-filter-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-renderer-factory-factory.js","./increment-cycle-counter-factory":"../node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-factory.js","./increment-cycle-counter-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-factory-factory.js","./increment-cycle-counter-function":"../node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-function.js","./index-size-error-factory":"../node_modules/standardized-audio-context/build/es2019/types/index-size-error-factory.js","./insert-element-in-set-function":"../node_modules/standardized-audio-context/build/es2019/types/insert-element-in-set-function.js","./internal-state-event-listener":"../node_modules/standardized-audio-context/build/es2019/types/internal-state-event-listener.js","./invalid-access-error-factory":"../node_modules/standardized-audio-context/build/es2019/types/invalid-access-error-factory.js","./invalid-state-error-factory":"../node_modules/standardized-audio-context/build/es2019/types/invalid-state-error-factory.js","./is-active-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/is-active-audio-node-function.js","./is-any-audio-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-context-factory.js","./is-any-audio-context-function":"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-context-function.js","./is-any-audio-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-node-factory.js","./is-any-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-node-function.js","./is-any-audio-param-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-param-factory.js","./is-any-audio-param-function":"../node_modules/standardized-audio-context/build/es2019/types/is-any-audio-param-function.js","./is-any-offline-audio-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-any-offline-audio-context-factory.js","./is-any-offline-audio-context-function":"../node_modules/standardized-audio-context/build/es2019/types/is-any-offline-audio-context-function.js","./is-dc-curve-function":"../node_modules/standardized-audio-context/build/es2019/types/is-dc-curve-function.js","./is-native-audio-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-context-factory.js","./is-native-audio-context-function":"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-context-function.js","./is-native-audio-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-node-factory.js","./is-native-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-node-function.js","./is-native-audio-param-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-param-factory.js","./is-native-audio-param-function":"../node_modules/standardized-audio-context/build/es2019/types/is-native-audio-param-function.js","./is-native-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-native-context-factory.js","./is-native-context-function":"../node_modules/standardized-audio-context/build/es2019/types/is-native-context-function.js","./is-native-offline-audio-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-native-offline-audio-context-factory.js","./is-native-offline-audio-context-function":"../node_modules/standardized-audio-context/build/es2019/types/is-native-offline-audio-context-function.js","./is-part-of-a-cycle-function":"../node_modules/standardized-audio-context/build/es2019/types/is-part-of-a-cycle-function.js","./is-passive-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/is-passive-audio-node-function.js","./is-secure-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-secure-context-factory.js","./is-supported-promise-factory":"../node_modules/standardized-audio-context/build/es2019/types/is-supported-promise-factory.js","./media-element-audio-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/media-element-audio-source-node-constructor.js","./media-element-audio-source-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/media-element-audio-source-node-constructor-factory.js","./media-stream-audio-destination-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-destination-node-constructor.js","./media-stream-audio-destination-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-destination-node-constructor-factory.js","./media-stream-audio-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-source-node-constructor.js","./media-stream-audio-source-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-source-node-constructor-factory.js","./media-stream-track-audio-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/media-stream-track-audio-source-node-constructor.js","./media-stream-track-audio-source-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/media-stream-track-audio-source-node-constructor-factory.js","./minimal-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/types/minimal-audio-context-constructor.js","./minimal-audio-context-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/minimal-audio-context-constructor-factory.js","./minimal-base-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/types/minimal-base-audio-context-constructor.js","./minimal-base-audio-context-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/minimal-base-audio-context-constructor-factory.js","./minimal-offline-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/types/minimal-offline-audio-context-constructor.js","./minimal-offline-audio-context-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/minimal-offline-audio-context-constructor-factory.js","./monitor-connections-factory":"../node_modules/standardized-audio-context/build/es2019/types/monitor-connections-factory.js","./monitor-connections-function":"../node_modules/standardized-audio-context/build/es2019/types/monitor-connections-function.js","./native-analyser-node":"../node_modules/standardized-audio-context/build/es2019/types/native-analyser-node.js","./native-analyser-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-analyser-node-factory.js","./native-analyser-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-analyser-node-factory-factory.js","./native-audio-buffer":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer.js","./native-audio-buffer-constructor":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-constructor.js","./native-audio-buffer-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-constructor-factory.js","./native-audio-buffer-source-node":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node.js","./native-audio-buffer-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node-factory.js","./native-audio-buffer-source-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node-factory-factory.js","./native-audio-context":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-context.js","./native-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-context-constructor.js","./native-audio-context-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-context-constructor-factory.js","./native-audio-destination-node":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node.js","./native-audio-destination-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node-factory.js","./native-audio-destination-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node-factory-factory.js","./native-audio-listener":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-listener.js","./native-audio-node":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-node.js","./native-audio-param":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-param.js","./native-audio-param-map":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-param-map.js","./native-audio-worklet":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet.js","./native-audio-worklet-node":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node.js","./native-audio-worklet-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-constructor.js","./native-audio-worklet-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-constructor-factory.js","./native-audio-worklet-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-factory.js","./native-audio-worklet-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-factory-factory.js","./native-audio-worklet-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-faker-factory.js","./native-audio-worklet-node-faker-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-faker-factory-factory.js","./native-audio-worklet-node-options":"../node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-options.js","./native-biquad-filter-node":"../node_modules/standardized-audio-context/build/es2019/types/native-biquad-filter-node.js","./native-biquad-filter-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-biquad-filter-node-factory.js","./native-channel-merger-node":"../node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node.js","./native-channel-merger-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node-factory.js","./native-channel-merger-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node-factory-factory.js","./native-channel-splitter-node":"../node_modules/standardized-audio-context/build/es2019/types/native-channel-splitter-node.js","./native-channel-splitter-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-channel-splitter-node-factory.js","./native-constant-source-node":"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node.js","./native-constant-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-factory.js","./native-constant-source-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-factory-factory.js","./native-constant-source-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-faker-factory.js","./native-constant-source-node-faker-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-faker-factory-factory.js","./native-context":"../node_modules/standardized-audio-context/build/es2019/types/native-context.js","./native-convolver-node":"../node_modules/standardized-audio-context/build/es2019/types/native-convolver-node.js","./native-convolver-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-convolver-node-factory.js","./native-convolver-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-convolver-node-factory-factory.js","./native-delay-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-delay-node-factory.js","./native-delay-node":"../node_modules/standardized-audio-context/build/es2019/types/native-delay-node.js","./native-dynamics-compressor-node":"../node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node.js","./native-dynamics-compressor-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node-factory.js","./native-dynamics-compressor-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node-factory-factory.js","./native-event-target":"../node_modules/standardized-audio-context/build/es2019/types/native-event-target.js","./native-gain-node":"../node_modules/standardized-audio-context/build/es2019/types/native-gain-node.js","./native-gain-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-gain-node-factory.js","./native-iir-filter-node":"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node.js","./native-iir-filter-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-factory.js","./native-iir-filter-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-factory-factory.js","./native-iir-filter-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-faker-factory.js","./native-iir-filter-node-faker-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-faker-factory-factory.js","./native-media-element-audio-source-node":"../node_modules/standardized-audio-context/build/es2019/types/native-media-element-audio-source-node.js","./native-media-element-audio-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-media-element-audio-source-node-factory.js","./native-media-stream-audio-destination-node":"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-destination-node.js","./native-media-stream-audio-destination-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-destination-node-factory.js","./native-media-stream-audio-source-node":"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-source-node.js","./native-media-stream-audio-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-source-node-factory.js","./native-media-stream-track-audio-source-node":"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node.js","./native-media-stream-track-audio-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node-factory.js","./native-media-stream-track-audio-source-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node-factory-factory.js","./native-offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context.js","./native-offline-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context-constructor.js","./native-offline-audio-context-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context-constructor-factory.js","./native-oscillator-node":"../node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node.js","./native-oscillator-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node-factory.js","./native-oscillator-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node-factory-factory.js","./native-panner-node":"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node.js","./native-panner-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node-factory.js","./native-panner-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node-factory-factory.js","./native-panner-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node-faker-factory.js","./native-panner-node-faker-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-panner-node-faker-factory-factory.js","./native-periodic-wave":"../node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave.js","./native-periodic-wave-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave-factory.js","./native-periodic-wave-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave-factory-factory.js","./native-script-processor-node":"../node_modules/standardized-audio-context/build/es2019/types/native-script-processor-node.js","./native-script-processor-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-script-processor-node-factory.js","./native-stereo-panner-node":"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node.js","./native-stereo-panner-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-factory.js","./native-stereo-panner-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-factory-factory.js","./native-stereo-panner-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-faker-factory.js","./native-stereo-panner-node-faker-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-faker-factory-factory.js","./native-wave-shaper-node":"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node.js","./native-wave-shaper-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-factory.js","./native-wave-shaper-node-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-factory-factory.js","./native-wave-shaper-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-faker-factory.js","./native-wave-shaper-node-faker-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-faker-factory-factory.js","./not-supported-error-factory":"../node_modules/standardized-audio-context/build/es2019/types/not-supported-error-factory.js","./offline-audio-context-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/offline-audio-context-constructor-factory.js","./oscillator-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-constructor.js","./oscillator-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-constructor-factory.js","./oscillator-node-renderer":"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer.js","./oscillator-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer-factory.js","./oscillator-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer-factory-factory.js","./oscillator-type":"../node_modules/standardized-audio-context/build/es2019/types/oscillator-type.js","./output-connection":"../node_modules/standardized-audio-context/build/es2019/types/output-connection.js","./over-sample-type":"../node_modules/standardized-audio-context/build/es2019/types/over-sample-type.js","./overwrite-accessors-function":"../node_modules/standardized-audio-context/build/es2019/types/overwrite-accessors-function.js","./panner-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/panner-node-constructor.js","./panner-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/panner-node-constructor-factory.js","./panner-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/panner-node-renderer-factory.js","./panner-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/panner-node-renderer-factory-factory.js","./panning-model-type":"../node_modules/standardized-audio-context/build/es2019/types/panning-model-type.js","./passive-audio-node-input-connection":"../node_modules/standardized-audio-context/build/es2019/types/passive-audio-node-input-connection.js","./passive-audio-param-input-connection":"../node_modules/standardized-audio-context/build/es2019/types/passive-audio-param-input-connection.js","./periodic-wave-constructor":"../node_modules/standardized-audio-context/build/es2019/types/periodic-wave-constructor.js","./periodic-wave-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/periodic-wave-constructor-factory.js","./pick-element-from-set-function":"../node_modules/standardized-audio-context/build/es2019/types/pick-element-from-set-function.js","./render-automation-factory":"../node_modules/standardized-audio-context/build/es2019/types/render-automation-factory.js","./render-automation-function":"../node_modules/standardized-audio-context/build/es2019/types/render-automation-function.js","./render-inputs-of-audio-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-node-factory.js","./render-inputs-of-audio-node-function":"../node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-node-function.js","./render-inputs-of-audio-param-factory":"../node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-param-factory.js","./render-inputs-of-audio-param-function":"../node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-param-function.js","./render-native-offline-audio-context-factory":"../node_modules/standardized-audio-context/build/es2019/types/render-native-offline-audio-context-factory.js","./render-native-offline-audio-context-function":"../node_modules/standardized-audio-context/build/es2019/types/render-native-offline-audio-context-function.js","./sanitize-audio-worklet-node-options-function":"../node_modules/standardized-audio-context/build/es2019/types/sanitize-audio-worklet-node-options-function.js","./sanitize-channel-splitter-options-function":"../node_modules/standardized-audio-context/build/es2019/types/sanitize-channel-splitter-options-function.js","./sanitize-periodic-wave-options-function":"../node_modules/standardized-audio-context/build/es2019/types/sanitize-periodic-wave-options-function.js","./set-active-audio-worklet-node-inputs-factory":"../node_modules/standardized-audio-context/build/es2019/types/set-active-audio-worklet-node-inputs-factory.js","./set-active-audio-worklet-node-inputs-function":"../node_modules/standardized-audio-context/build/es2019/types/set-active-audio-worklet-node-inputs-function.js","./set-audio-node-tail-time-factory":"../node_modules/standardized-audio-context/build/es2019/types/set-audio-node-tail-time-factory.js","./set-audio-node-tail-time-function":"../node_modules/standardized-audio-context/build/es2019/types/set-audio-node-tail-time-function.js","./set-value-at-time-until-possible-function":"../node_modules/standardized-audio-context/build/es2019/types/set-value-at-time-until-possible-function.js","./start-rendering-factory":"../node_modules/standardized-audio-context/build/es2019/types/start-rendering-factory.js","./start-rendering-function":"../node_modules/standardized-audio-context/build/es2019/types/start-rendering-function.js","./stereo-panner-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-constructor.js","./stereo-panner-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-constructor-factory.js","./stereo-panner-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-renderer-factory-factory.js","./stereo-panner-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-renderer-factory.js","./test-audio-buffer-copy-channel-methods-subarray-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-audio-buffer-copy-channel-methods-subarray-support-factory.js","./test-audio-buffer-constructor-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-audio-buffer-constructor-support-factory.js","./test-audio-context-close-method-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-audio-context-close-method-support-factory.js","./test-audio-context-decode-audio-data-method-type-error-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-audio-context-decode-audio-data-method-type-error-support-factory.js","./test-audio-context-options-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-audio-context-options-support-factory.js","./test-audio-node-connect-method-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-audio-node-connect-method-support-factory.js","./test-audio-worklet-processor-no-outputs-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-audio-worklet-processor-no-outputs-support-factory.js","./test-audio-worklet-processor-post-message-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-audio-worklet-processor-post-message-support-factory.js","./test-channel-merger-node-channel-count-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-channel-merger-node-channel-count-support-factory.js","./test-constant-source-node-accurate-scheduling-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-constant-source-node-accurate-scheduling-support-factory.js","./test-convolver-node-buffer-reassignability-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-convolver-node-buffer-reassignability-support-factory.js","./test-convolver-node-channel-count-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-convolver-node-channel-count-support-factory.js","./test-is-secure-context-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-is-secure-context-support-factory.js","./test-media-stream-audio-source-node-media-stream-without-audio-track-support":"../node_modules/standardized-audio-context/build/es2019/types/test-media-stream-audio-source-node-media-stream-without-audio-track-support.js","./test-offline-audio-context-current-time-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-offline-audio-context-current-time-support-factory.js","./test-stereo-panner-node-default-value-support-factory":"../node_modules/standardized-audio-context/build/es2019/types/test-stereo-panner-node-default-value-support-factory.js","./unknown-error-factory":"../node_modules/standardized-audio-context/build/es2019/types/unknown-error-factory.js","./unrendered-audio-worklet-node-store":"../node_modules/standardized-audio-context/build/es2019/types/unrendered-audio-worklet-node-store.js","./unrendered-audio-worklet-nodes":"../node_modules/standardized-audio-context/build/es2019/types/unrendered-audio-worklet-nodes.js","./wave-shaper-node-constructor":"../node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-constructor.js","./wave-shaper-node-constructor-factory":"../node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-constructor-factory.js","./wave-shaper-node-renderer-factory-factory":"../node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-renderer-factory-factory.js","./wave-shaper-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-renderer-factory.js","./window":"../node_modules/standardized-audio-context/build/es2019/types/window.js","./window-factory":"../node_modules/standardized-audio-context/build/es2019/types/window-factory.js","./wrap-audio-buffer-copy-channel-methods-factory":"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-factory.js","./wrap-audio-buffer-copy-channel-methods-function":"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-function.js","./wrap-audio-buffer-copy-channel-methods-out-of-bounds-factory":"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-out-of-bounds-factory.js","./wrap-audio-buffer-copy-channel-methods-out-of-bounds-function":"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-out-of-bounds-function.js","./wrap-audio-buffer-source-node-start-method-offset-clamping-function":"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-start-method-offset-clamping-function.js","./wrap-audio-buffer-source-node-stop-method-nullified-buffer-factory":"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-stop-method-nullified-buffer-factory.js","./wrap-audio-buffer-source-node-stop-method-nullified-buffer-function":"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-stop-method-nullified-buffer-function.js","./wrap-audio-scheduled-source-node-stop-method-consecutive-calls-function":"../node_modules/standardized-audio-context/build/es2019/types/wrap-audio-scheduled-source-node-stop-method-consecutive-calls-function.js","./wrap-channel-merger-node-factory":"../node_modules/standardized-audio-context/build/es2019/types/wrap-channel-merger-node-factory.js","./wrap-channel-merger-node-function":"../node_modules/standardized-audio-context/build/es2019/types/wrap-channel-merger-node-function.js","./wrap-event-listener-function":"../node_modules/standardized-audio-context/build/es2019/types/wrap-event-listener-function.js"}],"../node_modules/standardized-audio-context/build/es2019/module.js":[function(require,module,exports) {
+},{"./abort-error-factory":"node_modules/standardized-audio-context/build/es2019/types/abort-error-factory.js","./active-audio-worklet-node-inputs-store":"node_modules/standardized-audio-context/build/es2019/types/active-audio-worklet-node-inputs-store.js","./active-input-connection":"node_modules/standardized-audio-context/build/es2019/types/active-input-connection.js","./add-active-input-connection-to-audio-node-factory":"node_modules/standardized-audio-context/build/es2019/types/add-active-input-connection-to-audio-node-factory.js","./add-active-input-connection-to-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/add-active-input-connection-to-audio-node-function.js","./add-audio-node-connections-factory":"node_modules/standardized-audio-context/build/es2019/types/add-audio-node-connections-factory.js","./add-audio-node-connections-function":"node_modules/standardized-audio-context/build/es2019/types/add-audio-node-connections-function.js","./add-audio-param-connections-factory":"node_modules/standardized-audio-context/build/es2019/types/add-audio-param-connections-factory.js","./add-audio-param-connections-function":"node_modules/standardized-audio-context/build/es2019/types/add-audio-param-connections-function.js","./add-audio-worklet-module-factory":"node_modules/standardized-audio-context/build/es2019/types/add-audio-worklet-module-factory.js","./add-audio-worklet-module-function":"node_modules/standardized-audio-context/build/es2019/types/add-audio-worklet-module-function.js","./add-connection-to-audio-node-factory":"node_modules/standardized-audio-context/build/es2019/types/add-connection-to-audio-node-factory.js","./add-connection-to-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/add-connection-to-audio-node-function.js","./add-passive-input-connection-to-audio-node-factory":"node_modules/standardized-audio-context/build/es2019/types/add-passive-input-connection-to-audio-node-factory.js","./add-passive-input-connection-to-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/add-passive-input-connection-to-audio-node-function.js","./add-silent-connection-factory":"node_modules/standardized-audio-context/build/es2019/types/add-silent-connection-factory.js","./add-silent-connection-function":"node_modules/standardized-audio-context/build/es2019/types/add-silent-connection-function.js","./add-unrendered-audio-worklet-node-factory":"node_modules/standardized-audio-context/build/es2019/types/add-unrendered-audio-worklet-node-factory.js","./add-unrendered-audio-worklet-node-function":"node_modules/standardized-audio-context/build/es2019/types/add-unrendered-audio-worklet-node-function.js","./analyser-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/analyser-node-constructor.js","./analyser-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/analyser-node-constructor-factory.js","./analyser-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/analyser-node-renderer-factory.js","./analyser-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/analyser-node-renderer-factory-factory.js","./any-audio-buffer":"node_modules/standardized-audio-context/build/es2019/types/any-audio-buffer.js","./any-context":"node_modules/standardized-audio-context/build/es2019/types/any-context.js","./audio-buffer-constructor":"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-constructor.js","./audio-buffer-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-constructor-factory.js","./audio-buffer-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-constructor.js","./audio-buffer-source-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-constructor-factory.js","./audio-buffer-source-node-renderer":"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer.js","./audio-buffer-source-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer-factory.js","./audio-buffer-source-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-source-node-renderer-factory-factory.js","./audio-buffer-store":"node_modules/standardized-audio-context/build/es2019/types/audio-buffer-store.js","./audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/types/audio-context-constructor.js","./audio-context-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-context-constructor-factory.js","./audio-context-latency-category":"node_modules/standardized-audio-context/build/es2019/types/audio-context-latency-category.js","./audio-context-state":"node_modules/standardized-audio-context/build/es2019/types/audio-context-state.js","./audio-destination-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-constructor.js","./audio-destination-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-constructor-factory.js","./audio-destination-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-destination-node-renderer-factory.js","./audio-listener-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-listener-factory.js","./audio-listener-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-listener-factory-factory.js","./audio-node-connections":"node_modules/standardized-audio-context/build/es2019/types/audio-node-connections.js","./audio-node-connections-store":"node_modules/standardized-audio-context/build/es2019/types/audio-node-connections-store.js","./audio-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/audio-node-constructor.js","./audio-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-node-constructor-factory.js","./audio-node-output-connection":"node_modules/standardized-audio-context/build/es2019/types/audio-node-output-connection.js","./audio-node-renderer":"node_modules/standardized-audio-context/build/es2019/types/audio-node-renderer.js","./audio-node-store":"node_modules/standardized-audio-context/build/es2019/types/audio-node-store.js","./audio-node-tail-time-store":"node_modules/standardized-audio-context/build/es2019/types/audio-node-tail-time-store.js","./audio-param-audio-node-store":"node_modules/standardized-audio-context/build/es2019/types/audio-param-audio-node-store.js","./audio-param-connections":"node_modules/standardized-audio-context/build/es2019/types/audio-param-connections.js","./audio-param-connections-store":"node_modules/standardized-audio-context/build/es2019/types/audio-param-connections-store.js","./audio-param-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-param-factory.js","./audio-param-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-param-factory-factory.js","./audio-param-map":"node_modules/standardized-audio-context/build/es2019/types/audio-param-map.js","./audio-param-output-connection":"node_modules/standardized-audio-context/build/es2019/types/audio-param-output-connection.js","./audio-param-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-param-renderer-factory.js","./audio-param-store":"node_modules/standardized-audio-context/build/es2019/types/audio-param-store.js","./audio-worklet-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-constructor.js","./audio-worklet-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-constructor-factory.js","./audio-worklet-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-renderer-factory.js","./audio-worklet-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/audio-worklet-node-renderer-factory-factory.js","./backup-offline-audio-context-store":"node_modules/standardized-audio-context/build/es2019/types/backup-offline-audio-context-store.js","./base-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/types/base-audio-context-constructor.js","./base-audio-context-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/base-audio-context-constructor-factory.js","./biquad-filter-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-constructor.js","./biquad-filter-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-constructor-factory.js","./biquad-filter-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-renderer-factory.js","./biquad-filter-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-node-renderer-factory-factory.js","./biquad-filter-type":"node_modules/standardized-audio-context/build/es2019/types/biquad-filter-type.js","./channel-count-mode":"node_modules/standardized-audio-context/build/es2019/types/channel-count-mode.js","./channel-interpretation":"node_modules/standardized-audio-context/build/es2019/types/channel-interpretation.js","./channel-merger-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-constructor.js","./channel-merger-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-constructor-factory.js","./channel-merger-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-renderer-factory.js","./channel-merger-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/channel-merger-node-renderer-factory-factory.js","./channel-splitter-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-constructor.js","./channel-splitter-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-constructor-factory.js","./channel-splitter-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-renderer-factory.js","./channel-splitter-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/channel-splitter-node-renderer-factory-factory.js","./cache-test-result-factory":"node_modules/standardized-audio-context/build/es2019/types/cache-test-result-factory.js","./cache-test-result-function":"node_modules/standardized-audio-context/build/es2019/types/cache-test-result-function.js","./connect-audio-param-factory":"node_modules/standardized-audio-context/build/es2019/types/connect-audio-param-factory.js","./connect-audio-param-function":"node_modules/standardized-audio-context/build/es2019/types/connect-audio-param-function.js","./connect-multiple-outputs-factory":"node_modules/standardized-audio-context/build/es2019/types/connect-multiple-outputs-factory.js","./connect-multiple-outputs-function":"node_modules/standardized-audio-context/build/es2019/types/connect-multiple-outputs-function.js","./connect-native-audio-node-to-native-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/connect-native-audio-node-to-native-audio-node-function.js","./connected-native-audio-buffer-source-node-factory":"node_modules/standardized-audio-context/build/es2019/types/connected-native-audio-buffer-source-node-factory.js","./connected-native-audio-buffer-source-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/connected-native-audio-buffer-source-node-factory-factory.js","./constant-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-constructor.js","./constant-source-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-constructor-factory.js","./constant-source-node-renderer":"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer.js","./constant-source-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer-factory.js","./constant-source-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/constant-source-node-renderer-factory-factory.js","./constructor":"node_modules/standardized-audio-context/build/es2019/types/constructor.js","./context":"node_modules/standardized-audio-context/build/es2019/types/context.js","./context-store":"node_modules/standardized-audio-context/build/es2019/types/context-store.js","./convert-number-to-unsigned-long-factory":"node_modules/standardized-audio-context/build/es2019/types/convert-number-to-unsigned-long-factory.js","./convert-number-to-unsigned-long-function":"node_modules/standardized-audio-context/build/es2019/types/convert-number-to-unsigned-long-function.js","./convolver-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/convolver-node-constructor.js","./convolver-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/convolver-node-constructor-factory.js","./convolver-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/convolver-node-renderer-factory.js","./convolver-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/convolver-node-renderer-factory-factory.js","./create-native-offline-audio-context-factory":"node_modules/standardized-audio-context/build/es2019/types/create-native-offline-audio-context-factory.js","./create-native-offline-audio-context-function":"node_modules/standardized-audio-context/build/es2019/types/create-native-offline-audio-context-function.js","./cycle-counters":"node_modules/standardized-audio-context/build/es2019/types/cycle-counters.js","./data-clone-error-factory":"node_modules/standardized-audio-context/build/es2019/types/data-clone-error-factory.js","./decode-audio-data-factory":"node_modules/standardized-audio-context/build/es2019/types/decode-audio-data-factory.js","./decode-audio-data-function":"node_modules/standardized-audio-context/build/es2019/types/decode-audio-data-function.js","./decode-error-callback":"node_modules/standardized-audio-context/build/es2019/types/decode-error-callback.js","./decode-success-callback":"node_modules/standardized-audio-context/build/es2019/types/decode-success-callback.js","./decrement-cycle-counter-factory":"node_modules/standardized-audio-context/build/es2019/types/decrement-cycle-counter-factory.js","./decrement-cycle-counter-function":"node_modules/standardized-audio-context/build/es2019/types/decrement-cycle-counter-function.js","./delay-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/delay-node-constructor.js","./delay-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/delay-node-constructor-factory.js","./delay-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/delay-node-renderer-factory.js","./delay-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/delay-node-renderer-factory-factory.js","./delete-active-input-connection-to-audio-node-factory":"node_modules/standardized-audio-context/build/es2019/types/delete-active-input-connection-to-audio-node-factory.js","./delete-active-input-connection-to-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/delete-active-input-connection-to-audio-node-function.js","./delete-unrendered-audio-worklet-node-factory":"node_modules/standardized-audio-context/build/es2019/types/delete-unrendered-audio-worklet-node-factory.js","./delete-unrendered-audio-worklet-node-function":"node_modules/standardized-audio-context/build/es2019/types/delete-unrendered-audio-worklet-node-function.js","./detect-cycles-factory":"node_modules/standardized-audio-context/build/es2019/types/detect-cycles-factory.js","./detect-cycles-function":"node_modules/standardized-audio-context/build/es2019/types/detect-cycles-function.js","./disconnect-multiple-outputs-factory":"node_modules/standardized-audio-context/build/es2019/types/disconnect-multiple-outputs-factory.js","./disconnect-multiple-outputs-function":"node_modules/standardized-audio-context/build/es2019/types/disconnect-multiple-outputs-function.js","./disconnect-native-audio-node-from-native-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/disconnect-native-audio-node-from-native-audio-node-function.js","./distance-model-type":"node_modules/standardized-audio-context/build/es2019/types/distance-model-type.js","./dynamics-compressor-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-constructor.js","./dynamics-compressor-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-constructor-factory.js","./dynamics-compressor-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-renderer-factory.js","./dynamics-compressor-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/dynamics-compressor-node-renderer-factory-factory.js","./encoding-error-factory":"node_modules/standardized-audio-context/build/es2019/types/encoding-error-factory.js","./error-event-handler":"node_modules/standardized-audio-context/build/es2019/types/error-event-handler.js","./evaluate-audio-worklet-global-scope-function":"node_modules/standardized-audio-context/build/es2019/types/evaluate-audio-worklet-global-scope-function.js","./evaluate-source-factory":"node_modules/standardized-audio-context/build/es2019/types/evaluate-source-factory.js","./evaluate-source-function":"node_modules/standardized-audio-context/build/es2019/types/evaluate-source-function.js","./event-handler":"node_modules/standardized-audio-context/build/es2019/types/event-handler.js","./event-target-constructor":"node_modules/standardized-audio-context/build/es2019/types/event-target-constructor.js","./event-target-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/event-target-constructor-factory.js","./expose-current-frame-and-current-time-factory":"node_modules/standardized-audio-context/build/es2019/types/expose-current-frame-and-current-time-factory.js","./expose-current-frame-and-current-time-function":"node_modules/standardized-audio-context/build/es2019/types/expose-current-frame-and-current-time-function.js","./fetch-source-factory":"node_modules/standardized-audio-context/build/es2019/types/fetch-source-factory.js","./fetch-source-function":"node_modules/standardized-audio-context/build/es2019/types/fetch-source-function.js","./gain-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/gain-node-constructor.js","./gain-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/gain-node-constructor-factory.js","./gain-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/gain-node-renderer-factory.js","./gain-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/gain-node-renderer-factory-factory.js","./get-active-audio-worklet-node-inputs-factory":"node_modules/standardized-audio-context/build/es2019/types/get-active-audio-worklet-node-inputs-factory.js","./get-active-audio-worklet-node-inputs-function":"node_modules/standardized-audio-context/build/es2019/types/get-active-audio-worklet-node-inputs-function.js","./get-audio-node-connections-function":"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-connections-function.js","./get-audio-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-renderer-factory.js","./get-audio-node-renderer-function":"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-renderer-function.js","./get-audio-node-tail-time-factory":"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-tail-time-factory.js","./get-audio-node-tail-time-function":"node_modules/standardized-audio-context/build/es2019/types/get-audio-node-tail-time-function.js","./get-audio-param-connections-function":"node_modules/standardized-audio-context/build/es2019/types/get-audio-param-connections-function.js","./get-audio-param-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/get-audio-param-renderer-factory.js","./get-audio-param-renderer-function":"node_modules/standardized-audio-context/build/es2019/types/get-audio-param-renderer-function.js","./get-backup-offline-audio-context-factory":"node_modules/standardized-audio-context/build/es2019/types/get-backup-offline-audio-context-factory.js","./get-backup-offline-audio-context-function":"node_modules/standardized-audio-context/build/es2019/types/get-backup-offline-audio-context-function.js","./get-event-listeners-of-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/get-event-listeners-of-audio-node-function.js","./get-native-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/get-native-audio-node-function.js","./get-native-audio-param-function":"node_modules/standardized-audio-context/build/es2019/types/get-native-audio-param-function.js","./get-native-context-factory":"node_modules/standardized-audio-context/build/es2019/types/get-native-context-factory.js","./get-native-context-function":"node_modules/standardized-audio-context/build/es2019/types/get-native-context-function.js","./get-or-create-backup-offline-audio-context-factory":"node_modules/standardized-audio-context/build/es2019/types/get-or-create-backup-offline-audio-context-factory.js","./get-or-create-backup-offline-audio-context-function":"node_modules/standardized-audio-context/build/es2019/types/get-or-create-backup-offline-audio-context-function.js","./get-unrendered-audio-worklet-nodes-factory":"node_modules/standardized-audio-context/build/es2019/types/get-unrendered-audio-worklet-nodes-factory.js","./get-unrendered-audio-worklet-nodes-function":"node_modules/standardized-audio-context/build/es2019/types/get-unrendered-audio-worklet-nodes-function.js","./get-value-for-key-function":"node_modules/standardized-audio-context/build/es2019/types/get-value-for-key-function.js","./iir-filter-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-constructor.js","./iir-filter-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-constructor-factory.js","./iir-filter-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-renderer-factory.js","./iir-filter-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/iir-filter-node-renderer-factory-factory.js","./increment-cycle-counter-factory":"node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-factory.js","./increment-cycle-counter-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-factory-factory.js","./increment-cycle-counter-function":"node_modules/standardized-audio-context/build/es2019/types/increment-cycle-counter-function.js","./index-size-error-factory":"node_modules/standardized-audio-context/build/es2019/types/index-size-error-factory.js","./insert-element-in-set-function":"node_modules/standardized-audio-context/build/es2019/types/insert-element-in-set-function.js","./internal-state-event-listener":"node_modules/standardized-audio-context/build/es2019/types/internal-state-event-listener.js","./invalid-access-error-factory":"node_modules/standardized-audio-context/build/es2019/types/invalid-access-error-factory.js","./invalid-state-error-factory":"node_modules/standardized-audio-context/build/es2019/types/invalid-state-error-factory.js","./is-active-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/is-active-audio-node-function.js","./is-any-audio-context-factory":"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-context-factory.js","./is-any-audio-context-function":"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-context-function.js","./is-any-audio-node-factory":"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-node-factory.js","./is-any-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-node-function.js","./is-any-audio-param-factory":"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-param-factory.js","./is-any-audio-param-function":"node_modules/standardized-audio-context/build/es2019/types/is-any-audio-param-function.js","./is-any-offline-audio-context-factory":"node_modules/standardized-audio-context/build/es2019/types/is-any-offline-audio-context-factory.js","./is-any-offline-audio-context-function":"node_modules/standardized-audio-context/build/es2019/types/is-any-offline-audio-context-function.js","./is-dc-curve-function":"node_modules/standardized-audio-context/build/es2019/types/is-dc-curve-function.js","./is-native-audio-context-factory":"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-context-factory.js","./is-native-audio-context-function":"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-context-function.js","./is-native-audio-node-factory":"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-node-factory.js","./is-native-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-node-function.js","./is-native-audio-param-factory":"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-param-factory.js","./is-native-audio-param-function":"node_modules/standardized-audio-context/build/es2019/types/is-native-audio-param-function.js","./is-native-context-factory":"node_modules/standardized-audio-context/build/es2019/types/is-native-context-factory.js","./is-native-context-function":"node_modules/standardized-audio-context/build/es2019/types/is-native-context-function.js","./is-native-offline-audio-context-factory":"node_modules/standardized-audio-context/build/es2019/types/is-native-offline-audio-context-factory.js","./is-native-offline-audio-context-function":"node_modules/standardized-audio-context/build/es2019/types/is-native-offline-audio-context-function.js","./is-part-of-a-cycle-function":"node_modules/standardized-audio-context/build/es2019/types/is-part-of-a-cycle-function.js","./is-passive-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/is-passive-audio-node-function.js","./is-secure-context-factory":"node_modules/standardized-audio-context/build/es2019/types/is-secure-context-factory.js","./is-supported-promise-factory":"node_modules/standardized-audio-context/build/es2019/types/is-supported-promise-factory.js","./media-element-audio-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/media-element-audio-source-node-constructor.js","./media-element-audio-source-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/media-element-audio-source-node-constructor-factory.js","./media-stream-audio-destination-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-destination-node-constructor.js","./media-stream-audio-destination-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-destination-node-constructor-factory.js","./media-stream-audio-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-source-node-constructor.js","./media-stream-audio-source-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/media-stream-audio-source-node-constructor-factory.js","./media-stream-track-audio-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/media-stream-track-audio-source-node-constructor.js","./media-stream-track-audio-source-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/media-stream-track-audio-source-node-constructor-factory.js","./minimal-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/types/minimal-audio-context-constructor.js","./minimal-audio-context-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/minimal-audio-context-constructor-factory.js","./minimal-base-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/types/minimal-base-audio-context-constructor.js","./minimal-base-audio-context-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/minimal-base-audio-context-constructor-factory.js","./minimal-offline-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/types/minimal-offline-audio-context-constructor.js","./minimal-offline-audio-context-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/minimal-offline-audio-context-constructor-factory.js","./monitor-connections-factory":"node_modules/standardized-audio-context/build/es2019/types/monitor-connections-factory.js","./monitor-connections-function":"node_modules/standardized-audio-context/build/es2019/types/monitor-connections-function.js","./native-analyser-node":"node_modules/standardized-audio-context/build/es2019/types/native-analyser-node.js","./native-analyser-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-analyser-node-factory.js","./native-analyser-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-analyser-node-factory-factory.js","./native-audio-buffer":"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer.js","./native-audio-buffer-constructor":"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-constructor.js","./native-audio-buffer-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-constructor-factory.js","./native-audio-buffer-source-node":"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node.js","./native-audio-buffer-source-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node-factory.js","./native-audio-buffer-source-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-buffer-source-node-factory-factory.js","./native-audio-context":"node_modules/standardized-audio-context/build/es2019/types/native-audio-context.js","./native-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/types/native-audio-context-constructor.js","./native-audio-context-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-context-constructor-factory.js","./native-audio-destination-node":"node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node.js","./native-audio-destination-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node-factory.js","./native-audio-destination-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-destination-node-factory-factory.js","./native-audio-listener":"node_modules/standardized-audio-context/build/es2019/types/native-audio-listener.js","./native-audio-node":"node_modules/standardized-audio-context/build/es2019/types/native-audio-node.js","./native-audio-param":"node_modules/standardized-audio-context/build/es2019/types/native-audio-param.js","./native-audio-param-map":"node_modules/standardized-audio-context/build/es2019/types/native-audio-param-map.js","./native-audio-worklet":"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet.js","./native-audio-worklet-node":"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node.js","./native-audio-worklet-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-constructor.js","./native-audio-worklet-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-constructor-factory.js","./native-audio-worklet-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-factory.js","./native-audio-worklet-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-factory-factory.js","./native-audio-worklet-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-faker-factory.js","./native-audio-worklet-node-faker-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-faker-factory-factory.js","./native-audio-worklet-node-options":"node_modules/standardized-audio-context/build/es2019/types/native-audio-worklet-node-options.js","./native-biquad-filter-node":"node_modules/standardized-audio-context/build/es2019/types/native-biquad-filter-node.js","./native-biquad-filter-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-biquad-filter-node-factory.js","./native-channel-merger-node":"node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node.js","./native-channel-merger-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node-factory.js","./native-channel-merger-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-channel-merger-node-factory-factory.js","./native-channel-splitter-node":"node_modules/standardized-audio-context/build/es2019/types/native-channel-splitter-node.js","./native-channel-splitter-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-channel-splitter-node-factory.js","./native-constant-source-node":"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node.js","./native-constant-source-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-factory.js","./native-constant-source-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-factory-factory.js","./native-constant-source-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-faker-factory.js","./native-constant-source-node-faker-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-constant-source-node-faker-factory-factory.js","./native-context":"node_modules/standardized-audio-context/build/es2019/types/native-context.js","./native-convolver-node":"node_modules/standardized-audio-context/build/es2019/types/native-convolver-node.js","./native-convolver-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-convolver-node-factory.js","./native-convolver-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-convolver-node-factory-factory.js","./native-delay-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-delay-node-factory.js","./native-delay-node":"node_modules/standardized-audio-context/build/es2019/types/native-delay-node.js","./native-dynamics-compressor-node":"node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node.js","./native-dynamics-compressor-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node-factory.js","./native-dynamics-compressor-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-dynamics-compressor-node-factory-factory.js","./native-event-target":"node_modules/standardized-audio-context/build/es2019/types/native-event-target.js","./native-gain-node":"node_modules/standardized-audio-context/build/es2019/types/native-gain-node.js","./native-gain-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-gain-node-factory.js","./native-iir-filter-node":"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node.js","./native-iir-filter-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-factory.js","./native-iir-filter-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-factory-factory.js","./native-iir-filter-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-faker-factory.js","./native-iir-filter-node-faker-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-iir-filter-node-faker-factory-factory.js","./native-media-element-audio-source-node":"node_modules/standardized-audio-context/build/es2019/types/native-media-element-audio-source-node.js","./native-media-element-audio-source-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-media-element-audio-source-node-factory.js","./native-media-stream-audio-destination-node":"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-destination-node.js","./native-media-stream-audio-destination-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-destination-node-factory.js","./native-media-stream-audio-source-node":"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-source-node.js","./native-media-stream-audio-source-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-audio-source-node-factory.js","./native-media-stream-track-audio-source-node":"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node.js","./native-media-stream-track-audio-source-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node-factory.js","./native-media-stream-track-audio-source-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-media-stream-track-audio-source-node-factory-factory.js","./native-offline-audio-context":"node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context.js","./native-offline-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context-constructor.js","./native-offline-audio-context-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/native-offline-audio-context-constructor-factory.js","./native-oscillator-node":"node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node.js","./native-oscillator-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node-factory.js","./native-oscillator-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-oscillator-node-factory-factory.js","./native-panner-node":"node_modules/standardized-audio-context/build/es2019/types/native-panner-node.js","./native-panner-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-panner-node-factory.js","./native-panner-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-panner-node-factory-factory.js","./native-panner-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/types/native-panner-node-faker-factory.js","./native-panner-node-faker-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-panner-node-faker-factory-factory.js","./native-periodic-wave":"node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave.js","./native-periodic-wave-factory":"node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave-factory.js","./native-periodic-wave-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-periodic-wave-factory-factory.js","./native-script-processor-node":"node_modules/standardized-audio-context/build/es2019/types/native-script-processor-node.js","./native-script-processor-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-script-processor-node-factory.js","./native-stereo-panner-node":"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node.js","./native-stereo-panner-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-factory.js","./native-stereo-panner-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-factory-factory.js","./native-stereo-panner-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-faker-factory.js","./native-stereo-panner-node-faker-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-stereo-panner-node-faker-factory-factory.js","./native-wave-shaper-node":"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node.js","./native-wave-shaper-node-factory":"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-factory.js","./native-wave-shaper-node-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-factory-factory.js","./native-wave-shaper-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-faker-factory.js","./native-wave-shaper-node-faker-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/native-wave-shaper-node-faker-factory-factory.js","./not-supported-error-factory":"node_modules/standardized-audio-context/build/es2019/types/not-supported-error-factory.js","./offline-audio-context-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/offline-audio-context-constructor-factory.js","./oscillator-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-constructor.js","./oscillator-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-constructor-factory.js","./oscillator-node-renderer":"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer.js","./oscillator-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer-factory.js","./oscillator-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/oscillator-node-renderer-factory-factory.js","./oscillator-type":"node_modules/standardized-audio-context/build/es2019/types/oscillator-type.js","./output-connection":"node_modules/standardized-audio-context/build/es2019/types/output-connection.js","./over-sample-type":"node_modules/standardized-audio-context/build/es2019/types/over-sample-type.js","./overwrite-accessors-function":"node_modules/standardized-audio-context/build/es2019/types/overwrite-accessors-function.js","./panner-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/panner-node-constructor.js","./panner-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/panner-node-constructor-factory.js","./panner-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/panner-node-renderer-factory.js","./panner-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/panner-node-renderer-factory-factory.js","./panning-model-type":"node_modules/standardized-audio-context/build/es2019/types/panning-model-type.js","./passive-audio-node-input-connection":"node_modules/standardized-audio-context/build/es2019/types/passive-audio-node-input-connection.js","./passive-audio-param-input-connection":"node_modules/standardized-audio-context/build/es2019/types/passive-audio-param-input-connection.js","./periodic-wave-constructor":"node_modules/standardized-audio-context/build/es2019/types/periodic-wave-constructor.js","./periodic-wave-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/periodic-wave-constructor-factory.js","./pick-element-from-set-function":"node_modules/standardized-audio-context/build/es2019/types/pick-element-from-set-function.js","./render-automation-factory":"node_modules/standardized-audio-context/build/es2019/types/render-automation-factory.js","./render-automation-function":"node_modules/standardized-audio-context/build/es2019/types/render-automation-function.js","./render-inputs-of-audio-node-factory":"node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-node-factory.js","./render-inputs-of-audio-node-function":"node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-node-function.js","./render-inputs-of-audio-param-factory":"node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-param-factory.js","./render-inputs-of-audio-param-function":"node_modules/standardized-audio-context/build/es2019/types/render-inputs-of-audio-param-function.js","./render-native-offline-audio-context-factory":"node_modules/standardized-audio-context/build/es2019/types/render-native-offline-audio-context-factory.js","./render-native-offline-audio-context-function":"node_modules/standardized-audio-context/build/es2019/types/render-native-offline-audio-context-function.js","./sanitize-audio-worklet-node-options-function":"node_modules/standardized-audio-context/build/es2019/types/sanitize-audio-worklet-node-options-function.js","./sanitize-channel-splitter-options-function":"node_modules/standardized-audio-context/build/es2019/types/sanitize-channel-splitter-options-function.js","./sanitize-periodic-wave-options-function":"node_modules/standardized-audio-context/build/es2019/types/sanitize-periodic-wave-options-function.js","./set-active-audio-worklet-node-inputs-factory":"node_modules/standardized-audio-context/build/es2019/types/set-active-audio-worklet-node-inputs-factory.js","./set-active-audio-worklet-node-inputs-function":"node_modules/standardized-audio-context/build/es2019/types/set-active-audio-worklet-node-inputs-function.js","./set-audio-node-tail-time-factory":"node_modules/standardized-audio-context/build/es2019/types/set-audio-node-tail-time-factory.js","./set-audio-node-tail-time-function":"node_modules/standardized-audio-context/build/es2019/types/set-audio-node-tail-time-function.js","./set-value-at-time-until-possible-function":"node_modules/standardized-audio-context/build/es2019/types/set-value-at-time-until-possible-function.js","./start-rendering-factory":"node_modules/standardized-audio-context/build/es2019/types/start-rendering-factory.js","./start-rendering-function":"node_modules/standardized-audio-context/build/es2019/types/start-rendering-function.js","./stereo-panner-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-constructor.js","./stereo-panner-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-constructor-factory.js","./stereo-panner-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-renderer-factory-factory.js","./stereo-panner-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/stereo-panner-node-renderer-factory.js","./test-audio-buffer-copy-channel-methods-subarray-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-audio-buffer-copy-channel-methods-subarray-support-factory.js","./test-audio-buffer-constructor-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-audio-buffer-constructor-support-factory.js","./test-audio-context-close-method-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-audio-context-close-method-support-factory.js","./test-audio-context-decode-audio-data-method-type-error-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-audio-context-decode-audio-data-method-type-error-support-factory.js","./test-audio-context-options-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-audio-context-options-support-factory.js","./test-audio-node-connect-method-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-audio-node-connect-method-support-factory.js","./test-audio-worklet-processor-no-outputs-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-audio-worklet-processor-no-outputs-support-factory.js","./test-audio-worklet-processor-post-message-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-audio-worklet-processor-post-message-support-factory.js","./test-channel-merger-node-channel-count-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-channel-merger-node-channel-count-support-factory.js","./test-constant-source-node-accurate-scheduling-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-constant-source-node-accurate-scheduling-support-factory.js","./test-convolver-node-buffer-reassignability-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-convolver-node-buffer-reassignability-support-factory.js","./test-convolver-node-channel-count-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-convolver-node-channel-count-support-factory.js","./test-is-secure-context-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-is-secure-context-support-factory.js","./test-media-stream-audio-source-node-media-stream-without-audio-track-support":"node_modules/standardized-audio-context/build/es2019/types/test-media-stream-audio-source-node-media-stream-without-audio-track-support.js","./test-offline-audio-context-current-time-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-offline-audio-context-current-time-support-factory.js","./test-stereo-panner-node-default-value-support-factory":"node_modules/standardized-audio-context/build/es2019/types/test-stereo-panner-node-default-value-support-factory.js","./unknown-error-factory":"node_modules/standardized-audio-context/build/es2019/types/unknown-error-factory.js","./unrendered-audio-worklet-node-store":"node_modules/standardized-audio-context/build/es2019/types/unrendered-audio-worklet-node-store.js","./unrendered-audio-worklet-nodes":"node_modules/standardized-audio-context/build/es2019/types/unrendered-audio-worklet-nodes.js","./wave-shaper-node-constructor":"node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-constructor.js","./wave-shaper-node-constructor-factory":"node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-constructor-factory.js","./wave-shaper-node-renderer-factory-factory":"node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-renderer-factory-factory.js","./wave-shaper-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/types/wave-shaper-node-renderer-factory.js","./window":"node_modules/standardized-audio-context/build/es2019/types/window.js","./window-factory":"node_modules/standardized-audio-context/build/es2019/types/window-factory.js","./wrap-audio-buffer-copy-channel-methods-factory":"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-factory.js","./wrap-audio-buffer-copy-channel-methods-function":"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-function.js","./wrap-audio-buffer-copy-channel-methods-out-of-bounds-factory":"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-out-of-bounds-factory.js","./wrap-audio-buffer-copy-channel-methods-out-of-bounds-function":"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-copy-channel-methods-out-of-bounds-function.js","./wrap-audio-buffer-source-node-start-method-offset-clamping-function":"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-start-method-offset-clamping-function.js","./wrap-audio-buffer-source-node-stop-method-nullified-buffer-factory":"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-stop-method-nullified-buffer-factory.js","./wrap-audio-buffer-source-node-stop-method-nullified-buffer-function":"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-buffer-source-node-stop-method-nullified-buffer-function.js","./wrap-audio-scheduled-source-node-stop-method-consecutive-calls-function":"node_modules/standardized-audio-context/build/es2019/types/wrap-audio-scheduled-source-node-stop-method-consecutive-calls-function.js","./wrap-channel-merger-node-factory":"node_modules/standardized-audio-context/build/es2019/types/wrap-channel-merger-node-factory.js","./wrap-channel-merger-node-function":"node_modules/standardized-audio-context/build/es2019/types/wrap-channel-merger-node-function.js","./wrap-event-listener-function":"node_modules/standardized-audio-context/build/es2019/types/wrap-event-listener-function.js"}],"node_modules/standardized-audio-context/build/es2019/module.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22155,7 +22155,7 @@ exports.isAnyOfflineAudioContext = isAnyOfflineAudioContext;
 const isSupported = () => (0, _isSupportedPromise.createIsSupportedPromise)(cacheTestResult, (0, _testAudioBufferCopyChannelMethodsSubarraySupport.createTestAudioBufferCopyChannelMethodsSubarraySupport)(nativeOfflineAudioContextConstructor), (0, _testAudioContextCloseMethodSupport.createTestAudioContextCloseMethodSupport)(nativeAudioContextConstructor), (0, _testAudioContextDecodeAudioDataMethodTypeErrorSupport.createTestAudioContextDecodeAudioDataMethodTypeErrorSupport)(nativeOfflineAudioContextConstructor), (0, _testAudioContextOptionsSupport.createTestAudioContextOptionsSupport)(nativeAudioContextConstructor), (0, _testAudioNodeConnectMethodSupport.createTestAudioNodeConnectMethodSupport)(nativeOfflineAudioContextConstructor), (0, _testAudioWorkletProcessorNoOutputsSupport.createTestAudioWorkletProcessorNoOutputsSupport)(nativeAudioWorkletNodeConstructor, nativeOfflineAudioContextConstructor), (0, _testChannelMergerNodeChannelCountSupport.createTestChannelMergerNodeChannelCountSupport)(nativeOfflineAudioContextConstructor), (0, _testConstantSourceNodeAccurateSchedulingSupport.createTestConstantSourceNodeAccurateSchedulingSupport)(nativeOfflineAudioContextConstructor), (0, _testConvolverNodeBufferReassignabilitySupport.createTestConvolverNodeBufferReassignabilitySupport)(nativeOfflineAudioContextConstructor), (0, _testConvolverNodeChannelCountSupport.createTestConvolverNodeChannelCountSupport)(nativeOfflineAudioContextConstructor), _testDomExceptionConstructorSupport.testDomExceptionConstructorSupport, (0, _testIsSecureContextSupport.createTestIsSecureContextSupport)(window), (0, _testMediaStreamAudioSourceNodeMediaStreamWithoutAudioTrackSupport.createTestMediaStreamAudioSourceNodeMediaStreamWithoutAudioTrackSupport)(nativeAudioContextConstructor), (0, _testStereoPannerNodeDefaultValueSupport.createTestStereoPannerNodeDefaultValueSupport)(nativeOfflineAudioContextConstructor), _testTransferablesSupport.testTransferablesSupport);
 
 exports.isSupported = isSupported;
-},{"automation-events":"../node_modules/automation-events/build/es5/bundle.js","./factories/abort-error":"../node_modules/standardized-audio-context/build/es2019/factories/abort-error.js","./factories/add-active-input-connection-to-audio-node":"../node_modules/standardized-audio-context/build/es2019/factories/add-active-input-connection-to-audio-node.js","./factories/add-audio-node-connections":"../node_modules/standardized-audio-context/build/es2019/factories/add-audio-node-connections.js","./factories/add-audio-param-connections":"../node_modules/standardized-audio-context/build/es2019/factories/add-audio-param-connections.js","./factories/add-audio-worklet-module":"../node_modules/standardized-audio-context/build/es2019/factories/add-audio-worklet-module.js","./factories/add-connection-to-audio-node":"../node_modules/standardized-audio-context/build/es2019/factories/add-connection-to-audio-node.js","./factories/add-passive-input-connection-to-audio-node":"../node_modules/standardized-audio-context/build/es2019/factories/add-passive-input-connection-to-audio-node.js","./factories/add-silent-connection":"../node_modules/standardized-audio-context/build/es2019/factories/add-silent-connection.js","./factories/add-unrendered-audio-worklet-node":"../node_modules/standardized-audio-context/build/es2019/factories/add-unrendered-audio-worklet-node.js","./factories/analyser-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/analyser-node-constructor.js","./factories/analyser-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/analyser-node-renderer-factory.js","./factories/audio-buffer-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-constructor.js","./factories/audio-buffer-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-source-node-constructor.js","./factories/audio-buffer-source-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-source-node-renderer-factory.js","./factories/audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/audio-context-constructor.js","./factories/audio-destination-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/audio-destination-node-constructor.js","./factories/audio-destination-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/audio-destination-node-renderer-factory.js","./factories/audio-listener-factory":"../node_modules/standardized-audio-context/build/es2019/factories/audio-listener-factory.js","./factories/audio-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/audio-node-constructor.js","./factories/audio-param-factory":"../node_modules/standardized-audio-context/build/es2019/factories/audio-param-factory.js","./factories/audio-param-renderer":"../node_modules/standardized-audio-context/build/es2019/factories/audio-param-renderer.js","./factories/audio-worklet-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/audio-worklet-node-constructor.js","./factories/audio-worklet-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/audio-worklet-node-renderer-factory.js","./factories/base-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/base-audio-context-constructor.js","./factories/biquad-filter-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/biquad-filter-node-constructor.js","./factories/biquad-filter-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/biquad-filter-node-renderer-factory.js","./factories/cache-test-result":"../node_modules/standardized-audio-context/build/es2019/factories/cache-test-result.js","./factories/channel-merger-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/channel-merger-node-constructor.js","./factories/channel-merger-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/channel-merger-node-renderer-factory.js","./factories/channel-splitter-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/channel-splitter-node-constructor.js","./factories/channel-splitter-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/channel-splitter-node-renderer-factory.js","./factories/connect-audio-param":"../node_modules/standardized-audio-context/build/es2019/factories/connect-audio-param.js","./factories/connect-multiple-outputs":"../node_modules/standardized-audio-context/build/es2019/factories/connect-multiple-outputs.js","./factories/connected-native-audio-buffer-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/connected-native-audio-buffer-source-node-factory.js","./factories/constant-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/constant-source-node-constructor.js","./factories/constant-source-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/constant-source-node-renderer-factory.js","./factories/convert-number-to-unsigned-long":"../node_modules/standardized-audio-context/build/es2019/factories/convert-number-to-unsigned-long.js","./factories/convolver-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/convolver-node-constructor.js","./factories/convolver-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/convolver-node-renderer-factory.js","./factories/create-native-offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/factories/create-native-offline-audio-context.js","./factories/data-clone-error":"../node_modules/standardized-audio-context/build/es2019/factories/data-clone-error.js","./factories/decode-audio-data":"../node_modules/standardized-audio-context/build/es2019/factories/decode-audio-data.js","./factories/decrement-cycle-counter":"../node_modules/standardized-audio-context/build/es2019/factories/decrement-cycle-counter.js","./factories/delay-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/delay-node-constructor.js","./factories/delay-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/delay-node-renderer-factory.js","./factories/delete-active-input-connection-to-audio-node":"../node_modules/standardized-audio-context/build/es2019/factories/delete-active-input-connection-to-audio-node.js","./factories/delete-unrendered-audio-worklet-node":"../node_modules/standardized-audio-context/build/es2019/factories/delete-unrendered-audio-worklet-node.js","./factories/detect-cycles":"../node_modules/standardized-audio-context/build/es2019/factories/detect-cycles.js","./factories/disconnect-multiple-outputs":"../node_modules/standardized-audio-context/build/es2019/factories/disconnect-multiple-outputs.js","./factories/dynamics-compressor-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/dynamics-compressor-node-constructor.js","./factories/dynamics-compressor-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/dynamics-compressor-node-renderer-factory.js","./factories/encoding-error":"../node_modules/standardized-audio-context/build/es2019/factories/encoding-error.js","./factories/evaluate-source":"../node_modules/standardized-audio-context/build/es2019/factories/evaluate-source.js","./factories/event-target-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/event-target-constructor.js","./factories/expose-current-frame-and-current-time":"../node_modules/standardized-audio-context/build/es2019/factories/expose-current-frame-and-current-time.js","./factories/fetch-source":"../node_modules/standardized-audio-context/build/es2019/factories/fetch-source.js","./factories/gain-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/gain-node-constructor.js","./factories/gain-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/gain-node-renderer-factory.js","./factories/get-active-audio-worklet-node-inputs":"../node_modules/standardized-audio-context/build/es2019/factories/get-active-audio-worklet-node-inputs.js","./factories/get-audio-node-renderer":"../node_modules/standardized-audio-context/build/es2019/factories/get-audio-node-renderer.js","./factories/get-audio-node-tail-time":"../node_modules/standardized-audio-context/build/es2019/factories/get-audio-node-tail-time.js","./factories/get-audio-param-renderer":"../node_modules/standardized-audio-context/build/es2019/factories/get-audio-param-renderer.js","./factories/get-backup-offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/factories/get-backup-offline-audio-context.js","./factories/get-native-context":"../node_modules/standardized-audio-context/build/es2019/factories/get-native-context.js","./factories/get-or-create-backup-offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/factories/get-or-create-backup-offline-audio-context.js","./factories/get-unrendered-audio-worklet-nodes":"../node_modules/standardized-audio-context/build/es2019/factories/get-unrendered-audio-worklet-nodes.js","./factories/iir-filter-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/iir-filter-node-constructor.js","./factories/iir-filter-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/iir-filter-node-renderer-factory.js","./factories/increment-cycle-counter-factory":"../node_modules/standardized-audio-context/build/es2019/factories/increment-cycle-counter-factory.js","./factories/index-size-error":"../node_modules/standardized-audio-context/build/es2019/factories/index-size-error.js","./factories/invalid-access-error":"../node_modules/standardized-audio-context/build/es2019/factories/invalid-access-error.js","./factories/invalid-state-error":"../node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js","./factories/is-any-audio-context":"../node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-context.js","./factories/is-any-audio-node":"../node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-node.js","./factories/is-any-audio-param":"../node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-param.js","./factories/is-any-offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/factories/is-any-offline-audio-context.js","./factories/is-native-audio-context":"../node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-context.js","./factories/is-native-audio-node":"../node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-node.js","./factories/is-native-audio-param":"../node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-param.js","./factories/is-native-context":"../node_modules/standardized-audio-context/build/es2019/factories/is-native-context.js","./factories/is-native-offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/factories/is-native-offline-audio-context.js","./factories/is-secure-context":"../node_modules/standardized-audio-context/build/es2019/factories/is-secure-context.js","./factories/is-supported-promise":"../node_modules/standardized-audio-context/build/es2019/factories/is-supported-promise.js","./factories/media-element-audio-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/media-element-audio-source-node-constructor.js","./factories/media-stream-audio-destination-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/media-stream-audio-destination-node-constructor.js","./factories/media-stream-audio-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/media-stream-audio-source-node-constructor.js","./factories/media-stream-track-audio-source-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/media-stream-track-audio-source-node-constructor.js","./factories/minimal-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/minimal-audio-context-constructor.js","./factories/minimal-base-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/minimal-base-audio-context-constructor.js","./factories/minimal-offline-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/minimal-offline-audio-context-constructor.js","./factories/monitor-connections":"../node_modules/standardized-audio-context/build/es2019/factories/monitor-connections.js","./factories/native-analyser-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-analyser-node-factory.js","./factories/native-audio-buffer-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-buffer-constructor.js","./factories/native-audio-buffer-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-buffer-source-node-factory.js","./factories/native-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-context-constructor.js","./factories/native-audio-destination-node":"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-destination-node.js","./factories/native-audio-worklet-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-constructor.js","./factories/native-audio-worklet-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-factory.js","./factories/native-audio-worklet-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-faker-factory.js","./factories/native-biquad-filter-node":"../node_modules/standardized-audio-context/build/es2019/factories/native-biquad-filter-node.js","./factories/native-channel-merger-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-channel-merger-node-factory.js","./factories/native-channel-splitter-node":"../node_modules/standardized-audio-context/build/es2019/factories/native-channel-splitter-node.js","./factories/native-constant-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-constant-source-node-factory.js","./factories/native-constant-source-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-constant-source-node-faker-factory.js","./factories/native-convolver-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-convolver-node-factory.js","./factories/native-delay-node":"../node_modules/standardized-audio-context/build/es2019/factories/native-delay-node.js","./factories/native-dynamics-compressor-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-dynamics-compressor-node-factory.js","./factories/native-gain-node":"../node_modules/standardized-audio-context/build/es2019/factories/native-gain-node.js","./factories/native-iir-filter-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-iir-filter-node-factory.js","./factories/native-iir-filter-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-iir-filter-node-faker-factory.js","./factories/native-media-element-audio-source-node":"../node_modules/standardized-audio-context/build/es2019/factories/native-media-element-audio-source-node.js","./factories/native-media-stream-audio-destination-node":"../node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-audio-destination-node.js","./factories/native-media-stream-audio-source-node":"../node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-audio-source-node.js","./factories/native-media-stream-track-audio-source-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-track-audio-source-node-factory.js","./factories/native-offline-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/native-offline-audio-context-constructor.js","./factories/native-oscillator-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-oscillator-node-factory.js","./factories/native-panner-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-panner-node-factory.js","./factories/native-panner-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-panner-node-faker-factory.js","./factories/native-periodic-wave-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-periodic-wave-factory.js","./factories/native-script-processor-node":"../node_modules/standardized-audio-context/build/es2019/factories/native-script-processor-node.js","./factories/native-stereo-panner-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-stereo-panner-node-factory.js","./factories/native-stereo-panner-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-stereo-panner-node-faker-factory.js","./factories/native-wave-shaper-node-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-wave-shaper-node-factory.js","./factories/native-wave-shaper-node-faker-factory":"../node_modules/standardized-audio-context/build/es2019/factories/native-wave-shaper-node-faker-factory.js","./factories/not-supported-error":"../node_modules/standardized-audio-context/build/es2019/factories/not-supported-error.js","./factories/offline-audio-context-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/offline-audio-context-constructor.js","./factories/oscillator-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/oscillator-node-constructor.js","./factories/oscillator-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/oscillator-node-renderer-factory.js","./factories/panner-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/panner-node-constructor.js","./factories/panner-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/panner-node-renderer-factory.js","./factories/periodic-wave-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/periodic-wave-constructor.js","./factories/render-automation":"../node_modules/standardized-audio-context/build/es2019/factories/render-automation.js","./factories/render-inputs-of-audio-node":"../node_modules/standardized-audio-context/build/es2019/factories/render-inputs-of-audio-node.js","./factories/render-inputs-of-audio-param":"../node_modules/standardized-audio-context/build/es2019/factories/render-inputs-of-audio-param.js","./factories/render-native-offline-audio-context":"../node_modules/standardized-audio-context/build/es2019/factories/render-native-offline-audio-context.js","./factories/set-active-audio-worklet-node-inputs":"../node_modules/standardized-audio-context/build/es2019/factories/set-active-audio-worklet-node-inputs.js","./factories/set-audio-node-tail-time":"../node_modules/standardized-audio-context/build/es2019/factories/set-audio-node-tail-time.js","./factories/start-rendering":"../node_modules/standardized-audio-context/build/es2019/factories/start-rendering.js","./factories/stereo-panner-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/stereo-panner-node-constructor.js","./factories/stereo-panner-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/stereo-panner-node-renderer-factory.js","./factories/test-audio-buffer-constructor-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-buffer-constructor-support.js","./factories/test-audio-buffer-copy-channel-methods-subarray-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-buffer-copy-channel-methods-subarray-support.js","./factories/test-audio-context-close-method-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-close-method-support.js","./factories/test-audio-context-decode-audio-data-method-type-error-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-decode-audio-data-method-type-error-support.js","./factories/test-audio-context-options-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-options-support.js","./factories/test-audio-node-connect-method-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-node-connect-method-support.js","./factories/test-audio-worklet-processor-no-outputs-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-worklet-processor-no-outputs-support.js","./factories/test-audio-worklet-processor-post-message-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-audio-worklet-processor-post-message-support.js","./factories/test-channel-merger-node-channel-count-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-channel-merger-node-channel-count-support.js","./factories/test-constant-source-node-accurate-scheduling-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-constant-source-node-accurate-scheduling-support.js","./factories/test-convolver-node-buffer-reassignability-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-convolver-node-buffer-reassignability-support.js","./factories/test-convolver-node-channel-count-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-convolver-node-channel-count-support.js","./factories/test-is-secure-context-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-is-secure-context-support.js","./factories/test-media-stream-audio-source-node-media-stream-without-audio-track-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-media-stream-audio-source-node-media-stream-without-audio-track-support.js","./factories/test-offline-audio-context-current-time-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-offline-audio-context-current-time-support.js","./factories/test-stereo-panner-node-default-value-support":"../node_modules/standardized-audio-context/build/es2019/factories/test-stereo-panner-node-default-value-support.js","./factories/unknown-error":"../node_modules/standardized-audio-context/build/es2019/factories/unknown-error.js","./factories/wave-shaper-node-constructor":"../node_modules/standardized-audio-context/build/es2019/factories/wave-shaper-node-constructor.js","./factories/wave-shaper-node-renderer-factory":"../node_modules/standardized-audio-context/build/es2019/factories/wave-shaper-node-renderer-factory.js","./factories/window":"../node_modules/standardized-audio-context/build/es2019/factories/window.js","./factories/wrap-audio-buffer-copy-channel-methods":"../node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-copy-channel-methods.js","./factories/wrap-audio-buffer-copy-channel-methods-out-of-bounds":"../node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-copy-channel-methods-out-of-bounds.js","./factories/wrap-audio-buffer-source-node-stop-method-nullified-buffer":"../node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-source-node-stop-method-nullified-buffer.js","./factories/wrap-channel-merger-node":"../node_modules/standardized-audio-context/build/es2019/factories/wrap-channel-merger-node.js","./globals":"../node_modules/standardized-audio-context/build/es2019/globals.js","./helpers/connect-native-audio-node-to-native-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/connect-native-audio-node-to-native-audio-node.js","./helpers/disconnect-native-audio-node-from-native-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/disconnect-native-audio-node-from-native-audio-node.js","./helpers/get-audio-node-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js","./helpers/get-audio-param-connections":"../node_modules/standardized-audio-context/build/es2019/helpers/get-audio-param-connections.js","./helpers/get-event-listeners-of-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js","./helpers/get-native-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-node.js","./helpers/get-native-audio-param":"../node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-param.js","./helpers/get-value-for-key":"../node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js","./helpers/insert-element-in-set":"../node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js","./helpers/is-active-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","./helpers/is-dc-curve":"../node_modules/standardized-audio-context/build/es2019/helpers/is-dc-curve.js","./helpers/is-part-of-a-cycle":"../node_modules/standardized-audio-context/build/es2019/helpers/is-part-of-a-cycle.js","./helpers/is-passive-audio-node":"../node_modules/standardized-audio-context/build/es2019/helpers/is-passive-audio-node.js","./helpers/overwrite-accessors":"../node_modules/standardized-audio-context/build/es2019/helpers/overwrite-accessors.js","./helpers/pick-element-from-set":"../node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js","./helpers/sanitize-audio-worklet-node-options":"../node_modules/standardized-audio-context/build/es2019/helpers/sanitize-audio-worklet-node-options.js","./helpers/sanitize-channel-splitter-options":"../node_modules/standardized-audio-context/build/es2019/helpers/sanitize-channel-splitter-options.js","./helpers/sanitize-periodic-wave-options":"../node_modules/standardized-audio-context/build/es2019/helpers/sanitize-periodic-wave-options.js","./helpers/set-value-at-time-until-possible":"../node_modules/standardized-audio-context/build/es2019/helpers/set-value-at-time-until-possible.js","./helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support.js","./helpers/test-audio-buffer-source-node-start-method-consecutive-calls-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-start-method-consecutive-calls-support.js","./helpers/test-audio-buffer-source-node-start-method-offset-clamping-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-start-method-offset-clamping-support.js","./helpers/test-audio-buffer-source-node-stop-method-nullified-buffer-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-stop-method-nullified-buffer-support.js","./helpers/test-audio-scheduled-source-node-start-method-negative-parameters-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-start-method-negative-parameters-support.js","./helpers/test-audio-scheduled-source-node-stop-method-consecutive-calls-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-stop-method-consecutive-calls-support.js","./helpers/test-audio-scheduled-source-node-stop-method-negative-parameters-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-stop-method-negative-parameters-support.js","./helpers/test-dom-exception-constructor-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-dom-exception-constructor-support.js","./helpers/test-promise-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js","./helpers/test-transferables-support":"../node_modules/standardized-audio-context/build/es2019/helpers/test-transferables-support.js","./helpers/wrap-audio-buffer-source-node-start-method-offset-clamping":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-source-node-start-method-offset-clamping.js","./helpers/wrap-audio-scheduled-source-node-stop-method-consecutive-calls":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-consecutive-calls.js","./helpers/wrap-event-listener":"../node_modules/standardized-audio-context/build/es2019/helpers/wrap-event-listener.js","./interfaces/index":"../node_modules/standardized-audio-context/build/es2019/interfaces/index.js","./types/index":"../node_modules/standardized-audio-context/build/es2019/types/index.js"}],"../node_modules/tone/build/esm/core/util/Debug.js":[function(require,module,exports) {
+},{"automation-events":"node_modules/automation-events/build/es5/bundle.js","./factories/abort-error":"node_modules/standardized-audio-context/build/es2019/factories/abort-error.js","./factories/add-active-input-connection-to-audio-node":"node_modules/standardized-audio-context/build/es2019/factories/add-active-input-connection-to-audio-node.js","./factories/add-audio-node-connections":"node_modules/standardized-audio-context/build/es2019/factories/add-audio-node-connections.js","./factories/add-audio-param-connections":"node_modules/standardized-audio-context/build/es2019/factories/add-audio-param-connections.js","./factories/add-audio-worklet-module":"node_modules/standardized-audio-context/build/es2019/factories/add-audio-worklet-module.js","./factories/add-connection-to-audio-node":"node_modules/standardized-audio-context/build/es2019/factories/add-connection-to-audio-node.js","./factories/add-passive-input-connection-to-audio-node":"node_modules/standardized-audio-context/build/es2019/factories/add-passive-input-connection-to-audio-node.js","./factories/add-silent-connection":"node_modules/standardized-audio-context/build/es2019/factories/add-silent-connection.js","./factories/add-unrendered-audio-worklet-node":"node_modules/standardized-audio-context/build/es2019/factories/add-unrendered-audio-worklet-node.js","./factories/analyser-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/analyser-node-constructor.js","./factories/analyser-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/analyser-node-renderer-factory.js","./factories/audio-buffer-constructor":"node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-constructor.js","./factories/audio-buffer-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-source-node-constructor.js","./factories/audio-buffer-source-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/audio-buffer-source-node-renderer-factory.js","./factories/audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/factories/audio-context-constructor.js","./factories/audio-destination-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/audio-destination-node-constructor.js","./factories/audio-destination-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/audio-destination-node-renderer-factory.js","./factories/audio-listener-factory":"node_modules/standardized-audio-context/build/es2019/factories/audio-listener-factory.js","./factories/audio-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/audio-node-constructor.js","./factories/audio-param-factory":"node_modules/standardized-audio-context/build/es2019/factories/audio-param-factory.js","./factories/audio-param-renderer":"node_modules/standardized-audio-context/build/es2019/factories/audio-param-renderer.js","./factories/audio-worklet-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/audio-worklet-node-constructor.js","./factories/audio-worklet-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/audio-worklet-node-renderer-factory.js","./factories/base-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/factories/base-audio-context-constructor.js","./factories/biquad-filter-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/biquad-filter-node-constructor.js","./factories/biquad-filter-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/biquad-filter-node-renderer-factory.js","./factories/cache-test-result":"node_modules/standardized-audio-context/build/es2019/factories/cache-test-result.js","./factories/channel-merger-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/channel-merger-node-constructor.js","./factories/channel-merger-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/channel-merger-node-renderer-factory.js","./factories/channel-splitter-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/channel-splitter-node-constructor.js","./factories/channel-splitter-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/channel-splitter-node-renderer-factory.js","./factories/connect-audio-param":"node_modules/standardized-audio-context/build/es2019/factories/connect-audio-param.js","./factories/connect-multiple-outputs":"node_modules/standardized-audio-context/build/es2019/factories/connect-multiple-outputs.js","./factories/connected-native-audio-buffer-source-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/connected-native-audio-buffer-source-node-factory.js","./factories/constant-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/constant-source-node-constructor.js","./factories/constant-source-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/constant-source-node-renderer-factory.js","./factories/convert-number-to-unsigned-long":"node_modules/standardized-audio-context/build/es2019/factories/convert-number-to-unsigned-long.js","./factories/convolver-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/convolver-node-constructor.js","./factories/convolver-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/convolver-node-renderer-factory.js","./factories/create-native-offline-audio-context":"node_modules/standardized-audio-context/build/es2019/factories/create-native-offline-audio-context.js","./factories/data-clone-error":"node_modules/standardized-audio-context/build/es2019/factories/data-clone-error.js","./factories/decode-audio-data":"node_modules/standardized-audio-context/build/es2019/factories/decode-audio-data.js","./factories/decrement-cycle-counter":"node_modules/standardized-audio-context/build/es2019/factories/decrement-cycle-counter.js","./factories/delay-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/delay-node-constructor.js","./factories/delay-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/delay-node-renderer-factory.js","./factories/delete-active-input-connection-to-audio-node":"node_modules/standardized-audio-context/build/es2019/factories/delete-active-input-connection-to-audio-node.js","./factories/delete-unrendered-audio-worklet-node":"node_modules/standardized-audio-context/build/es2019/factories/delete-unrendered-audio-worklet-node.js","./factories/detect-cycles":"node_modules/standardized-audio-context/build/es2019/factories/detect-cycles.js","./factories/disconnect-multiple-outputs":"node_modules/standardized-audio-context/build/es2019/factories/disconnect-multiple-outputs.js","./factories/dynamics-compressor-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/dynamics-compressor-node-constructor.js","./factories/dynamics-compressor-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/dynamics-compressor-node-renderer-factory.js","./factories/encoding-error":"node_modules/standardized-audio-context/build/es2019/factories/encoding-error.js","./factories/evaluate-source":"node_modules/standardized-audio-context/build/es2019/factories/evaluate-source.js","./factories/event-target-constructor":"node_modules/standardized-audio-context/build/es2019/factories/event-target-constructor.js","./factories/expose-current-frame-and-current-time":"node_modules/standardized-audio-context/build/es2019/factories/expose-current-frame-and-current-time.js","./factories/fetch-source":"node_modules/standardized-audio-context/build/es2019/factories/fetch-source.js","./factories/gain-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/gain-node-constructor.js","./factories/gain-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/gain-node-renderer-factory.js","./factories/get-active-audio-worklet-node-inputs":"node_modules/standardized-audio-context/build/es2019/factories/get-active-audio-worklet-node-inputs.js","./factories/get-audio-node-renderer":"node_modules/standardized-audio-context/build/es2019/factories/get-audio-node-renderer.js","./factories/get-audio-node-tail-time":"node_modules/standardized-audio-context/build/es2019/factories/get-audio-node-tail-time.js","./factories/get-audio-param-renderer":"node_modules/standardized-audio-context/build/es2019/factories/get-audio-param-renderer.js","./factories/get-backup-offline-audio-context":"node_modules/standardized-audio-context/build/es2019/factories/get-backup-offline-audio-context.js","./factories/get-native-context":"node_modules/standardized-audio-context/build/es2019/factories/get-native-context.js","./factories/get-or-create-backup-offline-audio-context":"node_modules/standardized-audio-context/build/es2019/factories/get-or-create-backup-offline-audio-context.js","./factories/get-unrendered-audio-worklet-nodes":"node_modules/standardized-audio-context/build/es2019/factories/get-unrendered-audio-worklet-nodes.js","./factories/iir-filter-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/iir-filter-node-constructor.js","./factories/iir-filter-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/iir-filter-node-renderer-factory.js","./factories/increment-cycle-counter-factory":"node_modules/standardized-audio-context/build/es2019/factories/increment-cycle-counter-factory.js","./factories/index-size-error":"node_modules/standardized-audio-context/build/es2019/factories/index-size-error.js","./factories/invalid-access-error":"node_modules/standardized-audio-context/build/es2019/factories/invalid-access-error.js","./factories/invalid-state-error":"node_modules/standardized-audio-context/build/es2019/factories/invalid-state-error.js","./factories/is-any-audio-context":"node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-context.js","./factories/is-any-audio-node":"node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-node.js","./factories/is-any-audio-param":"node_modules/standardized-audio-context/build/es2019/factories/is-any-audio-param.js","./factories/is-any-offline-audio-context":"node_modules/standardized-audio-context/build/es2019/factories/is-any-offline-audio-context.js","./factories/is-native-audio-context":"node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-context.js","./factories/is-native-audio-node":"node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-node.js","./factories/is-native-audio-param":"node_modules/standardized-audio-context/build/es2019/factories/is-native-audio-param.js","./factories/is-native-context":"node_modules/standardized-audio-context/build/es2019/factories/is-native-context.js","./factories/is-native-offline-audio-context":"node_modules/standardized-audio-context/build/es2019/factories/is-native-offline-audio-context.js","./factories/is-secure-context":"node_modules/standardized-audio-context/build/es2019/factories/is-secure-context.js","./factories/is-supported-promise":"node_modules/standardized-audio-context/build/es2019/factories/is-supported-promise.js","./factories/media-element-audio-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/media-element-audio-source-node-constructor.js","./factories/media-stream-audio-destination-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/media-stream-audio-destination-node-constructor.js","./factories/media-stream-audio-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/media-stream-audio-source-node-constructor.js","./factories/media-stream-track-audio-source-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/media-stream-track-audio-source-node-constructor.js","./factories/minimal-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/factories/minimal-audio-context-constructor.js","./factories/minimal-base-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/factories/minimal-base-audio-context-constructor.js","./factories/minimal-offline-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/factories/minimal-offline-audio-context-constructor.js","./factories/monitor-connections":"node_modules/standardized-audio-context/build/es2019/factories/monitor-connections.js","./factories/native-analyser-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-analyser-node-factory.js","./factories/native-audio-buffer-constructor":"node_modules/standardized-audio-context/build/es2019/factories/native-audio-buffer-constructor.js","./factories/native-audio-buffer-source-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-audio-buffer-source-node-factory.js","./factories/native-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/factories/native-audio-context-constructor.js","./factories/native-audio-destination-node":"node_modules/standardized-audio-context/build/es2019/factories/native-audio-destination-node.js","./factories/native-audio-worklet-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-constructor.js","./factories/native-audio-worklet-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-factory.js","./factories/native-audio-worklet-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-audio-worklet-node-faker-factory.js","./factories/native-biquad-filter-node":"node_modules/standardized-audio-context/build/es2019/factories/native-biquad-filter-node.js","./factories/native-channel-merger-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-channel-merger-node-factory.js","./factories/native-channel-splitter-node":"node_modules/standardized-audio-context/build/es2019/factories/native-channel-splitter-node.js","./factories/native-constant-source-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-constant-source-node-factory.js","./factories/native-constant-source-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-constant-source-node-faker-factory.js","./factories/native-convolver-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-convolver-node-factory.js","./factories/native-delay-node":"node_modules/standardized-audio-context/build/es2019/factories/native-delay-node.js","./factories/native-dynamics-compressor-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-dynamics-compressor-node-factory.js","./factories/native-gain-node":"node_modules/standardized-audio-context/build/es2019/factories/native-gain-node.js","./factories/native-iir-filter-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-iir-filter-node-factory.js","./factories/native-iir-filter-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-iir-filter-node-faker-factory.js","./factories/native-media-element-audio-source-node":"node_modules/standardized-audio-context/build/es2019/factories/native-media-element-audio-source-node.js","./factories/native-media-stream-audio-destination-node":"node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-audio-destination-node.js","./factories/native-media-stream-audio-source-node":"node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-audio-source-node.js","./factories/native-media-stream-track-audio-source-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-media-stream-track-audio-source-node-factory.js","./factories/native-offline-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/factories/native-offline-audio-context-constructor.js","./factories/native-oscillator-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-oscillator-node-factory.js","./factories/native-panner-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-panner-node-factory.js","./factories/native-panner-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-panner-node-faker-factory.js","./factories/native-periodic-wave-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-periodic-wave-factory.js","./factories/native-script-processor-node":"node_modules/standardized-audio-context/build/es2019/factories/native-script-processor-node.js","./factories/native-stereo-panner-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-stereo-panner-node-factory.js","./factories/native-stereo-panner-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-stereo-panner-node-faker-factory.js","./factories/native-wave-shaper-node-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-wave-shaper-node-factory.js","./factories/native-wave-shaper-node-faker-factory":"node_modules/standardized-audio-context/build/es2019/factories/native-wave-shaper-node-faker-factory.js","./factories/not-supported-error":"node_modules/standardized-audio-context/build/es2019/factories/not-supported-error.js","./factories/offline-audio-context-constructor":"node_modules/standardized-audio-context/build/es2019/factories/offline-audio-context-constructor.js","./factories/oscillator-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/oscillator-node-constructor.js","./factories/oscillator-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/oscillator-node-renderer-factory.js","./factories/panner-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/panner-node-constructor.js","./factories/panner-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/panner-node-renderer-factory.js","./factories/periodic-wave-constructor":"node_modules/standardized-audio-context/build/es2019/factories/periodic-wave-constructor.js","./factories/render-automation":"node_modules/standardized-audio-context/build/es2019/factories/render-automation.js","./factories/render-inputs-of-audio-node":"node_modules/standardized-audio-context/build/es2019/factories/render-inputs-of-audio-node.js","./factories/render-inputs-of-audio-param":"node_modules/standardized-audio-context/build/es2019/factories/render-inputs-of-audio-param.js","./factories/render-native-offline-audio-context":"node_modules/standardized-audio-context/build/es2019/factories/render-native-offline-audio-context.js","./factories/set-active-audio-worklet-node-inputs":"node_modules/standardized-audio-context/build/es2019/factories/set-active-audio-worklet-node-inputs.js","./factories/set-audio-node-tail-time":"node_modules/standardized-audio-context/build/es2019/factories/set-audio-node-tail-time.js","./factories/start-rendering":"node_modules/standardized-audio-context/build/es2019/factories/start-rendering.js","./factories/stereo-panner-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/stereo-panner-node-constructor.js","./factories/stereo-panner-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/stereo-panner-node-renderer-factory.js","./factories/test-audio-buffer-constructor-support":"node_modules/standardized-audio-context/build/es2019/factories/test-audio-buffer-constructor-support.js","./factories/test-audio-buffer-copy-channel-methods-subarray-support":"node_modules/standardized-audio-context/build/es2019/factories/test-audio-buffer-copy-channel-methods-subarray-support.js","./factories/test-audio-context-close-method-support":"node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-close-method-support.js","./factories/test-audio-context-decode-audio-data-method-type-error-support":"node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-decode-audio-data-method-type-error-support.js","./factories/test-audio-context-options-support":"node_modules/standardized-audio-context/build/es2019/factories/test-audio-context-options-support.js","./factories/test-audio-node-connect-method-support":"node_modules/standardized-audio-context/build/es2019/factories/test-audio-node-connect-method-support.js","./factories/test-audio-worklet-processor-no-outputs-support":"node_modules/standardized-audio-context/build/es2019/factories/test-audio-worklet-processor-no-outputs-support.js","./factories/test-audio-worklet-processor-post-message-support":"node_modules/standardized-audio-context/build/es2019/factories/test-audio-worklet-processor-post-message-support.js","./factories/test-channel-merger-node-channel-count-support":"node_modules/standardized-audio-context/build/es2019/factories/test-channel-merger-node-channel-count-support.js","./factories/test-constant-source-node-accurate-scheduling-support":"node_modules/standardized-audio-context/build/es2019/factories/test-constant-source-node-accurate-scheduling-support.js","./factories/test-convolver-node-buffer-reassignability-support":"node_modules/standardized-audio-context/build/es2019/factories/test-convolver-node-buffer-reassignability-support.js","./factories/test-convolver-node-channel-count-support":"node_modules/standardized-audio-context/build/es2019/factories/test-convolver-node-channel-count-support.js","./factories/test-is-secure-context-support":"node_modules/standardized-audio-context/build/es2019/factories/test-is-secure-context-support.js","./factories/test-media-stream-audio-source-node-media-stream-without-audio-track-support":"node_modules/standardized-audio-context/build/es2019/factories/test-media-stream-audio-source-node-media-stream-without-audio-track-support.js","./factories/test-offline-audio-context-current-time-support":"node_modules/standardized-audio-context/build/es2019/factories/test-offline-audio-context-current-time-support.js","./factories/test-stereo-panner-node-default-value-support":"node_modules/standardized-audio-context/build/es2019/factories/test-stereo-panner-node-default-value-support.js","./factories/unknown-error":"node_modules/standardized-audio-context/build/es2019/factories/unknown-error.js","./factories/wave-shaper-node-constructor":"node_modules/standardized-audio-context/build/es2019/factories/wave-shaper-node-constructor.js","./factories/wave-shaper-node-renderer-factory":"node_modules/standardized-audio-context/build/es2019/factories/wave-shaper-node-renderer-factory.js","./factories/window":"node_modules/standardized-audio-context/build/es2019/factories/window.js","./factories/wrap-audio-buffer-copy-channel-methods":"node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-copy-channel-methods.js","./factories/wrap-audio-buffer-copy-channel-methods-out-of-bounds":"node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-copy-channel-methods-out-of-bounds.js","./factories/wrap-audio-buffer-source-node-stop-method-nullified-buffer":"node_modules/standardized-audio-context/build/es2019/factories/wrap-audio-buffer-source-node-stop-method-nullified-buffer.js","./factories/wrap-channel-merger-node":"node_modules/standardized-audio-context/build/es2019/factories/wrap-channel-merger-node.js","./globals":"node_modules/standardized-audio-context/build/es2019/globals.js","./helpers/connect-native-audio-node-to-native-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/connect-native-audio-node-to-native-audio-node.js","./helpers/disconnect-native-audio-node-from-native-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/disconnect-native-audio-node-from-native-audio-node.js","./helpers/get-audio-node-connections":"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-node-connections.js","./helpers/get-audio-param-connections":"node_modules/standardized-audio-context/build/es2019/helpers/get-audio-param-connections.js","./helpers/get-event-listeners-of-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/get-event-listeners-of-audio-node.js","./helpers/get-native-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-node.js","./helpers/get-native-audio-param":"node_modules/standardized-audio-context/build/es2019/helpers/get-native-audio-param.js","./helpers/get-value-for-key":"node_modules/standardized-audio-context/build/es2019/helpers/get-value-for-key.js","./helpers/insert-element-in-set":"node_modules/standardized-audio-context/build/es2019/helpers/insert-element-in-set.js","./helpers/is-active-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/is-active-audio-node.js","./helpers/is-dc-curve":"node_modules/standardized-audio-context/build/es2019/helpers/is-dc-curve.js","./helpers/is-part-of-a-cycle":"node_modules/standardized-audio-context/build/es2019/helpers/is-part-of-a-cycle.js","./helpers/is-passive-audio-node":"node_modules/standardized-audio-context/build/es2019/helpers/is-passive-audio-node.js","./helpers/overwrite-accessors":"node_modules/standardized-audio-context/build/es2019/helpers/overwrite-accessors.js","./helpers/pick-element-from-set":"node_modules/standardized-audio-context/build/es2019/helpers/pick-element-from-set.js","./helpers/sanitize-audio-worklet-node-options":"node_modules/standardized-audio-context/build/es2019/helpers/sanitize-audio-worklet-node-options.js","./helpers/sanitize-channel-splitter-options":"node_modules/standardized-audio-context/build/es2019/helpers/sanitize-channel-splitter-options.js","./helpers/sanitize-periodic-wave-options":"node_modules/standardized-audio-context/build/es2019/helpers/sanitize-periodic-wave-options.js","./helpers/set-value-at-time-until-possible":"node_modules/standardized-audio-context/build/es2019/helpers/set-value-at-time-until-possible.js","./helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-copy-channel-methods-out-of-bounds-support.js","./helpers/test-audio-buffer-source-node-start-method-consecutive-calls-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-start-method-consecutive-calls-support.js","./helpers/test-audio-buffer-source-node-start-method-offset-clamping-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-start-method-offset-clamping-support.js","./helpers/test-audio-buffer-source-node-stop-method-nullified-buffer-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-buffer-source-node-stop-method-nullified-buffer-support.js","./helpers/test-audio-scheduled-source-node-start-method-negative-parameters-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-start-method-negative-parameters-support.js","./helpers/test-audio-scheduled-source-node-stop-method-consecutive-calls-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-stop-method-consecutive-calls-support.js","./helpers/test-audio-scheduled-source-node-stop-method-negative-parameters-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-audio-scheduled-source-node-stop-method-negative-parameters-support.js","./helpers/test-dom-exception-constructor-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-dom-exception-constructor-support.js","./helpers/test-promise-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-promise-support.js","./helpers/test-transferables-support":"node_modules/standardized-audio-context/build/es2019/helpers/test-transferables-support.js","./helpers/wrap-audio-buffer-source-node-start-method-offset-clamping":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-buffer-source-node-start-method-offset-clamping.js","./helpers/wrap-audio-scheduled-source-node-stop-method-consecutive-calls":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-audio-scheduled-source-node-stop-method-consecutive-calls.js","./helpers/wrap-event-listener":"node_modules/standardized-audio-context/build/es2019/helpers/wrap-event-listener.js","./interfaces/index":"node_modules/standardized-audio-context/build/es2019/interfaces/index.js","./types/index":"node_modules/standardized-audio-context/build/es2019/types/index.js"}],"node_modules/tone/build/esm/core/util/Debug.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22228,7 +22228,7 @@ function log(...args) {
 function warn(...args) {
   defaultLogger.warn(...args);
 }
-},{}],"../node_modules/tone/build/esm/core/util/TypeCheck.js":[function(require,module,exports) {
+},{}],"node_modules/tone/build/esm/core/util/TypeCheck.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22315,7 +22315,7 @@ function isString(arg) {
 function isNote(arg) {
   return isString(arg) && /^([a-g]{1}(?:b|#|x|bb)?)(-?[0-9]+)/i.test(arg);
 }
-},{}],"../node_modules/tone/build/esm/core/context/AudioContext.js":[function(require,module,exports) {
+},{}],"node_modules/tone/build/esm/core/context/AudioContext.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22378,7 +22378,7 @@ function createAudioWorkletNode(context, name, options) {
  * functionality is supported within the currently used browse.
  * Taken from [standardized-audio-context](https://github.com/chrisguttandin/standardized-audio-context#issupported)
  */
-},{"standardized-audio-context":"../node_modules/standardized-audio-context/build/es2019/module.js","../util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js"}],"../node_modules/tslib/tslib.es6.js":[function(require,module,exports) {
+},{"standardized-audio-context":"node_modules/standardized-audio-context/build/es2019/module.js","../util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js"}],"node_modules/tslib/tslib.es6.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22863,7 +22863,7 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
   privateMap.set(receiver, value);
   return value;
 }
-},{}],"../node_modules/tone/build/esm/core/clock/Ticker.js":[function(require,module,exports) {
+},{}],"node_modules/tone/build/esm/core/clock/Ticker.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23006,7 +23006,7 @@ class Ticker {
 }
 
 exports.Ticker = Ticker;
-},{}],"../node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js":[function(require,module,exports) {
+},{}],"node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23058,7 +23058,7 @@ function isAudioContext(arg) {
 function isAudioBuffer(arg) {
   return arg instanceof _standardizedAudioContext.AudioBuffer;
 }
-},{"standardized-audio-context":"../node_modules/standardized-audio-context/build/es2019/module.js"}],"../node_modules/tone/build/esm/core/util/Defaults.js":[function(require,module,exports) {
+},{"standardized-audio-context":"node_modules/standardized-audio-context/build/es2019/module.js"}],"node_modules/tone/build/esm/core/util/Defaults.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23191,7 +23191,7 @@ function omitFromObject(obj, omit) {
   });
   return obj;
 }
-},{"./AdvancedTypeCheck":"../node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","./TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js"}],"../node_modules/tone/build/esm/core/Tone.js":[function(require,module,exports) {
+},{"./AdvancedTypeCheck":"node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","./TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js"}],"node_modules/tone/build/esm/core/Tone.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23305,7 +23305,7 @@ class Tone {
 
 exports.Tone = Tone;
 Tone.version = _version.version;
-},{"../version":"../node_modules/tone/build/esm/version.js","./context/AudioContext":"../node_modules/tone/build/esm/core/context/AudioContext.js","./util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/core/util/Math.js":[function(require,module,exports) {
+},{"../version":"node_modules/tone/build/esm/version.js","./context/AudioContext":"node_modules/tone/build/esm/core/context/AudioContext.js","./util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/core/util/Math.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23361,7 +23361,7 @@ function EQ(a, b) {
 function clamp(value, min, max) {
   return Math.max(Math.min(value, max), min);
 }
-},{}],"../node_modules/tone/build/esm/core/util/Timeline.js":[function(require,module,exports) {
+},{}],"node_modules/tone/build/esm/core/util/Timeline.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23795,7 +23795,7 @@ class Timeline extends _Tone.Tone {
 }
 
 exports.Timeline = Timeline;
-},{"../Tone":"../node_modules/tone/build/esm/core/Tone.js","./Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Debug":"../node_modules/tone/build/esm/core/util/Debug.js","./Math":"../node_modules/tone/build/esm/core/util/Math.js"}],"../node_modules/tone/build/esm/core/context/ContextInitialization.js":[function(require,module,exports) {
+},{"../Tone":"node_modules/tone/build/esm/core/Tone.js","./Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Debug":"node_modules/tone/build/esm/core/util/Debug.js","./Math":"node_modules/tone/build/esm/core/util/Math.js"}],"node_modules/tone/build/esm/core/context/ContextInitialization.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23847,7 +23847,7 @@ function closeContext(ctx) {
   // remove any additional modules
   notifyCloseContext.forEach(cb => cb(ctx));
 }
-},{}],"../node_modules/tone/build/esm/core/util/Emitter.js":[function(require,module,exports) {
+},{}],"node_modules/tone/build/esm/core/util/Emitter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23990,7 +23990,7 @@ class Emitter extends _Tone.Tone {
 }
 
 exports.Emitter = Emitter;
-},{"../Tone":"../node_modules/tone/build/esm/core/Tone.js","./TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js"}],"../node_modules/tone/build/esm/core/context/BaseContext.js":[function(require,module,exports) {
+},{"../Tone":"node_modules/tone/build/esm/core/Tone.js","./TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js"}],"node_modules/tone/build/esm/core/context/BaseContext.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24019,7 +24019,7 @@ class BaseContext extends _Emitter.Emitter {
 }
 
 exports.BaseContext = BaseContext;
-},{"../util/Emitter":"../node_modules/tone/build/esm/core/util/Emitter.js"}],"../node_modules/tone/build/esm/core/context/Context.js":[function(require,module,exports) {
+},{"../util/Emitter":"node_modules/tone/build/esm/core/util/Emitter.js"}],"node_modules/tone/build/esm/core/context/Context.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24628,7 +24628,7 @@ class Context extends _BaseContext.BaseContext {
 }
 
 exports.Context = Context;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../clock/Ticker":"../node_modules/tone/build/esm/core/clock/Ticker.js","../util/AdvancedTypeCheck":"../node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Timeline":"../node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./AudioContext":"../node_modules/tone/build/esm/core/context/AudioContext.js","./ContextInitialization":"../node_modules/tone/build/esm/core/context/ContextInitialization.js","./BaseContext":"../node_modules/tone/build/esm/core/context/BaseContext.js","../util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/core/context/DummyContext.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../clock/Ticker":"node_modules/tone/build/esm/core/clock/Ticker.js","../util/AdvancedTypeCheck":"node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Timeline":"node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./AudioContext":"node_modules/tone/build/esm/core/context/AudioContext.js","./ContextInitialization":"node_modules/tone/build/esm/core/context/ContextInitialization.js","./BaseContext":"node_modules/tone/build/esm/core/context/BaseContext.js","../util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/core/context/DummyContext.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24819,7 +24819,7 @@ class DummyContext extends _BaseContext.BaseContext {
 }
 
 exports.DummyContext = DummyContext;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","./BaseContext":"../node_modules/tone/build/esm/core/context/BaseContext.js"}],"../node_modules/tone/build/esm/core/util/Interface.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","./BaseContext":"node_modules/tone/build/esm/core/context/BaseContext.js"}],"node_modules/tone/build/esm/core/util/Interface.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24863,7 +24863,7 @@ const noOp = () => {// no operation here!
 };
 
 exports.noOp = noOp;
-},{"./TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js"}],"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js":[function(require,module,exports) {
+},{"./TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js"}],"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25302,7 +25302,7 @@ ToneAudioBuffer.baseUrl = "";
  */
 
 ToneAudioBuffer.downloads = [];
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../Global":"../node_modules/tone/build/esm/core/Global.js","../Tone":"../node_modules/tone/build/esm/core/Tone.js","../util/AdvancedTypeCheck":"../node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/core/context/OfflineContext.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../Global":"node_modules/tone/build/esm/core/Global.js","../Tone":"node_modules/tone/build/esm/core/Tone.js","../util/AdvancedTypeCheck":"node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/core/context/OfflineContext.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25414,7 +25414,7 @@ class OfflineContext extends _Context.Context {
 }
 
 exports.OfflineContext = OfflineContext;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../context/AudioContext":"../node_modules/tone/build/esm/core/context/AudioContext.js","../context/Context":"../node_modules/tone/build/esm/core/context/Context.js","../util/AdvancedTypeCheck":"../node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","./ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js"}],"../node_modules/tone/build/esm/core/Global.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../context/AudioContext":"node_modules/tone/build/esm/core/context/AudioContext.js","../context/Context":"node_modules/tone/build/esm/core/context/Context.js","../util/AdvancedTypeCheck":"node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","./ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js"}],"node_modules/tone/build/esm/core/Global.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25507,7 +25507,7 @@ if (_AudioContext.theWindow && !_AudioContext.theWindow.TONE_SILENCE_LOGGING) {
 
   console.log(`%c${printString}`, "background: #000; color: #fff");
 }
-},{"../version":"../node_modules/tone/build/esm/version.js","./context/AudioContext":"../node_modules/tone/build/esm/core/context/AudioContext.js","./context/Context":"../node_modules/tone/build/esm/core/context/Context.js","./context/DummyContext":"../node_modules/tone/build/esm/core/context/DummyContext.js","./context/OfflineContext":"../node_modules/tone/build/esm/core/context/OfflineContext.js","./util/AdvancedTypeCheck":"../node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js"}],"../node_modules/tone/build/esm/core/type/Conversions.js":[function(require,module,exports) {
+},{"../version":"node_modules/tone/build/esm/version.js","./context/AudioContext":"node_modules/tone/build/esm/core/context/AudioContext.js","./context/Context":"node_modules/tone/build/esm/core/context/Context.js","./context/DummyContext":"node_modules/tone/build/esm/core/context/DummyContext.js","./context/OfflineContext":"node_modules/tone/build/esm/core/context/OfflineContext.js","./util/AdvancedTypeCheck":"node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js"}],"node_modules/tone/build/esm/core/type/Conversions.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25606,7 +25606,7 @@ function ftomf(frequency) {
 function mtof(midi) {
   return A4 * Math.pow(2, (midi - 69) / 12);
 }
-},{}],"../node_modules/tone/build/esm/core/type/TimeBase.js":[function(require,module,exports) {
+},{}],"node_modules/tone/build/esm/core/type/TimeBase.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25908,7 +25908,7 @@ class TimeBaseClass extends _Tone.Tone {
 }
 
 exports.TimeBaseClass = TimeBaseClass;
-},{"../Tone":"../node_modules/tone/build/esm/core/Tone.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js"}],"../node_modules/tone/build/esm/core/type/Time.js":[function(require,module,exports) {
+},{"../Tone":"node_modules/tone/build/esm/core/Tone.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js"}],"node_modules/tone/build/esm/core/type/Time.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26092,7 +26092,7 @@ exports.TimeClass = TimeClass;
 function Time(value, units) {
   return new TimeClass((0, _Global.getContext)(), value, units);
 }
-},{"../Global":"../node_modules/tone/build/esm/core/Global.js","./Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","./TimeBase":"../node_modules/tone/build/esm/core/type/TimeBase.js"}],"../node_modules/tone/build/esm/core/type/Frequency.js":[function(require,module,exports) {
+},{"../Global":"node_modules/tone/build/esm/core/Global.js","./Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","./TimeBase":"node_modules/tone/build/esm/core/type/TimeBase.js"}],"node_modules/tone/build/esm/core/type/Frequency.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26403,7 +26403,7 @@ const scaleIndexToNote = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", 
 function Frequency(value, units) {
   return new FrequencyClass((0, _Global.getContext)(), value, units);
 }
-},{"../Global":"../node_modules/tone/build/esm/core/Global.js","./Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","./Time":"../node_modules/tone/build/esm/core/type/Time.js"}],"../node_modules/tone/build/esm/core/type/TransportTime.js":[function(require,module,exports) {
+},{"../Global":"node_modules/tone/build/esm/core/Global.js","./Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","./Time":"node_modules/tone/build/esm/core/type/Time.js"}],"node_modules/tone/build/esm/core/type/TransportTime.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26452,7 +26452,7 @@ exports.TransportTimeClass = TransportTimeClass;
 function TransportTime(value, units) {
   return new TransportTimeClass((0, _Global.getContext)(), value, units);
 }
-},{"../Global":"../node_modules/tone/build/esm/core/Global.js","./Time":"../node_modules/tone/build/esm/core/type/Time.js"}],"../node_modules/tone/build/esm/core/context/ToneWithContext.js":[function(require,module,exports) {
+},{"../Global":"node_modules/tone/build/esm/core/Global.js","./Time":"node_modules/tone/build/esm/core/type/Time.js"}],"node_modules/tone/build/esm/core/context/ToneWithContext.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26655,7 +26655,7 @@ class ToneWithContext extends _Tone.Tone {
 }
 
 exports.ToneWithContext = ToneWithContext;
-},{"../Global":"../node_modules/tone/build/esm/core/Global.js","../Tone":"../node_modules/tone/build/esm/core/Tone.js","../type/Frequency":"../node_modules/tone/build/esm/core/type/Frequency.js","../type/Time":"../node_modules/tone/build/esm/core/type/Time.js","../type/TransportTime":"../node_modules/tone/build/esm/core/type/TransportTime.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js"}],"../node_modules/tone/build/esm/core/util/StateTimeline.js":[function(require,module,exports) {
+},{"../Global":"node_modules/tone/build/esm/core/Global.js","../Tone":"node_modules/tone/build/esm/core/Tone.js","../type/Frequency":"node_modules/tone/build/esm/core/type/Frequency.js","../type/Time":"node_modules/tone/build/esm/core/type/Time.js","../type/TransportTime":"node_modules/tone/build/esm/core/type/TransportTime.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js"}],"node_modules/tone/build/esm/core/util/StateTimeline.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26757,7 +26757,7 @@ class StateTimeline extends _Timeline.Timeline {
 }
 
 exports.StateTimeline = StateTimeline;
-},{"./Timeline":"../node_modules/tone/build/esm/core/util/Timeline.js","./Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/core/context/Param.js":[function(require,module,exports) {
+},{"./Timeline":"node_modules/tone/build/esm/core/util/Timeline.js","./Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/core/context/Param.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27294,7 +27294,7 @@ class Param extends _ToneWithContext.ToneWithContext {
 }
 
 exports.Param = Param;
-},{"../type/Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","../util/AdvancedTypeCheck":"../node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Timeline":"../node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./ToneWithContext":"../node_modules/tone/build/esm/core/context/ToneWithContext.js","../util/Math":"../node_modules/tone/build/esm/core/util/Math.js","../util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/core/context/ToneAudioNode.js":[function(require,module,exports) {
+},{"../type/Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","../util/AdvancedTypeCheck":"node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Timeline":"node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./ToneWithContext":"node_modules/tone/build/esm/core/context/ToneWithContext.js","../util/Math":"node_modules/tone/build/esm/core/util/Math.js","../util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/core/context/ToneAudioNode.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27696,7 +27696,7 @@ function disconnect(srcNode, dstNode, outputNumber = 0, inputNumber = 0) {
     srcNode.disconnect();
   }
 }
-},{"../util/AdvancedTypeCheck":"../node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./Param":"../node_modules/tone/build/esm/core/context/Param.js","./ToneWithContext":"../node_modules/tone/build/esm/core/context/ToneWithContext.js","../util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/core/context/Gain.js":[function(require,module,exports) {
+},{"../util/AdvancedTypeCheck":"node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./Param":"node_modules/tone/build/esm/core/context/Param.js","./ToneWithContext":"node_modules/tone/build/esm/core/context/ToneWithContext.js","../util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/core/context/Gain.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27774,7 +27774,7 @@ class Gain extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Gain = Gain;
-},{"../context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","./ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"../node_modules/tone/build/esm/source/OneShotSource.js":[function(require,module,exports) {
+},{"../context/Param":"node_modules/tone/build/esm/core/context/Param.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","./ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"node_modules/tone/build/esm/source/OneShotSource.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -27999,7 +27999,7 @@ class OneShotSource extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.OneShotSource = OneShotSource;
-},{"../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/signal/ToneConstantSource.js":[function(require,module,exports) {
+},{"../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/signal/ToneConstantSource.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28086,7 +28086,7 @@ class ToneConstantSource extends _OneShotSource.OneShotSource {
 }
 
 exports.ToneConstantSource = ToneConstantSource;
-},{"../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../source/OneShotSource":"../node_modules/tone/build/esm/source/OneShotSource.js"}],"../node_modules/tone/build/esm/signal/Signal.js":[function(require,module,exports) {
+},{"../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../source/OneShotSource":"node_modules/tone/build/esm/source/OneShotSource.js"}],"node_modules/tone/build/esm/signal/Signal.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28334,7 +28334,7 @@ function connectSignal(signal, destination, outputNum, inputNum) {
 
   (0, _ToneAudioNode.connect)(signal, destination, outputNum, inputNum);
 }
-},{"../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/AdvancedTypeCheck":"../node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./ToneConstantSource":"../node_modules/tone/build/esm/signal/ToneConstantSource.js"}],"../node_modules/tone/build/esm/core/clock/TickParam.js":[function(require,module,exports) {
+},{"../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/AdvancedTypeCheck":"node_modules/tone/build/esm/core/util/AdvancedTypeCheck.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./ToneConstantSource":"node_modules/tone/build/esm/signal/ToneConstantSource.js"}],"node_modules/tone/build/esm/core/clock/TickParam.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28638,7 +28638,7 @@ class TickParam extends _Param.Param {
 }
 
 exports.TickParam = TickParam;
-},{"../context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Timeline":"../node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js"}],"../node_modules/tone/build/esm/core/clock/TickSignal.js":[function(require,module,exports) {
+},{"../context/Param":"node_modules/tone/build/esm/core/context/Param.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Timeline":"node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js"}],"node_modules/tone/build/esm/core/clock/TickSignal.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28727,7 +28727,7 @@ class TickSignal extends _Signal.Signal {
 }
 
 exports.TickSignal = TickSignal;
-},{"../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./TickParam":"../node_modules/tone/build/esm/core/clock/TickParam.js"}],"../node_modules/tone/build/esm/core/clock/TickSource.js":[function(require,module,exports) {
+},{"../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./TickParam":"node_modules/tone/build/esm/core/clock/TickParam.js"}],"node_modules/tone/build/esm/core/clock/TickSource.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29115,7 +29115,7 @@ class TickSource extends _ToneWithContext.ToneWithContext {
 }
 
 exports.TickSource = TickSource;
-},{"../context/ToneWithContext":"../node_modules/tone/build/esm/core/context/ToneWithContext.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../util/StateTimeline":"../node_modules/tone/build/esm/core/util/StateTimeline.js","../util/Timeline":"../node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./TickSignal":"../node_modules/tone/build/esm/core/clock/TickSignal.js","../util/Math":"../node_modules/tone/build/esm/core/util/Math.js"}],"../node_modules/tone/build/esm/core/clock/Clock.js":[function(require,module,exports) {
+},{"../context/ToneWithContext":"node_modules/tone/build/esm/core/context/ToneWithContext.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../util/StateTimeline":"node_modules/tone/build/esm/core/util/StateTimeline.js","../util/Timeline":"node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./TickSignal":"node_modules/tone/build/esm/core/clock/TickSignal.js","../util/Math":"node_modules/tone/build/esm/core/util/Math.js"}],"node_modules/tone/build/esm/core/clock/Clock.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29443,7 +29443,7 @@ class Clock extends _ToneWithContext.ToneWithContext {
 exports.Clock = Clock;
 
 _Emitter.Emitter.mixin(Clock);
-},{"../context/ToneWithContext":"../node_modules/tone/build/esm/core/context/ToneWithContext.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Emitter":"../node_modules/tone/build/esm/core/util/Emitter.js","../util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../util/StateTimeline":"../node_modules/tone/build/esm/core/util/StateTimeline.js","./TickSource":"../node_modules/tone/build/esm/core/clock/TickSource.js","../util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/core/context/Delay.js":[function(require,module,exports) {
+},{"../context/ToneWithContext":"node_modules/tone/build/esm/core/context/ToneWithContext.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Emitter":"node_modules/tone/build/esm/core/util/Emitter.js","../util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../util/StateTimeline":"node_modules/tone/build/esm/core/util/StateTimeline.js","./TickSource":"node_modules/tone/build/esm/core/clock/TickSource.js","../util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/core/context/Delay.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29522,7 +29522,7 @@ class Delay extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Delay = Delay;
-},{"../context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","./ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"../node_modules/tone/build/esm/core/context/Offline.js":[function(require,module,exports) {
+},{"../context/Param":"node_modules/tone/build/esm/core/context/Param.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","./ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"node_modules/tone/build/esm/core/context/Offline.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29589,7 +29589,7 @@ function Offline(callback, duration, channels = 2, sampleRate = (0, _Global.getC
     return new _ToneAudioBuffer.ToneAudioBuffer(buffer);
   });
 }
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../Global":"../node_modules/tone/build/esm/core/Global.js","./OfflineContext":"../node_modules/tone/build/esm/core/context/OfflineContext.js","./ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js"}],"../node_modules/tone/build/esm/core/context/ToneAudioBuffers.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../Global":"node_modules/tone/build/esm/core/Global.js","./OfflineContext":"node_modules/tone/build/esm/core/context/OfflineContext.js","./ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js"}],"node_modules/tone/build/esm/core/context/ToneAudioBuffers.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29738,7 +29738,7 @@ class ToneAudioBuffers extends _Tone.Tone {
 }
 
 exports.ToneAudioBuffers = ToneAudioBuffers;
-},{"../Tone":"../node_modules/tone/build/esm/core/Tone.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/core/type/Midi.js":[function(require,module,exports) {
+},{"../Tone":"node_modules/tone/build/esm/core/Tone.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/core/type/Midi.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29841,7 +29841,7 @@ exports.MidiClass = MidiClass;
 function Midi(value, units) {
   return new MidiClass((0, _Global.getContext)(), value, units);
 }
-},{"../Global":"../node_modules/tone/build/esm/core/Global.js","./Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","./Frequency":"../node_modules/tone/build/esm/core/type/Frequency.js"}],"../node_modules/tone/build/esm/core/type/Ticks.js":[function(require,module,exports) {
+},{"../Global":"node_modules/tone/build/esm/core/Global.js","./Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","./Frequency":"node_modules/tone/build/esm/core/type/Frequency.js"}],"node_modules/tone/build/esm/core/type/Ticks.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29929,7 +29929,7 @@ exports.TicksClass = TicksClass;
 function Ticks(value, units) {
   return new TicksClass((0, _Global.getContext)(), value, units);
 }
-},{"../Global":"../node_modules/tone/build/esm/core/Global.js","./TransportTime":"../node_modules/tone/build/esm/core/type/TransportTime.js"}],"../node_modules/tone/build/esm/core/util/Draw.js":[function(require,module,exports) {
+},{"../Global":"node_modules/tone/build/esm/core/Global.js","./TransportTime":"node_modules/tone/build/esm/core/type/TransportTime.js"}],"node_modules/tone/build/esm/core/util/Draw.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30074,7 +30074,7 @@ exports.Draw = Draw;
 (0, _ContextInitialization.onContextClose)(context => {
   context.draw.dispose();
 });
-},{"../context/ToneWithContext":"../node_modules/tone/build/esm/core/context/ToneWithContext.js","./Timeline":"../node_modules/tone/build/esm/core/util/Timeline.js","../context/ContextInitialization":"../node_modules/tone/build/esm/core/context/ContextInitialization.js"}],"../node_modules/tone/build/esm/core/util/IntervalTimeline.js":[function(require,module,exports) {
+},{"../context/ToneWithContext":"node_modules/tone/build/esm/core/context/ToneWithContext.js","./Timeline":"node_modules/tone/build/esm/core/util/Timeline.js","../context/ContextInitialization":"node_modules/tone/build/esm/core/context/ContextInitialization.js"}],"node_modules/tone/build/esm/core/util/IntervalTimeline.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30715,13 +30715,13 @@ class IntervalNode {
   }
 
 }
-},{"../Tone":"../node_modules/tone/build/esm/core/Tone.js","./TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/core/type/NoteUnits.js":[function(require,module,exports) {
+},{"../Tone":"node_modules/tone/build/esm/core/Tone.js","./TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/core/type/NoteUnits.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-},{}],"../node_modules/tone/build/esm/core/type/Units.js":[function(require,module,exports) {
+},{}],"node_modules/tone/build/esm/core/type/Units.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30740,7 +30740,7 @@ Object.keys(_NoteUnits).forEach(function (key) {
     }
   });
 });
-},{"./NoteUnits":"../node_modules/tone/build/esm/core/type/NoteUnits.js"}],"../node_modules/tone/build/esm/core/index.js":[function(require,module,exports) {
+},{"./NoteUnits":"node_modules/tone/build/esm/core/type/NoteUnits.js"}],"node_modules/tone/build/esm/core/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31112,7 +31112,7 @@ exports.debug = debug;
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./clock/Clock":"../node_modules/tone/build/esm/core/clock/Clock.js","./context/Context":"../node_modules/tone/build/esm/core/context/Context.js","./context/BaseContext":"../node_modules/tone/build/esm/core/context/BaseContext.js","./context/Delay":"../node_modules/tone/build/esm/core/context/Delay.js","./context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","./context/Offline":"../node_modules/tone/build/esm/core/context/Offline.js","./context/OfflineContext":"../node_modules/tone/build/esm/core/context/OfflineContext.js","./context/Param":"../node_modules/tone/build/esm/core/context/Param.js","./context/ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","./context/ToneAudioBuffers":"../node_modules/tone/build/esm/core/context/ToneAudioBuffers.js","./context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","./type/Frequency":"../node_modules/tone/build/esm/core/type/Frequency.js","./type/Midi":"../node_modules/tone/build/esm/core/type/Midi.js","./type/Time":"../node_modules/tone/build/esm/core/type/Time.js","./type/Ticks":"../node_modules/tone/build/esm/core/type/Ticks.js","./type/TransportTime":"../node_modules/tone/build/esm/core/type/TransportTime.js","./util/Draw":"../node_modules/tone/build/esm/core/util/Draw.js","./util/Emitter":"../node_modules/tone/build/esm/core/util/Emitter.js","./util/IntervalTimeline":"../node_modules/tone/build/esm/core/util/IntervalTimeline.js","./util/StateTimeline":"../node_modules/tone/build/esm/core/util/StateTimeline.js","./util/Timeline":"../node_modules/tone/build/esm/core/util/Timeline.js","./util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./type/Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","./util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./type/Units":"../node_modules/tone/build/esm/core/type/Units.js","./util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/component/channel/Volume.js":[function(require,module,exports) {
+},{"./clock/Clock":"node_modules/tone/build/esm/core/clock/Clock.js","./context/Context":"node_modules/tone/build/esm/core/context/Context.js","./context/BaseContext":"node_modules/tone/build/esm/core/context/BaseContext.js","./context/Delay":"node_modules/tone/build/esm/core/context/Delay.js","./context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","./context/Offline":"node_modules/tone/build/esm/core/context/Offline.js","./context/OfflineContext":"node_modules/tone/build/esm/core/context/OfflineContext.js","./context/Param":"node_modules/tone/build/esm/core/context/Param.js","./context/ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","./context/ToneAudioBuffers":"node_modules/tone/build/esm/core/context/ToneAudioBuffers.js","./context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","./type/Frequency":"node_modules/tone/build/esm/core/type/Frequency.js","./type/Midi":"node_modules/tone/build/esm/core/type/Midi.js","./type/Time":"node_modules/tone/build/esm/core/type/Time.js","./type/Ticks":"node_modules/tone/build/esm/core/type/Ticks.js","./type/TransportTime":"node_modules/tone/build/esm/core/type/TransportTime.js","./util/Draw":"node_modules/tone/build/esm/core/util/Draw.js","./util/Emitter":"node_modules/tone/build/esm/core/util/Emitter.js","./util/IntervalTimeline":"node_modules/tone/build/esm/core/util/IntervalTimeline.js","./util/StateTimeline":"node_modules/tone/build/esm/core/util/StateTimeline.js","./util/Timeline":"node_modules/tone/build/esm/core/util/Timeline.js","./util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./type/Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","./util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./type/Units":"node_modules/tone/build/esm/core/type/Units.js","./util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/component/channel/Volume.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31197,7 +31197,7 @@ class Volume extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Volume = Volume;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/core/context/Destination.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/core/context/Destination.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31334,7 +31334,7 @@ exports.Destination = Destination;
 (0, _ContextInitialization.onContextClose)(context => {
   context.destination.dispose();
 });
-},{"../../component/channel/Volume":"../node_modules/tone/build/esm/component/channel/Volume.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./ContextInitialization":"../node_modules/tone/build/esm/core/context/ContextInitialization.js","./Gain":"../node_modules/tone/build/esm/core/context/Gain.js","./ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"../node_modules/tone/build/esm/core/util/TimelineValue.js":[function(require,module,exports) {
+},{"../../component/channel/Volume":"node_modules/tone/build/esm/component/channel/Volume.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./ContextInitialization":"node_modules/tone/build/esm/core/context/ContextInitialization.js","./Gain":"node_modules/tone/build/esm/core/context/Gain.js","./ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"node_modules/tone/build/esm/core/util/TimelineValue.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31396,7 +31396,7 @@ class TimelineValue extends _Tone.Tone {
 }
 
 exports.TimelineValue = TimelineValue;
-},{"./Timeline":"../node_modules/tone/build/esm/core/util/Timeline.js","../Tone":"../node_modules/tone/build/esm/core/Tone.js"}],"../node_modules/tone/build/esm/core/clock/TransportEvent.js":[function(require,module,exports) {
+},{"./Timeline":"node_modules/tone/build/esm/core/util/Timeline.js","../Tone":"node_modules/tone/build/esm/core/Tone.js"}],"node_modules/tone/build/esm/core/clock/TransportEvent.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31483,7 +31483,7 @@ class TransportEvent {
 
 exports.TransportEvent = TransportEvent;
 TransportEvent._eventId = 0;
-},{"../util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/core/clock/TransportRepeatEvent.js":[function(require,module,exports) {
+},{"../util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/core/clock/TransportRepeatEvent.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31626,7 +31626,7 @@ class TransportRepeatEvent extends _TransportEvent.TransportEvent {
 }
 
 exports.TransportRepeatEvent = TransportRepeatEvent;
-},{"../type/Ticks":"../node_modules/tone/build/esm/core/type/Ticks.js","./TransportEvent":"../node_modules/tone/build/esm/core/clock/TransportEvent.js","../util/Math":"../node_modules/tone/build/esm/core/util/Math.js"}],"../node_modules/tone/build/esm/core/clock/Transport.js":[function(require,module,exports) {
+},{"../type/Ticks":"node_modules/tone/build/esm/core/type/Ticks.js","./TransportEvent":"node_modules/tone/build/esm/core/clock/TransportEvent.js","../util/Math":"node_modules/tone/build/esm/core/util/Math.js"}],"node_modules/tone/build/esm/core/clock/Transport.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32369,7 +32369,7 @@ _Emitter.Emitter.mixin(Transport); //-------------------------------------
 (0, _ContextInitialization.onContextClose)(context => {
   context.transport.dispose();
 });
-},{"../../core/type/Time":"../node_modules/tone/build/esm/core/type/Time.js","../../core/util/TimelineValue":"../node_modules/tone/build/esm/core/util/TimelineValue.js","../context/ContextInitialization":"../node_modules/tone/build/esm/core/context/ContextInitialization.js","../context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../context/ToneWithContext":"../node_modules/tone/build/esm/core/context/ToneWithContext.js","../type/Ticks":"../node_modules/tone/build/esm/core/type/Ticks.js","../type/TransportTime":"../node_modules/tone/build/esm/core/type/TransportTime.js","../util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../util/Emitter":"../node_modules/tone/build/esm/core/util/Emitter.js","../util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../util/IntervalTimeline":"../node_modules/tone/build/esm/core/util/IntervalTimeline.js","../util/Timeline":"../node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./Clock":"../node_modules/tone/build/esm/core/clock/Clock.js","./TransportEvent":"../node_modules/tone/build/esm/core/clock/TransportEvent.js","./TransportRepeatEvent":"../node_modules/tone/build/esm/core/clock/TransportRepeatEvent.js"}],"../node_modules/tone/build/esm/source/Source.js":[function(require,module,exports) {
+},{"../../core/type/Time":"node_modules/tone/build/esm/core/type/Time.js","../../core/util/TimelineValue":"node_modules/tone/build/esm/core/util/TimelineValue.js","../context/ContextInitialization":"node_modules/tone/build/esm/core/context/ContextInitialization.js","../context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../context/ToneWithContext":"node_modules/tone/build/esm/core/context/ToneWithContext.js","../type/Ticks":"node_modules/tone/build/esm/core/type/Ticks.js","../type/TransportTime":"node_modules/tone/build/esm/core/type/TransportTime.js","../util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../util/Emitter":"node_modules/tone/build/esm/core/util/Emitter.js","../util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../util/IntervalTimeline":"node_modules/tone/build/esm/core/util/IntervalTimeline.js","../util/Timeline":"node_modules/tone/build/esm/core/util/Timeline.js","../util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./Clock":"node_modules/tone/build/esm/core/clock/Clock.js","./TransportEvent":"node_modules/tone/build/esm/core/clock/TransportEvent.js","./TransportRepeatEvent":"node_modules/tone/build/esm/core/clock/TransportRepeatEvent.js"}],"node_modules/tone/build/esm/source/Source.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32724,7 +32724,7 @@ class Source extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Source = Source;
-},{"../component/channel/Volume":"../node_modules/tone/build/esm/component/channel/Volume.js","../core/context/Destination":"../node_modules/tone/build/esm/core/context/Destination.js","../core/clock/Transport":"../node_modules/tone/build/esm/core/clock/Transport.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../core/util/StateTimeline":"../node_modules/tone/build/esm/core/util/StateTimeline.js","../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../core/util/Math":"../node_modules/tone/build/esm/core/util/Math.js"}],"../node_modules/tone/build/esm/source/buffer/ToneBufferSource.js":[function(require,module,exports) {
+},{"../component/channel/Volume":"node_modules/tone/build/esm/component/channel/Volume.js","../core/context/Destination":"node_modules/tone/build/esm/core/context/Destination.js","../core/clock/Transport":"node_modules/tone/build/esm/core/clock/Transport.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../core/util/StateTimeline":"node_modules/tone/build/esm/core/util/StateTimeline.js","../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../core/util/Math":"node_modules/tone/build/esm/core/util/Math.js"}],"node_modules/tone/build/esm/source/buffer/ToneBufferSource.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32985,7 +32985,7 @@ class ToneBufferSource extends _OneShotSource.OneShotSource {
 }
 
 exports.ToneBufferSource = ToneBufferSource;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../OneShotSource":"../node_modules/tone/build/esm/source/OneShotSource.js","../../core/util/Math":"../node_modules/tone/build/esm/core/util/Math.js"}],"../node_modules/tone/build/esm/source/Noise.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../OneShotSource":"node_modules/tone/build/esm/source/OneShotSource.js","../../core/util/Math":"node_modules/tone/build/esm/core/util/Math.js"}],"node_modules/tone/build/esm/source/Noise.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33275,7 +33275,7 @@ const _noiseBuffers = {
   }
 
 };
-},{"../core/context/ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../source/Source":"../node_modules/tone/build/esm/source/Source.js","./buffer/ToneBufferSource":"../node_modules/tone/build/esm/source/buffer/ToneBufferSource.js"}],"../node_modules/tone/build/esm/source/UserMedia.js":[function(require,module,exports) {
+},{"../core/context/ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../source/Source":"node_modules/tone/build/esm/source/Source.js","./buffer/ToneBufferSource":"node_modules/tone/build/esm/source/buffer/ToneBufferSource.js"}],"node_modules/tone/build/esm/source/UserMedia.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33534,7 +33534,7 @@ class UserMedia extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.UserMedia = UserMedia;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../component/channel/Volume":"../node_modules/tone/build/esm/component/channel/Volume.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js"}],"../node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../component/channel/Volume":"node_modules/tone/build/esm/component/channel/Volume.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js"}],"node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33565,7 +33565,7 @@ function generateWaveform(instance, length) {
     return buffer.getChannelData(0);
   });
 }
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/context/OfflineContext":"../node_modules/tone/build/esm/core/context/OfflineContext.js"}],"../node_modules/tone/build/esm/source/oscillator/ToneOscillatorNode.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/context/OfflineContext":"node_modules/tone/build/esm/core/context/OfflineContext.js"}],"node_modules/tone/build/esm/source/oscillator/ToneOscillatorNode.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33689,7 +33689,7 @@ class ToneOscillatorNode extends _OneShotSource.OneShotSource {
 }
 
 exports.ToneOscillatorNode = ToneOscillatorNode;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../OneShotSource":"../node_modules/tone/build/esm/source/OneShotSource.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/source/oscillator/Oscillator.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../OneShotSource":"node_modules/tone/build/esm/source/OneShotSource.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/source/oscillator/Oscillator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34152,7 +34152,7 @@ class Oscillator extends _Source.Source {
 
 exports.Oscillator = Oscillator;
 Oscillator._periodicWaveCache = [];
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../Source":"../node_modules/tone/build/esm/source/Source.js","./OscillatorInterface":"../node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js","./ToneOscillatorNode":"../node_modules/tone/build/esm/source/oscillator/ToneOscillatorNode.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../../core/util/Math":"../node_modules/tone/build/esm/core/util/Math.js"}],"../node_modules/tone/build/esm/signal/SignalOperator.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../Source":"node_modules/tone/build/esm/source/Source.js","./OscillatorInterface":"node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js","./ToneOscillatorNode":"node_modules/tone/build/esm/source/oscillator/ToneOscillatorNode.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../../core/util/Math":"node_modules/tone/build/esm/core/util/Math.js"}],"node_modules/tone/build/esm/signal/SignalOperator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34182,7 +34182,7 @@ class SignalOperator extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.SignalOperator = SignalOperator;
-},{"../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Signal":"../node_modules/tone/build/esm/signal/Signal.js"}],"../node_modules/tone/build/esm/signal/WaveShaper.js":[function(require,module,exports) {
+},{"../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Signal":"node_modules/tone/build/esm/signal/Signal.js"}],"node_modules/tone/build/esm/signal/WaveShaper.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34314,7 +34314,7 @@ class WaveShaper extends _SignalOperator.SignalOperator {
 }
 
 exports.WaveShaper = WaveShaper;
-},{"../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","./Signal":"../node_modules/tone/build/esm/signal/Signal.js","./SignalOperator":"../node_modules/tone/build/esm/signal/SignalOperator.js"}],"../node_modules/tone/build/esm/signal/AudioToGain.js":[function(require,module,exports) {
+},{"../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","./Signal":"node_modules/tone/build/esm/signal/Signal.js","./SignalOperator":"node_modules/tone/build/esm/signal/SignalOperator.js"}],"node_modules/tone/build/esm/signal/AudioToGain.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34370,7 +34370,7 @@ class AudioToGain extends _SignalOperator.SignalOperator {
 }
 
 exports.AudioToGain = AudioToGain;
-},{"./SignalOperator":"../node_modules/tone/build/esm/signal/SignalOperator.js","./WaveShaper":"../node_modules/tone/build/esm/signal/WaveShaper.js"}],"../node_modules/tone/build/esm/signal/Multiply.js":[function(require,module,exports) {
+},{"./SignalOperator":"node_modules/tone/build/esm/signal/SignalOperator.js","./WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js"}],"node_modules/tone/build/esm/signal/Multiply.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34439,7 +34439,7 @@ class Multiply extends _Signal.Signal {
 }
 
 exports.Multiply = Multiply;
-},{"../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Signal":"../node_modules/tone/build/esm/signal/Signal.js"}],"../node_modules/tone/build/esm/source/oscillator/AMOscillator.js":[function(require,module,exports) {
+},{"../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Signal":"node_modules/tone/build/esm/signal/Signal.js"}],"node_modules/tone/build/esm/source/oscillator/AMOscillator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34652,7 +34652,7 @@ class AMOscillator extends _Source.Source {
 }
 
 exports.AMOscillator = AMOscillator;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../signal/AudioToGain":"../node_modules/tone/build/esm/signal/AudioToGain.js","../../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../Source":"../node_modules/tone/build/esm/source/Source.js","./Oscillator":"../node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"../node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js"}],"../node_modules/tone/build/esm/source/oscillator/FMOscillator.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../signal/AudioToGain":"node_modules/tone/build/esm/signal/AudioToGain.js","../../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../Source":"node_modules/tone/build/esm/source/Source.js","./Oscillator":"node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js"}],"node_modules/tone/build/esm/source/oscillator/FMOscillator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34878,7 +34878,7 @@ class FMOscillator extends _Source.Source {
 }
 
 exports.FMOscillator = FMOscillator;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../Source":"../node_modules/tone/build/esm/source/Source.js","./Oscillator":"../node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"../node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js"}],"../node_modules/tone/build/esm/source/oscillator/PulseOscillator.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../Source":"node_modules/tone/build/esm/source/Source.js","./Oscillator":"node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js"}],"node_modules/tone/build/esm/source/oscillator/PulseOscillator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35109,7 +35109,7 @@ class PulseOscillator extends _Source.Source {
 }
 
 exports.PulseOscillator = PulseOscillator;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../../signal/WaveShaper":"../node_modules/tone/build/esm/signal/WaveShaper.js","../Source":"../node_modules/tone/build/esm/source/Source.js","./Oscillator":"../node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"../node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js"}],"../node_modules/tone/build/esm/source/oscillator/FatOscillator.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../../signal/WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js","../Source":"node_modules/tone/build/esm/source/Source.js","./Oscillator":"node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js"}],"node_modules/tone/build/esm/source/oscillator/FatOscillator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35371,7 +35371,7 @@ class FatOscillator extends _Source.Source {
 }
 
 exports.FatOscillator = FatOscillator;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../Source":"../node_modules/tone/build/esm/source/Source.js","./Oscillator":"../node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"../node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/source/oscillator/PWMOscillator.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../Source":"node_modules/tone/build/esm/source/Source.js","./Oscillator":"node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/source/oscillator/PWMOscillator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35558,7 +35558,7 @@ class PWMOscillator extends _Source.Source {
 }
 
 exports.PWMOscillator = PWMOscillator;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../Source":"../node_modules/tone/build/esm/source/Source.js","./Oscillator":"../node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"../node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js","./PulseOscillator":"../node_modules/tone/build/esm/source/oscillator/PulseOscillator.js"}],"../node_modules/tone/build/esm/source/oscillator/OmniOscillator.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../Source":"node_modules/tone/build/esm/source/Source.js","./Oscillator":"node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js","./PulseOscillator":"node_modules/tone/build/esm/source/oscillator/PulseOscillator.js"}],"node_modules/tone/build/esm/source/oscillator/OmniOscillator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35974,7 +35974,7 @@ class OmniOscillator extends _Source.Source {
 }
 
 exports.OmniOscillator = OmniOscillator;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../Source":"../node_modules/tone/build/esm/source/Source.js","./AMOscillator":"../node_modules/tone/build/esm/source/oscillator/AMOscillator.js","./FatOscillator":"../node_modules/tone/build/esm/source/oscillator/FatOscillator.js","./FMOscillator":"../node_modules/tone/build/esm/source/oscillator/FMOscillator.js","./Oscillator":"../node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"../node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js","./PulseOscillator":"../node_modules/tone/build/esm/source/oscillator/PulseOscillator.js","./PWMOscillator":"../node_modules/tone/build/esm/source/oscillator/PWMOscillator.js"}],"../node_modules/tone/build/esm/signal/Add.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../Source":"node_modules/tone/build/esm/source/Source.js","./AMOscillator":"node_modules/tone/build/esm/source/oscillator/AMOscillator.js","./FatOscillator":"node_modules/tone/build/esm/source/oscillator/FatOscillator.js","./FMOscillator":"node_modules/tone/build/esm/source/oscillator/FMOscillator.js","./Oscillator":"node_modules/tone/build/esm/source/oscillator/Oscillator.js","./OscillatorInterface":"node_modules/tone/build/esm/source/oscillator/OscillatorInterface.js","./PulseOscillator":"node_modules/tone/build/esm/source/oscillator/PulseOscillator.js","./PWMOscillator":"node_modules/tone/build/esm/source/oscillator/PWMOscillator.js"}],"node_modules/tone/build/esm/signal/Add.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36045,7 +36045,7 @@ class Add extends _Signal.Signal {
 }
 
 exports.Add = Add;
-},{"../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Signal":"../node_modules/tone/build/esm/signal/Signal.js"}],"../node_modules/tone/build/esm/signal/Scale.js":[function(require,module,exports) {
+},{"../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Signal":"node_modules/tone/build/esm/signal/Signal.js"}],"node_modules/tone/build/esm/signal/Scale.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36147,7 +36147,7 @@ class Scale extends _SignalOperator.SignalOperator {
 }
 
 exports.Scale = Scale;
-},{"../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Add":"../node_modules/tone/build/esm/signal/Add.js","./Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","./SignalOperator":"../node_modules/tone/build/esm/signal/SignalOperator.js"}],"../node_modules/tone/build/esm/signal/Zero.js":[function(require,module,exports) {
+},{"../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Add":"node_modules/tone/build/esm/signal/Add.js","./Multiply":"node_modules/tone/build/esm/signal/Multiply.js","./SignalOperator":"node_modules/tone/build/esm/signal/SignalOperator.js"}],"node_modules/tone/build/esm/signal/Zero.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36206,7 +36206,7 @@ class Zero extends _SignalOperator.SignalOperator {
 }
 
 exports.Zero = Zero;
-},{"../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./SignalOperator":"../node_modules/tone/build/esm/signal/SignalOperator.js"}],"../node_modules/tone/build/esm/source/oscillator/LFO.js":[function(require,module,exports) {
+},{"../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./SignalOperator":"node_modules/tone/build/esm/signal/SignalOperator.js"}],"node_modules/tone/build/esm/source/oscillator/LFO.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36525,7 +36525,7 @@ class LFO extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.LFO = LFO;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../signal/AudioToGain":"../node_modules/tone/build/esm/signal/AudioToGain.js","../../signal/Scale":"../node_modules/tone/build/esm/signal/Scale.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../../signal/Zero":"../node_modules/tone/build/esm/signal/Zero.js","./Oscillator":"../node_modules/tone/build/esm/source/oscillator/Oscillator.js"}],"../node_modules/tone/build/esm/core/util/Decorator.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../signal/AudioToGain":"node_modules/tone/build/esm/signal/AudioToGain.js","../../signal/Scale":"node_modules/tone/build/esm/signal/Scale.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../../signal/Zero":"node_modules/tone/build/esm/signal/Zero.js","./Oscillator":"node_modules/tone/build/esm/source/oscillator/Oscillator.js"}],"node_modules/tone/build/esm/core/util/Decorator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36577,7 +36577,7 @@ function timeRange(min, max = Infinity) {
     });
   };
 }
-},{"./Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/source/buffer/Player.js":[function(require,module,exports) {
+},{"./Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/source/buffer/Player.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37010,7 +37010,7 @@ class Player extends _Source.Source {
 exports.Player = Player;
 (0, _tslib.__decorate)([(0, _Decorator.timeRange)(0)], Player.prototype, "fadeIn", void 0);
 (0, _tslib.__decorate)([(0, _Decorator.timeRange)(0)], Player.prototype, "fadeOut", void 0);
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/context/ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../Source":"../node_modules/tone/build/esm/source/Source.js","./ToneBufferSource":"../node_modules/tone/build/esm/source/buffer/ToneBufferSource.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../../core/util/Decorator":"../node_modules/tone/build/esm/core/util/Decorator.js"}],"../node_modules/tone/build/esm/source/buffer/Players.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/context/ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../Source":"node_modules/tone/build/esm/source/Source.js","./ToneBufferSource":"node_modules/tone/build/esm/source/buffer/ToneBufferSource.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../../core/util/Decorator":"node_modules/tone/build/esm/core/util/Decorator.js"}],"node_modules/tone/build/esm/source/buffer/Players.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37223,7 +37223,7 @@ class Players extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Players = Players;
-},{"../../component/channel/Volume":"../node_modules/tone/build/esm/component/channel/Volume.js","../../core/context/ToneAudioBuffers":"../node_modules/tone/build/esm/core/context/ToneAudioBuffers.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../Source":"../node_modules/tone/build/esm/source/Source.js","./Player":"../node_modules/tone/build/esm/source/buffer/Player.js"}],"../node_modules/tone/build/esm/source/buffer/GrainPlayer.js":[function(require,module,exports) {
+},{"../../component/channel/Volume":"node_modules/tone/build/esm/component/channel/Volume.js","../../core/context/ToneAudioBuffers":"node_modules/tone/build/esm/core/context/ToneAudioBuffers.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../Source":"node_modules/tone/build/esm/source/Source.js","./Player":"node_modules/tone/build/esm/source/buffer/Player.js"}],"node_modules/tone/build/esm/source/buffer/GrainPlayer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37529,7 +37529,7 @@ class GrainPlayer extends _Source.Source {
 }
 
 exports.GrainPlayer = GrainPlayer;
-},{"../Source":"../node_modules/tone/build/esm/source/Source.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../core/context/ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/clock/Clock":"../node_modules/tone/build/esm/core/clock/Clock.js","./ToneBufferSource":"../node_modules/tone/build/esm/source/buffer/ToneBufferSource.js","../../core/type/Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/source/index.js":[function(require,module,exports) {
+},{"../Source":"node_modules/tone/build/esm/source/Source.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../core/context/ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/clock/Clock":"node_modules/tone/build/esm/core/clock/Clock.js","./ToneBufferSource":"node_modules/tone/build/esm/source/buffer/ToneBufferSource.js","../../core/type/Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/source/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37730,7 +37730,7 @@ Object.keys(_GrainPlayer).forEach(function (key) {
     }
   });
 });
-},{"./Noise":"../node_modules/tone/build/esm/source/Noise.js","./UserMedia":"../node_modules/tone/build/esm/source/UserMedia.js","./oscillator/Oscillator":"../node_modules/tone/build/esm/source/oscillator/Oscillator.js","./oscillator/AMOscillator":"../node_modules/tone/build/esm/source/oscillator/AMOscillator.js","./oscillator/FMOscillator":"../node_modules/tone/build/esm/source/oscillator/FMOscillator.js","./oscillator/PulseOscillator":"../node_modules/tone/build/esm/source/oscillator/PulseOscillator.js","./oscillator/FatOscillator":"../node_modules/tone/build/esm/source/oscillator/FatOscillator.js","./oscillator/PWMOscillator":"../node_modules/tone/build/esm/source/oscillator/PWMOscillator.js","./oscillator/OmniOscillator":"../node_modules/tone/build/esm/source/oscillator/OmniOscillator.js","./oscillator/ToneOscillatorNode":"../node_modules/tone/build/esm/source/oscillator/ToneOscillatorNode.js","./oscillator/LFO":"../node_modules/tone/build/esm/source/oscillator/LFO.js","./buffer/ToneBufferSource":"../node_modules/tone/build/esm/source/buffer/ToneBufferSource.js","./buffer/Player":"../node_modules/tone/build/esm/source/buffer/Player.js","./buffer/Players":"../node_modules/tone/build/esm/source/buffer/Players.js","./buffer/GrainPlayer":"../node_modules/tone/build/esm/source/buffer/GrainPlayer.js"}],"../node_modules/tone/build/esm/signal/Abs.js":[function(require,module,exports) {
+},{"./Noise":"node_modules/tone/build/esm/source/Noise.js","./UserMedia":"node_modules/tone/build/esm/source/UserMedia.js","./oscillator/Oscillator":"node_modules/tone/build/esm/source/oscillator/Oscillator.js","./oscillator/AMOscillator":"node_modules/tone/build/esm/source/oscillator/AMOscillator.js","./oscillator/FMOscillator":"node_modules/tone/build/esm/source/oscillator/FMOscillator.js","./oscillator/PulseOscillator":"node_modules/tone/build/esm/source/oscillator/PulseOscillator.js","./oscillator/FatOscillator":"node_modules/tone/build/esm/source/oscillator/FatOscillator.js","./oscillator/PWMOscillator":"node_modules/tone/build/esm/source/oscillator/PWMOscillator.js","./oscillator/OmniOscillator":"node_modules/tone/build/esm/source/oscillator/OmniOscillator.js","./oscillator/ToneOscillatorNode":"node_modules/tone/build/esm/source/oscillator/ToneOscillatorNode.js","./oscillator/LFO":"node_modules/tone/build/esm/source/oscillator/LFO.js","./buffer/ToneBufferSource":"node_modules/tone/build/esm/source/buffer/ToneBufferSource.js","./buffer/Player":"node_modules/tone/build/esm/source/buffer/Player.js","./buffer/Players":"node_modules/tone/build/esm/source/buffer/Players.js","./buffer/GrainPlayer":"node_modules/tone/build/esm/source/buffer/GrainPlayer.js"}],"node_modules/tone/build/esm/signal/Abs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37799,7 +37799,7 @@ class Abs extends _SignalOperator.SignalOperator {
 }
 
 exports.Abs = Abs;
-},{"./SignalOperator":"../node_modules/tone/build/esm/signal/SignalOperator.js","./WaveShaper":"../node_modules/tone/build/esm/signal/WaveShaper.js"}],"../node_modules/tone/build/esm/signal/GainToAudio.js":[function(require,module,exports) {
+},{"./SignalOperator":"node_modules/tone/build/esm/signal/SignalOperator.js","./WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js"}],"node_modules/tone/build/esm/signal/GainToAudio.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37855,7 +37855,7 @@ class GainToAudio extends _SignalOperator.SignalOperator {
 }
 
 exports.GainToAudio = GainToAudio;
-},{"./SignalOperator":"../node_modules/tone/build/esm/signal/SignalOperator.js","./WaveShaper":"../node_modules/tone/build/esm/signal/WaveShaper.js"}],"../node_modules/tone/build/esm/signal/Negate.js":[function(require,module,exports) {
+},{"./SignalOperator":"node_modules/tone/build/esm/signal/SignalOperator.js","./WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js"}],"node_modules/tone/build/esm/signal/Negate.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37912,7 +37912,7 @@ class Negate extends _SignalOperator.SignalOperator {
 }
 
 exports.Negate = Negate;
-},{"./Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","./SignalOperator":"../node_modules/tone/build/esm/signal/SignalOperator.js"}],"../node_modules/tone/build/esm/signal/Subtract.js":[function(require,module,exports) {
+},{"./Multiply":"node_modules/tone/build/esm/signal/Multiply.js","./SignalOperator":"node_modules/tone/build/esm/signal/SignalOperator.js"}],"node_modules/tone/build/esm/signal/Subtract.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37997,7 +37997,7 @@ class Subtract extends _Signal.Signal {
 }
 
 exports.Subtract = Subtract;
-},{"../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../signal/Negate":"../node_modules/tone/build/esm/signal/Negate.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js"}],"../node_modules/tone/build/esm/signal/GreaterThanZero.js":[function(require,module,exports) {
+},{"../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../signal/Negate":"node_modules/tone/build/esm/signal/Negate.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js"}],"node_modules/tone/build/esm/signal/GreaterThanZero.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38059,7 +38059,7 @@ class GreaterThanZero extends _SignalOperator.SignalOperator {
 }
 
 exports.GreaterThanZero = GreaterThanZero;
-},{"./SignalOperator":"../node_modules/tone/build/esm/signal/SignalOperator.js","./Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","./WaveShaper":"../node_modules/tone/build/esm/signal/WaveShaper.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js"}],"../node_modules/tone/build/esm/signal/GreaterThan.js":[function(require,module,exports) {
+},{"./SignalOperator":"node_modules/tone/build/esm/signal/SignalOperator.js","./Multiply":"node_modules/tone/build/esm/signal/Multiply.js","./WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js"}],"node_modules/tone/build/esm/signal/GreaterThan.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38127,7 +38127,7 @@ class GreaterThan extends _Signal.Signal {
 }
 
 exports.GreaterThan = GreaterThan;
-},{"../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Subtract":"../node_modules/tone/build/esm/signal/Subtract.js","./Signal":"../node_modules/tone/build/esm/signal/Signal.js","./GreaterThanZero":"../node_modules/tone/build/esm/signal/GreaterThanZero.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/signal/Pow.js":[function(require,module,exports) {
+},{"../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Subtract":"node_modules/tone/build/esm/signal/Subtract.js","./Signal":"node_modules/tone/build/esm/signal/Signal.js","./GreaterThanZero":"node_modules/tone/build/esm/signal/GreaterThanZero.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/signal/Pow.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38209,7 +38209,7 @@ class Pow extends _SignalOperator.SignalOperator {
 }
 
 exports.Pow = Pow;
-},{"./WaveShaper":"../node_modules/tone/build/esm/signal/WaveShaper.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./SignalOperator":"../node_modules/tone/build/esm/signal/SignalOperator.js"}],"../node_modules/tone/build/esm/signal/ScaleExp.js":[function(require,module,exports) {
+},{"./WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./SignalOperator":"node_modules/tone/build/esm/signal/SignalOperator.js"}],"node_modules/tone/build/esm/signal/ScaleExp.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38276,7 +38276,7 @@ class ScaleExp extends _Scale.Scale {
 }
 
 exports.ScaleExp = ScaleExp;
-},{"./Scale":"../node_modules/tone/build/esm/signal/Scale.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Pow":"../node_modules/tone/build/esm/signal/Pow.js"}],"../node_modules/tone/build/esm/signal/SyncedSignal.js":[function(require,module,exports) {
+},{"./Scale":"node_modules/tone/build/esm/signal/Scale.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Pow":"node_modules/tone/build/esm/signal/Pow.js"}],"node_modules/tone/build/esm/signal/SyncedSignal.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38439,7 +38439,7 @@ class SyncedSignal extends _Signal.Signal {
 }
 
 exports.SyncedSignal = SyncedSignal;
-},{"./Signal":"../node_modules/tone/build/esm/signal/Signal.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/type/TransportTime":"../node_modules/tone/build/esm/core/type/TransportTime.js","./ToneConstantSource":"../node_modules/tone/build/esm/signal/ToneConstantSource.js"}],"../node_modules/tone/build/esm/signal/index.js":[function(require,module,exports) {
+},{"./Signal":"node_modules/tone/build/esm/signal/Signal.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/type/TransportTime":"node_modules/tone/build/esm/core/type/TransportTime.js","./ToneConstantSource":"node_modules/tone/build/esm/signal/ToneConstantSource.js"}],"node_modules/tone/build/esm/signal/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38653,7 +38653,7 @@ Object.keys(_Zero).forEach(function (key) {
     }
   });
 });
-},{"./Add":"../node_modules/tone/build/esm/signal/Add.js","./Abs":"../node_modules/tone/build/esm/signal/Abs.js","./AudioToGain":"../node_modules/tone/build/esm/signal/AudioToGain.js","./GainToAudio":"../node_modules/tone/build/esm/signal/GainToAudio.js","./GreaterThan":"../node_modules/tone/build/esm/signal/GreaterThan.js","./GreaterThanZero":"../node_modules/tone/build/esm/signal/GreaterThanZero.js","./Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","./Negate":"../node_modules/tone/build/esm/signal/Negate.js","./Pow":"../node_modules/tone/build/esm/signal/Pow.js","./Signal":"../node_modules/tone/build/esm/signal/Signal.js","./Scale":"../node_modules/tone/build/esm/signal/Scale.js","./ScaleExp":"../node_modules/tone/build/esm/signal/ScaleExp.js","./Subtract":"../node_modules/tone/build/esm/signal/Subtract.js","./SyncedSignal":"../node_modules/tone/build/esm/signal/SyncedSignal.js","./WaveShaper":"../node_modules/tone/build/esm/signal/WaveShaper.js","./Zero":"../node_modules/tone/build/esm/signal/Zero.js"}],"../node_modules/tone/build/esm/component/envelope/Envelope.js":[function(require,module,exports) {
+},{"./Add":"node_modules/tone/build/esm/signal/Add.js","./Abs":"node_modules/tone/build/esm/signal/Abs.js","./AudioToGain":"node_modules/tone/build/esm/signal/AudioToGain.js","./GainToAudio":"node_modules/tone/build/esm/signal/GainToAudio.js","./GreaterThan":"node_modules/tone/build/esm/signal/GreaterThan.js","./GreaterThanZero":"node_modules/tone/build/esm/signal/GreaterThanZero.js","./Multiply":"node_modules/tone/build/esm/signal/Multiply.js","./Negate":"node_modules/tone/build/esm/signal/Negate.js","./Pow":"node_modules/tone/build/esm/signal/Pow.js","./Signal":"node_modules/tone/build/esm/signal/Signal.js","./Scale":"node_modules/tone/build/esm/signal/Scale.js","./ScaleExp":"node_modules/tone/build/esm/signal/ScaleExp.js","./Subtract":"node_modules/tone/build/esm/signal/Subtract.js","./SyncedSignal":"node_modules/tone/build/esm/signal/SyncedSignal.js","./WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js","./Zero":"node_modules/tone/build/esm/signal/Zero.js"}],"node_modules/tone/build/esm/component/envelope/Envelope.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39195,7 +39195,7 @@ const EnvelopeCurves = (() => {
     }
   };
 })();
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../../core/context/OfflineContext":"../node_modules/tone/build/esm/core/context/OfflineContext.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../../core/util/Decorator":"../node_modules/tone/build/esm/core/util/Decorator.js"}],"../node_modules/tone/build/esm/instrument/Instrument.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../../core/context/OfflineContext":"node_modules/tone/build/esm/core/context/OfflineContext.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../../core/util/Decorator":"node_modules/tone/build/esm/core/util/Decorator.js"}],"node_modules/tone/build/esm/instrument/Instrument.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39362,7 +39362,7 @@ class Instrument extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Instrument = Instrument;
-},{"../component/channel/Volume":"../node_modules/tone/build/esm/component/channel/Volume.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/instrument/Monophonic.js":[function(require,module,exports) {
+},{"../component/channel/Volume":"node_modules/tone/build/esm/component/channel/Volume.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/instrument/Monophonic.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39471,7 +39471,7 @@ class Monophonic extends _Instrument.Instrument {
 
 exports.Monophonic = Monophonic;
 (0, _tslib.__decorate)([(0, _Decorator.timeRange)(0)], Monophonic.prototype, "portamento", void 0);
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../core/type/Frequency":"../node_modules/tone/build/esm/core/type/Frequency.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../instrument/Instrument":"../node_modules/tone/build/esm/instrument/Instrument.js","../core/util/Decorator":"../node_modules/tone/build/esm/core/util/Decorator.js"}],"../node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../core/type/Frequency":"node_modules/tone/build/esm/core/type/Frequency.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../instrument/Instrument":"node_modules/tone/build/esm/instrument/Instrument.js","../core/util/Decorator":"node_modules/tone/build/esm/core/util/Decorator.js"}],"node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39539,7 +39539,7 @@ class AmplitudeEnvelope extends _Envelope.Envelope {
 }
 
 exports.AmplitudeEnvelope = AmplitudeEnvelope;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Envelope":"../node_modules/tone/build/esm/component/envelope/Envelope.js"}],"../node_modules/tone/build/esm/instrument/Synth.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Envelope":"node_modules/tone/build/esm/component/envelope/Envelope.js"}],"node_modules/tone/build/esm/instrument/Synth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39656,7 +39656,7 @@ class Synth extends _Monophonic.Monophonic {
 }
 
 exports.Synth = Synth;
-},{"../component/envelope/AmplitudeEnvelope":"../node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js","../component/envelope/Envelope":"../node_modules/tone/build/esm/component/envelope/Envelope.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../source/oscillator/OmniOscillator":"../node_modules/tone/build/esm/source/oscillator/OmniOscillator.js","../source/Source":"../node_modules/tone/build/esm/source/Source.js","./Monophonic":"../node_modules/tone/build/esm/instrument/Monophonic.js"}],"../node_modules/tone/build/esm/instrument/ModulationSynth.js":[function(require,module,exports) {
+},{"../component/envelope/AmplitudeEnvelope":"node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js","../component/envelope/Envelope":"node_modules/tone/build/esm/component/envelope/Envelope.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../source/oscillator/OmniOscillator":"node_modules/tone/build/esm/source/oscillator/OmniOscillator.js","../source/Source":"node_modules/tone/build/esm/source/Source.js","./Monophonic":"node_modules/tone/build/esm/instrument/Monophonic.js"}],"node_modules/tone/build/esm/instrument/ModulationSynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39806,7 +39806,7 @@ class ModulationSynth extends _Monophonic.Monophonic {
 }
 
 exports.ModulationSynth = ModulationSynth;
-},{"../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../component/envelope/Envelope":"../node_modules/tone/build/esm/component/envelope/Envelope.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Monophonic":"../node_modules/tone/build/esm/instrument/Monophonic.js","../source/oscillator/OmniOscillator":"../node_modules/tone/build/esm/source/oscillator/OmniOscillator.js","../source/Source":"../node_modules/tone/build/esm/source/Source.js","./Synth":"../node_modules/tone/build/esm/instrument/Synth.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js"}],"../node_modules/tone/build/esm/instrument/AMSynth.js":[function(require,module,exports) {
+},{"../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../component/envelope/Envelope":"node_modules/tone/build/esm/component/envelope/Envelope.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Monophonic":"node_modules/tone/build/esm/instrument/Monophonic.js","../source/oscillator/OmniOscillator":"node_modules/tone/build/esm/source/oscillator/OmniOscillator.js","../source/Source":"node_modules/tone/build/esm/source/Source.js","./Synth":"node_modules/tone/build/esm/instrument/Synth.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js"}],"node_modules/tone/build/esm/instrument/AMSynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39861,7 +39861,7 @@ class AMSynth extends _ModulationSynth.ModulationSynth {
 }
 
 exports.AMSynth = AMSynth;
-},{"../signal/AudioToGain":"../node_modules/tone/build/esm/signal/AudioToGain.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./ModulationSynth":"../node_modules/tone/build/esm/instrument/ModulationSynth.js"}],"../node_modules/tone/build/esm/component/filter/BiquadFilter.js":[function(require,module,exports) {
+},{"../signal/AudioToGain":"node_modules/tone/build/esm/signal/AudioToGain.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./ModulationSynth":"node_modules/tone/build/esm/instrument/ModulationSynth.js"}],"node_modules/tone/build/esm/component/filter/BiquadFilter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39986,7 +39986,7 @@ class BiquadFilter extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.BiquadFilter = BiquadFilter;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/component/filter/Filter.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/component/filter/Filter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40177,7 +40177,7 @@ class Filter extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Filter = Filter;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","./BiquadFilter":"../node_modules/tone/build/esm/component/filter/BiquadFilter.js"}],"../node_modules/tone/build/esm/component/envelope/FrequencyEnvelope.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","./BiquadFilter":"node_modules/tone/build/esm/component/filter/BiquadFilter.js"}],"node_modules/tone/build/esm/component/envelope/FrequencyEnvelope.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40299,7 +40299,7 @@ class FrequencyEnvelope extends _Envelope.Envelope {
 }
 
 exports.FrequencyEnvelope = FrequencyEnvelope;
-},{"../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Envelope":"../node_modules/tone/build/esm/component/envelope/Envelope.js","../../signal/Scale":"../node_modules/tone/build/esm/signal/Scale.js","../../signal/Pow":"../node_modules/tone/build/esm/signal/Pow.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/instrument/MonoSynth.js":[function(require,module,exports) {
+},{"../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Envelope":"node_modules/tone/build/esm/component/envelope/Envelope.js","../../signal/Scale":"node_modules/tone/build/esm/signal/Scale.js","../../signal/Pow":"node_modules/tone/build/esm/signal/Pow.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/instrument/MonoSynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40446,7 +40446,7 @@ class MonoSynth extends _Monophonic.Monophonic {
 }
 
 exports.MonoSynth = MonoSynth;
-},{"../component/envelope/AmplitudeEnvelope":"../node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js","../component/envelope/Envelope":"../node_modules/tone/build/esm/component/envelope/Envelope.js","../component/filter/Filter":"../node_modules/tone/build/esm/component/filter/Filter.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../instrument/Monophonic":"../node_modules/tone/build/esm/instrument/Monophonic.js","../source/oscillator/OmniOscillator":"../node_modules/tone/build/esm/source/oscillator/OmniOscillator.js","../source/Source":"../node_modules/tone/build/esm/source/Source.js","../component/envelope/FrequencyEnvelope":"../node_modules/tone/build/esm/component/envelope/FrequencyEnvelope.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"../node_modules/tone/build/esm/instrument/DuoSynth.js":[function(require,module,exports) {
+},{"../component/envelope/AmplitudeEnvelope":"node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js","../component/envelope/Envelope":"node_modules/tone/build/esm/component/envelope/Envelope.js","../component/filter/Filter":"node_modules/tone/build/esm/component/filter/Filter.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../instrument/Monophonic":"node_modules/tone/build/esm/instrument/Monophonic.js","../source/oscillator/OmniOscillator":"node_modules/tone/build/esm/source/oscillator/OmniOscillator.js","../source/Source":"node_modules/tone/build/esm/source/Source.js","../component/envelope/FrequencyEnvelope":"node_modules/tone/build/esm/component/envelope/FrequencyEnvelope.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"node_modules/tone/build/esm/instrument/DuoSynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40622,7 +40622,7 @@ class DuoSynth extends _Monophonic.Monophonic {
 }
 
 exports.DuoSynth = DuoSynth;
-},{"./Monophonic":"../node_modules/tone/build/esm/instrument/Monophonic.js","./MonoSynth":"../node_modules/tone/build/esm/instrument/MonoSynth.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../source/oscillator/LFO":"../node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js"}],"../node_modules/tone/build/esm/instrument/FMSynth.js":[function(require,module,exports) {
+},{"./Monophonic":"node_modules/tone/build/esm/instrument/Monophonic.js","./MonoSynth":"node_modules/tone/build/esm/instrument/MonoSynth.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../source/oscillator/LFO":"node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js"}],"node_modules/tone/build/esm/instrument/FMSynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40685,7 +40685,7 @@ class FMSynth extends _ModulationSynth.ModulationSynth {
 }
 
 exports.FMSynth = FMSynth;
-},{"../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","./ModulationSynth":"../node_modules/tone/build/esm/instrument/ModulationSynth.js"}],"../node_modules/tone/build/esm/instrument/MetalSynth.js":[function(require,module,exports) {
+},{"../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","./ModulationSynth":"node_modules/tone/build/esm/instrument/ModulationSynth.js"}],"node_modules/tone/build/esm/instrument/MetalSynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40941,7 +40941,7 @@ class MetalSynth extends _Monophonic.Monophonic {
 }
 
 exports.MetalSynth = MetalSynth;
-},{"../component/envelope/Envelope":"../node_modules/tone/build/esm/component/envelope/Envelope.js","../component/filter/Filter":"../node_modules/tone/build/esm/component/filter/Filter.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../signal/Scale":"../node_modules/tone/build/esm/signal/Scale.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../source/oscillator/FMOscillator":"../node_modules/tone/build/esm/source/oscillator/FMOscillator.js","./Monophonic":"../node_modules/tone/build/esm/instrument/Monophonic.js"}],"../node_modules/tone/build/esm/instrument/MembraneSynth.js":[function(require,module,exports) {
+},{"../component/envelope/Envelope":"node_modules/tone/build/esm/component/envelope/Envelope.js","../component/filter/Filter":"node_modules/tone/build/esm/component/filter/Filter.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../signal/Scale":"node_modules/tone/build/esm/signal/Scale.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../source/oscillator/FMOscillator":"node_modules/tone/build/esm/source/oscillator/FMOscillator.js","./Monophonic":"node_modules/tone/build/esm/instrument/Monophonic.js"}],"node_modules/tone/build/esm/instrument/MembraneSynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41027,7 +41027,7 @@ class MembraneSynth extends _Synth.Synth {
 exports.MembraneSynth = MembraneSynth;
 (0, _tslib.__decorate)([(0, _Decorator.range)(0)], MembraneSynth.prototype, "octaves", void 0);
 (0, _tslib.__decorate)([(0, _Decorator.timeRange)(0)], MembraneSynth.prototype, "pitchDecay", void 0);
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../core/type/Frequency":"../node_modules/tone/build/esm/core/type/Frequency.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","./Monophonic":"../node_modules/tone/build/esm/instrument/Monophonic.js","./Synth":"../node_modules/tone/build/esm/instrument/Synth.js","../core/util/Decorator":"../node_modules/tone/build/esm/core/util/Decorator.js"}],"../node_modules/tone/build/esm/instrument/NoiseSynth.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../core/type/Frequency":"node_modules/tone/build/esm/core/type/Frequency.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","./Monophonic":"node_modules/tone/build/esm/instrument/Monophonic.js","./Synth":"node_modules/tone/build/esm/instrument/Synth.js","../core/util/Decorator":"node_modules/tone/build/esm/core/util/Decorator.js"}],"node_modules/tone/build/esm/instrument/NoiseSynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41149,7 +41149,7 @@ class NoiseSynth extends _Instrument.Instrument {
 }
 
 exports.NoiseSynth = NoiseSynth;
-},{"../component/envelope/AmplitudeEnvelope":"../node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../source/Noise":"../node_modules/tone/build/esm/source/Noise.js","./Instrument":"../node_modules/tone/build/esm/instrument/Instrument.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../component/envelope/Envelope":"../node_modules/tone/build/esm/component/envelope/Envelope.js","../source/Source":"../node_modules/tone/build/esm/source/Source.js"}],"../node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js":[function(require,module,exports) {
+},{"../component/envelope/AmplitudeEnvelope":"node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../source/Noise":"node_modules/tone/build/esm/source/Noise.js","./Instrument":"node_modules/tone/build/esm/instrument/Instrument.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../component/envelope/Envelope":"node_modules/tone/build/esm/component/envelope/Envelope.js","../source/Source":"node_modules/tone/build/esm/source/Source.js"}],"node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41189,7 +41189,7 @@ function registerProcessor(name, classDesc) {
 function getWorkletGlobalScope() {
   return Array.from(workletContext).join("\n");
 }
-},{}],"../node_modules/tone/build/esm/core/worklet/ToneAudioWorklet.js":[function(require,module,exports) {
+},{}],"node_modules/tone/build/esm/core/worklet/ToneAudioWorklet.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41253,7 +41253,7 @@ class ToneAudioWorklet extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.ToneAudioWorklet = ToneAudioWorklet;
-},{"../context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","./WorkletGlobalScope":"../node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"../node_modules/tone/build/esm/core/worklet/ToneAudioWorkletProcessor.worklet.js":[function(require,module,exports) {
+},{"../context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","./WorkletGlobalScope":"node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"node_modules/tone/build/esm/core/worklet/ToneAudioWorkletProcessor.worklet.js":[function(require,module,exports) {
 "use strict";
 
 var _WorkletGlobalScope = require("./WorkletGlobalScope");
@@ -41292,7 +41292,7 @@ const toneAudioWorkletProcessor =
 	}
 `;
 (0, _WorkletGlobalScope.addToWorklet)(toneAudioWorkletProcessor);
-},{"./WorkletGlobalScope":"../node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"../node_modules/tone/build/esm/core/worklet/SingleIOProcessor.worklet.js":[function(require,module,exports) {
+},{"./WorkletGlobalScope":"node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"node_modules/tone/build/esm/core/worklet/SingleIOProcessor.worklet.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41376,7 +41376,7 @@ const singleIOProcess =
 `;
 exports.singleIOProcess = singleIOProcess;
 (0, _WorkletGlobalScope.addToWorklet)(singleIOProcess);
-},{"./ToneAudioWorkletProcessor.worklet":"../node_modules/tone/build/esm/core/worklet/ToneAudioWorkletProcessor.worklet.js","./WorkletGlobalScope":"../node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"../node_modules/tone/build/esm/core/worklet/DelayLine.worklet.js":[function(require,module,exports) {
+},{"./ToneAudioWorkletProcessor.worklet":"node_modules/tone/build/esm/core/worklet/ToneAudioWorkletProcessor.worklet.js","./WorkletGlobalScope":"node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"node_modules/tone/build/esm/core/worklet/DelayLine.worklet.js":[function(require,module,exports) {
 "use strict";
 
 var _WorkletGlobalScope = require("./WorkletGlobalScope");
@@ -41429,7 +41429,7 @@ const delayLine =
 	}
 `;
 (0, _WorkletGlobalScope.addToWorklet)(delayLine);
-},{"./WorkletGlobalScope":"../node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"../node_modules/tone/build/esm/component/filter/FeedbackCombFilter.worklet.js":[function(require,module,exports) {
+},{"./WorkletGlobalScope":"node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"node_modules/tone/build/esm/component/filter/FeedbackCombFilter.worklet.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41479,7 +41479,7 @@ const feedbackCombFilter =
 	}
 `;
 (0, _WorkletGlobalScope.registerProcessor)(workletName, feedbackCombFilter);
-},{"../../core/worklet/SingleIOProcessor.worklet":"../node_modules/tone/build/esm/core/worklet/SingleIOProcessor.worklet.js","../../core/worklet/DelayLine.worklet":"../node_modules/tone/build/esm/core/worklet/DelayLine.worklet.js","../../core/worklet/WorkletGlobalScope":"../node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"../node_modules/tone/build/esm/component/filter/FeedbackCombFilter.js":[function(require,module,exports) {
+},{"../../core/worklet/SingleIOProcessor.worklet":"node_modules/tone/build/esm/core/worklet/SingleIOProcessor.worklet.js","../../core/worklet/DelayLine.worklet":"node_modules/tone/build/esm/core/worklet/DelayLine.worklet.js","../../core/worklet/WorkletGlobalScope":"node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"node_modules/tone/build/esm/component/filter/FeedbackCombFilter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41577,7 +41577,7 @@ class FeedbackCombFilter extends _ToneAudioWorklet.ToneAudioWorklet {
 }
 
 exports.FeedbackCombFilter = FeedbackCombFilter;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../core/worklet/ToneAudioWorklet":"../node_modules/tone/build/esm/core/worklet/ToneAudioWorklet.js","./FeedbackCombFilter.worklet":"../node_modules/tone/build/esm/component/filter/FeedbackCombFilter.worklet.js"}],"../node_modules/tone/build/esm/component/filter/OnePoleFilter.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../core/worklet/ToneAudioWorklet":"node_modules/tone/build/esm/core/worklet/ToneAudioWorklet.js","./FeedbackCombFilter.worklet":"node_modules/tone/build/esm/component/filter/FeedbackCombFilter.worklet.js"}],"node_modules/tone/build/esm/component/filter/OnePoleFilter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41721,7 +41721,7 @@ class OnePoleFilter extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.OnePoleFilter = OnePoleFilter;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js"}],"../node_modules/tone/build/esm/component/filter/LowpassCombFilter.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js"}],"node_modules/tone/build/esm/component/filter/LowpassCombFilter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41796,7 +41796,7 @@ class LowpassCombFilter extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.LowpassCombFilter = LowpassCombFilter;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./FeedbackCombFilter":"../node_modules/tone/build/esm/component/filter/FeedbackCombFilter.js","./OnePoleFilter":"../node_modules/tone/build/esm/component/filter/OnePoleFilter.js"}],"../node_modules/tone/build/esm/instrument/PluckSynth.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./FeedbackCombFilter":"node_modules/tone/build/esm/component/filter/FeedbackCombFilter.js","./OnePoleFilter":"node_modules/tone/build/esm/component/filter/OnePoleFilter.js"}],"node_modules/tone/build/esm/instrument/PluckSynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41909,7 +41909,7 @@ class PluckSynth extends _Instrument.Instrument {
 }
 
 exports.PluckSynth = PluckSynth;
-},{"../component/filter/LowpassCombFilter":"../node_modules/tone/build/esm/component/filter/LowpassCombFilter.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../source/Noise":"../node_modules/tone/build/esm/source/Noise.js","./Instrument":"../node_modules/tone/build/esm/instrument/Instrument.js"}],"../node_modules/tone/build/esm/instrument/PolySynth.js":[function(require,module,exports) {
+},{"../component/filter/LowpassCombFilter":"node_modules/tone/build/esm/component/filter/LowpassCombFilter.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../source/Noise":"node_modules/tone/build/esm/source/Noise.js","./Instrument":"node_modules/tone/build/esm/instrument/Instrument.js"}],"node_modules/tone/build/esm/instrument/PolySynth.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42295,7 +42295,7 @@ class PolySynth extends _Instrument.Instrument {
 }
 
 exports.PolySynth = PolySynth;
-},{"../core/type/Midi":"../node_modules/tone/build/esm/core/type/Midi.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./Instrument":"../node_modules/tone/build/esm/instrument/Instrument.js","./Synth":"../node_modules/tone/build/esm/instrument/Synth.js","../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/instrument/Sampler.js":[function(require,module,exports) {
+},{"../core/type/Midi":"node_modules/tone/build/esm/core/type/Midi.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./Instrument":"node_modules/tone/build/esm/instrument/Instrument.js","./Synth":"node_modules/tone/build/esm/instrument/Synth.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/instrument/Sampler.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42615,7 +42615,7 @@ class Sampler extends _Instrument.Instrument {
 exports.Sampler = Sampler;
 (0, _tslib.__decorate)([(0, _Decorator.timeRange)(0)], Sampler.prototype, "attack", void 0);
 (0, _tslib.__decorate)([(0, _Decorator.timeRange)(0)], Sampler.prototype, "release", void 0);
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../core/context/ToneAudioBuffers":"../node_modules/tone/build/esm/core/context/ToneAudioBuffers.js","../core/type/Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","../core/type/Frequency":"../node_modules/tone/build/esm/core/type/Frequency.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","../instrument/Instrument":"../node_modules/tone/build/esm/instrument/Instrument.js","../source/buffer/ToneBufferSource":"../node_modules/tone/build/esm/source/buffer/ToneBufferSource.js","../core/util/Decorator":"../node_modules/tone/build/esm/core/util/Decorator.js","../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/instrument/index.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../core/context/ToneAudioBuffers":"node_modules/tone/build/esm/core/context/ToneAudioBuffers.js","../core/type/Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","../core/type/Frequency":"node_modules/tone/build/esm/core/type/Frequency.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","../instrument/Instrument":"node_modules/tone/build/esm/instrument/Instrument.js","../source/buffer/ToneBufferSource":"node_modules/tone/build/esm/source/buffer/ToneBufferSource.js","../core/util/Decorator":"node_modules/tone/build/esm/core/util/Decorator.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/instrument/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42764,7 +42764,7 @@ Object.keys(_Synth).forEach(function (key) {
     }
   });
 });
-},{"./AMSynth":"../node_modules/tone/build/esm/instrument/AMSynth.js","./DuoSynth":"../node_modules/tone/build/esm/instrument/DuoSynth.js","./FMSynth":"../node_modules/tone/build/esm/instrument/FMSynth.js","./MetalSynth":"../node_modules/tone/build/esm/instrument/MetalSynth.js","./MembraneSynth":"../node_modules/tone/build/esm/instrument/MembraneSynth.js","./MonoSynth":"../node_modules/tone/build/esm/instrument/MonoSynth.js","./NoiseSynth":"../node_modules/tone/build/esm/instrument/NoiseSynth.js","./PluckSynth":"../node_modules/tone/build/esm/instrument/PluckSynth.js","./PolySynth":"../node_modules/tone/build/esm/instrument/PolySynth.js","./Sampler":"../node_modules/tone/build/esm/instrument/Sampler.js","./Synth":"../node_modules/tone/build/esm/instrument/Synth.js"}],"../node_modules/tone/build/esm/event/ToneEvent.js":[function(require,module,exports) {
+},{"./AMSynth":"node_modules/tone/build/esm/instrument/AMSynth.js","./DuoSynth":"node_modules/tone/build/esm/instrument/DuoSynth.js","./FMSynth":"node_modules/tone/build/esm/instrument/FMSynth.js","./MetalSynth":"node_modules/tone/build/esm/instrument/MetalSynth.js","./MembraneSynth":"node_modules/tone/build/esm/instrument/MembraneSynth.js","./MonoSynth":"node_modules/tone/build/esm/instrument/MonoSynth.js","./NoiseSynth":"node_modules/tone/build/esm/instrument/NoiseSynth.js","./PluckSynth":"node_modules/tone/build/esm/instrument/PluckSynth.js","./PolySynth":"node_modules/tone/build/esm/instrument/PolySynth.js","./Sampler":"node_modules/tone/build/esm/instrument/Sampler.js","./Synth":"node_modules/tone/build/esm/instrument/Synth.js"}],"node_modules/tone/build/esm/event/ToneEvent.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43154,7 +43154,7 @@ class ToneEvent extends _ToneWithContext.ToneWithContext {
 }
 
 exports.ToneEvent = ToneEvent;
-},{"../core/clock/Transport":"../node_modules/tone/build/esm/core/clock/Transport.js","../core/context/ToneWithContext":"../node_modules/tone/build/esm/core/context/ToneWithContext.js","../core/type/Ticks":"../node_modules/tone/build/esm/core/type/Ticks.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../core/util/StateTimeline":"../node_modules/tone/build/esm/core/util/StateTimeline.js","../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js"}],"../node_modules/tone/build/esm/event/Loop.js":[function(require,module,exports) {
+},{"../core/clock/Transport":"node_modules/tone/build/esm/core/clock/Transport.js","../core/context/ToneWithContext":"node_modules/tone/build/esm/core/context/ToneWithContext.js","../core/type/Ticks":"node_modules/tone/build/esm/core/type/Ticks.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../core/util/StateTimeline":"node_modules/tone/build/esm/core/util/StateTimeline.js","../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js"}],"node_modules/tone/build/esm/event/Loop.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43367,7 +43367,7 @@ class Loop extends _ToneWithContext.ToneWithContext {
 }
 
 exports.Loop = Loop;
-},{"./ToneEvent":"../node_modules/tone/build/esm/event/ToneEvent.js","../core/context/ToneWithContext":"../node_modules/tone/build/esm/core/context/ToneWithContext.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/event/Part.js":[function(require,module,exports) {
+},{"./ToneEvent":"node_modules/tone/build/esm/event/ToneEvent.js","../core/context/ToneWithContext":"node_modules/tone/build/esm/core/context/ToneWithContext.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/event/Part.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43867,7 +43867,7 @@ class Part extends _ToneEvent.ToneEvent {
 }
 
 exports.Part = Part;
-},{"../core/type/Ticks":"../node_modules/tone/build/esm/core/type/Ticks.js","../core/type/TransportTime":"../node_modules/tone/build/esm/core/type/TransportTime.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/StateTimeline":"../node_modules/tone/build/esm/core/util/StateTimeline.js","../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./ToneEvent":"../node_modules/tone/build/esm/event/ToneEvent.js"}],"../node_modules/tone/build/esm/event/PatternGenerator.js":[function(require,module,exports) {
+},{"../core/type/Ticks":"node_modules/tone/build/esm/core/type/Ticks.js","../core/type/TransportTime":"node_modules/tone/build/esm/core/type/TransportTime.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/StateTimeline":"node_modules/tone/build/esm/core/util/StateTimeline.js","../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./ToneEvent":"node_modules/tone/build/esm/event/ToneEvent.js"}],"node_modules/tone/build/esm/event/PatternGenerator.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -44079,7 +44079,7 @@ function* PatternGenerator(values, pattern = "up", index = 0) {
       yield* randomWalk(values);
   }
 }
-},{"../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../core/util/Math":"../node_modules/tone/build/esm/core/util/Math.js"}],"../node_modules/tone/build/esm/event/Pattern.js":[function(require,module,exports) {
+},{"../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../core/util/Math":"node_modules/tone/build/esm/core/util/Math.js"}],"node_modules/tone/build/esm/event/Pattern.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -44172,7 +44172,7 @@ class Pattern extends _Loop.Loop {
 }
 
 exports.Pattern = Pattern;
-},{"./Loop":"../node_modules/tone/build/esm/event/Loop.js","./PatternGenerator":"../node_modules/tone/build/esm/event/PatternGenerator.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/event/Sequence.js":[function(require,module,exports) {
+},{"./Loop":"node_modules/tone/build/esm/event/Loop.js","./PatternGenerator":"node_modules/tone/build/esm/event/PatternGenerator.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/event/Sequence.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -44488,7 +44488,7 @@ class Sequence extends _ToneEvent.ToneEvent {
 }
 
 exports.Sequence = Sequence;
-},{"../core/type/Ticks":"../node_modules/tone/build/esm/core/type/Ticks.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/TypeCheck":"../node_modules/tone/build/esm/core/util/TypeCheck.js","./Part":"../node_modules/tone/build/esm/event/Part.js","./ToneEvent":"../node_modules/tone/build/esm/event/ToneEvent.js"}],"../node_modules/tone/build/esm/event/index.js":[function(require,module,exports) {
+},{"../core/type/Ticks":"node_modules/tone/build/esm/core/type/Ticks.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/TypeCheck":"node_modules/tone/build/esm/core/util/TypeCheck.js","./Part":"node_modules/tone/build/esm/event/Part.js","./ToneEvent":"node_modules/tone/build/esm/event/ToneEvent.js"}],"node_modules/tone/build/esm/event/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -44559,7 +44559,7 @@ Object.keys(_ToneEvent).forEach(function (key) {
     }
   });
 });
-},{"./Loop":"../node_modules/tone/build/esm/event/Loop.js","./Part":"../node_modules/tone/build/esm/event/Part.js","./Pattern":"../node_modules/tone/build/esm/event/Pattern.js","./Sequence":"../node_modules/tone/build/esm/event/Sequence.js","./ToneEvent":"../node_modules/tone/build/esm/event/ToneEvent.js"}],"../node_modules/tone/build/esm/component/channel/CrossFade.js":[function(require,module,exports) {
+},{"./Loop":"node_modules/tone/build/esm/event/Loop.js","./Part":"node_modules/tone/build/esm/event/Part.js","./Pattern":"node_modules/tone/build/esm/event/Pattern.js","./Sequence":"node_modules/tone/build/esm/event/Sequence.js","./ToneEvent":"node_modules/tone/build/esm/event/ToneEvent.js"}],"node_modules/tone/build/esm/component/channel/CrossFade.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -44699,7 +44699,7 @@ class CrossFade extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.CrossFade = CrossFade;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../signal/GainToAudio":"../node_modules/tone/build/esm/signal/GainToAudio.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js"}],"../node_modules/tone/build/esm/effect/Effect.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../signal/GainToAudio":"node_modules/tone/build/esm/signal/GainToAudio.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js"}],"node_modules/tone/build/esm/effect/Effect.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -44804,7 +44804,7 @@ class Effect extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Effect = Effect;
-},{"../component/channel/CrossFade":"../node_modules/tone/build/esm/component/channel/CrossFade.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/LFOEffect.js":[function(require,module,exports) {
+},{"../component/channel/CrossFade":"node_modules/tone/build/esm/component/channel/CrossFade.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/LFOEffect.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -44913,7 +44913,7 @@ class LFOEffect extends _Effect.Effect {
 }
 
 exports.LFOEffect = LFOEffect;
-},{"../effect/Effect":"../node_modules/tone/build/esm/effect/Effect.js","../source/oscillator/LFO":"../node_modules/tone/build/esm/source/oscillator/LFO.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/AutoFilter.js":[function(require,module,exports) {
+},{"../effect/Effect":"node_modules/tone/build/esm/effect/Effect.js","../source/oscillator/LFO":"node_modules/tone/build/esm/source/oscillator/LFO.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/AutoFilter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45004,7 +45004,7 @@ class AutoFilter extends _LFOEffect.LFOEffect {
 }
 
 exports.AutoFilter = AutoFilter;
-},{"../component/filter/Filter":"../node_modules/tone/build/esm/component/filter/Filter.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./LFOEffect":"../node_modules/tone/build/esm/effect/LFOEffect.js"}],"../node_modules/tone/build/esm/component/channel/Panner.js":[function(require,module,exports) {
+},{"../component/filter/Filter":"node_modules/tone/build/esm/component/filter/Filter.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./LFOEffect":"node_modules/tone/build/esm/effect/LFOEffect.js"}],"node_modules/tone/build/esm/component/channel/Panner.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45078,7 +45078,7 @@ class Panner extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Panner = Panner;
-},{"../../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/AutoPanner.js":[function(require,module,exports) {
+},{"../../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/AutoPanner.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45138,7 +45138,7 @@ class AutoPanner extends _LFOEffect.LFOEffect {
 }
 
 exports.AutoPanner = AutoPanner;
-},{"../component/channel/Panner":"../node_modules/tone/build/esm/component/channel/Panner.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./LFOEffect":"../node_modules/tone/build/esm/effect/LFOEffect.js"}],"../node_modules/tone/build/esm/component/analysis/Follower.js":[function(require,module,exports) {
+},{"../component/channel/Panner":"node_modules/tone/build/esm/component/channel/Panner.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./LFOEffect":"node_modules/tone/build/esm/effect/LFOEffect.js"}],"node_modules/tone/build/esm/component/analysis/Follower.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45215,7 +45215,7 @@ class Follower extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Follower = Follower;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../filter/OnePoleFilter":"../node_modules/tone/build/esm/component/filter/OnePoleFilter.js","../../signal/Abs":"../node_modules/tone/build/esm/signal/Abs.js"}],"../node_modules/tone/build/esm/effect/AutoWah.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../filter/OnePoleFilter":"node_modules/tone/build/esm/component/filter/OnePoleFilter.js","../../signal/Abs":"node_modules/tone/build/esm/signal/Abs.js"}],"node_modules/tone/build/esm/effect/AutoWah.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45394,7 +45394,7 @@ class AutoWah extends _Effect.Effect {
 }
 
 exports.AutoWah = AutoWah;
-},{"./Effect":"../node_modules/tone/build/esm/effect/Effect.js","../component/filter/Filter":"../node_modules/tone/build/esm/component/filter/Filter.js","../component/analysis/Follower":"../node_modules/tone/build/esm/component/analysis/Follower.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/type/Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","../signal/ScaleExp":"../node_modules/tone/build/esm/signal/ScaleExp.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/BitCrusher.worklet.js":[function(require,module,exports) {
+},{"./Effect":"node_modules/tone/build/esm/effect/Effect.js","../component/filter/Filter":"node_modules/tone/build/esm/component/filter/Filter.js","../component/analysis/Follower":"node_modules/tone/build/esm/component/analysis/Follower.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/type/Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","../signal/ScaleExp":"node_modules/tone/build/esm/signal/ScaleExp.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/BitCrusher.worklet.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45432,7 +45432,7 @@ const bitCrusherWorklet =
 `;
 exports.bitCrusherWorklet = bitCrusherWorklet;
 (0, _WorkletGlobalScope.registerProcessor)(workletName, bitCrusherWorklet);
-},{"../core/worklet/SingleIOProcessor.worklet":"../node_modules/tone/build/esm/core/worklet/SingleIOProcessor.worklet.js","../core/worklet/WorkletGlobalScope":"../node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"../node_modules/tone/build/esm/effect/BitCrusher.js":[function(require,module,exports) {
+},{"../core/worklet/SingleIOProcessor.worklet":"node_modules/tone/build/esm/core/worklet/SingleIOProcessor.worklet.js","../core/worklet/WorkletGlobalScope":"node_modules/tone/build/esm/core/worklet/WorkletGlobalScope.js"}],"node_modules/tone/build/esm/effect/BitCrusher.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45549,7 +45549,7 @@ class BitCrusherWorklet extends _ToneAudioWorklet.ToneAudioWorklet {
   }
 
 }
-},{"../core/worklet/ToneAudioWorklet":"../node_modules/tone/build/esm/core/worklet/ToneAudioWorklet.js","./Effect":"../node_modules/tone/build/esm/effect/Effect.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","./BitCrusher.worklet":"../node_modules/tone/build/esm/effect/BitCrusher.worklet.js"}],"../node_modules/tone/build/esm/effect/Chebyshev.js":[function(require,module,exports) {
+},{"../core/worklet/ToneAudioWorklet":"node_modules/tone/build/esm/core/worklet/ToneAudioWorklet.js","./Effect":"node_modules/tone/build/esm/effect/Effect.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","./BitCrusher.worklet":"node_modules/tone/build/esm/effect/BitCrusher.worklet.js"}],"node_modules/tone/build/esm/effect/Chebyshev.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45669,7 +45669,7 @@ class Chebyshev extends _Effect.Effect {
 }
 
 exports.Chebyshev = Chebyshev;
-},{"./Effect":"../node_modules/tone/build/esm/effect/Effect.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../signal/WaveShaper":"../node_modules/tone/build/esm/signal/WaveShaper.js","../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/component/channel/Split.js":[function(require,module,exports) {
+},{"./Effect":"node_modules/tone/build/esm/effect/Effect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../signal/WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/component/channel/Split.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45715,7 +45715,7 @@ class Split extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Split = Split;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js"}],"../node_modules/tone/build/esm/component/channel/Merge.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js"}],"node_modules/tone/build/esm/component/channel/Merge.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45763,7 +45763,7 @@ class Merge extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Merge = Merge;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js"}],"../node_modules/tone/build/esm/effect/StereoEffect.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js"}],"node_modules/tone/build/esm/effect/StereoEffect.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45862,7 +45862,7 @@ class StereoEffect extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.StereoEffect = StereoEffect;
-},{"../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../component/channel/CrossFade":"../node_modules/tone/build/esm/component/channel/CrossFade.js","../component/channel/Split":"../node_modules/tone/build/esm/component/channel/Split.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../component/channel/Merge":"../node_modules/tone/build/esm/component/channel/Merge.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/StereoFeedbackEffect.js":[function(require,module,exports) {
+},{"../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../component/channel/CrossFade":"node_modules/tone/build/esm/component/channel/CrossFade.js","../component/channel/Split":"node_modules/tone/build/esm/component/channel/Split.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../component/channel/Merge":"node_modules/tone/build/esm/component/channel/Merge.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/StereoFeedbackEffect.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45951,7 +45951,7 @@ class StereoFeedbackEffect extends _StereoEffect.StereoEffect {
 }
 
 exports.StereoFeedbackEffect = StereoFeedbackEffect;
-},{"./StereoEffect":"../node_modules/tone/build/esm/effect/StereoEffect.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../component/channel/Split":"../node_modules/tone/build/esm/component/channel/Split.js","../component/channel/Merge":"../node_modules/tone/build/esm/component/channel/Merge.js"}],"../node_modules/tone/build/esm/effect/Chorus.js":[function(require,module,exports) {
+},{"./StereoEffect":"node_modules/tone/build/esm/effect/StereoEffect.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../component/channel/Split":"node_modules/tone/build/esm/component/channel/Split.js","../component/channel/Merge":"node_modules/tone/build/esm/component/channel/Merge.js"}],"node_modules/tone/build/esm/effect/Chorus.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46165,7 +46165,7 @@ class Chorus extends _StereoFeedbackEffect.StereoFeedbackEffect {
 }
 
 exports.Chorus = Chorus;
-},{"../effect/StereoFeedbackEffect":"../node_modules/tone/build/esm/effect/StereoFeedbackEffect.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../source/oscillator/LFO":"../node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Delay":"../node_modules/tone/build/esm/core/context/Delay.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/Distortion.js":[function(require,module,exports) {
+},{"../effect/StereoFeedbackEffect":"node_modules/tone/build/esm/effect/StereoFeedbackEffect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../source/oscillator/LFO":"node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Delay":"node_modules/tone/build/esm/core/context/Delay.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/Distortion.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46257,7 +46257,7 @@ class Distortion extends _Effect.Effect {
 }
 
 exports.Distortion = Distortion;
-},{"../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../signal/WaveShaper":"../node_modules/tone/build/esm/signal/WaveShaper.js","./Effect":"../node_modules/tone/build/esm/effect/Effect.js"}],"../node_modules/tone/build/esm/effect/FeedbackEffect.js":[function(require,module,exports) {
+},{"../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../signal/WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js","./Effect":"node_modules/tone/build/esm/effect/Effect.js"}],"node_modules/tone/build/esm/effect/FeedbackEffect.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46308,7 +46308,7 @@ class FeedbackEffect extends _Effect.Effect {
 }
 
 exports.FeedbackEffect = FeedbackEffect;
-},{"../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","./Effect":"../node_modules/tone/build/esm/effect/Effect.js"}],"../node_modules/tone/build/esm/effect/FeedbackDelay.js":[function(require,module,exports) {
+},{"../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","./Effect":"node_modules/tone/build/esm/effect/Effect.js"}],"node_modules/tone/build/esm/effect/FeedbackDelay.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46373,7 +46373,7 @@ class FeedbackDelay extends _FeedbackEffect.FeedbackEffect {
 }
 
 exports.FeedbackDelay = FeedbackDelay;
-},{"../core/context/Delay":"../node_modules/tone/build/esm/core/context/Delay.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","./FeedbackEffect":"../node_modules/tone/build/esm/effect/FeedbackEffect.js"}],"../node_modules/tone/build/esm/component/filter/PhaseShiftAllpass.js":[function(require,module,exports) {
+},{"../core/context/Delay":"node_modules/tone/build/esm/core/context/Delay.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","./FeedbackEffect":"node_modules/tone/build/esm/effect/FeedbackEffect.js"}],"node_modules/tone/build/esm/component/filter/PhaseShiftAllpass.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46454,7 +46454,7 @@ class PhaseShiftAllpass extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.PhaseShiftAllpass = PhaseShiftAllpass;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"../node_modules/tone/build/esm/effect/FrequencyShifter.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"node_modules/tone/build/esm/effect/FrequencyShifter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46592,7 +46592,7 @@ class FrequencyShifter extends _Effect.Effect {
 }
 
 exports.FrequencyShifter = FrequencyShifter;
-},{"../component/filter/PhaseShiftAllpass":"../node_modules/tone/build/esm/component/filter/PhaseShiftAllpass.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../effect/Effect":"../node_modules/tone/build/esm/effect/Effect.js","../signal/Add":"../node_modules/tone/build/esm/signal/Add.js","../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../signal/Negate":"../node_modules/tone/build/esm/signal/Negate.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../source/oscillator/Oscillator":"../node_modules/tone/build/esm/source/oscillator/Oscillator.js","../source/oscillator/ToneOscillatorNode":"../node_modules/tone/build/esm/source/oscillator/ToneOscillatorNode.js"}],"../node_modules/tone/build/esm/effect/Freeverb.js":[function(require,module,exports) {
+},{"../component/filter/PhaseShiftAllpass":"node_modules/tone/build/esm/component/filter/PhaseShiftAllpass.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../effect/Effect":"node_modules/tone/build/esm/effect/Effect.js","../signal/Add":"node_modules/tone/build/esm/signal/Add.js","../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../signal/Negate":"node_modules/tone/build/esm/signal/Negate.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../source/oscillator/Oscillator":"node_modules/tone/build/esm/source/oscillator/Oscillator.js","../source/oscillator/ToneOscillatorNode":"node_modules/tone/build/esm/source/oscillator/ToneOscillatorNode.js"}],"node_modules/tone/build/esm/effect/Freeverb.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46726,7 +46726,7 @@ class Freeverb extends _StereoEffect.StereoEffect {
 }
 
 exports.Freeverb = Freeverb;
-},{"./StereoEffect":"../node_modules/tone/build/esm/effect/StereoEffect.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../component/filter/LowpassCombFilter":"../node_modules/tone/build/esm/component/filter/LowpassCombFilter.js"}],"../node_modules/tone/build/esm/effect/JCReverb.js":[function(require,module,exports) {
+},{"./StereoEffect":"node_modules/tone/build/esm/effect/StereoEffect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../component/filter/LowpassCombFilter":"node_modules/tone/build/esm/component/filter/LowpassCombFilter.js"}],"node_modules/tone/build/esm/effect/JCReverb.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46854,7 +46854,7 @@ class JCReverb extends _StereoEffect.StereoEffect {
 }
 
 exports.JCReverb = JCReverb;
-},{"./StereoEffect":"../node_modules/tone/build/esm/effect/StereoEffect.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../signal/Scale":"../node_modules/tone/build/esm/signal/Scale.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../component/filter/FeedbackCombFilter":"../node_modules/tone/build/esm/component/filter/FeedbackCombFilter.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/StereoXFeedbackEffect.js":[function(require,module,exports) {
+},{"./StereoEffect":"node_modules/tone/build/esm/effect/StereoEffect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../signal/Scale":"node_modules/tone/build/esm/signal/Scale.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../component/filter/FeedbackCombFilter":"node_modules/tone/build/esm/component/filter/FeedbackCombFilter.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/StereoXFeedbackEffect.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46898,7 +46898,7 @@ class StereoXFeedbackEffect extends _StereoFeedbackEffect.StereoFeedbackEffect {
 }
 
 exports.StereoXFeedbackEffect = StereoXFeedbackEffect;
-},{"./StereoFeedbackEffect":"../node_modules/tone/build/esm/effect/StereoFeedbackEffect.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/PingPongDelay.js":[function(require,module,exports) {
+},{"./StereoFeedbackEffect":"node_modules/tone/build/esm/effect/StereoFeedbackEffect.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/PingPongDelay.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46987,7 +46987,7 @@ class PingPongDelay extends _StereoXFeedbackEffect.StereoXFeedbackEffect {
 }
 
 exports.PingPongDelay = PingPongDelay;
-},{"./StereoXFeedbackEffect":"../node_modules/tone/build/esm/effect/StereoXFeedbackEffect.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/context/Delay":"../node_modules/tone/build/esm/core/context/Delay.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/PitchShift.js":[function(require,module,exports) {
+},{"./StereoXFeedbackEffect":"node_modules/tone/build/esm/effect/StereoXFeedbackEffect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/context/Delay":"node_modules/tone/build/esm/core/context/Delay.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/PitchShift.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47176,7 +47176,7 @@ class PitchShift extends _FeedbackEffect.FeedbackEffect {
 }
 
 exports.PitchShift = PitchShift;
-},{"./FeedbackEffect":"../node_modules/tone/build/esm/effect/FeedbackEffect.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../source/oscillator/LFO":"../node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Delay":"../node_modules/tone/build/esm/core/context/Delay.js","../component/channel/CrossFade":"../node_modules/tone/build/esm/component/channel/CrossFade.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../core/type/Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js"}],"../node_modules/tone/build/esm/effect/Phaser.js":[function(require,module,exports) {
+},{"./FeedbackEffect":"node_modules/tone/build/esm/effect/FeedbackEffect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../source/oscillator/LFO":"node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Delay":"node_modules/tone/build/esm/core/context/Delay.js","../component/channel/CrossFade":"node_modules/tone/build/esm/component/channel/CrossFade.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../core/type/Conversions":"node_modules/tone/build/esm/core/type/Conversions.js"}],"node_modules/tone/build/esm/effect/Phaser.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47328,7 +47328,7 @@ class Phaser extends _StereoEffect.StereoEffect {
 }
 
 exports.Phaser = Phaser;
-},{"./StereoEffect":"../node_modules/tone/build/esm/effect/StereoEffect.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../source/oscillator/LFO":"../node_modules/tone/build/esm/source/oscillator/LFO.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/Reverb.js":[function(require,module,exports) {
+},{"./StereoEffect":"node_modules/tone/build/esm/effect/StereoEffect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../source/oscillator/LFO":"node_modules/tone/build/esm/source/oscillator/LFO.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/Reverb.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47480,7 +47480,7 @@ class Reverb extends _Effect.Effect {
 }
 
 exports.Reverb = Reverb;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../component/channel/Merge":"../node_modules/tone/build/esm/component/channel/Merge.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../source/Noise":"../node_modules/tone/build/esm/source/Noise.js","./Effect":"../node_modules/tone/build/esm/effect/Effect.js","../core/context/OfflineContext":"../node_modules/tone/build/esm/core/context/OfflineContext.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/component/channel/MidSideSplit.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../component/channel/Merge":"node_modules/tone/build/esm/component/channel/Merge.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../source/Noise":"node_modules/tone/build/esm/source/Noise.js","./Effect":"node_modules/tone/build/esm/effect/Effect.js","../core/context/OfflineContext":"node_modules/tone/build/esm/core/context/OfflineContext.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/component/channel/MidSideSplit.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47562,7 +47562,7 @@ class MidSideSplit extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.MidSideSplit = MidSideSplit;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Split":"../node_modules/tone/build/esm/component/channel/Split.js","../../signal/Add":"../node_modules/tone/build/esm/signal/Add.js","../../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../../signal/Subtract":"../node_modules/tone/build/esm/signal/Subtract.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js"}],"../node_modules/tone/build/esm/component/channel/MidSideMerge.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Split":"node_modules/tone/build/esm/component/channel/Split.js","../../signal/Add":"node_modules/tone/build/esm/signal/Add.js","../../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../../signal/Subtract":"node_modules/tone/build/esm/signal/Subtract.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js"}],"node_modules/tone/build/esm/component/channel/MidSideMerge.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47652,7 +47652,7 @@ class MidSideMerge extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.MidSideMerge = MidSideMerge;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Merge":"../node_modules/tone/build/esm/component/channel/Merge.js","../../signal/Add":"../node_modules/tone/build/esm/signal/Add.js","../../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../../signal/Subtract":"../node_modules/tone/build/esm/signal/Subtract.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js"}],"../node_modules/tone/build/esm/effect/MidSideEffect.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Merge":"node_modules/tone/build/esm/component/channel/Merge.js","../../signal/Add":"node_modules/tone/build/esm/signal/Add.js","../../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../../signal/Subtract":"node_modules/tone/build/esm/signal/Subtract.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js"}],"node_modules/tone/build/esm/effect/MidSideEffect.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47733,7 +47733,7 @@ class MidSideEffect extends _Effect.Effect {
 }
 
 exports.MidSideEffect = MidSideEffect;
-},{"./Effect":"../node_modules/tone/build/esm/effect/Effect.js","../component/channel/MidSideSplit":"../node_modules/tone/build/esm/component/channel/MidSideSplit.js","../component/channel/MidSideMerge":"../node_modules/tone/build/esm/component/channel/MidSideMerge.js"}],"../node_modules/tone/build/esm/effect/StereoWidener.js":[function(require,module,exports) {
+},{"./Effect":"node_modules/tone/build/esm/effect/Effect.js","../component/channel/MidSideSplit":"node_modules/tone/build/esm/component/channel/MidSideSplit.js","../component/channel/MidSideMerge":"node_modules/tone/build/esm/component/channel/MidSideMerge.js"}],"node_modules/tone/build/esm/effect/StereoWidener.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47835,7 +47835,7 @@ class StereoWidener extends _MidSideEffect.MidSideEffect {
 }
 
 exports.StereoWidener = StereoWidener;
-},{"../effect/MidSideEffect":"../node_modules/tone/build/esm/effect/MidSideEffect.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../signal/Multiply":"../node_modules/tone/build/esm/signal/Multiply.js","../signal/Subtract":"../node_modules/tone/build/esm/signal/Subtract.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"../node_modules/tone/build/esm/effect/Tremolo.js":[function(require,module,exports) {
+},{"../effect/MidSideEffect":"node_modules/tone/build/esm/effect/MidSideEffect.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../signal/Multiply":"node_modules/tone/build/esm/signal/Multiply.js","../signal/Subtract":"node_modules/tone/build/esm/signal/Subtract.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js"}],"node_modules/tone/build/esm/effect/Tremolo.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48018,7 +48018,7 @@ class Tremolo extends _StereoEffect.StereoEffect {
 }
 
 exports.Tremolo = Tremolo;
-},{"./StereoEffect":"../node_modules/tone/build/esm/effect/StereoEffect.js","../source/oscillator/LFO":"../node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/Vibrato.js":[function(require,module,exports) {
+},{"./StereoEffect":"node_modules/tone/build/esm/effect/StereoEffect.js","../source/oscillator/LFO":"node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/Vibrato.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48103,7 +48103,7 @@ class Vibrato extends _Effect.Effect {
 }
 
 exports.Vibrato = Vibrato;
-},{"./Effect":"../node_modules/tone/build/esm/effect/Effect.js","../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../source/oscillator/LFO":"../node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Delay":"../node_modules/tone/build/esm/core/context/Delay.js","../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/effect/index.js":[function(require,module,exports) {
+},{"./Effect":"node_modules/tone/build/esm/effect/Effect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../source/oscillator/LFO":"node_modules/tone/build/esm/source/oscillator/LFO.js","../core/context/Delay":"node_modules/tone/build/esm/core/context/Delay.js","../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/effect/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48343,7 +48343,7 @@ Object.keys(_Vibrato).forEach(function (key) {
     }
   });
 });
-},{"./AutoFilter":"../node_modules/tone/build/esm/effect/AutoFilter.js","./AutoPanner":"../node_modules/tone/build/esm/effect/AutoPanner.js","./AutoWah":"../node_modules/tone/build/esm/effect/AutoWah.js","./BitCrusher":"../node_modules/tone/build/esm/effect/BitCrusher.js","./Chebyshev":"../node_modules/tone/build/esm/effect/Chebyshev.js","./Chorus":"../node_modules/tone/build/esm/effect/Chorus.js","./Distortion":"../node_modules/tone/build/esm/effect/Distortion.js","./FeedbackDelay":"../node_modules/tone/build/esm/effect/FeedbackDelay.js","./FrequencyShifter":"../node_modules/tone/build/esm/effect/FrequencyShifter.js","./Freeverb":"../node_modules/tone/build/esm/effect/Freeverb.js","./JCReverb":"../node_modules/tone/build/esm/effect/JCReverb.js","./PingPongDelay":"../node_modules/tone/build/esm/effect/PingPongDelay.js","./PitchShift":"../node_modules/tone/build/esm/effect/PitchShift.js","./Phaser":"../node_modules/tone/build/esm/effect/Phaser.js","./Reverb":"../node_modules/tone/build/esm/effect/Reverb.js","./StereoWidener":"../node_modules/tone/build/esm/effect/StereoWidener.js","./Tremolo":"../node_modules/tone/build/esm/effect/Tremolo.js","./Vibrato":"../node_modules/tone/build/esm/effect/Vibrato.js"}],"../node_modules/tone/build/esm/component/analysis/Analyser.js":[function(require,module,exports) {
+},{"./AutoFilter":"node_modules/tone/build/esm/effect/AutoFilter.js","./AutoPanner":"node_modules/tone/build/esm/effect/AutoPanner.js","./AutoWah":"node_modules/tone/build/esm/effect/AutoWah.js","./BitCrusher":"node_modules/tone/build/esm/effect/BitCrusher.js","./Chebyshev":"node_modules/tone/build/esm/effect/Chebyshev.js","./Chorus":"node_modules/tone/build/esm/effect/Chorus.js","./Distortion":"node_modules/tone/build/esm/effect/Distortion.js","./FeedbackDelay":"node_modules/tone/build/esm/effect/FeedbackDelay.js","./FrequencyShifter":"node_modules/tone/build/esm/effect/FrequencyShifter.js","./Freeverb":"node_modules/tone/build/esm/effect/Freeverb.js","./JCReverb":"node_modules/tone/build/esm/effect/JCReverb.js","./PingPongDelay":"node_modules/tone/build/esm/effect/PingPongDelay.js","./PitchShift":"node_modules/tone/build/esm/effect/PitchShift.js","./Phaser":"node_modules/tone/build/esm/effect/Phaser.js","./Reverb":"node_modules/tone/build/esm/effect/Reverb.js","./StereoWidener":"node_modules/tone/build/esm/effect/StereoWidener.js","./Tremolo":"node_modules/tone/build/esm/effect/Tremolo.js","./Vibrato":"node_modules/tone/build/esm/effect/Vibrato.js"}],"node_modules/tone/build/esm/component/analysis/Analyser.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48504,7 +48504,7 @@ class Analyser extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Analyser = Analyser;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../channel/Split":"../node_modules/tone/build/esm/component/channel/Split.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/component/analysis/MeterBase.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../channel/Split":"node_modules/tone/build/esm/component/channel/Split.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/component/analysis/MeterBase.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48543,7 +48543,7 @@ class MeterBase extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.MeterBase = MeterBase;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Analyser":"../node_modules/tone/build/esm/component/analysis/Analyser.js"}],"../node_modules/tone/build/esm/component/analysis/Meter.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Analyser":"node_modules/tone/build/esm/component/analysis/Analyser.js"}],"node_modules/tone/build/esm/component/analysis/Meter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48659,7 +48659,7 @@ class Meter extends _MeterBase.MeterBase {
 }
 
 exports.Meter = Meter;
-},{"../../core/type/Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./MeterBase":"../node_modules/tone/build/esm/component/analysis/MeterBase.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","./Analyser":"../node_modules/tone/build/esm/component/analysis/Analyser.js"}],"../node_modules/tone/build/esm/component/analysis/FFT.js":[function(require,module,exports) {
+},{"../../core/type/Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./MeterBase":"node_modules/tone/build/esm/component/analysis/MeterBase.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","./Analyser":"node_modules/tone/build/esm/component/analysis/Analyser.js"}],"node_modules/tone/build/esm/component/analysis/FFT.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48751,7 +48751,7 @@ class FFT extends _MeterBase.MeterBase {
 }
 
 exports.FFT = FFT;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/type/Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./MeterBase":"../node_modules/tone/build/esm/component/analysis/MeterBase.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js"}],"../node_modules/tone/build/esm/component/analysis/DCMeter.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/type/Conversions":"node_modules/tone/build/esm/core/type/Conversions.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./MeterBase":"node_modules/tone/build/esm/component/analysis/MeterBase.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/component/analysis/DCMeter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48797,7 +48797,7 @@ class DCMeter extends _MeterBase.MeterBase {
 }
 
 exports.DCMeter = DCMeter;
-},{"../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./MeterBase":"../node_modules/tone/build/esm/component/analysis/MeterBase.js"}],"../node_modules/tone/build/esm/component/analysis/Waveform.js":[function(require,module,exports) {
+},{"../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./MeterBase":"node_modules/tone/build/esm/component/analysis/MeterBase.js"}],"node_modules/tone/build/esm/component/analysis/Waveform.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48853,7 +48853,7 @@ class Waveform extends _MeterBase.MeterBase {
 }
 
 exports.Waveform = Waveform;
-},{"../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./MeterBase":"../node_modules/tone/build/esm/component/analysis/MeterBase.js"}],"../node_modules/tone/build/esm/component/channel/Solo.js":[function(require,module,exports) {
+},{"../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./MeterBase":"node_modules/tone/build/esm/component/analysis/MeterBase.js"}],"node_modules/tone/build/esm/component/channel/Solo.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49010,7 +49010,7 @@ Solo._allSolos = new Map();
  */
 
 Solo._soloed = new Map();
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js"}],"../node_modules/tone/build/esm/component/channel/PanVol.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js"}],"node_modules/tone/build/esm/component/channel/PanVol.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49096,7 +49096,7 @@ class PanVol extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.PanVol = PanVol;
-},{"../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Panner":"../node_modules/tone/build/esm/component/channel/Panner.js","./Volume":"../node_modules/tone/build/esm/component/channel/Volume.js"}],"../node_modules/tone/build/esm/component/channel/Channel.js":[function(require,module,exports) {
+},{"../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Panner":"node_modules/tone/build/esm/component/channel/Panner.js","./Volume":"node_modules/tone/build/esm/component/channel/Volume.js"}],"node_modules/tone/build/esm/component/channel/Channel.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49264,7 +49264,7 @@ class Channel extends _ToneAudioNode.ToneAudioNode {
 
 exports.Channel = Channel;
 Channel.buses = new Map();
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Solo":"../node_modules/tone/build/esm/component/channel/Solo.js","./PanVol":"../node_modules/tone/build/esm/component/channel/PanVol.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js"}],"../node_modules/tone/build/esm/component/channel/Mono.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Solo":"node_modules/tone/build/esm/component/channel/Solo.js","./PanVol":"node_modules/tone/build/esm/component/channel/PanVol.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js"}],"node_modules/tone/build/esm/component/channel/Mono.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49313,7 +49313,7 @@ class Mono extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Mono = Mono;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Merge":"../node_modules/tone/build/esm/component/channel/Merge.js"}],"../node_modules/tone/build/esm/component/channel/MultibandSplit.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Merge":"node_modules/tone/build/esm/component/channel/Merge.js"}],"node_modules/tone/build/esm/component/channel/MultibandSplit.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49463,7 +49463,7 @@ class MultibandSplit extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.MultibandSplit = MultibandSplit;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../../signal/Signal":"../node_modules/tone/build/esm/signal/Signal.js","../filter/Filter":"../node_modules/tone/build/esm/component/filter/Filter.js"}],"../node_modules/tone/build/esm/core/context/Listener.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../../signal/Signal":"node_modules/tone/build/esm/signal/Signal.js","../filter/Filter":"node_modules/tone/build/esm/component/filter/Filter.js"}],"node_modules/tone/build/esm/core/context/Listener.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49567,7 +49567,7 @@ exports.Listener = Listener;
 (0, _ContextInitialization.onContextClose)(context => {
   context.listener.dispose();
 });
-},{"./ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Param":"../node_modules/tone/build/esm/core/context/Param.js","./ContextInitialization":"../node_modules/tone/build/esm/core/context/ContextInitialization.js"}],"../node_modules/tone/build/esm/component/channel/Panner3D.js":[function(require,module,exports) {
+},{"./ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Param":"node_modules/tone/build/esm/core/context/Param.js","./ContextInitialization":"node_modules/tone/build/esm/core/context/ContextInitialization.js"}],"node_modules/tone/build/esm/component/channel/Panner3D.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49790,7 +49790,7 @@ class Panner3D extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Panner3D = Panner3D;
-},{"../../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/context/Listener":"../node_modules/tone/build/esm/core/context/Listener.js"}],"../node_modules/tone/build/esm/component/channel/Recorder.js":[function(require,module,exports) {
+},{"../../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/context/Listener":"node_modules/tone/build/esm/core/context/Listener.js"}],"node_modules/tone/build/esm/component/channel/Recorder.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49961,7 +49961,7 @@ class Recorder extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Recorder = Recorder;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Debug":"../node_modules/tone/build/esm/core/util/Debug.js","../../core/context/AudioContext":"../node_modules/tone/build/esm/core/context/AudioContext.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js"}],"../node_modules/tone/build/esm/component/dynamics/Compressor.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js","../../core/context/AudioContext":"node_modules/tone/build/esm/core/context/AudioContext.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js"}],"node_modules/tone/build/esm/component/dynamics/Compressor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50081,7 +50081,7 @@ class Compressor extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Compressor = Compressor;
-},{"../../core/context/Param":"../node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/component/dynamics/Gate.js":[function(require,module,exports) {
+},{"../../core/context/Param":"node_modules/tone/build/esm/core/context/Param.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/component/dynamics/Gate.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50185,7 +50185,7 @@ class Gate extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Gate = Gate;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../signal/GreaterThan":"../node_modules/tone/build/esm/signal/GreaterThan.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../analysis/Follower":"../node_modules/tone/build/esm/component/analysis/Follower.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/type/Conversions":"../node_modules/tone/build/esm/core/type/Conversions.js"}],"../node_modules/tone/build/esm/component/dynamics/Limiter.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../signal/GreaterThan":"node_modules/tone/build/esm/signal/GreaterThan.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../analysis/Follower":"node_modules/tone/build/esm/component/analysis/Follower.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/type/Conversions":"node_modules/tone/build/esm/core/type/Conversions.js"}],"node_modules/tone/build/esm/component/dynamics/Limiter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50257,7 +50257,7 @@ class Limiter extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Limiter = Limiter;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","./Compressor":"../node_modules/tone/build/esm/component/dynamics/Compressor.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/component/dynamics/MidSideCompressor.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","./Compressor":"node_modules/tone/build/esm/component/dynamics/Compressor.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/component/dynamics/MidSideCompressor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50341,7 +50341,7 @@ class MidSideCompressor extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.MidSideCompressor = MidSideCompressor;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Compressor":"../node_modules/tone/build/esm/component/dynamics/Compressor.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../channel/MidSideSplit":"../node_modules/tone/build/esm/component/channel/MidSideSplit.js","../channel/MidSideMerge":"../node_modules/tone/build/esm/component/channel/MidSideMerge.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/component/dynamics/MultibandCompressor.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Compressor":"node_modules/tone/build/esm/component/dynamics/Compressor.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../channel/MidSideSplit":"node_modules/tone/build/esm/component/channel/MidSideSplit.js","../channel/MidSideMerge":"node_modules/tone/build/esm/component/channel/MidSideMerge.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/component/dynamics/MultibandCompressor.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50451,7 +50451,7 @@ class MultibandCompressor extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.MultibandCompressor = MultibandCompressor;
-},{"../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Compressor":"../node_modules/tone/build/esm/component/dynamics/Compressor.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../channel/MultibandSplit":"../node_modules/tone/build/esm/component/channel/MultibandSplit.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js"}],"../node_modules/tone/build/esm/component/filter/EQ3.js":[function(require,module,exports) {
+},{"../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","./Compressor":"node_modules/tone/build/esm/component/dynamics/Compressor.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../channel/MultibandSplit":"node_modules/tone/build/esm/component/channel/MultibandSplit.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js"}],"node_modules/tone/build/esm/component/filter/EQ3.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50562,7 +50562,7 @@ class EQ3 extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.EQ3 = EQ3;
-},{"../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js","../channel/MultibandSplit":"../node_modules/tone/build/esm/component/channel/MultibandSplit.js"}],"../node_modules/tone/build/esm/component/filter/Convolver.js":[function(require,module,exports) {
+},{"../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js","../channel/MultibandSplit":"node_modules/tone/build/esm/component/channel/MultibandSplit.js"}],"node_modules/tone/build/esm/component/filter/Convolver.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50705,7 +50705,7 @@ class Convolver extends _ToneAudioNode.ToneAudioNode {
 }
 
 exports.Convolver = Convolver;
-},{"tslib":"../node_modules/tslib/tslib.es6.js","../../core/context/ToneAudioNode":"../node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/context/ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../../core/util/Defaults":"../node_modules/tone/build/esm/core/util/Defaults.js","../../core/context/Gain":"../node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Interface":"../node_modules/tone/build/esm/core/util/Interface.js"}],"../node_modules/tone/build/esm/component/index.js":[function(require,module,exports) {
+},{"tslib":"node_modules/tslib/tslib.es6.js","../../core/context/ToneAudioNode":"node_modules/tone/build/esm/core/context/ToneAudioNode.js","../../core/context/ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","../../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../../core/context/Gain":"node_modules/tone/build/esm/core/context/Gain.js","../../core/util/Interface":"node_modules/tone/build/esm/core/util/Interface.js"}],"node_modules/tone/build/esm/component/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51166,7 +51166,7 @@ Object.keys(_BiquadFilter).forEach(function (key) {
     }
   });
 });
-},{"./analysis/Analyser":"../node_modules/tone/build/esm/component/analysis/Analyser.js","./analysis/Meter":"../node_modules/tone/build/esm/component/analysis/Meter.js","./analysis/FFT":"../node_modules/tone/build/esm/component/analysis/FFT.js","./analysis/DCMeter":"../node_modules/tone/build/esm/component/analysis/DCMeter.js","./analysis/Waveform":"../node_modules/tone/build/esm/component/analysis/Waveform.js","./analysis/Follower":"../node_modules/tone/build/esm/component/analysis/Follower.js","./channel/Channel":"../node_modules/tone/build/esm/component/channel/Channel.js","./channel/CrossFade":"../node_modules/tone/build/esm/component/channel/CrossFade.js","./channel/Merge":"../node_modules/tone/build/esm/component/channel/Merge.js","./channel/MidSideMerge":"../node_modules/tone/build/esm/component/channel/MidSideMerge.js","./channel/MidSideSplit":"../node_modules/tone/build/esm/component/channel/MidSideSplit.js","./channel/Mono":"../node_modules/tone/build/esm/component/channel/Mono.js","./channel/MultibandSplit":"../node_modules/tone/build/esm/component/channel/MultibandSplit.js","./channel/Panner":"../node_modules/tone/build/esm/component/channel/Panner.js","./channel/Panner3D":"../node_modules/tone/build/esm/component/channel/Panner3D.js","./channel/PanVol":"../node_modules/tone/build/esm/component/channel/PanVol.js","./channel/Recorder":"../node_modules/tone/build/esm/component/channel/Recorder.js","./channel/Solo":"../node_modules/tone/build/esm/component/channel/Solo.js","./channel/Split":"../node_modules/tone/build/esm/component/channel/Split.js","./channel/Volume":"../node_modules/tone/build/esm/component/channel/Volume.js","./dynamics/Compressor":"../node_modules/tone/build/esm/component/dynamics/Compressor.js","./dynamics/Gate":"../node_modules/tone/build/esm/component/dynamics/Gate.js","./dynamics/Limiter":"../node_modules/tone/build/esm/component/dynamics/Limiter.js","./dynamics/MidSideCompressor":"../node_modules/tone/build/esm/component/dynamics/MidSideCompressor.js","./dynamics/MultibandCompressor":"../node_modules/tone/build/esm/component/dynamics/MultibandCompressor.js","./envelope/AmplitudeEnvelope":"../node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js","./envelope/Envelope":"../node_modules/tone/build/esm/component/envelope/Envelope.js","./envelope/FrequencyEnvelope":"../node_modules/tone/build/esm/component/envelope/FrequencyEnvelope.js","./filter/EQ3":"../node_modules/tone/build/esm/component/filter/EQ3.js","./filter/Filter":"../node_modules/tone/build/esm/component/filter/Filter.js","./filter/OnePoleFilter":"../node_modules/tone/build/esm/component/filter/OnePoleFilter.js","./filter/FeedbackCombFilter":"../node_modules/tone/build/esm/component/filter/FeedbackCombFilter.js","./filter/LowpassCombFilter":"../node_modules/tone/build/esm/component/filter/LowpassCombFilter.js","./filter/Convolver":"../node_modules/tone/build/esm/component/filter/Convolver.js","./filter/BiquadFilter":"../node_modules/tone/build/esm/component/filter/BiquadFilter.js"}],"../node_modules/tone/build/esm/classes.js":[function(require,module,exports) {
+},{"./analysis/Analyser":"node_modules/tone/build/esm/component/analysis/Analyser.js","./analysis/Meter":"node_modules/tone/build/esm/component/analysis/Meter.js","./analysis/FFT":"node_modules/tone/build/esm/component/analysis/FFT.js","./analysis/DCMeter":"node_modules/tone/build/esm/component/analysis/DCMeter.js","./analysis/Waveform":"node_modules/tone/build/esm/component/analysis/Waveform.js","./analysis/Follower":"node_modules/tone/build/esm/component/analysis/Follower.js","./channel/Channel":"node_modules/tone/build/esm/component/channel/Channel.js","./channel/CrossFade":"node_modules/tone/build/esm/component/channel/CrossFade.js","./channel/Merge":"node_modules/tone/build/esm/component/channel/Merge.js","./channel/MidSideMerge":"node_modules/tone/build/esm/component/channel/MidSideMerge.js","./channel/MidSideSplit":"node_modules/tone/build/esm/component/channel/MidSideSplit.js","./channel/Mono":"node_modules/tone/build/esm/component/channel/Mono.js","./channel/MultibandSplit":"node_modules/tone/build/esm/component/channel/MultibandSplit.js","./channel/Panner":"node_modules/tone/build/esm/component/channel/Panner.js","./channel/Panner3D":"node_modules/tone/build/esm/component/channel/Panner3D.js","./channel/PanVol":"node_modules/tone/build/esm/component/channel/PanVol.js","./channel/Recorder":"node_modules/tone/build/esm/component/channel/Recorder.js","./channel/Solo":"node_modules/tone/build/esm/component/channel/Solo.js","./channel/Split":"node_modules/tone/build/esm/component/channel/Split.js","./channel/Volume":"node_modules/tone/build/esm/component/channel/Volume.js","./dynamics/Compressor":"node_modules/tone/build/esm/component/dynamics/Compressor.js","./dynamics/Gate":"node_modules/tone/build/esm/component/dynamics/Gate.js","./dynamics/Limiter":"node_modules/tone/build/esm/component/dynamics/Limiter.js","./dynamics/MidSideCompressor":"node_modules/tone/build/esm/component/dynamics/MidSideCompressor.js","./dynamics/MultibandCompressor":"node_modules/tone/build/esm/component/dynamics/MultibandCompressor.js","./envelope/AmplitudeEnvelope":"node_modules/tone/build/esm/component/envelope/AmplitudeEnvelope.js","./envelope/Envelope":"node_modules/tone/build/esm/component/envelope/Envelope.js","./envelope/FrequencyEnvelope":"node_modules/tone/build/esm/component/envelope/FrequencyEnvelope.js","./filter/EQ3":"node_modules/tone/build/esm/component/filter/EQ3.js","./filter/Filter":"node_modules/tone/build/esm/component/filter/Filter.js","./filter/OnePoleFilter":"node_modules/tone/build/esm/component/filter/OnePoleFilter.js","./filter/FeedbackCombFilter":"node_modules/tone/build/esm/component/filter/FeedbackCombFilter.js","./filter/LowpassCombFilter":"node_modules/tone/build/esm/component/filter/LowpassCombFilter.js","./filter/Convolver":"node_modules/tone/build/esm/component/filter/Convolver.js","./filter/BiquadFilter":"node_modules/tone/build/esm/component/filter/BiquadFilter.js"}],"node_modules/tone/build/esm/classes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51263,7 +51263,7 @@ Object.keys(_index7).forEach(function (key) {
     }
   });
 });
-},{"./core/index":"../node_modules/tone/build/esm/core/index.js","./source/index":"../node_modules/tone/build/esm/source/index.js","./signal/index":"../node_modules/tone/build/esm/signal/index.js","./instrument/index":"../node_modules/tone/build/esm/instrument/index.js","./event/index":"../node_modules/tone/build/esm/event/index.js","./effect/index":"../node_modules/tone/build/esm/effect/index.js","./component/index":"../node_modules/tone/build/esm/component/index.js"}],"../node_modules/tone/build/esm/index.js":[function(require,module,exports) {
+},{"./core/index":"node_modules/tone/build/esm/core/index.js","./source/index":"node_modules/tone/build/esm/source/index.js","./signal/index":"node_modules/tone/build/esm/signal/index.js","./instrument/index":"node_modules/tone/build/esm/instrument/index.js","./event/index":"node_modules/tone/build/esm/event/index.js","./effect/index":"node_modules/tone/build/esm/effect/index.js","./component/index":"node_modules/tone/build/esm/component/index.js"}],"node_modules/tone/build/esm/index.js":[function(require,module,exports) {
 
 "use strict";
 
@@ -51488,7 +51488,7 @@ const Buffers = _ToneAudioBuffers.ToneAudioBuffers;
 exports.Buffers = Buffers;
 const BufferSource = _ToneBufferSource.ToneBufferSource;
 exports.BufferSource = BufferSource;
-},{"./core/Global":"../node_modules/tone/build/esm/core/Global.js","./classes":"../node_modules/tone/build/esm/classes.js","./version":"../node_modules/tone/build/esm/version.js","./core/context/ToneAudioBuffer":"../node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","./core/context/AudioContext":"../node_modules/tone/build/esm/core/context/AudioContext.js","./core/context/ToneAudioBuffers":"../node_modules/tone/build/esm/core/context/ToneAudioBuffers.js","./source/buffer/ToneBufferSource":"../node_modules/tone/build/esm/source/buffer/ToneBufferSource.js"}],"audioTone.js":[function(require,module,exports) {
+},{"./core/Global":"node_modules/tone/build/esm/core/Global.js","./classes":"node_modules/tone/build/esm/classes.js","./version":"node_modules/tone/build/esm/version.js","./core/context/ToneAudioBuffer":"node_modules/tone/build/esm/core/context/ToneAudioBuffer.js","./core/context/AudioContext":"node_modules/tone/build/esm/core/context/AudioContext.js","./core/context/ToneAudioBuffers":"node_modules/tone/build/esm/core/context/ToneAudioBuffers.js","./source/buffer/ToneBufferSource":"node_modules/tone/build/esm/source/buffer/ToneBufferSource.js"}],"audioTone.js":[function(require,module,exports) {
 "use strict";
 
 var Tone = _interopRequireWildcard(require("tone"));
@@ -51501,7 +51501,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var synth = new Tone.Synth().toDestination(); //play a middle 'C' for the duration of an 8th note
 
 synth.triggerAttackRelease('C4', '8n');
-},{"tone":"../node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
