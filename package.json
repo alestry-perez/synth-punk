@@ -1,5 +1,5 @@
 {
-  "esversion": 6,
+  "esversion": 9,
   "name": "synth-punk",
   "version": "1.0.0",
   "main": "audioTone.js",
