@@ -11,8 +11,36 @@
     />
     <title>Synth Punk</title>
   </head>
-  <body class="bg-pink-400">
-    <h1 class="text-4xl font-bold text-center text-red-500"></h1>
+  <body>
+    <div class="container w-6/12 border-black">
+      <div class="grid grid-cols-3 grid-rows-2 gap-1 divide-x-2 divide-yellow-500 border-box synth w-730 h-532">
+        <div class="oscGroup">
+          <div class="grid grid-flow-col grid-rows-3 gap-2 oscOne">
+            <h2 class="self-center text-center underline uppercase">osc - 1</h2>
+          <div class="w-64 h-12 bg-black waveDisplay justify-self-center">WAVE DISPLAY</div>
+          <div class="flex items-center justify-evenly waveType ">
+            <input class="sine" type="checkbox">
+            <input class="square" type="checkbox">
+            <input class="triangle" type="checkbox">
+            <input class="saw" type="checkbox">
+          </div>
+          <div class="flex row-start-4 justify-evenly knobs">
+            <div class="flex items-center justify-center w-12 h-12 bg-black rounded-full"></div>
+            <div class="flex items-center justify-center w-12 h-12 bg-black rounded-full"></div>
+            <div class="flex items-center justify-center w-12 h-12 bg-black rounded-full"></div>
+            <div class="flex items-center justify-center w-12 h-12 bg-black rounded-full"></div>
+          </div>
+          </div>
+        </div>
+        <div class="grid grid-flow-col grid-rows-3 gap-2">
+          <h2 class="self-center text-center underline uppercase" >amp-env</h2>
+        </div>
+        <div class="grid grid-flow-col grid-rows-3 gap-2">
+          <h2 class="self-center text-center underline uppercase">delay</h2>
+        </div>
+      </div>
+    </div>
+
     <script src="audioTone.js"></script>
   </body>
 </html>

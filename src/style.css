@@ -1,3 +1,8 @@
+/* :root {
+  --background-color-primary: #D1AF6F;
+  --background-color-secondary: #2E5090;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,3 +12,4 @@
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   */
+
