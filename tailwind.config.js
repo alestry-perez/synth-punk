@@ -1,14 +1,10 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        completed: "#83B919",
-        success: "#587e0e",
-        'harvest-gold': {
+        'primary': {
           50: '#fdfbf8',
           100: '#faf7f1',
           200: '#f4ebdb',
@@ -20,7 +16,7 @@ module.exports = {
           800: '#7d6943',
           900: '#665636',
         },
-        'chambray': {
+        'secondary': {
           50: '#f5f6f9',
           100: '#eaeef4',
           200: '#cbd3e3',
