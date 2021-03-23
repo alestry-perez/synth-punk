@@ -19,11 +19,12 @@
         <div class="oscGroup">
           <div class="grid grid-flow-col grid-rows-3 gap-2 oscOne">
             <h2 class="self-center text-center underline uppercase">osc - 1</h2>
-            <div class="self-center w-64 h-12 text-center waveDisplay justify-self-center bg-secondary-500">
-            </div>
+            <div
+              class="self-center w-64 h-12 text-center waveDisplay justify-self-center bg-secondary-500"
+            ></div>
             <div class="flex items-center justify-evenly waveType">
               <button
-                class="uppercase border cursor-pointer w-11 hover:border-black"
+                class="uppercase border cursor-pointer w-11 hover:bg-white border-secondary-500"
                 name="osc1Type"
                 data-param="osc1.type"
                 onchange="changetype()"
@@ -33,9 +34,8 @@
               >
                 Sine
               </button>
-
               <button
-                class="uppercase border cursor-pointer w-11 hover:border-black"
+                class="uppercase border cursor-pointer w-11 hover:bg-white border-secondary-500"
                 name="osc1Type"
                 data-param="osc1.type"
                 onchange="changetype()"
@@ -45,9 +45,8 @@
               >
                 Sqr
               </button>
-
               <button
-                class="uppercase border cursor-pointer w-11 hover:border-black"
+                class="uppercase border cursor-pointer w-11 hover:bg-white border-secondary-500"
                 name="osc1Type"
                 data-param="osc1.type"
                 onchange="changetype()"
@@ -57,79 +56,10 @@
               >
                 Tri
               </button>
-
               <button
-                class="uppercase border cursor-pointer w-11 hover:border-black"
+                class="uppercase border cursor-pointer w-11 hover:bg-white border-secondary-500"
                 name="osc1Type"
                 data-param="osc1.type"
-                onchange="changetype()"
-                type="radio"
-                checked
-                value="saw"
-              >
-                Saw
-              </button>
-            </div>
-            <div class="flex row-start-4 justify-evenly knobs">
-              <div
-                class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-500"
-              ></div>
-              <div
-                class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-500"
-              ></div>
-              <div
-                class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-500"
-              ></div>
-              <div
-                class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-500"
-              ></div>
-            </div>
-          </div>
-          <div class="grid grid-flow-col grid-rows-3 gap-2 oscTwo">
-            <h2 class="self-center text-center underline uppercase">osc - 2</h2>
-            <div class="self-center w-64 h-12 text-center waveDisplay justify-self-center bg-secondary-500">
-            </div>
-            <div class="flex items-center justify-evenly waveType">
-              <button
-                class="uppercase border cursor-pointer w-11 hover:border-black"
-                name="osc1Type"
-                data-param="osc2.type"
-                onchange="changetype()"
-                type="radio"
-                checked
-                value="sine"
-              >
-                Sine
-              </button>
-
-              <button
-                class="uppercase border cursor-pointer w-11 hover:border-black"
-                name="osc1Type"
-                data-param="osc2.type"
-                onchange="changetype()"
-                type="radio"
-                checked
-                value="square"
-              >
-                Sqr
-              </button>
-
-              <button
-                class="uppercase border cursor-pointer w-11 hover:border-black"
-                name="osc1Type"
-                data-param="osc2.type"
-                onchange="changetype()"
-                type="radio"
-                checked
-                value="triangle"
-              >
-                Tri
-              </button>
-
-              <button
-                class="uppercase border cursor-pointer w-11 hover:border-black"
-                name="osc1Type"
-                data-param="osc2.type"
                 onchange="changetype()"
                 type="radio"
                 checked

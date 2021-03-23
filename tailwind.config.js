@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': {
+        primary: {
           50: '#fdfbf8',
           100: '#faf7f1',
           200: '#f4ebdb',
@@ -16,7 +16,7 @@ module.exports = {
           800: '#7d6943',
           900: '#665636',
         },
-        'secondary': {
+        secondary: {
           50: '#f5f6f9',
           100: '#eaeef4',
           200: '#cbd3e3',
@@ -28,7 +28,7 @@ module.exports = {
           800: '#1c3056',
           900: '#172747',
         },
-      }
+      },
     },
   },
   variants: {
