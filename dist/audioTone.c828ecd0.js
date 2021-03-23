@@ -51498,17 +51498,19 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var ready = false;
-var synth;
+var osc;
 setup();
 windowResized();
 draw();
-mousePressed(); //create a synth and connect it to the main output (your speakers)
+mousePressed();
 
-synth = new Tone.Synth().toDestination(); //play a middle 'C' for the duration of an 8th note
-
-synth.triggerAttackRelease('C4', '8n');
-
-function setup() {}
+function setup() {
+  osc = new Tone.Oscillator({
+    type: 'sine',
+    frequency: 440,
+    volume: -16
+  }).toDestination();
+}
 
 function windowResized() {}
 
@@ -51525,6 +51527,7 @@ function draw() {
 function mousePressed() {
   if (!ready) {
     // start audio objects here
+    osc.start();
     ready = true;
   }
 }

@@ -1,19 +1,20 @@
 import * as Tone from 'tone';
 
 let ready = false;
-let synth;
+let osc;
 
 setup();
 windowResized();
 draw();
 mousePressed();
 
-//create a synth and connect it to the main output (your speakers)
-synth = new Tone.Synth().toDestination();
-//play a middle 'C' for the duration of an 8th note
-synth.triggerAttackRelease('C4', '8n');
-
-function setup() {}
+function setup() {
+  osc = new Tone.Oscillator({
+    type: 'sine',
+    frequency: 440,
+    volume: -16,
+  }).toDestination();
+}
 function windowResized() {}
 function draw() {
   var waveDisplay = 'Click To Start';
@@ -27,6 +28,7 @@ function draw() {
 function mousePressed() {
   if (!ready) {
     // start audio objects here
+    osc.start();
     ready = true;
   }
 }
