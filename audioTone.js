@@ -6,7 +6,6 @@ let osc;
 setup();
 windowResized();
 draw();
-mousePressed();
 
 function setup() {
   osc = new Tone.Oscillator({
@@ -25,10 +24,11 @@ function draw() {
     document.getElementById('waveDisplay').innerHTML = waveDisplay;
   }
 }
-function mousePressed() {
+var boxStart = document.getElementById('waveDisplay');
+boxStart.onclick = function () {
   if (!ready) {
     // start audio objects here
     osc.start();
     ready = true;
   }
-}
+};

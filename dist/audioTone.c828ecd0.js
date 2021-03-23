@@ -51502,7 +51502,6 @@ var osc;
 setup();
 windowResized();
 draw();
-mousePressed();
 
 function setup() {
   osc = new Tone.Oscillator({
@@ -51524,13 +51523,15 @@ function draw() {
   }
 }
 
-function mousePressed() {
+var boxStart = document.getElementById('waveDisplay');
+
+boxStart.onclick = function () {
   if (!ready) {
     // start audio objects here
     osc.start();
     ready = true;
   }
-}
+};
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
