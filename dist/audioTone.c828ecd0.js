@@ -51530,6 +51530,9 @@ boxStart.onclick = function () {
     // start audio objects here
     osc.start();
     ready = true;
+  } else {
+    osc.stop();
+    ready = false;
   }
 };
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {

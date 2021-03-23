@@ -30,5 +30,8 @@ boxStart.onclick = function () {
     // start audio objects here
     osc.start();
     ready = true;
+  } else {
+    osc.stop();
+    ready = false;
   }
 };
