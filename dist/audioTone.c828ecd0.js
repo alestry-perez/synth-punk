@@ -51514,7 +51514,7 @@ function setup() {
 function windowResized() {}
 
 function draw() {
-  var playStop = '<h2 class="text-center pt-1.5 ">PLAY / STOP</h2>';
+  var playStop = '<h2 class="text-center pt-1.5 font-bold">PLAY / STOP</h2>';
 
   if (ready) {// do the audio stuff
   } else {
