@@ -16,16 +16,16 @@ function setup() {
 }
 function windowResized() {}
 function draw() {
-  var waveDisplay = 'Click To Start';
+  var playStop = '<h2 class="text-center pt-1.5 ">PLAY / STOP</h2>';
   if (ready) {
     // do the audio stuff
   } else {
     // code here
-    document.getElementById('waveDisplay').innerHTML = waveDisplay;
+    document.getElementById('playStop').innerHTML = playStop;
   }
 }
-var boxStart = document.getElementById('waveDisplay');
-boxStart.onclick = function () {
+var boxStart = document.getElementById('playStop');
+boxStart.onclick = () => {
   if (!ready) {
     // start audio objects here
     osc.start();

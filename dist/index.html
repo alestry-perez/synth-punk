@@ -9,50 +9,94 @@
     <title>Synth Punk</title>
   <script src="/style.54d2cf43.js"></script></head>
   <body>
-    <div class="container w-max">
-      <div class="grid grid-cols-3 grid-rows-2 gap-1 border border-black divide-x-2 divide-black bg-primary-500 border-box synth w-730 h-532">
-        <div class="oscGroup">
-          <div class="grid grid-flow-col grid-rows-3 gap-2 oscOne">
+    <div class="container h-auto w-max">
+      <div id="synth" class="grid grid-cols-3 grid-rows-1 gap-0 border-2 border-black divide-x-2 divide-black bg-primary-500 border-box">
+        <div id="oscGroup" class="grid grid-flow-col grid-rows-3">
+          <!-- OSC 1 -->
+          <div id="oscOne" class="grid grid-flow-col grid-rows-4 gap-0 place-content-evenly">
             <h2 class="self-center text-center underline uppercase">osc - 1</h2>
-            <div id="waveDisplay" class="self-center w-64 h-12 text-center justify-self-center bg-secondary-500"></div>
+            <!-- Waveform Display -->
+            <div id="waveDisplay" class="self-center h-12 mx-2 text-center border-2 border-black w-52 justify-self-center bg-secondary-500"></div>
+            <!-- Waveform Select -->
             <div class="flex items-center justify-evenly waveType">
-              <button class="uppercase border cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc1Type" data-param="osc1.type" onchange="changetype()" type="radio" checked="" value="sine">
+              <button class="uppercase border-2 cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc1Type" data-param="osc1.type" onchange="changetype()" type="radio" checked="" value="sine">
                 Sine
               </button>
-              <button class="uppercase border cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc1Type" data-param="osc1.type" onchange="changetype()" type="radio" checked="" value="square">
+              <button class="uppercase border-2 cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc1Type" data-param="osc1.type" onchange="changetype()" type="radio" checked="" value="square">
                 Sqr
               </button>
-              <button class="uppercase border cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc1Type" data-param="osc1.type" onchange="changetype()" type="radio" checked="" value="triangle">
+              <button class="uppercase border-2 cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc1Type" data-param="osc1.type" onchange="changetype()" type="radio" checked="" value="triangle">
                 Tri
               </button>
-              <button class="uppercase border cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc1Type" data-param="osc1.type" onchange="changetype()" type="radio" checked="" value="saw">
+              <button class="uppercase border-2 cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc1Type" data-param="osc1.type" onchange="changetype()" type="radio" checked="" value="saw">
                 Saw
               </button>
             </div>
+            <!-- Knobs -->
             <div class="flex row-start-4 justify-evenly knobs">
-              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-500">
+              <div class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500">
                 LVL
               </div>
-              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-500">
+              <div class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500">
                 OCT
               </div>
-              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-500">
+              <div class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500">
                 SEMI
               </div>
-              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-500">
+              <div class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500">
                 FINE
               </div>
             </div>
           </div>
+
+          <!-- OSC 2 -->
+          <div id="oscTwo" class="grid grid-flow-col grid-rows-4 row-start-2 gap-0 place-content-evenly">
+          <h2 class="self-center text-center underline uppercase">osc - 2</h2>
+          <!-- Waveform Display -->
+          <div id="waveDisplay" class="self-center h-12 mx-2 text-center border-2 border-black w-52 justify-self-center bg-secondary-500"></div>
+        <!-- Waveform Select -->
+        <div class="flex items-center justify-evenly waveType">
+          <button class="uppercase border-2 cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc2Type" data-param="osc2.type" onchange="changetype()" type="radio" checked="" value="sine">
+            Sine
+          </button>
+          <button class="uppercase border-2 cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc12ype" data-param="osc2.type" onchange="changetype()" type="radio" checked="" value="square">
+            Sqr
+          </button>
+          <button class="uppercase border-2 cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc2Type" data-param="osc2.type" onchange="changetype()" type="radio" checked="" value="triangle">
+            Tri
+          </button>
+          <button class="uppercase border-2 cursor-pointer w-11 hover:bg-white border-secondary-500" name="osc2Type" data-param="osc2.type" onchange="changetype()" type="radio" checked="" value="saw">
+            Saw
+          </button>
         </div>
-        <div class="grid grid-flow-col grid-rows-3 gap-2">
-          <h2 class="self-center text-center underline uppercase">amp-env</h2>
+        <!-- Knobs -->
+        <div class="flex row-start-4 justify-evenly knobs">
+          <div class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500">
+            LVL
+          </div>
+          <div class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500">
+            OCT
+          </div>
+          <div class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500">
+            SEMI
+          </div>
+          <div class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500">
+            FINE
+          </div>
         </div>
-        <div class="grid grid-flow-col grid-rows-3 gap-2">
-          <h2 class="self-center text-center underline uppercase">delay</h2>
+        </div>
+          <!-- Play-Stop Button -->
+          <div id="playStop" class="w-32 h-10 row-start-3 border-2 border-black rounded-full cursor-pointer place-self-center bg-secondary-500"></div>
+        </div>
+          <div class="grid grid-flow-col grid-rows-3 gap-2">
+            <h2 class="self-center text-center underline uppercase">amp-env</h2>
+          </div>
+          <div class="grid grid-flow-col grid-rows-3 gap-2">
+            <h2 class="self-center text-center underline uppercase">delay</h2>
+          </div>
         </div>
       </div>
-    </div>
+    
 
     <script src="/audioTone.c828ecd0.js"></script>
   </body>

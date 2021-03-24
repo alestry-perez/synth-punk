@@ -51514,16 +51514,16 @@ function setup() {
 function windowResized() {}
 
 function draw() {
-  var waveDisplay = 'Click To Start';
+  var playStop = '<h2 class="text-center pt-1.5 ">PLAY / STOP</h2>';
 
   if (ready) {// do the audio stuff
   } else {
     // code here
-    document.getElementById('waveDisplay').innerHTML = waveDisplay;
+    document.getElementById('playStop').innerHTML = playStop;
   }
 }
 
-var boxStart = document.getElementById('waveDisplay');
+var boxStart = document.getElementById('playStop');
 
 boxStart.onclick = function () {
   if (!ready) {
@@ -51563,7 +51563,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52564" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51137" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
