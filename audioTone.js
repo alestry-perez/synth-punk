@@ -18,16 +18,13 @@ function windowResized() {}
 function draw() {
   var playStop = '<h2 class="text-center pt-1.5 font-bold">PLAY / STOP</h2>';
   if (ready) {
-    // do the audio stuff
   } else {
-    // code here
     document.getElementById('playStop').innerHTML = playStop;
   }
 }
 var boxStart = document.getElementById('playStop');
 boxStart.onclick = () => {
   if (!ready) {
-    // start audio objects here
     osc.start();
     ready = true;
   } else {
