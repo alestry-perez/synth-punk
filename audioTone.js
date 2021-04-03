@@ -22,7 +22,6 @@ function draw() {
     document.getElementById('playStop').innerHTML = playStop;
   }
 }
-
 var boxStart = document.getElementById('playStop');
 boxStart.onclick = () => {
   ready = !ready;
