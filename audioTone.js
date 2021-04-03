@@ -22,13 +22,18 @@ function draw() {
     document.getElementById('playStop').innerHTML = playStop;
   }
 }
+
 var boxStart = document.getElementById('playStop');
 boxStart.onclick = () => {
-  if (!ready) {
-    osc.start();
-    ready = true;
-  } else {
-    osc.stop();
-    ready = false;
-  }
+  ready = !ready;
+  return ready ? osc.start() : osc.stop();
 };
+// boxStart.onclick = () => {
+//   if (!ready) {
+//     osc.start();
+//     ready = true;
+//   } else {
+//     osc.stop();
+//     ready = false;
+//   }
+// };
