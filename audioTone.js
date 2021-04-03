@@ -27,12 +27,3 @@ boxStart.onclick = () => {
   ready = !ready;
   return ready ? osc.start() : osc.stop();
 };
-/*boxStart.onclick = () => {
-  if (!ready) {
-    osc.start();
-    ready = true;
-  } else {
-    osc.stop();
-    ready = false;
-  }
-};*/
