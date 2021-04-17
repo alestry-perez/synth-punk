@@ -14,7 +14,9 @@ function setup() {
     volume: -16,
   }).toDestination();
 }
+
 function windowResized() {}
+
 function draw() {
   var playStop = '<h2 class="text-center pt-1.5 font-bold">PLAY / STOP</h2>';
   if (ready) {
@@ -22,6 +24,7 @@ function draw() {
     document.getElementById('playStop').innerHTML = playStop;
   }
 }
+
 var boxStart = document.getElementById('playStop');
 boxStart.onclick = () => {
   ready = !ready;
