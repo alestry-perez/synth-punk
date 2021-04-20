@@ -6,3 +6,4 @@ Tools used:
 - Tailwindcss
 - Yarn
 - Web Audio API
+- Node
