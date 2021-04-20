@@ -4,3 +4,5 @@
 Tools used:
 - Tone.js
 - Tailwindcss
+- Yarn
+- Web Audio API
