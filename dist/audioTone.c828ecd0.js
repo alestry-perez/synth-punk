@@ -51514,17 +51514,9 @@ drawer().add({
   tone: osc,
   title: 'OSC',
 });
-meter({
-  tone: toneMeter,
-  parent: document.getElementById('waveDisplay'),
-});
-fft({
-  tone: toneFFT,
-  parent: document.getElementById('waveDisplay'),
-});
 waveform({
   tone: toneWaveform,
-  parent: document.getElementById('waveDisplay'),
+  parent: document.querySelector('#waveDisplay'),
 });
 */
 // Play Button
