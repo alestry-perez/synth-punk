@@ -16,6 +16,7 @@ const toneWaveform = new Tone.Waveform();
 osc.connect(toneWaveform);
 
 //bind the GUI Waveform
+/*
 drawer().add({
   tone: osc,
   title: 'OSC',
@@ -32,6 +33,7 @@ waveform({
   tone: toneWaveform,
   parent: document.getElementById('waveDisplay'),
 });
+*/
 
 // Play Button
 var boxStart = document.getElementById('playStop');

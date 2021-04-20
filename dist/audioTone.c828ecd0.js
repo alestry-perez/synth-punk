@@ -51509,22 +51509,25 @@ osc.connect(toneMeter);
 var toneWaveform = new Tone.Waveform();
 osc.connect(toneWaveform); //bind the GUI Waveform
 
+/*
 drawer().add({
   tone: osc,
-  title: 'OSC'
+  title: 'OSC',
 });
 meter({
   tone: toneMeter,
-  parent: document.getElementById('waveDisplay')
+  parent: document.getElementById('waveDisplay'),
 });
 fft({
   tone: toneFFT,
-  parent: document.getElementById('waveDisplay')
+  parent: document.getElementById('waveDisplay'),
 });
 waveform({
   tone: toneWaveform,
-  parent: document.getElementById('waveDisplay')
-}); // Play Button
+  parent: document.getElementById('waveDisplay'),
+});
+*/
+// Play Button
 
 var boxStart = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
