@@ -3,30 +3,41 @@ import * as Tone from 'tone';
 let ready = false;
 let osc;
 
-setup();
-windowResized();
-draw();
+osc = new Tone.Oscillator({
+  type: 'sine',
+  frequency: 440,
+  volume: -16,
+}).toDestination();
 
-function setup() {
-  osc = new Tone.Oscillator({
-    type: 'sine',
-    frequency: 440,
-    volume: -16,
-  }).toDestination();
-}
+const toneMeter = new Tone.Meter();
+osc.connect(toneMeter);
 
-function windowResized() {}
+const toneWaveform = new Tone.Waveform();
+osc.connect(toneWaveform);
 
-function draw() {
-  var playStop = '<h2 class="text-center pt-1.5 font-bold">PLAY / STOP</h2>';
-  if (ready) {
-  } else {
-    document.getElementById('playStop').innerHTML = playStop;
-  }
-}
+//bind the GUI Waveform
+drawer().add({
+  tone: osc,
+  title: 'OSC',
+});
+meter({
+  tone: toneMeter,
+  parent: document.getElementById('waveDisplay'),
+});
+fft({
+  tone: toneFFT,
+  parent: document.getElementById('waveDisplay'),
+});
+waveform({
+  tone: toneWaveform,
+  parent: document.getElementById('waveDisplay'),
+});
 
+// Play Button
 var boxStart = document.getElementById('playStop');
+const playStop = document.getElementById('playStatus');
 boxStart.onclick = () => {
   ready = !ready;
-  return ready ? osc.start() : osc.stop();
+  ready ? osc.start() : osc.stop();
+  playStop.textContent = ready ? 'STOP' : 'PLAY';
 };

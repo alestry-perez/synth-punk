@@ -51499,33 +51499,40 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var ready = false;
 var osc;
-setup();
-windowResized();
-draw();
+osc = new Tone.Oscillator({
+  type: 'sine',
+  frequency: 440,
+  volume: -16
+}).toDestination();
+var toneMeter = new Tone.Meter();
+osc.connect(toneMeter);
+var toneWaveform = new Tone.Waveform();
+osc.connect(toneWaveform); //bind the GUI Waveform
 
-function setup() {
-  osc = new Tone.Oscillator({
-    type: 'sine',
-    frequency: 440,
-    volume: -16
-  }).toDestination();
-}
-
-function windowResized() {}
-
-function draw() {
-  var playStop = '<h2 class="text-center pt-1.5 font-bold">PLAY / STOP</h2>';
-
-  if (ready) {} else {
-    document.getElementById('playStop').innerHTML = playStop;
-  }
-}
+drawer().add({
+  tone: osc,
+  title: 'OSC'
+});
+meter({
+  tone: toneMeter,
+  parent: document.getElementById('waveDisplay')
+});
+fft({
+  tone: toneFFT,
+  parent: document.getElementById('waveDisplay')
+});
+waveform({
+  tone: toneWaveform,
+  parent: document.getElementById('waveDisplay')
+}); // Play Button
 
 var boxStart = document.getElementById('playStop');
+var playStop = document.getElementById('playStatus');
 
 boxStart.onclick = function () {
   ready = !ready;
-  return ready ? osc.start() : osc.stop();
+  ready ? osc.start() : osc.stop();
+  playStop.textContent = ready ? 'STOP' : 'PLAY';
 };
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -51555,7 +51562,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51771" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64153" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
