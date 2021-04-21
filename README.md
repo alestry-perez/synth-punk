@@ -3,6 +3,7 @@
 
 Tools used:
 - Tone.js
+- Parcel
 - Tailwindcss
 - Yarn
 - Web Audio API
