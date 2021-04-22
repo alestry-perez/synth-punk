@@ -9,3 +9,6 @@ Tools used:
 - Web Audio API
 - Node
 - TypeScript
+
+## Upcoming Changes
+- React
