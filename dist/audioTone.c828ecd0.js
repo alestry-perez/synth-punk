@@ -124,7 +124,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.version = void 0;
-const version = "14.8.14";
+const version = "14.7.77";
 exports.version = version;
 },{}],"node_modules/@babel/runtime/helpers/arrayWithHoles.js":[function(require,module,exports) {
 function _arrayWithHoles(arr) {
@@ -23056,7 +23056,7 @@ function isAudioContext(arg) {
 
 
 function isAudioBuffer(arg) {
-  return arg instanceof _standardizedAudioContext.AudioBuffer;
+  return arg instanceof AudioBuffer;
 }
 },{"standardized-audio-context":"node_modules/standardized-audio-context/build/es2019/module.js"}],"node_modules/tone/build/esm/core/util/Defaults.js":[function(require,module,exports) {
 "use strict";
@@ -23213,8 +23213,7 @@ var _Debug = require("./util/Debug");
  */
 
 /**
- * Tone is the base class of all other classes.
- *
+ * @class  Tone is the base class of all other classes.
  * @category Core
  * @constructor
  */
@@ -23830,7 +23829,7 @@ function initializeContext(ctx) {
   notifyNewContext.forEach(cb => cb(ctx));
 }
 /**
- * Array of callbacks to invoke when a new context is closed
+ * Array of callbacks to invoke when a new context is created
  */
 
 
@@ -23844,7 +23843,7 @@ function onContextClose(cb) {
 }
 
 function closeContext(ctx) {
-  // remove any additional modules
+  // add any additional modules
   notifyCloseContext.forEach(cb => cb(ctx));
 }
 },{}],"node_modules/tone/build/esm/core/util/Emitter.js":[function(require,module,exports) {
@@ -23927,11 +23926,11 @@ class Emitter extends _Tone.Tone {
         this._events = {};
       }
 
-      if (this._events.hasOwnProperty(eventName)) {
+      if (this._events.hasOwnProperty(event)) {
         if ((0, _TypeCheck.isUndef)(callback)) {
-          this._events[eventName] = [];
+          this._events[event] = [];
         } else {
-          const eventList = this._events[eventName];
+          const eventList = this._events[event];
 
           for (let i = eventList.length - 1; i >= 0; i--) {
             if (eventList[i] === callback) {
@@ -26045,7 +26044,7 @@ class TimeClass extends _TimeBase.TimeBaseClass {
     const quarterTime = this._beatsToUnits(1);
 
     const quarters = this.valueOf() / quarterTime;
-    return quarters * this._getPPQ();
+    return Math.round(quarters * this._getPPQ());
   }
   /**
    * Return the time in seconds.
@@ -31420,18 +31419,11 @@ class TransportEvent {
      * The unique id of the event
      */
     this.id = TransportEvent._eventId++;
-    /**
-     * The remaining value between the passed in time, and Math.floor(time).
-     * This value is later added back when scheduling to get sub-tick precision.
-     */
-
-    this._remainderTime = 0;
     const options = Object.assign(TransportEvent.getDefaults(), opts);
     this.transport = transport;
     this.callback = options.callback;
     this._once = options.once;
-    this.time = Math.floor(options.time);
-    this._remainderTime = options.time - this.time;
+    this.time = options.time;
   }
 
   static getDefaults() {
@@ -31442,14 +31434,6 @@ class TransportEvent {
     };
   }
   /**
-   * Get the time and remainder time.
-   */
-
-
-  get floatTime() {
-    return this.time + this._remainderTime;
-  }
-  /**
    * Invoke the event callback.
    * @param  time  The AudioContext time in seconds of the event
    */
@@ -31457,8 +31441,7 @@ class TransportEvent {
 
   invoke(time) {
     if (this.callback) {
-      const tickDuration = this.transport.bpm.getDurationOfTicks(1, time);
-      this.callback(time + this._remainderTime * tickDuration);
+      this.callback(time);
 
       if (this._once) {
         this.transport.clear(this.id);
@@ -31495,8 +31478,6 @@ var _Ticks = require("../type/Ticks");
 
 var _TransportEvent = require("./TransportEvent");
 
-var _Math = require("../util/Math");
-
 /**
  * TransportRepeatEvent is an internal class used by Tone.Transport
  * to schedule repeat events. This class should not be instantiated directly.
@@ -31528,12 +31509,11 @@ class TransportRepeatEvent extends _TransportEvent.TransportEvent {
 
     this._boundRestart = this._restart.bind(this);
     const options = Object.assign(TransportRepeatEvent.getDefaults(), opts);
-    this.duration = options.duration;
-    this._interval = options.interval;
+    this.duration = new _Ticks.TicksClass(transport.context, options.duration).valueOf();
+    this._interval = new _Ticks.TicksClass(transport.context, options.interval).valueOf();
     this._nextTick = options.time;
     this.transport.on("start", this._boundRestart);
     this.transport.on("loopStart", this._boundRestart);
-    this.transport.on("ticks", this._boundRestart);
     this.context = this.transport.context;
 
     this._restart();
@@ -31561,52 +31541,38 @@ class TransportRepeatEvent extends _TransportEvent.TransportEvent {
     super.invoke(time);
   }
   /**
-   * Create an event on the transport on the nextTick
-   */
-
-
-  _createEvent() {
-    if ((0, _Math.LT)(this._nextTick, this.floatTime + this.duration)) {
-      return this.transport.scheduleOnce(this.invoke.bind(this), new _Ticks.TicksClass(this.context, this._nextTick).toSeconds());
-    }
-
-    return -1;
-  }
-  /**
    * Push more events onto the timeline to keep up with the position of the timeline
    */
 
 
   _createEvents(time) {
     // schedule the next event
-    // const ticks = this.transport.getTicksAtTime(time);
-    // if the next tick is within the bounds set by "duration"
-    if ((0, _Math.LT)(this._nextTick + this._interval, this.floatTime + this.duration)) {
+    const ticks = this.transport.getTicksAtTime(time);
+
+    if (ticks >= this.time && ticks >= this._nextTick && this._nextTick + this._interval < this.time + this.duration) {
       this._nextTick += this._interval;
       this._currentId = this._nextId;
       this._nextId = this.transport.scheduleOnce(this.invoke.bind(this), new _Ticks.TicksClass(this.context, this._nextTick).toSeconds());
     }
   }
   /**
-   * Re-compute the events when the transport time has changed from a start/ticks/loopStart event
+   * Push more events onto the timeline to keep up with the position of the timeline
    */
 
 
   _restart(time) {
     this.transport.clear(this._currentId);
-    this.transport.clear(this._nextId); // start at the first event
-
-    this._nextTick = this.floatTime;
+    this.transport.clear(this._nextId);
+    this._nextTick = this.time;
     const ticks = this.transport.getTicksAtTime(time);
 
-    if ((0, _Math.GT)(ticks, this.time)) {
-      // the event is not being scheduled from the beginning and should be offset
-      this._nextTick = this.floatTime + Math.ceil((ticks - this.floatTime) / this._interval) * this._interval;
+    if (ticks > this.time) {
+      this._nextTick = this.time + Math.ceil((ticks - this.time) / this._interval) * this._interval;
     }
 
-    this._currentId = this._createEvent();
+    this._currentId = this.transport.scheduleOnce(this.invoke.bind(this), new _Ticks.TicksClass(this.context, this._nextTick).toSeconds());
     this._nextTick += this._interval;
-    this._nextId = this._createEvent();
+    this._nextId = this.transport.scheduleOnce(this.invoke.bind(this), new _Ticks.TicksClass(this.context, this._nextTick).toSeconds());
   }
   /**
    * Clean up
@@ -31619,14 +31585,13 @@ class TransportRepeatEvent extends _TransportEvent.TransportEvent {
     this.transport.clear(this._nextId);
     this.transport.off("start", this._boundRestart);
     this.transport.off("loopStart", this._boundRestart);
-    this.transport.off("ticks", this._boundRestart);
     return this;
   }
 
 }
 
 exports.TransportRepeatEvent = TransportRepeatEvent;
-},{"../type/Ticks":"node_modules/tone/build/esm/core/type/Ticks.js","./TransportEvent":"node_modules/tone/build/esm/core/clock/TransportEvent.js","../util/Math":"node_modules/tone/build/esm/core/util/Math.js"}],"node_modules/tone/build/esm/core/clock/Transport.js":[function(require,module,exports) {
+},{"../type/Ticks":"node_modules/tone/build/esm/core/type/Ticks.js","./TransportEvent":"node_modules/tone/build/esm/core/clock/TransportEvent.js"}],"node_modules/tone/build/esm/core/clock/Transport.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32201,8 +32166,6 @@ class Transport extends _ToneWithContext.ToneWithContext {
 
         this.emit("start", time, this._clock.getSecondsAtTime(time));
       } else {
-        this.emit("ticks", now);
-
         this._clock.setTicksAtTime(t, now);
       }
     }
@@ -32215,7 +32178,7 @@ class Transport extends _ToneWithContext.ToneWithContext {
 
 
   getTicksAtTime(time) {
-    return this._clock.getTicksAtTime(time);
+    return Math.round(this._clock.getTicksAtTime(time));
   }
   /**
    * Return the elapsed seconds at the given time.
@@ -42880,6 +42843,11 @@ class ToneEvent extends _ToneWithContext.ToneWithContext {
           }
 
           if (duration !== Infinity) {
+            // schedule a stop since it's finite duration
+            this._state.setStateAtTime("stopped", startTick + duration + 1, {
+              id: -1
+            });
+
             duration = new _Ticks.TicksClass(this.context, duration);
           }
 
@@ -42978,13 +42946,13 @@ class ToneEvent extends _ToneWithContext.ToneWithContext {
 
       const previousEvent = this._state.getBefore(ticks);
 
-      let rescheduleTime = ticks;
+      let reschedulTime = ticks;
 
       if (previousEvent !== null) {
-        rescheduleTime = previousEvent.time;
+        reschedulTime = previousEvent.time;
       }
 
-      this._rescheduleEvents(rescheduleTime);
+      this._rescheduleEvents(reschedulTime);
     }
 
     return this;
@@ -43041,7 +43009,7 @@ class ToneEvent extends _ToneWithContext.ToneWithContext {
 
 
   _getLoopDuration() {
-    return (this._loopEnd - this._loopStart) / this._playbackRate;
+    return Math.round((this._loopEnd - this._loopStart) / this._playbackRate);
   }
   /**
    * If the note should loop or not
@@ -43065,7 +43033,7 @@ class ToneEvent extends _ToneWithContext.ToneWithContext {
     this._rescheduleEvents();
   }
   /**
-   * The playback rate of the event. Defaults to 1.
+   * The playback rate of the note. Defaults to 1.
    * @example
    * const note = new Tone.ToneEvent();
    * note.loop = true;
@@ -44257,7 +44225,7 @@ class Sequence extends _ToneEvent.ToneEvent {
 
 
   _seqCallback(time, value) {
-    if (value !== null && !this.mute) {
+    if (value !== null) {
       this.callback(time, value);
     }
   }
@@ -45563,8 +45531,6 @@ var _Defaults = require("../core/util/Defaults");
 
 var _WaveShaper = require("../signal/WaveShaper");
 
-var _Debug = require("../core/util/Debug");
-
 /**
  * Chebyshev is a waveshaper which is good
  * for making different types of distortion sounds.
@@ -45623,7 +45589,7 @@ class Chebyshev extends _Effect.Effect {
   }
   /**
    * The order of the Chebyshev polynomial which creates the equation which is applied to the incoming
-   * signal through a Tone.WaveShaper. Must be an integer. The equations are in the form:
+   * signal through a Tone.WaveShaper. The equations are in the form:
    * ```
    * order 2: 2x^2 + 1
    * order 3: 4x^3 + 3x
@@ -45638,7 +45604,6 @@ class Chebyshev extends _Effect.Effect {
   }
 
   set order(order) {
-    (0, _Debug.assert)(Number.isInteger(order), "'order' must be an integer");
     this._order = order;
 
     this._shaper.setMap(x => {
@@ -45669,7 +45634,7 @@ class Chebyshev extends _Effect.Effect {
 }
 
 exports.Chebyshev = Chebyshev;
-},{"./Effect":"node_modules/tone/build/esm/effect/Effect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../signal/WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js","../core/util/Debug":"node_modules/tone/build/esm/core/util/Debug.js"}],"node_modules/tone/build/esm/component/channel/Split.js":[function(require,module,exports) {
+},{"./Effect":"node_modules/tone/build/esm/effect/Effect.js","../core/util/Defaults":"node_modules/tone/build/esm/core/util/Defaults.js","../signal/WaveShaper":"node_modules/tone/build/esm/signal/WaveShaper.js"}],"node_modules/tone/build/esm/component/channel/Split.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51503,28 +51468,19 @@ osc = new Tone.Oscillator({
   type: 'sine',
   frequency: 440,
   volume: -16
-}).toDestination();
-var toneMeter = new Tone.Meter();
-osc.connect(toneMeter);
-var toneWaveform = new Tone.Waveform();
-osc.connect(toneWaveform); //bind the GUI Waveform
+}).toDestination(); //bind the GUI Waveform
 
-/*
-drawer().add({
-  tone: osc,
-  title: 'OSC',
-});
+var toneWaveform = new Tone.Waveform();
+osc.connect(toneWaveform);
 waveform({
   tone: toneWaveform,
-  parent: document.querySelector('#waveDisplay'),
-});
-*/
-// Play Button
+  parent: document.getElementById('waveDisplay')
+}); // Play Button
 
-var boxStart = document.getElementById('playStop');
+var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
 
-boxStart.onclick = function () {
+playButton.onclick = function () {
   ready = !ready;
   ready ? osc.start() : osc.stop();
   playStop.textContent = ready ? 'STOP' : 'PLAY';
@@ -51557,7 +51513,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64153" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55135" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

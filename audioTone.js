@@ -9,28 +9,19 @@ osc = new Tone.Oscillator({
   volume: -16,
 }).toDestination();
 
-const toneMeter = new Tone.Meter();
-osc.connect(toneMeter);
-
+//bind the GUI Waveform
 const toneWaveform = new Tone.Waveform();
 osc.connect(toneWaveform);
 
-//bind the GUI Waveform
-/*
-drawer().add({
-  tone: osc,
-  title: 'OSC',
-});
 waveform({
   tone: toneWaveform,
-  parent: document.querySelector('#waveDisplay'),
+  parent: document.getElementById('waveDisplay'),
 });
-*/
 
 // Play Button
-const boxStart = document.getElementById('playStop');
+const playButton = document.getElementById('playStop');
 const playStop = document.getElementById('playStatus');
-boxStart.onclick = () => {
+playButton.onclick = () => {
   ready = !ready;
   ready ? osc.start() : osc.stop();
   playStop.textContent = ready ? 'STOP' : 'PLAY';

@@ -10,7 +10,7 @@
     "parcel": "1.12.3",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "tone": "^14.8.14",
+    "tone": "^14.7.77",
     "yarn": "^1.22.10"
   },
   "resolutions": {
