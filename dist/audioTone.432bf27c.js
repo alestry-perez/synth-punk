@@ -51502,7 +51502,40 @@ osc = new Tone.Oscillator({
   type: 'sine',
   frequency: 440,
   volume: -16
-}).toDestination(); // Play Button
+});
+osc.toDestination();
+var waveform = new Tone.Waveform();
+osc.connect(waveform);
+
+function draw() {
+  var canvas = document.getElementById('waveDisplay');
+
+  if (!canvas.getContext) {
+    return;
+  }
+
+  var ctx = canvas.getContext('2d');
+  ctx.strokeStyle = 'red';
+  ctx.lineWidth = 5;
+  ctx.beginPath();
+  ctx.moveTo(0, 75);
+  ctx.lineTo(293, 75);
+  ctx.stroke();
+
+  if (ready) {
+    var buffer = wave.getValue(0);
+
+    for (var i = 0; i < buffer.length; i++) {}
+
+    return;
+  }
+}
+
+draw(); // waveform({
+//   tone: toneWaveform,
+//   parent: document.getElementById('waveDisplay'),
+// });
+// Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
