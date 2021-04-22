@@ -10,13 +10,13 @@ osc = new Tone.Oscillator({
 }).toDestination();
 
 //bind the GUI Waveform
-const toneWaveform = new Tone.Waveform();
-osc.connect(toneWaveform);
+// const toneWaveform = new Tone.Waveform();
+// osc.connect(toneWaveform);
 
-waveform({
-  tone: toneWaveform,
-  parent: document.getElementById('waveDisplay'),
-});
+// waveform({
+//   tone: toneWaveform,
+//   parent: document.getElementById('waveDisplay'),
+// });
 
 // Play Button
 const playButton = document.getElementById('playStop');
