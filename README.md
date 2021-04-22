@@ -8,3 +8,4 @@ Tools used:
 - Yarn
 - Web Audio API
 - Node
+- TypeScript
