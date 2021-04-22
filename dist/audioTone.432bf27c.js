@@ -51502,14 +51502,7 @@ osc = new Tone.Oscillator({
   type: 'sine',
   frequency: 440,
   volume: -16
-}).toDestination(); //bind the GUI Waveform
-// const toneWaveform = new Tone.Waveform();
-// osc.connect(toneWaveform);
-// waveform({
-//   tone: toneWaveform,
-//   parent: document.getElementById('waveDisplay'),
-// });
-// Play Button
+}).toDestination(); // Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
