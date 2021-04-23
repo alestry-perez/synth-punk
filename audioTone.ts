@@ -13,26 +13,45 @@ osc.toDestination();
 const waveform = new Tone.Waveform();
 osc.connect(waveform);
 
+const canvas = document.getElementById('waveDisplay');
+
 function draw() {
-  const canvas = document.getElementById('waveDisplay');
-
-  if (!canvas.getContext) {
-    return;
-  }
-  const ctx = canvas.getContext('2d');
-
-  ctx.strokeStyle = 'red';
-  ctx.lineWidth = 5;
-
-  ctx.beginPath();
-  ctx.moveTo(0, 75);
-  ctx.lineTo(293, 75);
-  ctx.stroke();
+  background(0);
 
   if (ready) {
-    let buffer = wave.getValue(0);
-    for (let i = 0; i < buffer.length; i++) {}
-    return;
+    // do the audio stuff
+    osc.frequency.value = map(mouseX, 0, width, 110, 880);
+
+    stroke(255);
+    let buffer = waveform.getValue(0);
+    console.log(stroke);
+    // look a trigger point where the samples are going from
+    // negative to positive
+    let start = 0;
+    for (let i = 1; i < buffer.length; i++) {
+      if (buffer[i - 1] < 0 && buffer[i] >= 0) {
+        start = i;
+        break; // interrupts a for loop
+      }
+    }
+
+    // calculate a new end point such that we always
+    // draw the same number of samples in each frame
+    let end = start + buffer.length / 2;
+
+    // drawing the waveform
+    for (let i = start; i < end; i++) {
+      let x1 = map(i - 1, start, end, 0, width);
+      let y1 = map(buffer[i - 1], -1, 1, 0, height);
+      let x2 = map(i, start, end, 0, width);
+      let y2 = map(buffer[i], -1, 1, 0, height);
+      line(x1, y1, x2, y2);
+    }
+  } else {
+    fill(255);
+    noStroke();
+    textAlign(CENTER, CENTER);
+    text('CLICK TO START', width / 2, height / 2);
   }
 }
 draw();

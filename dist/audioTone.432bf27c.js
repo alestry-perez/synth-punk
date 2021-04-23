@@ -51506,28 +51506,44 @@ osc = new Tone.Oscillator({
 osc.toDestination();
 var waveform = new Tone.Waveform();
 osc.connect(waveform);
+var canvas = document.getElementById('waveDisplay');
 
 function draw() {
-  var canvas = document.getElementById('waveDisplay');
-
-  if (!canvas.getContext) {
-    return;
-  }
-
-  var ctx = canvas.getContext('2d');
-  ctx.strokeStyle = 'red';
-  ctx.lineWidth = 5;
-  ctx.beginPath();
-  ctx.moveTo(0, 75);
-  ctx.lineTo(293, 75);
-  ctx.stroke();
+  background(0);
 
   if (ready) {
-    var buffer = wave.getValue(0);
+    // do the audio stuff
+    osc.frequency.value = map(mouseX, 0, width, 110, 880);
+    stroke(255);
+    var buffer = waveform.getValue(0);
+    console.log(stroke); // look a trigger point where the samples are going from
+    // negative to positive
 
-    for (var i = 0; i < buffer.length; i++) {}
+    var start = 0;
 
-    return;
+    for (var i = 1; i < buffer.length; i++) {
+      if (buffer[i - 1] < 0 && buffer[i] >= 0) {
+        start = i;
+        break; // interrupts a for loop
+      }
+    } // calculate a new end point such that we always
+    // draw the same number of samples in each frame
+
+
+    var end = start + buffer.length / 2; // drawing the waveform
+
+    for (var i = start; i < end; i++) {
+      var x1 = map(i - 1, start, end, 0, width);
+      var y1 = map(buffer[i - 1], -1, 1, 0, height);
+      var x2 = map(i, start, end, 0, width);
+      var y2 = map(buffer[i], -1, 1, 0, height);
+      line(x1, y1, x2, y2);
+    }
+  } else {
+    fill(255);
+    noStroke();
+    textAlign(CENTER, CENTER);
+    text('CLICK TO START', width / 2, height / 2);
   }
 }
 
@@ -51573,7 +51589,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59532" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60514" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
