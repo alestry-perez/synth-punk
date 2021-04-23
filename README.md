@@ -8,3 +8,7 @@ Tools used:
 - Yarn
 - Web Audio API
 - Node
+- TypeScript
+
+## Upcoming Changes
+- React
