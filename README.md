@@ -9,6 +9,8 @@ Tools used:
 - Web Audio API
 - Node
 - TypeScript
+- p5.js
 
 ## Upcoming Changes
 - React
+- Tonal
