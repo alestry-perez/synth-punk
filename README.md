@@ -11,6 +11,6 @@ Tools used:
 - TypeScript
 - p5.js
 
-## Upcoming Changes
+## Additions Coming Soon 
 - React
 - Tonal
