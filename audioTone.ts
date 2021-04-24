@@ -13,9 +13,9 @@ osc.toDestination();
 const waveform = new Tone.Waveform();
 osc.connect(waveform);
 
-const canvas = document.getElementById('waveDisplay');
-
 function draw() {
+  const canvas = document.getElementById('waveDisplay');
+
   background(0);
 
   if (ready) {
