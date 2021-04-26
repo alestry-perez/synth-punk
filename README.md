@@ -1,7 +1,9 @@
 # synth-punk
+
 ## Online Synth
 
 Tools used:
+
 - Tone.js
 - Parcel
 - Tailwindcss
@@ -9,8 +11,9 @@ Tools used:
 - Web Audio API
 - Node
 - TypeScript
-- p5.js
+- Sketch.js
 
-## Additions Coming Soon 
+## Additions Coming Soon
+
 - React
 - Tonal
