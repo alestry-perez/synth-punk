@@ -51506,9 +51506,9 @@ osc = new Tone.Oscillator({
 osc.toDestination();
 var waveform = new Tone.Waveform();
 osc.connect(waveform);
-var canvas = document.getElementById('waveDisplay');
 
 function draw() {
+  var canvas = document.getElementById('waveDisplay');
   background(0);
 
   if (ready) {
@@ -51589,7 +51589,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60514" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62257" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

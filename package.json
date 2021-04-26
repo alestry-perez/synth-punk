@@ -2,7 +2,7 @@
   "esversion": 9,
   "name": "synth-punk",
   "version": "1.0.0",
-  "main": "audioTone.ts",
+  "main": "audioTone.js",
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.4",
     "autoprefixer": "^9",
