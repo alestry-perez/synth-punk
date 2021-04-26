@@ -51464,50 +51464,55 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var ready = false;
 var osc;
-Sketch.create({
-  setup: function setup() {
-    createCanvas(document.getElementById('waveDisplay'));
-    osc = new Tone.Oscillator({
-      type: 'sine',
-      frequency: 440,
-      volume: -16
-    });
-    osc.toDestination();
-    var waveform = new Tone.Waveform();
-    Tone.Destination.connect(waveform);
-  },
-  draw: function draw(waveform) {
-    if (ready) {
-      // do the audio stuff
-      osc.frequency.value = map(mouseX, 0, width, 110, 880);
-      stroke(255);
-      var buffer = waveform.getValue(0);
-      console.log(stroke); // look a trigger point where the samples are going from
-      // negative to positive
+var sketch = Sketch.create({
+  container: document.getElementById('waveDisplay'),
+  retina: 'auto'
+});
 
-      var start = 0;
+sketch.setup = function () {
+  //sketch.createCanvas(canvas.width, canvas.height);
+  osc = new Tone.Oscillator({
+    type: 'sine',
+    frequency: 440,
+    volume: -16
+  });
+  osc.toDestination();
+  var waveform = new Tone.Waveform();
+  Tone.Destination.connect(waveform);
+};
 
-      for (var i = 1; i < buffer.length; i++) {
-        if (buffer[i - 1] < 0 && buffer[i] >= 0) {
-          start = i;
-          break; // interrupts a for loop
-        }
-      } // calculate a new end point such that we always
-      // draw the same number of samples in each frame
+sketch.draw = function () {
+  if (ready) {
+    // do the audio stuff
+    //osc.frequency.value = map(mouseX, 0, width, 110, 880);
+    sketch.stroke(255);
+    var buffer = waveform.getValue(0);
+    console.log(stroke); // look a trigger point where the samples are going from
+    // negative to positive
 
+    var start = 0;
 
-      var end = start + buffer.length / 2; // drawing the waveform
-
-      for (var _i = start; _i < end; _i++) {
-        var x1 = map(_i - 1, start, end, 0, width);
-        var y1 = map(buffer[_i - 1], -1, 1, 0, height);
-        var x2 = map(_i, start, end, 0, width);
-        var y2 = map(buffer[_i], -1, 1, 0, height);
-        line(x1, y1, x2, y2);
+    for (var i = 1; i < buffer.length; i++) {
+      if (buffer[i - 1] < 0 && buffer[i] >= 0) {
+        start = i;
+        break; // interrupts a for loop
       }
+    } // calculate a new end point such that we always
+    // draw the same number of samples in each frame
+
+
+    var end = start + buffer.length / 2; // drawing the waveform
+
+    for (var _i = start; _i < end; _i++) {
+      var x1 = map(_i - 1, start, end, 0, width);
+      var y1 = map(buffer[_i - 1], -1, 1, 0, height);
+      var x2 = map(_i, start, end, 0, width);
+      var y2 = map(buffer[_i], -1, 1, 0, height);
+      line(x1, y1, x2, y2);
     }
   }
-}); // Play Button
+}; // Play Button
+
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
