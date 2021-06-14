@@ -14,6 +14,7 @@
     <title>Synth Punk</title>
   </head>
   <body>
+    
     <div class="container h-auto w-max">
       <div
         id="synth"
@@ -34,48 +35,28 @@
             <!-- Waveform Select -->
             <div class="flex items-center justify-evenly waveType">
               <button
-                class="uppercase border-2 cursor-pointer w-11 bg-white border-black
-                name="osc1Type"
-                data-param="osc1.type"
-                onchange="changetype()"
-                type="radio"
-                checked
-                value="sine"
+                id="sine"
+                class="uppercase bg-white border-2 border-black cursor-pointer changeWaveType w-11"
               >
-                Sine
+                SINE
               </button>
               <button
-                class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-                name="osc1Type"
-                data-param="osc1.type"
-                onchange="changetype()"
-                type="radio"
-                checked
-                value="square"
+                id="square"
+                class="uppercase bg-white border-2 border-black cursor-pointer changeWaveType w-11"
               >
-                Sqr
+                SQR
               </button>
               <button
-                class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-                name="osc1Type"
-                data-param="osc1.type"
-                onchange="changetype()"
-                type="radio"
-                checked
-                value="triangle"
+                id="triangle"
+                class="uppercase bg-white border-2 border-black cursor-pointer changeWaveType w-11"
               >
-                Tri
+                TRI
               </button>
               <button
-                class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-                name="osc1Type"
-                data-param="osc1.type"
-                onchange="changetype()"
-                type="radio"
-                checked
-                value="saw"
+                id="sawtooth"
+                class="uppercase bg-white border-2 border-black cursor-pointer changeWaveType w-11"
               >
-                Saw
+                SAW
               </button>
             </div>
             <!-- Knobs -->
@@ -115,48 +96,28 @@
         <!-- Waveform Select -->
         <div class="flex items-center justify-evenly waveType">
           <button
-            class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-            name="osc2Type"
-            data-param="osc2.type"
-            onchange="changetype()"
-            type="radio"
-            checked
-            value="sine"
+            id='sine'
+            class="uppercase bg-white border-2 border-black cursor-pointer changeWaveType w-11"
           >
-            Sine
+            SINE
           </button>
           <button
-            class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-            name="osc12ype"
-            data-param="osc2.type"
-            onchange="changetype()"
-            type="radio"
-            checked
-            value="square"
+            id='square'
+            class="uppercase bg-white border-2 border-black cursor-pointer changeWaveType w-11"
           >
-            Sqr
+            SQR
           </button>
           <button
-            class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-            name="osc2Type"
-            data-param="osc2.type"
-            onchange="changetype()"
-            type="radio"
-            checked
-            value="triangle"
+            id='triangle'
+            class="uppercase bg-white border-2 border-black cursor-pointer changeWaveType w-11"
           >
-            Tri
+            TRI
           </button>
           <button
+            id='sawtooth'
             class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-            name="osc2Type"
-            data-param="osc2.type"
-            onchange="changetype()"
-            type="radio"
-            checked
-            value="saw"
           >
-            Saw
+            SAW
           </button>
         </div>
         <!-- Knobs -->
@@ -200,7 +161,6 @@
         </div>
       </div>
     </div>
-
     <script src="audioTone.js"></script>
   </body>
 </html>
