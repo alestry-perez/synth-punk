@@ -15,5 +15,6 @@ Tools used:
 
 ## Additions Coming Soon
 
-- React
+- Vite
+- Svelte
 - Tonal
