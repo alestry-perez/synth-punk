@@ -2,15 +2,21 @@ import * as Tone from 'tone';
 
 let ready = false;
 let osc;
+let osc2;
+let merge;
 
+// Sound Bus
+merge = new Tone.Merge().toDestination();
+
+// Oscillators
 osc = new Tone.Oscillator({
   frequency: 440,
   volume: -16,
-});
-osc.toDestination();
-
-const waveform = new Tone.Waveform();
-Tone.Destination.connect(waveform);
+}).connect(merge, 0, 0);
+osc2 = new Tone.Oscillator({
+  frequency: 440,
+  volume: -16,
+}).connect(merge, 0, 1);
 
 // Play Button
 const playButton = document.getElementById('playStop');
@@ -28,5 +34,3 @@ for (let waveButton of changeWave) {
     osc.type = e.target.id.toLowerCase();
   });
 }
-
-console.log(changeWave);

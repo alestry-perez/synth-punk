@@ -51580,13 +51580,19 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var ready = false;
 var osc;
+var osc2;
+var merge; // Sound Bus
+
+merge = new Tone.Merge().toDestination(); // Oscillators
+
 osc = new Tone.Oscillator({
   frequency: 440,
   volume: -16
-});
-osc.toDestination();
-var waveform = new Tone.Waveform();
-Tone.Destination.connect(waveform); // Play Button
+}).connect(merge, 0, 0);
+osc2 = new Tone.Oscillator({
+  frequency: 440,
+  volume: -16
+}).connect(merge, 0, 1); // Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
@@ -51615,8 +51621,6 @@ try {
 } finally {
   _iterator.f();
 }
-
-console.log(changeWave);
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
