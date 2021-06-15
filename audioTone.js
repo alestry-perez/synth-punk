@@ -28,3 +28,5 @@ for (let waveButton of changeWave) {
     osc.type = e.target.id.toLowerCase();
   });
 }
+
+console.log(changeWave);
