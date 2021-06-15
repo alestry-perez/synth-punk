@@ -51580,19 +51580,12 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var ready = false;
 var osc;
-var osc2;
-var merge; // Sound Bus
+var osc2; // Mixer
+// Oscillators
 
-merge = new Tone.Merge().toDestination(); // Oscillators
+osc = new Tone.Oscillator().toDestination(); //osc2 = new Tone.Oscillator();
 
-osc = new Tone.Oscillator({
-  frequency: 440,
-  volume: -16
-}).connect(merge, 0, 0);
-osc2 = new Tone.Oscillator({
-  frequency: 440,
-  volume: -16
-}).connect(merge, 0, 1); // Play Button
+console.log(osc.numberOfInputs); // Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
@@ -51605,6 +51598,7 @@ playButton.onclick = function () {
 
 
 var changeWave = document.querySelectorAll('button.changeWaveType');
+var changeWave2 = document.querySelectorAll('button.changeWaveType2');
 
 var _iterator = _createForOfIteratorHelper(changeWave),
     _step;
@@ -51620,6 +51614,22 @@ try {
   _iterator.e(err);
 } finally {
   _iterator.f();
+}
+
+var _iterator2 = _createForOfIteratorHelper(changeWave2),
+    _step2;
+
+try {
+  for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+    var waveButton2 = _step2.value;
+    waveButton2.addEventListener('click', function (e) {
+      osc2.type = e.target.id.toLowerCase();
+    });
+  }
+} catch (err) {
+  _iterator2.e(err);
+} finally {
+  _iterator2.f();
 }
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
