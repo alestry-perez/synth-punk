@@ -51583,9 +51583,10 @@ var osc;
 var osc2; // Mixer
 // Oscillators
 
-osc = new Tone.Oscillator().toDestination(); //osc2 = new Tone.Oscillator();
-
-console.log(osc.numberOfInputs); // Play Button
+osc = new Tone.Oscillator().toDestination(); // osc2 = new Tone.Oscillator().toDestination();
+// const channel = new Tone.Channel();
+// console.log(channel);
+// Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
@@ -51595,6 +51596,7 @@ playButton.onclick = function () {
   ready ? osc.start() : osc.stop();
   playStop.textContent = ready ? 'STOP' : 'PLAY';
 }; // Synth Selection
+// * look into "event delegation js"
 
 
 var changeWave = document.querySelectorAll('button.changeWaveType');
@@ -51659,7 +51661,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54297" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57255" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

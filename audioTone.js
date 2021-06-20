@@ -8,8 +8,9 @@ let osc2;
 
 // Oscillators
 osc = new Tone.Oscillator().toDestination();
-//osc2 = new Tone.Oscillator();
-console.log(osc.numberOfInputs);
+// osc2 = new Tone.Oscillator().toDestination();
+// const channel = new Tone.Channel();
+// console.log(channel);
 
 // Play Button
 const playButton = document.getElementById('playStop');
@@ -21,6 +22,7 @@ playButton.onclick = () => {
 };
 
 // Synth Selection
+// * look into "event delegation js"
 const changeWave = document.querySelectorAll('button.changeWaveType');
 const changeWave2 = document.querySelectorAll('button.changeWaveType2');
 for (let waveButton of changeWave) {
