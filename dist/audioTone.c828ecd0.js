@@ -51579,24 +51579,23 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 var ready = false;
-var osc;
-var osc2; // Mixer
-// Oscillators
+var osc1;
+var osc2;
+var merge = new Tone.Merge().toDestination(); // * Oscillators
 
-osc = new Tone.Oscillator().toDestination(); // osc2 = new Tone.Oscillator().toDestination();
-// const channel = new Tone.Channel();
-// console.log(channel);
-// Play Button
+osc1 = new Tone.Oscillator().connect(merge, 0, 0);
+osc2 = new Tone.Oscillator().connect(merge, 0, 1); // * Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
 
 playButton.onclick = function () {
   ready = !ready;
-  ready ? osc.start() : osc.stop();
+  ready ? osc1.start() : osc1.stop();
+  ready ? osc2.start() : osc2.stop();
   playStop.textContent = ready ? 'STOP' : 'PLAY';
-}; // Synth Selection
-// * look into "event delegation js"
+}; // * Synth Selection
+// ! look into "event delegation js"
 
 
 var changeWave = document.querySelectorAll('button.changeWaveType');
@@ -51609,7 +51608,7 @@ try {
   for (_iterator.s(); !(_step = _iterator.n()).done;) {
     var waveButton = _step.value;
     waveButton.addEventListener('click', function (e) {
-      osc.type = e.target.id.toLowerCase();
+      osc1.type = e.target.id.toLowerCase();
     });
   }
 } catch (err) {
@@ -51661,7 +51660,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57255" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49311" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
