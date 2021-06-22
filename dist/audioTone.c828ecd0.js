@@ -51580,12 +51580,10 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var ready = false;
 var osc1;
-var osc2;
-var merge = new Tone.Merge().toDestination();
-console.log(merge); // * Oscillators
+var osc2; // * Oscillators
 
-osc1 = new Tone.Oscillator().connect(merge, 0, 0);
-osc2 = new Tone.Oscillator().connect(merge, 0, 1); // * Play Button
+osc1 = new Tone.Oscillator().toDestination();
+osc2 = new Tone.Oscillator().toDestination(); // * Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
@@ -51661,7 +51659,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49311" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65060" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

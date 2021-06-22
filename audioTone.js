@@ -4,13 +4,9 @@ let ready = false;
 let osc1;
 let osc2;
 
-const merge = new Tone.Merge().toDestination();
-
-console.log(merge);
-
 // * Oscillators
-osc1 = new Tone.Oscillator().connect(merge, 0, 0);
-osc2 = new Tone.Oscillator().connect(merge, 0, 1);
+osc1 = new Tone.Oscillator().toDestination();
+osc2 = new Tone.Oscillator().toDestination();
 
 // * Play Button
 const playButton = document.getElementById('playStop');
