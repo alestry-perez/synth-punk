@@ -51581,7 +51581,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 var ready = false;
 var osc1;
 var osc2;
-var merge = new Tone.Merge().toDestination(); // * Oscillators
+var merge = new Tone.Merge().toDestination();
+console.log(merge); // * Oscillators
 
 osc1 = new Tone.Oscillator().connect(merge, 0, 0);
 osc2 = new Tone.Oscillator().connect(merge, 0, 1); // * Play Button

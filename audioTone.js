@@ -6,6 +6,8 @@ let osc2;
 
 const merge = new Tone.Merge().toDestination();
 
+console.log(merge);
+
 // * Oscillators
 osc1 = new Tone.Oscillator().connect(merge, 0, 0);
 osc2 = new Tone.Oscillator().connect(merge, 0, 1);
