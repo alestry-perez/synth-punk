@@ -51590,8 +51590,8 @@ playButton.onclick = function () {
   playStop.textContent = ready ? 'STOP' : 'PLAY';
 }; // * Synth Selection
 // ! look into "event delegation js"
-// const changeWave = document.querySelectorAll('button.changeWaveType');
-// const changeWave2 = document.querySelectorAll('button.changeWaveType2');
+//const changeWave = document.querySelectorAll('button.changeWaveType');
+//const changeWave2 = document.querySelectorAll('button.changeWaveType2');
 
 
 var options = {
@@ -51600,7 +51600,7 @@ var options = {
 
 var onClick = function onClick(_ref) {
   var target = _ref.target;
-  var id = target.closest('.osc').id;
+  var id = target.closest('button').id;
   oscillators[id].type = target.id.toLowerCase();
 };
 
@@ -51609,12 +51609,12 @@ on('.osc button.changeWave', function (element) {
 });
 /*for (let waveButton of changeWave) {
   waveButton.addEventListener('click', (e) => {
-    osc1.type = e.target.id.toLowerCase();
+    oscillators.osc1.type = e.target.id.toLowerCase();
   });
 }
 for (let waveButton2 of changeWave2) {
   waveButton2.addEventListener('click', (e) => {
-    osc2.type = e.target.id.toLowerCase();
+    oscillators.osc2.type = e.target.id.toLowerCase();
   });
 }*/
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {

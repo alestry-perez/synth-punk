@@ -22,15 +22,15 @@ playButton.onclick = () => {
 
 // * Synth Selection
 // ! look into "event delegation js"
-// const changeWave = document.querySelectorAll('button.changeWaveType');
-// const changeWave2 = document.querySelectorAll('button.changeWaveType2');
+//const changeWave = document.querySelectorAll('button.changeWaveType');
+//const changeWave2 = document.querySelectorAll('button.changeWaveType2');
 
 const options = {
   passive: true,
 };
 
 const onClick = ({ target }) => {
-  const id = target.closest('.osc').id;
+  const id = target.closest('button').id;
 
   oscillators[id].type = target.id.toLowerCase();
 };
@@ -41,11 +41,11 @@ on('.osc button.changeWave', (element) => {
 
 /*for (let waveButton of changeWave) {
   waveButton.addEventListener('click', (e) => {
-    osc1.type = e.target.id.toLowerCase();
+    oscillators.osc1.type = e.target.id.toLowerCase();
   });
 }
 for (let waveButton2 of changeWave2) {
   waveButton2.addEventListener('click', (e) => {
-    osc2.type = e.target.id.toLowerCase();
+    oscillators.osc2.type = e.target.id.toLowerCase();
   });
 }*/
