@@ -51572,34 +51572,30 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var ready = false;
-var osc1;
-var osc2;
-var oscillators; // * Oscillators
+var ready = false; // * Oscillators
 
-osc1 = new Tone.Oscillator().toDestination();
-osc2 = new Tone.Oscillator().toDestination(); // * Play Button
+var oscillators = {
+  osc1: new Tone.Oscillator().toDestination(),
+  osc2: new Tone.Oscillator().toDestination()
+}; // * Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
 
 playButton.onclick = function () {
   ready = !ready;
-  ready ? osc1.start() : osc1.stop();
-  ready ? osc2.start() : osc2.stop();
+  Object.values(oscillators).forEach(function (osc) {
+    ready ? osc.start() : osc.stop();
+  });
   playStop.textContent = ready ? 'STOP' : 'PLAY';
 }; // * Synth Selection
 // ! look into "event delegation js"
+// const changeWave = document.querySelectorAll('button.changeWaveType');
+// const changeWave2 = document.querySelectorAll('button.changeWaveType2');
 
 
-var changeWave = document.querySelectorAll('button.changeWaveType');
-var changeWave2 = document.querySelectorAll('button.changeWaveType2');
 var options = {
   passive: true
-};
-oscillators = {
-  osc1: osc1,
-  osc2: osc2
 };
 
 var onClick = function onClick(_ref) {
