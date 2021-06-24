@@ -3,6 +3,7 @@ import * as Tone from 'tone';
 let ready = false;
 let osc1;
 let osc2;
+let oscillators;
 
 // * Oscillators
 osc1 = new Tone.Oscillator().toDestination();
@@ -22,7 +23,24 @@ playButton.onclick = () => {
 // ! look into "event delegation js"
 const changeWave = document.querySelectorAll('button.changeWaveType');
 const changeWave2 = document.querySelectorAll('button.changeWaveType2');
-for (let waveButton of changeWave) {
+
+const options = {
+  passive: true,
+};
+
+oscillators = { osc1, osc2 };
+
+const onClick = ({ target }) => {
+  const id = target.closest('.osc').id;
+
+  oscillators[id].type = target.id.toLowerCase();
+};
+
+on('.osc button.changeWave', (element) => {
+  listen('click', element, onClick, options);
+});
+
+/*for (let waveButton of changeWave) {
   waveButton.addEventListener('click', (e) => {
     osc1.type = e.target.id.toLowerCase();
   });
@@ -31,4 +49,4 @@ for (let waveButton2 of changeWave2) {
   waveButton2.addEventListener('click', (e) => {
     osc2.type = e.target.id.toLowerCase();
   });
-}
+}*/
