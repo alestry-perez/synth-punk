@@ -1137,11 +1137,6 @@ ansi-to-html@^0.6.4:
   dependencies:
     entities "^1.1.2"
 
-anticore@^4.3.8:
-  version "4.3.8"
-  resolved "https://registry.yarnpkg.com/anticore/-/anticore-4.3.8.tgz#f6318f503ad411adf270d8c6790f392ab4cd8fb6"
-  integrity sha512-4nOrcfEJp3GgD9ELWJKpRdsmDZxRrTsG4CdplfLB5E6QazOzObwY/kM7l87bjuny1i2NUxwl/hmARjgJDVv0vw==
-
 anymatch@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-2.0.0.tgz#bcb24b4f37934d9aa7ac17b4adaf89e7c76ef2eb"

@@ -13,39 +13,26 @@ const playButton = document.getElementById('playStop');
 const playStop = document.getElementById('playStatus');
 
 playButton.onclick = () => {
+  playStop.textContent = ready ? 'STOP' : 'PLAY';
+
   ready = !ready;
   Object.values(oscillators).forEach((osc) => {
     ready ? osc.start() : osc.stop();
   });
-  playStop.textContent = ready ? 'STOP' : 'PLAY';
 };
 
 // * Synth Selection
 // ! look into "event delegation js"
-//const changeWave = document.querySelectorAll('button.changeWaveType');
-//const changeWave2 = document.querySelectorAll('button.changeWaveType2');
+const changeWaveRow1 = document.querySelectorAll('button.changeWaveRow1');
+const changeWaveRow2 = document.querySelectorAll('button.changeWaveRow2');
 
-const options = {
-  passive: true,
-};
-
-const onClick = ({ target }) => {
-  const id = target.closest('button').id;
-
-  oscillators[id].type = target.id.toLowerCase();
-};
-
-on('.osc button.changeWave', (element) => {
-  listen('click', element, onClick, options);
-});
-
-/*for (let waveButton of changeWave) {
+for (let waveButton of changeWaveRow1) {
   waveButton.addEventListener('click', (e) => {
     oscillators.osc1.type = e.target.id.toLowerCase();
   });
 }
-for (let waveButton2 of changeWave2) {
-  waveButton2.addEventListener('click', (e) => {
+for (let waveButton of changeWaveRow2) {
+  waveButton.addEventListener('click', (e) => {
     oscillators.osc2.type = e.target.id.toLowerCase();
   });
-}*/
+}
