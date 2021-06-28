@@ -26,7 +26,7 @@ playButton.onclick = () => {
 const changeWaveRow1 = document.querySelectorAll('button.changeWaveRow1');
 const changeWaveRow2 = document.querySelectorAll('button.changeWaveRow2');
 
-for (let waveButton of changeWaveRow1) {
+/*for (let waveButton of changeWaveRow1) {
   waveButton.addEventListener('click', (e) => {
     oscillators.osc1.type = e.target.id.toLowerCase();
   });
@@ -35,4 +35,4 @@ for (let waveButton of changeWaveRow2) {
   waveButton.addEventListener('click', (e) => {
     oscillators.osc2.type = e.target.id.toLowerCase();
   });
-}
+}*/
