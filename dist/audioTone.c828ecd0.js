@@ -51572,28 +51572,41 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var ready = false; // * Oscillators
+// ! implement TailwindCSS JIT
+var ready = false; // * Channel Bus
+
+var channel = new Tone.Channel().toDestination(); // * Oscillators
 
 var oscillators = {
-  osc1: new Tone.Oscillator().toDestination(),
-  osc2: new Tone.Oscillator().toDestination()
+  osc1: new Tone.Oscillator().connect(channel),
+  osc2: new Tone.Oscillator().connect(channel)
 }; // * Play Button
 
-var playButton = document.getElementById('playStop');
-var playStop = document.getElementById('playStatus');
+var playButton = function playButton() {
+  var playButton = document.getElementById('playStop');
+  var playStop = document.getElementById('playStatus');
 
-playButton.onclick = function () {
-  playStop.textContent = ready ? 'STOP' : 'PLAY';
-  ready = !ready;
-  Object.values(oscillators).forEach(function (osc) {
-    ready ? osc.start() : osc.stop();
-  });
-}; // * Synth Selection
+  playButton.onclick = function () {
+    playStop.textContent = ready ? 'PLAY' : 'STOP';
+    ready = !ready;
+    Object.values(oscillators).forEach(function (osc) {
+      ready ? osc.start() : osc.stop();
+    });
+  };
+};
+
+playButton(); // * Synth Selection
 // ! look into "event delegation js"
+// const changeWaveRow1 = document.querySelectorAll('button.changeWaveRow1');
+// const changeWaveRow2 = document.querySelectorAll('button.changeWaveRow2');
 
-
-var changeWaveRow1 = document.querySelectorAll('button.changeWaveRow1');
-var changeWaveRow2 = document.querySelectorAll('button.changeWaveRow2');
+var waveTypeButtons = document.querySelectorAll('button');
+waveTypeButtons.forEach(function (buttons) {
+  buttons.addEventListener('click', function (e) {
+    oscillators.osc1.type = e.target.id.toLowerCase();
+    console.log('Button Clicked!');
+  });
+});
 /*for (let waveButton of changeWaveRow1) {
   waveButton.addEventListener('click', (e) => {
     oscillators.osc1.type = e.target.id.toLowerCase();
@@ -51632,7 +51645,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64625" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52253" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
