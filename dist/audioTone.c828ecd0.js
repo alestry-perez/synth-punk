@@ -51580,22 +51580,19 @@ var oscillators = {
   osc2: new Tone.Oscillator().toDestination()
 }; // * Play Button
 
-var playButton = function playButton() {
-  var playButton = document.getElementById('playStop');
-  var playStop = document.getElementById('playStatus');
+var playButton = document.getElementById('playStop');
+var playStop = document.getElementById('playStatus');
 
-  playButton.onclick = function () {
-    playStop.textContent = ready ? 'PLAY' : 'STOP';
-    ready = !ready;
-    Object.values(oscillators).forEach(function (osc) {
-      ready ? osc.start() : osc.stop();
-    });
-  };
-};
-
-playButton(); // * Synth Selection
+playButton.onclick = function () {
+  playStop.textContent = ready ? 'PLAY' : 'STOP';
+  ready = !ready;
+  Object.values(oscillators).forEach(function (osc) {
+    ready ? osc.start() : osc.stop();
+  });
+}; // * Synth Selection
 // This selector will only match buttons that change the waveform, so we
 // don't mess with other buttons on the page!
+
 
 document.querySelectorAll('button[data-waveform]').forEach(function (button) {
   button.addEventListener('click', function (_ref) {

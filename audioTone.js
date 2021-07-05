@@ -1,5 +1,4 @@
 import * as Tone from 'tone';
-import { Panner } from 'tone';
 
 // ! implement TailwindCSS JIT
 
@@ -12,20 +11,18 @@ let oscillators = {
 };
 
 // * Play Button
-const playButton = () => {
-  const playButton = document.getElementById('playStop');
-  const playStop = document.getElementById('playStatus');
 
-  playButton.onclick = () => {
-    playStop.textContent = ready ? 'PLAY' : 'STOP';
+const playButton = document.getElementById('playStop');
+const playStop = document.getElementById('playStatus');
 
-    ready = !ready;
-    Object.values(oscillators).forEach((osc) => {
-      ready ? osc.start() : osc.stop();
-    });
-  };
+playButton.onclick = () => {
+  playStop.textContent = ready ? 'PLAY' : 'STOP';
+
+  ready = !ready;
+  Object.values(oscillators).forEach((osc) => {
+    ready ? osc.start() : osc.stop();
+  });
 };
-playButton();
 
 // * Synth Selection
 // This selector will only match buttons that change the waveform, so we
