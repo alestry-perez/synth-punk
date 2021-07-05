@@ -1,6 +1,13 @@
 import * as Tone from 'tone';
 
-// ! implement TailwindCSS JIT
+// ! TO DO:
+// ! 1. implement TailwindCSS JIT
+// ! 2. add wave display
+// ! 3. add volume level control
+// ! 4. add octive control
+// ! 5. add semi tone control
+// ! 6. add fine tune control
+// ! 7. add working controller knobs
 
 let ready = false;
 
