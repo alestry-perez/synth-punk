@@ -51573,13 +51573,11 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 // ! implement TailwindCSS JIT
-var ready = false; // * Channel Bus
-
-var channel = new Tone.Channel().toDestination(); // * Oscillators
+var ready = false; // * Oscillators
 
 var oscillators = {
-  osc1: new Tone.Oscillator().connect(channel),
-  osc2: new Tone.Oscillator().connect(channel)
+  osc1: new Tone.Oscillator().toDestination(),
+  osc2: new Tone.Oscillator().toDestination()
 }; // * Play Button
 
 var playButton = function playButton() {
@@ -51596,27 +51594,26 @@ var playButton = function playButton() {
 };
 
 playButton(); // * Synth Selection
-// ! look into "event delegation js"
-// const changeWaveRow1 = document.querySelectorAll('button.changeWaveRow1');
-// const changeWaveRow2 = document.querySelectorAll('button.changeWaveRow2');
+// This selector will only match buttons that change the waveform, so we
+// don't mess with other buttons on the page!
 
-var waveTypeButtons = document.querySelectorAll('button');
-waveTypeButtons.forEach(function (buttons) {
-  buttons.addEventListener('click', function (e) {
-    oscillators.osc1.type = e.target.id.toLowerCase();
-    console.log('Button Clicked!');
+document.querySelectorAll('button[data-waveform]').forEach(function (button) {
+  button.addEventListener('click', function (_ref) {
+    var target = _ref.target;
+    // `dataset` is a handy property that gives us object-style access
+    // to any data- attributes on an element. Here we use destructuring
+    // to pull out `osc` and `waveform`.
+    var _target$dataset = target.dataset,
+        osc = _target$dataset.osc,
+        waveform = _target$dataset.waveform; // Maybe you have a typo and you write `data-osc="osc11"`. This check
+    // sees if the osc actually exists in your `oscillators` object so we
+    // don't error out and break your code in those cases.
+
+    if (osc in oscillators) {
+      oscillators[osc].type = waveform;
+    }
   });
 });
-/*for (let waveButton of changeWaveRow1) {
-  waveButton.addEventListener('click', (e) => {
-    oscillators.osc1.type = e.target.id.toLowerCase();
-  });
-}
-for (let waveButton of changeWaveRow2) {
-  waveButton.addEventListener('click', (e) => {
-    oscillators.osc2.type = e.target.id.toLowerCase();
-  });
-}*/
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -51645,7 +51642,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52253" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65010" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

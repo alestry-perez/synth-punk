@@ -1,16 +1,14 @@
 import * as Tone from 'tone';
+import { Panner } from 'tone';
 
 // ! implement TailwindCSS JIT
 
 let ready = false;
 
-// * Channel Bus
-let channel = new Tone.Channel().toDestination();
-
 // * Oscillators
 let oscillators = {
-  osc1: new Tone.Oscillator().connect(channel),
-  osc2: new Tone.Oscillator().connect(channel),
+  osc1: new Tone.Oscillator().toDestination(),
+  osc2: new Tone.Oscillator().toDestination(),
 };
 
 // * Play Button
@@ -30,25 +28,20 @@ const playButton = () => {
 playButton();
 
 // * Synth Selection
-// ! look into "event delegation js"
-// const changeWaveRow1 = document.querySelectorAll('button.changeWaveRow1');
-// const changeWaveRow2 = document.querySelectorAll('button.changeWaveRow2');
+// This selector will only match buttons that change the waveform, so we
+// don't mess with other buttons on the page!
+document.querySelectorAll('button[data-waveform]').forEach((button) => {
+  button.addEventListener('click', ({ target }) => {
+    // `dataset` is a handy property that gives us object-style access
+    // to any data- attributes on an element. Here we use destructuring
+    // to pull out `osc` and `waveform`.
+    const { osc, waveform } = target.dataset;
 
-const waveTypeButtons = document.querySelectorAll('button');
-waveTypeButtons.forEach((buttons) => {
-  buttons.addEventListener('click', (e) => {
-    oscillators.osc1.type = e.target.id.toLowerCase();
-    console.log('Button Clicked!');
+    // Maybe you have a typo and you write `data-osc="osc11"`. This check
+    // sees if the osc actually exists in your `oscillators` object so we
+    // don't error out and break your code in those cases.
+    if (osc in oscillators) {
+      oscillators[osc].type = waveform;
+    }
   });
 });
-
-/*for (let waveButton of changeWaveRow1) {
-  waveButton.addEventListener('click', (e) => {
-    oscillators.osc1.type = e.target.id.toLowerCase();
-  });
-}
-for (let waveButton of changeWaveRow2) {
-  waveButton.addEventListener('click', (e) => {
-    oscillators.osc2.type = e.target.id.toLowerCase();
-  });
-}*/
