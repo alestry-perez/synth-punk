@@ -51589,22 +51589,15 @@ playButton.onclick = function () {
   Object.values(oscillators).forEach(function (osc) {
     ready ? osc.start() : osc.stop();
   });
-}; // * Synth Selection
-// This selector will only match buttons that change the waveform, so we
-// don't mess with other buttons on the page!
+}; // * Oscillator Wave Selection
 
 
 document.querySelectorAll('button[data-waveform]').forEach(function (button) {
   button.addEventListener('click', function (_ref) {
     var target = _ref.target;
-    // `dataset` is a handy property that gives us object-style access
-    // to any data- attributes on an element. Here we use destructuring
-    // to pull out `osc` and `waveform`.
     var _target$dataset = target.dataset,
         osc = _target$dataset.osc,
-        waveform = _target$dataset.waveform; // Maybe you have a typo and you write `data-osc="osc11"`. This check
-    // sees if the osc actually exists in your `oscillators` object so we
-    // don't error out and break your code in those cases.
+        waveform = _target$dataset.waveform;
 
     if (osc in oscillators) {
       oscillators[osc].type = waveform;
