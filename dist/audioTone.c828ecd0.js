@@ -51585,19 +51585,7 @@ var ready = false; // * Oscillators
 var oscillators = {
   osc1: new Tone.Oscillator().toDestination(),
   osc2: new Tone.Oscillator().toDestination()
-}; // * Play Button
-
-var playButton = document.getElementById('playStop');
-var playStop = document.getElementById('playStatus');
-
-playButton.onclick = function () {
-  playStop.textContent = ready ? 'PLAY' : 'STOP';
-  ready = !ready;
-  Object.values(oscillators).forEach(function (osc) {
-    ready ? osc.start() : osc.stop();
-  });
 }; // * Oscillator Wave Selection
-
 
 document.querySelectorAll('button[data-waveform]').forEach(function (button) {
   button.addEventListener('click', function (_ref) {
@@ -51610,7 +51598,19 @@ document.querySelectorAll('button[data-waveform]').forEach(function (button) {
       oscillators[osc].type = waveform;
     }
   });
-});
+}); // * Knobs
+// * Play Button
+
+var playButton = document.getElementById('playStop');
+var playStop = document.getElementById('playStatus');
+
+playButton.onclick = function () {
+  playStop.textContent = ready ? 'PLAY' : 'STOP';
+  ready = !ready;
+  Object.values(oscillators).forEach(function (osc) {
+    ready ? osc.start() : osc.stop();
+  });
+};
 },{"tone":"node_modules/tone/build/esm/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -51639,7 +51639,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65010" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53348" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
