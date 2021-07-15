@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap"
@@ -14,11 +19,10 @@
     <title>Synth Punk</title>
   </head>
   <body>
-    
-    <div class="container h-auto w-max">
+    <div class="grid h-screen place-items-center">
       <div
         id="synth"
-        class="grid grid-cols-3 grid-rows-1 gap-0 border-2 border-black divide-x-2 divide-black bg-primary-500 border-box"
+        class="grid grid-cols-3 grid-rows-1 gap-0 border-2 border-black divide-x-2 divide-black  bg-primary-500 border-box"
       >
         <div id="oscGroup" class="grid grid-flow-col grid-rows-3">
           <!-- OSC 1 -->
@@ -26,39 +30,45 @@
             id="oscOne"
             class="grid grid-flow-col grid-rows-4 gap-0 place-content-evenly"
           >
-            <h2 class="self-center font-bold text-center underline uppercase">osc - 1</h2>
+            <h2 class="self-center font-bold text-center underline uppercase">
+              osc - 1
+            </h2>
             <!-- Waveform Display -->
             <div
-              class="self-center h-12 mx-2 text-center border-2 border-black w-52 justify-self-center bg-secondary-500"
+              class="self-center h-12 mx-2 text-center border-2 border-black  w-52 justify-self-center bg-secondary-500"
             >
-            <canvas id="waveDisplay" class="self-center h-12 w-52 justify-self-center"></canvas></div>
+              <canvas
+                id="waveDisplay"
+                class="self-center h-12 w-52 justify-self-center"
+              ></canvas>
+            </div>
             <!-- Waveform Select -->
             <div class="flex items-center justify-evenly waveType">
               <button
                 data-osc="osc1"
                 data-waveform="sine"
-                class="uppercase bg-white border-2 border-black cursor-pointer w-11"
+                class="uppercase bg-white border-2 border-black cursor-pointer  w-11"
               >
                 SINE
               </button>
               <button
                 data-osc="osc1"
                 data-waveform="square"
-                class="uppercase bg-white border-2 border-black cursor-pointer w-11"
+                class="uppercase bg-white border-2 border-black cursor-pointer  w-11"
               >
                 SQR
               </button>
               <button
-              data-osc="osc1"
-              data-waveform="triangle"
-              class="uppercase bg-white border-2 border-black cursor-pointer w-11"
+                data-osc="osc1"
+                data-waveform="triangle"
+                class="uppercase bg-white border-2 border-black cursor-pointer  w-11"
               >
                 TRI
               </button>
               <button
                 data-osc="osc1"
                 data-waveform="sawtooth"
-                class="uppercase bg-white border-2 border-black cursor-pointer w-11"
+                class="uppercase bg-white border-2 border-black cursor-pointer  w-11"
               >
                 SAW
               </button>
@@ -67,22 +77,22 @@
             <div class="flex row-start-4 justify-evenly knobs">
               <div
                 id="levelKnob"
-                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500"
+                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
               >
                 LVL
               </div>
               <div
-                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500"
+                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
               >
                 OCT
               </div>
               <div
-                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500"
+                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
               >
                 SEMI
               </div>
               <div
-                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500"
+                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
               >
                 FINE
               </div>
@@ -90,83 +100,94 @@
           </div>
 
           <!-- OSC 2 -->
-          <div id="oscTwo"
-          class="grid grid-flow-col grid-rows-4 row-start-2 gap-0 place-content-evenly">
-          <h2 class="self-center font-bold text-center underline uppercase">osc - 2</h2>
-          <!-- Waveform Display -->
           <div
-              class="self-center h-12 mx-2 text-center border-2 border-black w-52 justify-self-center bg-secondary-500"
+            id="oscTwo"
+            class="grid grid-flow-col grid-rows-4 row-start-2 gap-0  place-content-evenly"
+          >
+            <h2 class="self-center font-bold text-center underline uppercase">
+              osc - 2
+            </h2>
+            <!-- Waveform Display -->
+            <div
+              class="self-center h-12 mx-2 text-center border-2 border-black  w-52 justify-self-center bg-secondary-500"
             >
-            <canvas id="waveDisplay" class="self-center h-12 w-52 justify-self-center"></canvas></div>
-        <!-- Waveform Select -->
-        <div class="flex items-center justify-evenly waveType">
-          <button
-          data-osc="osc2"
-          data-waveform="sine"
-            class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-          >
-            SINE
-          </button>
-          <button
-            data-osc="osc2"
-            data-waveform="square"
-            class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-          >
-            SQR
-          </button>
-          <button
-            data-osc="osc2"
-            data-waveform="triangle"
-            class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-          >
-            TRI
-          </button>
-          <button
-            data-osc="osc2"
-            data-waveform="sawtooth"
-            class="uppercase bg-white border-2 border-black cursor-pointer w-11"
-          >
-            SAW
-          </button>
-        </div>
-        <!-- Knobs -->
-        <div class="flex row-start-4 justify-evenly knobs">
-          <div
-            class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500"
-          >
-            LVL
+              <canvas
+                id="waveDisplay"
+                class="self-center h-12 w-52 justify-self-center"
+              ></canvas>
+            </div>
+            <!-- Waveform Select -->
+            <div class="flex items-center justify-evenly waveType">
+              <button
+                data-osc="osc2"
+                data-waveform="sine"
+                class="uppercase bg-white border-2 border-black cursor-pointer  w-11"
+              >
+                SINE
+              </button>
+              <button
+                data-osc="osc2"
+                data-waveform="square"
+                class="uppercase bg-white border-2 border-black cursor-pointer  w-11"
+              >
+                SQR
+              </button>
+              <button
+                data-osc="osc2"
+                data-waveform="triangle"
+                class="uppercase bg-white border-2 border-black cursor-pointer  w-11"
+              >
+                TRI
+              </button>
+              <button
+                data-osc="osc2"
+                data-waveform="sawtooth"
+                class="uppercase bg-white border-2 border-black cursor-pointer  w-11"
+              >
+                SAW
+              </button>
+            </div>
+            <!-- Knobs -->
+            <div class="flex row-start-4 justify-evenly knobs">
+              <div
+                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
+              >
+                LVL
+              </div>
+              <div
+                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
+              >
+                OCT
+              </div>
+              <div
+                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
+              >
+                SEMI
+              </div>
+              <div
+                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
+              >
+                FINE
+              </div>
+            </div>
           </div>
-          <div
-            class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500"
-          >
-            OCT
-          </div>
-          <div
-            class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500"
-          >
-            SEMI
-          </div>
-          <div
-            class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full bg-secondary-500"
-          >
-            FINE
-          </div>
-        </div>
-        </div>
           <!-- Play-Stop Button -->
           <div
             id="playStop"
-            class="w-32 h-10 row-start-3 border-2 border-black rounded-full cursor-pointer select-none place-self-center bg-secondary-500 active:bg-secondary-200"
+            class="w-32 h-10 row-start-3 border-2 border-black rounded-full cursor-pointer select-none  place-self-center bg-secondary-500 active:bg-secondary-200"
           >
-          <h2 id="playStatus" class="text-center pt-1.5 font-bold">PLAY</h2>
-        </div>
-        </div>
-          <div class="grid grid-flow-col grid-rows-3 gap-2">
-            <h2 class="self-center font-bold text-center underline uppercase">amp-env</h2>
+            <h2 id="playStatus" class="text-center pt-1.5 font-bold">PLAY</h2>
           </div>
-          <div class="grid grid-flow-col grid-rows-3 gap-2">
-            <h2 class="self-center font-bold text-center underline uppercase">efx</h2>
-          </div>
+        </div>
+        <div class="grid grid-flow-col grid-rows-3 gap-2">
+          <h2 class="self-center font-bold text-center underline uppercase">
+            amp-env
+          </h2>
+        </div>
+        <div class="grid grid-flow-col grid-rows-3 gap-2">
+          <h2 class="self-center font-bold text-center underline uppercase">
+            efx
+          </h2>
         </div>
       </div>
     </div>
