@@ -51580,11 +51580,16 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 // ! 5. add semi tone control
 // ! 6. add fine tune control
 // ! 7. add working controller knobs
-var ready = false; // * Oscillators
+var ready = false; // * OSC Params
+
+var oscParams = {
+  vol1: new Tone.Volume().toDestination(),
+  vol2: new Tone.Volume().toDestination()
+}; // * Oscillators
 
 var oscillators = {
-  osc1: new Tone.Oscillator().toDestination(),
-  osc2: new Tone.Oscillator().toDestination()
+  osc1: new Tone.Oscillator().connect(oscParams.vol1),
+  osc2: new Tone.Oscillator().connect(oscParams.vol2)
 }; // * Oscillator Wave Selection
 
 document.querySelectorAll('button[data-waveform]').forEach(function (button) {
@@ -51599,7 +51604,19 @@ document.querySelectorAll('button[data-waveform]').forEach(function (button) {
     }
   });
 }); // * Knobs
-// * Play Button
+
+document.querySelectorAll('input[type="range"]').forEach(function (knob) {
+  knob.addEventListener('change', function (_ref2) {
+    var target = _ref2.target;
+    var _target$dataset2 = target.dataset,
+        osc = _target$dataset2.osc,
+        property = _target$dataset2.property;
+
+    if (osc in oscillators) {
+      oscillators[osc][property] = target.value;
+    }
+  });
+}); // * Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
@@ -51639,7 +51656,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63426" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49194" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

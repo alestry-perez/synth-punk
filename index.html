@@ -20,6 +20,7 @@
   </head>
   <body>
     <div class="grid h-screen place-items-center">
+      <div><h1>シンセパンク</h1></div>
       <div
         id="synth"
         class="grid grid-cols-3 grid-rows-1 gap-0 border-2 border-black divide-x-2 divide-black  bg-primary-500 border-box"
@@ -75,12 +76,12 @@
             </div>
             <!-- Knobs -->
             <div class="flex row-start-4 justify-evenly knobs">
-              <div
-                id="levelKnob"
+              <input
+                data-osc="osc1"
+                data-setting="volume"
+                type="range"
                 class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
-              >
-                LVL
-              </div>
+              />
               <div
                 class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  bg-secondary-500"
               >

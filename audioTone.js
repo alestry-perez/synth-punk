@@ -11,10 +11,16 @@ import * as Tone from 'tone';
 
 let ready = false;
 
+// * OSC Params
+let oscParams = {
+  vol1: new Tone.Volume().toDestination(),
+  vol2: new Tone.Volume().toDestination(),
+};
+
 // * Oscillators
 let oscillators = {
-  osc1: new Tone.Oscillator().toDestination(),
-  osc2: new Tone.Oscillator().toDestination(),
+  osc1: new Tone.Oscillator().connect(oscParams.vol1),
+  osc2: new Tone.Oscillator().connect(oscParams.vol2),
 };
 
 // * Oscillator Wave Selection
@@ -29,6 +35,15 @@ document.querySelectorAll('button[data-waveform]').forEach((button) => {
 });
 
 // * Knobs
+document.querySelectorAll('input[type="range"]').forEach((knob) => {
+  knob.addEventListener('change', ({ target }) => {
+    const { osc, property } = target.dataset;
+
+    if (osc in oscillators) {
+      oscillators[osc][property] = target.value;
+    }
+  });
+});
 
 // * Play Button
 const playButton = document.getElementById('playStop');
