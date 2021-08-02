@@ -1,4 +1,4 @@
-# synth-punk
+# SYNTH-PUNK'ish
 
 ## Online Synth
 
