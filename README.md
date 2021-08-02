@@ -18,3 +18,16 @@ Tools used:
 - Vite
 - Svelte
 - Tonal
+
+## Features
+
+- [x] Synth Wave Type Selection 
+- [] Synth Wave Controls
+- [] Drum Machine
+- [] Amp Envalopes
+- [] Low Pass Filters
+- [] High Pass Filters
+- [] Delay Effect
+- [] Other Effects
+- [] Note Manipulation
+- [] Mixer
