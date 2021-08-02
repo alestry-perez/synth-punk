@@ -19,7 +19,7 @@ Tools used:
 - Svelte
 - Tonal
 
-## Features
+## Features Implemented
 
 - [x] Synth Wave Type Selection 
 - [ ] Synth Wave Controls
