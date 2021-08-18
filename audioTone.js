@@ -35,6 +35,7 @@ document.querySelectorAll('button[data-waveform]').forEach((button) => {
 });
 
 // * Knobs
+
 document.querySelectorAll('input[type="range"]').forEach((knob) => {
   knob.addEventListener('change', ({ target }) => {
     const { osc, property } = target.dataset;
