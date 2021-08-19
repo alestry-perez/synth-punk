@@ -51789,18 +51789,25 @@ document.querySelectorAll('button[data-waveform]').forEach(function (button) {
   });
 }); // * Knobs
 
-document.querySelectorAll('something-div').forEach(function (knob) {
-  knob.addEventListener('change', function (_ref2) {
-    var target = _ref2.target;
-    var _target$dataset2 = target.dataset,
-        osc = _target$dataset2.osc,
-        property = _target$dataset2.property;
-
-    if (osc in oscillators) {
-      oscillators[osc][property] = target.value;
-    }
-  });
-}); // * Play Button
+$('.dial').knob({
+  min: 10,
+  max: 50,
+  width: 100,
+  height: 100,
+  displayInput: true,
+  fgColor: '#FF0000',
+  release: function release(v) {
+    alert(v);
+  }
+}); // document.querySelectorAll('something-div').forEach((knob) => {
+//   knob.addEventListener('change', ({ target }) => {
+//     const { osc, property } = target.dataset;
+//     if (osc in oscillators) {
+//       oscillators[osc][property] = target.value;
+//     }
+//   });
+// });
+// * Play Button
 
 var playButton = document.getElementById('playStop');
 var playStop = document.getElementById('playStatus');
@@ -51840,7 +51847,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57603" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61221" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

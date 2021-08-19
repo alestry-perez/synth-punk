@@ -35,14 +35,26 @@ document.querySelectorAll('button[data-waveform]').forEach((button) => {
 });
 
 // * Knobs
-document.querySelectorAll('something-div').forEach((knob) => {
-  knob.addEventListener('change', ({ target }) => {
-    const { osc, property } = target.dataset;
-    if (osc in oscillators) {
-      oscillators[osc][property] = target.value;
-    }
-  });
+$('.dial').knob({
+  min: 10,
+  max: 50,
+  width: 100,
+  height: 100,
+  displayInput: true,
+  fgColor: '#FF0000',
+  release: function (v) {
+    alert(v);
+  },
 });
+
+// document.querySelectorAll('something-div').forEach((knob) => {
+//   knob.addEventListener('change', ({ target }) => {
+//     const { osc, property } = target.dataset;
+//     if (osc in oscillators) {
+//       oscillators[osc][property] = target.value;
+//     }
+//   });
+// });
 
 // * Play Button
 const playButton = document.getElementById('playStop');

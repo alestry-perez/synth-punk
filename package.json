@@ -6,6 +6,8 @@
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.4",
     "autoprefixer": "^9",
+    "jquery": "^3.6.0",
+    "jquery-knob": "^1.2.11",
     "jshint": "^2.12.0",
     "parcel": "1.12.3",
     "postcss": "^8",
