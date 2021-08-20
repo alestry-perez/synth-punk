@@ -51792,8 +51792,8 @@ document.querySelectorAll('button[data-waveform]').forEach(function (button) {
 $('.dial').knob({
   min: 10,
   max: 50,
-  width: 100,
-  height: 100,
+  width: 50,
+  height: 50,
   displayInput: true,
   fgColor: '#FF0000',
   release: function release(v) {
@@ -51847,7 +51847,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61221" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64105" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
