@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap"
       rel="stylesheet"
     />
+
     <title>Synth Punk</title>
   </head>
   <body>
@@ -69,7 +70,13 @@
             </div>
             <!-- Knobs -->
             <div class="flex row-start-4 justify-evenly knobs">
-              <input type="text" value="75" class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full dial bg-secondary-500"" />
+              <input
+                type="number"
+                name="test1"
+                min="0"
+                max="100"
+                class="flex items-center justify-center w-10 h-10 border-2 border-black rounded-full  dial bg-secondary-500"
+              />
               <div
                 data-osc="osc1"
                 data-setting="volume"
