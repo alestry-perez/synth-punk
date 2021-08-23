@@ -36,15 +36,6 @@ document.querySelectorAll('button[data-waveform]').forEach((button) => {
 
 // * Knobs
 
-// document.querySelectorAll('something-div').forEach((knob) => {
-//   knob.addEventListener('change', ({ target }) => {
-//     const { osc, property } = target.dataset;
-//     if (osc in oscillators) {
-//       oscillators[osc][property] = target.value;
-//     }
-//   });
-// });
-
 // * Play Button
 const playButton = document.getElementById('playStop');
 const playStop = document.getElementById('playStatus');

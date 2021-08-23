@@ -51822,14 +51822,6 @@ document.querySelectorAll('button[data-waveform]').forEach(function (button) {
     }
   });
 }); // * Knobs
-// document.querySelectorAll('something-div').forEach((knob) => {
-//   knob.addEventListener('change', ({ target }) => {
-//     const { osc, property } = target.dataset;
-//     if (osc in oscillators) {
-//       oscillators[osc][property] = target.value;
-//     }
-//   });
-// });
 // * Play Button
 
 var playButton = document.getElementById('playStop');
