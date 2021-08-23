@@ -51788,18 +51788,7 @@ document.querySelectorAll('button[data-waveform]').forEach(function (button) {
     }
   });
 }); // * Knobs
-
-$('.dial').knob({
-  min: 10,
-  max: 50,
-  width: 50,
-  height: 50,
-  displayInput: true,
-  fgColor: '#FF0000',
-  release: function release(v) {
-    alert(v);
-  }
-}); // document.querySelectorAll('something-div').forEach((knob) => {
+// document.querySelectorAll('something-div').forEach((knob) => {
 //   knob.addEventListener('change', ({ target }) => {
 //     const { osc, property } = target.dataset;
 //     if (osc in oscillators) {
@@ -51847,7 +51836,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64470" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50137" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
