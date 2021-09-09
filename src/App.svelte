@@ -21,20 +21,22 @@
 </main>
 
 <style>
-  :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
 
   main {
-    text-align: center;
-    padding: 1em;
-    margin: 0 auto;
+    @apply 
+    flex 
+    flex-col 
+    text-center 
+    p-1 
+    m-0 
+    items-center 
+    justify-center;
   }
 
   img {
-    height: 16rem;
-    width: 16rem;
+    @apply 
+    h-20 
+    w-20;
   }
 
   h1 {
