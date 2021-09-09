@@ -1,0 +1,6 @@
+/* CSS HEX */
+--rich-black-fogra-39: #141115ff;
+--shadow: #7d7461ff;
+--honey-yellow: #f7b32bff;
+--red-ryb: #f72c25ff;
+--ghost-white: #f7f7ffff;

@@ -1,13 +1,13 @@
 <script>
   import AmpEnv from './lib/AmpEnv.svelte';
-import Efx from './lib/Efx.svelte';
-import OscKnobOne from './lib/OscKnobOne.svelte';
-import OscKnobTwo from './lib/OscKnobTwo.svelte';
+  import Efx from './lib/Efx.svelte';
+  import OscKnobOne from './lib/OscKnobOne.svelte';
+  import OscKnobTwo from './lib/OscKnobTwo.svelte';
   import PlayButton from './lib/PlayButton.svelte';
   import WaveDisplayOne from './lib/WaveDisplayOne.svelte';
-import WaveDisplayTwo from './lib/WaveDisplayTwo.svelte';
+  import WaveDisplayTwo from './lib/WaveDisplayTwo.svelte';
   import WaveSelectOne from './lib/WaveSelectOne.svelte';
-import WaveSelectTwo from './lib/WaveSelectTwo.svelte';
+  import WaveSelectTwo from './lib/WaveSelectTwo.svelte';
 </script>
 
 <main>
