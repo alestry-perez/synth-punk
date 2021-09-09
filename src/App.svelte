@@ -63,5 +63,8 @@ import WaveSelectTwo from './lib/WaveSelectTwo.svelte';
 </main>
 
 <style>
+body {
+  background-color: #7D7461;
+}
 
 </style>
