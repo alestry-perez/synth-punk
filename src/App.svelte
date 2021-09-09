@@ -14,7 +14,9 @@
   <body>
     <div class="grid h-screen place-items-center">
       <div>
-        <h1 class="text-2xl font-black">シンセパンク</h1>
+        <h1 class="text-2xl font-black">
+          シンセパンク
+        </h1>
       </div>
       <div
         id="synth"
