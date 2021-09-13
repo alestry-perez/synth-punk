@@ -1,4 +1,5 @@
 <script>
+import { ToneAudio } from 'tone';
 
 </script>
 
